@@ -6,9 +6,9 @@ level: Experienced
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 18f070005685699e2d1feb12a31802faa17e35f3
+source-git-commit: ca3a3e5b8272c0db9e355abd2d16896251594b43
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '996'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,10 @@ ht-degree: 0%
 # Renderervaringen
 
 Voer de stappen in het dialoogvenster *Ervaringen renderen* diagram om ervoor te zorgen dat alle noodzakelijke taken nodig om ervaringen terug te geven in de correcte opeenvolging worden uitgevoerd.
+
+>[!NOTE]
+>
+>Als u de optie voor het automatisch laden van pagina&#39;s hebt ingeschakeld tijdens het [De stap Verzoek voor automatisch laden van pagina configureren](/help/dev/patterns/initialize-sdk.md#automatic) in *SDKS initialiseren* kunt u deze activiteit overslaan, tenzij u de SDK van Adobe Target wilt bellen om extra ervaringen te genereren met een aanvraag voor een regionale locatie.
 
 >[!TIP]
 >
@@ -58,7 +62,7 @@ Aanbevolen objecten toevoegen en de plaatsing ervan in de doelRecommendations co
 
 **Vereiste parameters voor entiteit**
 
-* Het kenmerk Item in promoties moet worden doorgegeven wanneer de optie &#39;Promoten door kenmerk&#39; wordt gebruikt.
+* Objectkenmerken in promoties moeten worden doorgegeven wanneer de optie &#39;Promoten door kenmerk&#39; wordt gebruikt.
 
 +++
 
@@ -90,7 +94,7 @@ Aanbevelingen doen op basis van de inhoud van het winkelwagentje.
 
 ## 3.3: criteria op basis van populariteit {#popularity}
 
-Aanbevelingen doen op basis van de algemene populariteit van een item op uw site of op basis van de populariteit van items in de favoriete of meest bekeken categorie, het merk, het genre enzovoort van een gebruiker.
+Aanbevelingen doen op basis van de algemene populariteit van een item op uw site of op basis van de populariteit van items in de favoriete of meest bekeken categorie, het merk, het genre enzovoort van een bezoeker.
 
 +++Zie details
 
@@ -107,7 +111,7 @@ Aanbevelingen doen op basis van de algemene populariteit van een item op uw site
 **Vereiste parameters voor entiteit**
 
 * `entity.categoryId` of het itemkenmerk voor populariteit als de criteria zijn gebaseerd op het huidige of het itemkenmerk.
-* Er mag niets worden doorgegeven voor de meest bekeken/verkochte objecten op de site.
+* Er moet niets worden doorgegeven voor Meest bekeken/Meest verkochte objecten op de site.
 
 **Leesingen**
 
@@ -168,7 +172,7 @@ Aanbevelingen doen op basis van het gedrag van de gebruiker.
 
 ## 3.6: Aangepaste criteria {#custom}
 
-Aanbevelingen doen op basis van een aangepast bestand dat u uploadt
+Aanbevelingen doen op basis van een aangepast bestand dat u uploadt.
 
 +++Zie details
 
@@ -222,7 +226,7 @@ Geef entiteit-id&#39;s door voor entiteiten die u wilt uitsluiten van uw aanbeve
 
 * [Entiteitskenmerken](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html){target=_blank}
 
-U kunt deze stap ook uitvoeren door productfeeds te maken met de opdracht [!DNL Target] UI voor het bijwerken van de productcatalogus voor [!DNL Recommendations].
+U kunt deze stap ook uitvoeren door [productfeeds](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/feeds.html){target=_blank} met de [!DNL Target] UI voor het bijwerken van de productcatalogus voor [!DNL Recommendations].
 
 +++
 
@@ -244,7 +248,7 @@ Geef de profielkenmerken op die als sleutels voor inclusieregels in de hierboven
 
 ## 3.11: Aanvraag voor het laden van een brandpagina {#fire}
 
-Deze stap activeert een [!DNL Delivery API] bellen met `execute` > `pageLoad` lading in het verzoek. De `getOffers()` de methode haalt de ervaring en `applyOffers()` geeft de ervaring op de pagina weer. De pageLoad-aanvraag is nodig voor rendering van ervaringen die zijn geschreven in het dialoogvenster [Visual Experience Composer](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html){target=_blank} (VEC).
+Deze stap activeert een [!DNL Delivery API] bellen met `execute` > `pageLoad` lading in het verzoek. De `getOffers()` de methode haalt de ervaring en `applyOffers()` geeft de ervaring op de pagina weer. De `pageLoad` verzoek is nodig voor het renderen van ervaringen die zijn geschreven in de [Visual Experience Composer](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html){target=_blank} (VEC).
 
 +++Zie details
 
