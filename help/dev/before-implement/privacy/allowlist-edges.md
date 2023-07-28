@@ -4,9 +4,9 @@ description: Een lijst met hosts weergeven om u te helpen lijsten van gewenste p
 title: Hoe kan ik Lijsten van gewenste personen? [!DNL Target] Randknooppunten?
 feature: Privacy & Security
 exl-id: a7e5d2fc-da8e-414d-a3da-2441ea21503d
-source-git-commit: 55deb12a59dc228ec7dcec17fc0ecb43e2900613
+source-git-commit: 3f4147d521b1fb3ee12e879e52a48d459f6b24b9
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '516'
 ht-degree: 5%
 
 ---
@@ -27,11 +27,7 @@ U kunt lijst van gewenste personen [!DNL Target] randknooppunten, indien gewenst
 >
 >[!DNL Adobe Target] de infrastructuur wordt bijgewerkt en de klanten die adressen willen lijsten van gewenste personen moeten beide reeksen IPs gebruiken. Het nalaten om dit te doen zal klanten gebruikend server-kant of hybride implementaties beïnvloeden waar de vraag van doel API voor het halen van ervaringen uit binnen een netwerk achter een firewall voortkomt die wordt gevormd om een lijst van gewenste personen te gebruiken.
 >
->Deze update wordt uitgevoerd volgens het volgende schema:
->
->* 22-26 mei: regio Europa, Midden-Oosten en Afrika (EMEA)
->* 22-26 mei: regio Azië-Stille Oceaan (APAC)
->* 6-10 juni: Amerikaanse regio
+>Alle Edge4 *x* de adressen die in beide lijsten worden vermeld zijn gepland om op 9 augustus 2023 worden bijgewerkt.
 
 ## IP-adressen (NAT) van Network Address Translation [!DNL Target] randen
 
