@@ -6,7 +6,7 @@ level: Experienced
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 5321ce43be26e8f0776da49e597ecb5f8dfb5984
+source-git-commit: 9b65380febf64896a3885c49f8bb79e4bb33f604
 workflow-type: tm+mt
 source-wordcount: '948'
 ht-degree: 0%
@@ -27,7 +27,7 @@ De automatische uit-van-de-doos flikkerbehandeling beschikbaar met at.js is zinv
 
 De stapnummers in de volgende afbeelding komen overeen met de onderstaande secties.
 
-![Renderervaringsdiagram](/help/dev/patterns/assets/render-experiences-diagram.png){width="600" zoomable="yes"}
+![Renderervaringsdiagram](/help/dev/patterns/assets/diagram-render-experiences.png){width="600" zoomable="yes"}
 
 Klik op de volgende koppelingen om naar de gewenste secties te navigeren:
 
