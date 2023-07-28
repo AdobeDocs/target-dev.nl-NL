@@ -6,9 +6,9 @@ level: Experienced
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 65cad3c558aa0f52c8007dcdb566c0ce3b29d8b7
+source-git-commit: 1291a095a7befed5f795f34099e0411930788e29
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '335'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Deze stap helpt u ervoor te zorgen dat alle gebeurtenissen waarnaar moet worden 
 
 ![Fire Adobe Target Track API-diagram](/help/dev/patterns/assets/fire-adobe-target-track-api-diagram.png){width="100" zoomable="yes"}
 
-U verzendt de kenmerken voor orderomzetting zoals vermeld in de sectie Voorwaarde hieronder. De naam van de box is niet van belang, maar de conversie moet worden gebruikt `orderConfirmPage`.
+U verzendt de kenmerken voor orderomzetting die worden vermeld in het dialoogvenster *Vereisten* hieronder. De naam van de box is niet van belang, maar de conversie moet worden gebruikt `orderConfirmPage`.
 
 U te hoeven niet om de attributen van de ordeconversie in deze vraag te omvatten. Deze vraag registreert ideaal succesmetriek die van als mini-omzettingsgebeurtenissen vóór de belangrijkste omzettingsgebeurtenissen kan worden gedacht. `CardIds` moeten worden opgenomen in aanbevelingen op basis van de `Add to Cart` gebeurtenis.
 
@@ -46,7 +46,7 @@ U te hoeven niet om de attributen van de ordeconversie in deze vraag te omvatten
 * Ontmoet met uw bedrijfsteam om alle gebeurtenissen te identificeren die als omzettings of succesmetriek kunnen worden beschouwd. U moet ook de omzettingsgebeurtenis identificeren die opbrengst produceert zodat die details kunnen worden verzonden naar [!DNL Target] samen met de gebeurtenisgegevens.
 * Zorg ervoor dat de volgende kenmerken beschikbaar zijn in de gegevenslaag, zodat u deze kunt verzenden met de conversiegebeurtenis. De conversiegebeurtenis genereert inkomsten, zoals een productaankoop of de gebeurtenis Add to Cart.
 
-   * `productPurchaseId`: Product-id&#39;s die zijn aangeschaft als onderdeel van de bestelling. Meerdere producten worden door komma&#39;s gescheiden.
+   * `productPurchaseId`: Product-id&#39;s die zijn aangeschaft als onderdeel van de bestelling. Scheid meerdere producten met komma&#39;s.
    * `orderTotal`: Totaal bestellen voor de aankoop.
    * `orderId`: Order-id van de aankoop.
 
