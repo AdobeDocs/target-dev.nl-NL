@@ -2,9 +2,9 @@
 user-guide-title: Adobe Target Developer Guide
 breadcrumb-title: Doelontwikkelaarsgids
 user-guide-description: Leer hoe u de ervaring van uw klanten kunt aanpassen en personaliseren om uw omzet te maximaliseren op uw websites en mobiele sites, apps, sociale media en andere digitale kanalen.
-source-git-commit: 5321ce43be26e8f0776da49e597ecb5f8dfb5984
+source-git-commit: 65cad3c558aa0f52c8007dcdb566c0ce3b29d8b7
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '739'
 ht-degree: 3%
 
 ---
@@ -217,5 +217,6 @@ ht-degree: 3%
       + [SDK&#39;s initialiseren](/help/dev/patterns/initialize-sdk.md)
       + [Gegevensverzameling configureren](/help/dev/patterns/data-collection.md)
       + [Renderervaringen](/help/dev/patterns/render-experiences.md)
+      + [Doel op hoogte stellen](/help/dev/patterns/notify-target.md)
 
 
