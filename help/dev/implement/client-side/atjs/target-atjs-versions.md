@@ -4,9 +4,9 @@ description: Bekijk de details over wijzigingen in elke versie van het dialoogve
 title: Wat is inbegrepen in Elke Versie van at.js?
 feature: at.js
 exl-id: 609dacba-2ab8-45e9-b189-928d59938c98
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: dc7831e4c3eb7dfc4a11d440e55b3a116b6e28fc
 workflow-type: tm+mt
-source-wordcount: '4531'
+source-wordcount: '4580'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,15 @@ ht-degree: 0%
 
 Details over de wijzigingen in elke versie van het dialoogvenster [!DNL Adobe Target] at.js JavaScript-bibliotheek.
 
->[!WARNING]
+>[!IMPORTANT]
 >
->[!DNL Adobe Target] ondersteunt beide at.js 1.*x* en te.js 2.*x*. Voer een upgrade uit naar de meest recente update van een van de belangrijkste versies van at.js om ervoor te zorgen dat u een ondersteunde versie uitvoert.
+>[!DNL Adobe Target] ondersteunt beide at.js 1.*x* en te.js 2.*x*.
+>
+>te.js 1.*x* is in de onderhoudsmodus gegaan. De [!DNL Target] teamreleases foutoplossingen en beveiligingspatches indien nodig.
+>
+>De [!DNL Target] team biedt volledige ondersteuning voor at.js 2.*x* en geeft oplossingen voor problemen, beveiligingspatches, functies en optimalisatie van prestaties voortdurend weer.
+>
+>U zou aan de recentste versies van één van beide moeten bevorderen 1.*x* of 2.*x* om insectenmoeilijke situaties en veiligheidspatches voor kwesties te verkrijgen die in om het even welke vorige minder belangrijke versie van de overeenkomstige belangrijkste versie worden ontdekt.
 
 Tags in [Adobe Experience Platform](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) zijn de aangewezen methode om at.js te bevorderen. Extensieontwikkelaars voegen voortdurend nieuwe functies toe aan hun extensies en corrigeren vaak bugs. Deze updates worden verpakt in nieuwe versies van een extensie en worden als upgrades beschikbaar gesteld in de Adobe Experience Platform-catalogus. Zie voor meer informatie [Uitbreidingen upgraden](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/extension-upgrade.html) in de *Overzicht van codes* hulplijn.
 
