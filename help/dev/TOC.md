@@ -2,9 +2,9 @@
 user-guide-title: Adobe Target Developer Guide
 breadcrumb-title: Doelontwikkelaarsgids
 user-guide-description: Leer hoe u de ervaring van uw klanten kunt aanpassen en personaliseren om uw omzet te maximaliseren op uw websites en mobiele sites, apps, sociale media en andere digitale kanalen.
-source-git-commit: 65cad3c558aa0f52c8007dcdb566c0ce3b29d8b7
+source-git-commit: eadb45877b13ac029dae6aaf172abebabb804983
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '707'
 ht-degree: 3%
 
 ---
@@ -168,12 +168,6 @@ ht-degree: 3%
    + [Voorvertoning voor mobiele doelversie](implement/mobile/target-mobile-preview.md)
    + [Locatieservice gebruiken](implement/mobile/use-location-service.md)
    + [Veelgestelde vragen over het doel voor mobiele apps](implement/mobile/mobile-faq.md)
-   + Adobe Mobile SDK versie 4.x {#version-4}
-      + [Hoe Target werkt in mobiele apps](implement/mobile/how-target-works-mobile-apps.md)
-      + [Doel inschakelen in de SDK](implement/mobile/enable-target-in-sdk.md)
-      + [iOS - maak een doellocatie en succesmaatstaf](implement/mobile/mobile-create-location-and-metric.md)
-      + [iOS - aangepaste gebruikersgegevens verzenden](implement/mobile/mobile-custom-user-data.md)
-      + [Prefetaanbiedingsinhoud](implement/mobile/prefetch-offer-content.md)
 + E-mailimplementatie {#implement-email}
    + [E-mail: Implementeer overzicht van doel](implement/email/overview.md)
    + [Een dialoogvenster maken voor een afbeelding](implement/email/testing-content-with-the-adbox.md)

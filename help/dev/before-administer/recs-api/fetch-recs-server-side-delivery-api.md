@@ -6,9 +6,9 @@ kt: 3815
 thumbnail: null
 author: Judy Kim
 exl-id: 9b391f42-2922-48e0-ad7e-10edd6125be6
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: ba53161b2ec51af3d90994773034790feb51099c
 workflow-type: tm+mt
-source-wordcount: '1507'
+source-wordcount: '1493'
 ht-degree: 0%
 
 ---
@@ -88,7 +88,6 @@ De volgende bronnen bieden voorbeelden van verschillende implementaties die niet
 | --- | --- |
 | [Adobe Target Overal - Implementeer server-kant of in de IoT](https://expleague.azureedge.net/labs/L733/index.html) | Adobe Summit 2019 Lab die praktijkervaring biedt voor een React-toepassing die gebruikmaakt van Adobe Target server-side API&#39;s. |
 | [Adobe Target in een mobiele toepassing zonder de Adobe-SDK](https://community.tealiumiq.com/t5/Universal-Data-Hub/Adobe-Target-in-a-Mobile-App-Without-the-Adobe-SDK/ta-p/26753) | In deze handleiding ziet u hoe u Adobe Target kunt instellen in uw mobiele app zonder de SDK van de Adobe te installeren. Deze oplossing gebruikt de webweergave van Tealium SDK en de module Externe opdrachten om aanvragen te verzenden en te ontvangen naar de Adobe Visitor API (Experience Cloud) en de Adobe Target API. |
-| [Hoe Adobe Target werkt in mobiele apps](../../implement/mobile/how-target-works-mobile-apps.md) | Hoe het Doel met de Mobiele SDK werkt |
 | [De doelextensie configureren in Experience Platform Launch en doel-API&#39;s implementeren](https://developer.adobe.com/client-sdks/documentation/adobe-target/) | Stappen voor het vormen van de uitbreiding van het Doel in Experience Platform Launch, het toevoegen van de Uitbreiding van het Doel aan uw app, en het uitvoeren van Doel APIs aan verzoekactiviteiten, prefetch aanbiedingen, en Ga visuele voorproefwijze in. |
 | [Adobe Target Node-client](https://www.npmjs.com/package/@adobe/target-nodejs-sdk) | Open-sourced Target Node.js SDK v1.0 |
 | [Overzicht van de server](../../implement/server-side/server-side-overview.md) | Informatie over Adobe Target Server Side Delivery API&#39;s, Server Side Batch Delivery API&#39;s, Node.js SDK en Adobe Target Recommendations API&#39;s. |
