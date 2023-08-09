@@ -4,9 +4,9 @@ description: Gebruik koppelingen voor mobiele voorvertoningen om end-to-end kwal
 title: Hoe gebruik ik de koppeling Mobiele voorvertoning in [!DNL Target] Mobiel?
 feature: Implement Mobile
 exl-id: c0c4237a-de1f-4231-b085-f8f1e96afc13
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: cf39b35e208a99114b3f97df2e9ef7eb8a46e153
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '537'
 ht-degree: 0%
 
 ---
@@ -14,10 +14,6 @@ ht-degree: 0%
 # [!DNL Target] mobiele voorvertoning
 
 Gebruik de koppeling voor mobiele voorvertoningen om eenvoudige end-to-end QA&#39;s voor mobiele app-activiteiten uit te voeren en uzelf in te schrijven voor verschillende ervaringen op uw apparaat zonder speciale testapparaten.
-
->[!NOTE]
->
->Voor de functie voor mobiele voorvertoningen moet u de juiste 4.14 (of hoger) versie van de Adobe Mobile SDK downloaden en installeren.
 
 ## Overzicht
 
@@ -27,69 +23,24 @@ Met de functie voor mobiele voorvertoningen kunt u uw mobiele-toepassingsactivit
 
 1. **Gebruik een ondersteunde versie van de SDK:** Voor de functie voor mobiele voorvertoningen moet u de juiste versie 4.14 (of hoger) van de Adobe Mobile SDK downloaden en installeren in de corresponderende apps.
 
-   Voor instructies voor het downloaden van de juiste SDK raadpleegt u:
-
-   * **iOS:** [Voordat u begint](https://experienceleague.adobe.com/docs/mobile-services/ios/getting-started-ios/requirements.html) in de *IOS Help voor mobiele services*.
-   * **Android:** [Voordat u begint](https://experienceleague.adobe.com/docs/mobile-services/android/getting-started-android/requirements.html) in de *Help bij Mobile Services Android*.
+   Voor instructies voor het downloaden van de juiste SDK raadpleegt u [Huidige SDK-versies](https://developer.adobe.com/client-sdks/documentation/current-sdk-versions/){target=_blank} in de *[!DNL Adobe Experience Platform Mobile SDK]* documentatie.
 
 1. **Een URL-schema instellen:** De voorbeeldkoppeling gebruikt een URL-schema om uw app te openen. U moet een uniek URL-schema opgeven voor de voorvertoning.
 
-   De volgende illustratie is een voorbeeld op iOS:
+   Zie voor meer informatie [Visuele voorvertoning](https://developer.adobe.com/client-sdks/documentation/adobe-target/#visual-preview){target=_blank} in *Adobe Target* in de *[!DNL Adobe Experience Platform Mobile SDK]* documentatie.
 
-   ![alternatieve afbeelding](assets/mobile-preview-url-scheme-ios.png)
+   De volgende koppelingen bevatten meer informatie:
 
-   De volgende afbeelding is een voorbeeld op Android:
+   * **iOs**: Ga voor meer informatie over het instellen van URL-schema&#39;s voor iOS naar [Een aangepast URL-schema voor uw app definiëren](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target=_blank} op de Apple Developer-website.
+   * **Android**: Ga voor meer informatie over het instellen van URL-schema&#39;s voor Android naar [Diepe koppelingen maken naar App-inhoud](https://developer.android.com/training/app-links/deep-linking){target=_blank} op de website van Android Developers.
 
-   ![alternatieve afbeelding](assets/Android_Deeplink.png)
+1. **Instellen `collectLaunchInfo` API**
 
-1. **Track Adobe DeepLink**
-
-   **iOS:** In de toepassingsafgevaardigde, vraag `[ADBMobile trackAdobeDeepLink:url` wanneer de gedelegeerde wordt gevraagd om de bron te openen met het URL-schema dat in de vorige stap is opgegeven.
-
-   Het volgende codefragment is een voorbeeld:
-
-   ```javascript {line-numbers="true"}
-   - (BOOL) application:(UIApplication *)app openURL:(NSURL *)url 
-                options:(NSDictionary<NSString *,id> *)options { 
-   
-       if ([[url scheme] isEqualToString:@"com.adobe.targetmobile"]) { 
-           [ADBMobile trackAdobeDeepLink:url]; 
-           return YES; 
-       } 
-       return NO; 
-   } 
-   ```
-
-   **Android:** In de app roept u `Config.trackAdobeDeepLink(URL);` wanneer de bezoeker wordt gevraagd om het middel met het URL-schema te openen dat in de vorige stap werd gespecificeerd.
-
-   ```javascript {line-numbers="true"}
-    private Boolean shouldOpenDeeplinkUrl() { 
-        Intent appLinkIntent = getIntent(); 
-        String appLinkAction = appLinkIntent.getAction(); 
-        Uri appLinkData = appLinkIntent.getData; 
-        if (appLinkData.toString().startsWith("com.adobe.targetmobile")) { 
-            Config.trackAdobeDeepLink(appLinkData); 
-            return true; 
-        } 
-        return false; 
-     }
-   ```
-
-   Als u Mobiele voorvertoning wilt laten werken voor Android, moet u ook het volgende codefragment toevoegen in AndroidManifest.xml als u versie 5 van de Adobe Mobile SDK gebruikt:
-
-   ```javascript {line-numbers="true"}
-   <activity android:name="com.adobe.marketing.mobile.FullscreenMessageActivity" />
-   ```
-
-   Gebruik het volgende codefragment als u versie 4 van de Adobe Mobile SDK gebruikt:
-
-   ```javascript {line-numbers="true"}
-   <activity android:name="com.adobe.mobile.MessageFullScreenActivity" />
-   ```
+   Zie voor meer informatie [Visuele voorvertoning](https://developer.adobe.com/client-sdks/documentation/adobe-target/#visual-preview){target=_blank} in *Adobe Target* in de *[!DNL Adobe Experience Platform Mobile SDK]* documentatie.
 
 ## Een voorbeeldkoppeling genereren
 
-1. In de [!DNL Target] UI, klik **[!UICONTROL More Options]** pictogram (drie verticale ovalen), en selecteer vervolgens **[!UICONTROL Create Mobile Preview]**.
+1. In de [!DNL Target] UI, klik **[!UICONTROL More Options]** pictogram (de verticale ellips) en selecteer vervolgens **[!UICONTROL Create Mobile Preview]**.
 
    ![alternatieve afbeelding](assets/mobile-preview-create.png)
 
