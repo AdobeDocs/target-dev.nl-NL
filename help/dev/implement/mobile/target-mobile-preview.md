@@ -4,9 +4,9 @@ description: Gebruik koppelingen voor mobiele voorvertoningen om end-to-end kwal
 title: Hoe gebruik ik de koppeling Mobiele voorvertoning in [!DNL Target] Mobiel?
 feature: Implement Mobile
 exl-id: c0c4237a-de1f-4231-b085-f8f1e96afc13
-source-git-commit: cf39b35e208a99114b3f97df2e9ef7eb8a46e153
+source-git-commit: b678b69624963b4bdbce230a05a0355da96469f1
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '535'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Met de functie voor mobiele voorvertoningen kunt u uw mobiele-toepassingsactivit
 
 ## Vereisten
 
-1. **Gebruik een ondersteunde versie van de SDK:** Voor de functie voor mobiele voorvertoningen moet u de juiste versie 4.14 (of hoger) van de Adobe Mobile SDK downloaden en installeren in de corresponderende apps.
+1. **Gebruik een ondersteunde versie van de SDK:** Voor de functie voor mobiele voorvertoningen moet u de juiste versie van de Adobe Mobile SDK downloaden en installeren in de corresponderende apps.
 
    Voor instructies voor het downloaden van de juiste SDK raadpleegt u [Huidige SDK-versies](https://developer.adobe.com/client-sdks/documentation/current-sdk-versions/){target=_blank} in de *[!DNL Adobe Experience Platform Mobile SDK]* documentatie.
 
