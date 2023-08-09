@@ -4,9 +4,9 @@ description: Gebruik koppelingen voor mobiele voorvertoningen om end-to-end kwal
 title: Hoe gebruik ik de koppeling Mobiele voorvertoning in [!DNL Target] Mobiel?
 feature: Implement Mobile
 exl-id: c0c4237a-de1f-4231-b085-f8f1e96afc13
-source-git-commit: b678b69624963b4bdbce230a05a0355da96469f1
+source-git-commit: 97c96e63f9121793a83b445ad3dc33c5d094509a
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '538'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Met de functie voor mobiele voorvertoningen kunt u uw mobiele-toepassingsactivit
    * **iOs**: Ga voor meer informatie over het instellen van URL-schema&#39;s voor iOS naar [Een aangepast URL-schema voor uw app definiëren](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target=_blank} op de Apple Developer-website.
    * **Android**: Ga voor meer informatie over het instellen van URL-schema&#39;s voor Android naar [Diepe koppelingen maken naar App-inhoud](https://developer.android.com/training/app-links/deep-linking){target=_blank} op de website van Android Developers.
 
-1. **Instellen `collectLaunchInfo` API**
+1. **Instellen `collectLaunchInfo` API (alleen i0S)**
 
    Zie voor meer informatie [Visuele voorvertoning](https://developer.adobe.com/client-sdks/documentation/adobe-target/#visual-preview){target=_blank} in *Adobe Target* in de *[!DNL Adobe Experience Platform Mobile SDK]* documentatie.
 
