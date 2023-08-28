@@ -2,9 +2,9 @@
 user-guide-title: Adobe Target Developer Guide
 breadcrumb-title: Doelontwikkelaarsgids
 user-guide-description: Leer hoe u de ervaring van uw klanten kunt aanpassen en personaliseren om uw omzet te maximaliseren op uw websites en mobiele sites, apps, sociale media en andere digitale kanalen.
-source-git-commit: eadb45877b13ac029dae6aaf172abebabb804983
+source-git-commit: 2d1b1829a8f794e29bb054d1bfdcb5047d6b4acb
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '721'
 ht-degree: 3%
 
 ---
@@ -102,7 +102,7 @@ ht-degree: 3%
       + [Gebruikersmachtigingen en -eigenschappen](implement/server-side/sdk-guides/core-principles/user-permissions-and-properties.md)
    + Integratie {#integration}
       + [Overzicht van integratie](implement/server-side/sdk-guides/integration-with-experience-cloud/overview.md)
-      + [Experience Cloud ID-service (ECID)](implement/server-side/sdk-guides/integration-with-experience-cloud/ecid.md)
+      + [Experience Cloud ID Service (ECID)](implement/server-side/sdk-guides/integration-with-experience-cloud/ecid.md)
       + [Analyses voor doelrapportage (A4T)](implement/server-side/sdk-guides/integration-with-experience-cloud/a4t-reporting.md)
       + [AAM](implement/server-side/sdk-guides/integration-with-experience-cloud/aam-segments.md)
    + Apparaatbeslissingen {#on-device-decisioning}
@@ -168,6 +168,7 @@ ht-degree: 3%
    + [Voorvertoning voor mobiele doelversie](implement/mobile/target-mobile-preview.md)
    + [Locatieservice gebruiken](implement/mobile/use-location-service.md)
    + [Veelgestelde vragen over het doel voor mobiele apps](implement/mobile/mobile-faq.md)
+   + [Doel implementeren met de AEP Mobile SDK in een systeemeigen app met webweergaven](/help/dev/implement/mobile/native-app.md)
 + E-mailimplementatie {#implement-email}
    + [E-mail: Implementeer overzicht van doel](implement/email/overview.md)
    + [Een dialoogvenster maken voor een afbeelding](implement/email/testing-content-with-the-adbox.md)
