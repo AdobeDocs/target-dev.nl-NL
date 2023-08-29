@@ -4,9 +4,9 @@ description: Meer informatie [!DNL Adobe Target] voldoet aan de toepasselijke we
 title: Hoe behandelt Target privacykwesties, inclusief PII?
 feature: Privacy & Security
 exl-id: 4330e034-2483-4a25-9c87-48dbef6fc9de
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: d9ac5bab3a09cf49b2178a62c06eebe733b9048d
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '850'
 ht-degree: 0%
 
 ---
@@ -38,6 +38,14 @@ De volgende instellingen zijn beschikbaar in de [!DNL Target] UI door te naviger
   ![obfuscate-ip-options](assets/obfuscate-ip.png)
 
 [!DNL Target] ontvangt het volledige IP adres en verduistert het (als reeks aan Laatste octet of Volledige IP) zoals gespecificeerd. [!DNL Target] houdt dan het verduisterde IP adres in geheugen slechts tijdens de huidige zitting.
+
+### IP-verwarring op gegevensstroomniveau bij gebruik van de [!DNL Adobe Experience Platform Web SDK]
+
+Wanneer u de opdracht [!DNL Platform Web SDK] (versie 23.4 of recenter), het datastream-niveau IP obfuscation plaatsen neemt belangrijkheid over om het even welke IP die optieoptie in [!DNL Target]. Bijvoorbeeld, als de datastream-vlakke IP verduisteringsoptie wordt geplaatst aan [!UICONTROL Full] en de [!DNL Target] IP de optie van de verwarring wordt geplaatst aan [!UICONTROL Last octet obfuscation], [!DNL Target] ontvangt volledig verduisterde IP. Omdat IP binnen verwarring [!DNL Target] gebeurt vóór de geolocatieraadpleging, heeft het datastream-vlakke IP obfuscation plaatsen geen effect.
+
+Nadat IP de verwarring op het gegevensstroomniveau wordt geplaatst en uw gegevens door het Netwerk van de Rand gaan, verzoeken die aan komen [!DNL Target] en [!DNL Adobe Audience Manager] (AAM) bevatten slechts het verduisterde IP en om het even welke logica die op cliëntIP wordt gebaseerd wordt beïnvloed door de datastream-vlakke IP optie van de Verduistering. Om het even welke IP die obfusctie in wordt geplaatst [!DNL Target] of AAM wordt toegepast op het reeds verduisterde IP.
+
+Zie voor meer informatie [!UICONTROL IP Obfuscation] in [Een gegevensstroom configureren](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html){target=_blank} in de *[!DNL Adobe Experience Platfrom]Handleiding gegevensstromen*.
 
 ## GeoSegmentation
 
