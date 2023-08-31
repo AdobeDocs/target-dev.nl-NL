@@ -4,9 +4,9 @@ description: Leren gebruiken [!UICONTROL [!UICONTROL on-device decisioning]] om 
 title: Wat is een apparaatbeslissing?
 feature: Implement Server-side
 exl-id: 22ed3072-56f0-4075-9d1a-d642afe3b649
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 79ffa3f58d780f587fe1202b82d3860395504dfe
 workflow-type: tm+mt
-source-wordcount: '1112'
+source-wordcount: '1127'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ De besluitvorming op het apparaat ondersteunt de volgende publieksregels:
 
 | Auditieregel | Apparaatbeslissingen |
 | --- | --- |
-| [Geo](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/geo.html) | Ja |
+| [Geo](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/geo.html) | Ja<P>Bij gebruik van apparaatbeslissingen worden de volgende geografische kenmerken ondersteund:<ul><li>Land/regio</li><li>Plaats</li><li>Breedte</li><li>Lengtegraad</li></ul> |
 | [Netwerk](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/network.html) | Nee |
 | [Mobiel](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/mobile.html) | Nee |
 | [Aangepaste parameters](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html) | Ja |
@@ -69,7 +69,7 @@ De besluitvorming op het apparaat ondersteunt de volgende publieksregels:
 | [Bezoekerprofiel](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html) | Nee |
 | [verkeersbronnen](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html) | Nee |
 | [Tijdschema](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/time-frame.html) | Ja |
-| [Experience Cloud publiek](https://experienceleague.adobe.com/docs/target/using/integrate/mmp.html) (Soorten publiek uit Adobe Audience Manager, Adobe Analytics en Adobe Experience Manager) | Nee |
+| [Soorten publiek Experience Cloud](https://experienceleague.adobe.com/docs/target/using/integrate/mmp.html) (Soorten publiek uit Adobe Audience Manager, Adobe Analytics en Adobe Experience Manager) | Nee |
 
 ## Hoe kan ik mijn klant voorzien van [!UICONTROL on-device decisioning]?
 
@@ -146,10 +146,10 @@ Deze video van 7 minuten:
 
 Zie de [[!DNL Adobe Target] Tutorials](https://experienceleague.adobe.com/docs/target-learn/tutorials/overview.html).
 
-### Adobe Tech Blog - Deel 1: Uitvoeren [!DNL Adobe Target] NodeJS SDK voor experimenteren en personalisatie op Edge-platforms (Akamai Edge Workers)
+### Tech Blog Adobe - Deel 1: Uitvoeren [!DNL Adobe Target] NodeJS SDK voor experimenteren en personalisatie op Edge-platforms (Akamai Edge Workers)
 
 [Klik hier om het blogbericht te openen](https://medium.com/adobetech/part-1-run-adobe-target-nodejs-sdk-for-experimentation-and-personalization-on-edge-platforms-4d8660964ed9).
 
-### Adobe Tech Blog - Deel 2: Run [!DNL Adobe Target] NodeJS SDK voor experimenteren en personalisatie op Edge-platforms (AWS Lambda@Edge)
+### Tech Blog Adobe - Deel 2: Run [!DNL Adobe Target] NodeJS SDK voor experimenteren en personalisatie op Edge-platforms (AWS Lambda@Edge)
 
 [Klik hier om het blogbericht te openen](https://medium.com/adobetech/part-2-run-adobe-target-nodejs-sdk-for-experimentation-and-personalization-on-edge-platforms-aws-4d6bdac24563).

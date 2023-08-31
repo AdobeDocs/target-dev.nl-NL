@@ -4,9 +4,9 @@ description: Meer weten over welke functies worden ondersteund voor [!UICONTROL 
 title: Welke functies worden ondersteund in een beslissing op het apparaat
 feature: at.js
 exl-id: bdd65658-6c4a-41ae-a222-59c00a11bdac
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 79ffa3f58d780f587fe1202b82d3860395504dfe
 workflow-type: tm+mt
-source-wordcount: '633'
+source-wordcount: '648'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ In de volgende tabel wordt aangegeven voor welke publieksregels deze worden onde
 
 | Auditieregel | Ondersteund? |
 | --- | --- |
-| [Geo](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/geo.html) | Ja |
+| [Geo](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/geo.html) | Ja<P>Bij gebruik van apparaatbeslissingen worden de volgende geografische kenmerken ondersteund:<ul><li>Land/regio</li><li>Plaats</li><li>Breedte</li><li>Lengtegraad</li></ul> |
 | [Netwerk](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/network.html) | Nee |
 | [Mobiel](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/mobile.html) | Nee |
 | [Aangepaste parameters](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html) | Ja |
@@ -50,7 +50,7 @@ In de volgende tabel wordt aangegeven voor welke publieksregels deze worden onde
 
 ### Geo targeting voor [!UICONTROL on-device decisioning]
 
-Minimale vertraging behouden voor [!UICONTROL on-device decisioning] Adobe raadt u aan om de geo-waarden zelf op te geven in de oproep aan [getOffers](/help/dev/implement/client-side/atjs/atjs-functions/adobe-target-getoffers-atjs-2.md). Stel het Geo-object in in de context van de aanvraag. Dit betekent vanuit de browser een manier om de locatie van elke bezoeker te bepalen. Bijvoorbeeld, kunt u een IP-aan-Geo raadpleging uitvoeren, gebruikend de dienst u vormt. Sommige hostingproviders, zoals Google Cloud, bieden deze functionaliteit via aangepaste headers in elk `HttpServletRequest`.
+Minimale vertraging behouden voor [!UICONTROL on-device decisioning] De activiteiten met geo-based publiek, Adobe adviseert u de geo waarden zelf in de vraag te verstrekken aan [getOffers](/help/dev/implement/client-side/atjs/atjs-functions/adobe-target-getoffers-atjs-2.md). Stel het Geo-object in in de context van de aanvraag. Dit betekent vanuit de browser een manier om de locatie van elke bezoeker te bepalen. Bijvoorbeeld, kunt u een IP-aan-Geo raadpleging uitvoeren, gebruikend de dienst u vormt. Sommige hostingproviders, zoals Google Cloud, bieden deze functionaliteit via aangepaste headers in elk `HttpServletRequest`.
 
 ```javascript {line-numbers="true"}
 window.adobe.target.getOffers({ 
