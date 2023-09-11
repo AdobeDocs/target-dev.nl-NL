@@ -6,9 +6,9 @@ level: Experienced
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 7a79eb1d263cf42529a5a1b1ca1f9de4db218a49
+source-git-commit: e15513f5c52240536ccf41f16ba7f4dc6dbf9a04
 workflow-type: tm+mt
-source-wordcount: '148'
+source-wordcount: '149'
 ht-degree: 0%
 
 ---
@@ -25,16 +25,16 @@ De nummers in de afbeelding geven geen bewerkingsvolgorde aan:
 
 1. Client-side SDK&#39;s voor [!DNL Adobe Target] en [!DNL Experience Cloud ID Service]
 1. [!DNL Target Delivery API] call
-1. Aankoopoproep voor ECID
+1. [!UICONTROL Experience Cloud ID] (ECID) overnameoproep
 1. Bulkprofielupdate-API en [!DNL Customer Attributes] (CA)
 1. Gegevensinvoer van gegevens van de klant naar [!DNL Target] profielarchief
-1. Profiel-/gedragsgegevens verzamelen en bepalen welke ervaring de eindgebruiker te zien krijgt
+1. Profiel- en gedragsgegevens verzamelen en bepalen welke ervaring de bezoeker te zien krijgt
 1. Ervaringen die op de pagina worden weergegeven
 1. at.js geeft de ervaringen op de pagina weer
 
-Elk patroon bestaat uit verschillende onderdelen. Elk onderdeel voldoet aan een essentiële implementatievereiste voor uw [!DNL Target] uitvoering.
+Elk patroon bestaat uit verschillende onderdelen, waarbij elk onderdeel overeenkomt met een essentiële implementatievereiste voor uw [!DNL Target] uitvoering.
 
-Elk onderdeel wordt uitgelegd op een aparte pagina in deze handleiding. Bijvoorbeeld de [[!DNL Recommendations] implementatiepatroon met behulp van at.js](/help/dev/patterns/recs-atjs/recs-implementation-pattern-atjs.md) bevat de volgende pagina&#39;s:
+Elk deel wordt verklaard in een afzonderlijk onderwerp in deze gids. Bijvoorbeeld de [[!DNL Recommendations] implementatiepatroon met behulp van at.js](/help/dev/patterns/recs-atjs/recs-implementation-pattern-atjs.md) bevat de volgende onderwerpen :
 
 * SDK initialiseren
 * Gegevensverzameling configureren

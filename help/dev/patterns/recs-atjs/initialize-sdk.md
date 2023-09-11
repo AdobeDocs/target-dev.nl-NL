@@ -6,9 +6,9 @@ level: Experienced
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 948ebe0c5011fb0327a7b5d45f3e7ac857fcb8ad
+source-git-commit: e15513f5c52240536ccf41f16ba7f4dc6dbf9a04
 workflow-type: tm+mt
-source-wordcount: '1690'
+source-wordcount: '1709'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Deze stap helpt ervoor te zorgen dat de `VisitorAPI.js` de bibliotheek is correc
 **Vereisten**
 
 * Als u de Bezoeker-id/API-service wilt gebruiken, moet uw bedrijf zijn ingeschakeld voor de [!DNL Adobe Experience Cloud] en een [!UICONTROL Organization ID]. Zie voor meer informatie [Vereisten voor Experience Cloud: organisatie-id](https://experienceleague.adobe.com/docs/id-service/using/reference/requirements.html?){target=_blank} in de *Help bij Identiteitsservice* hulplijn.
-* U hebt de `VisitorAPI.js` bestand. Neem contact op met uw digitale marketingteam voor dit bestand.
+* U hebt de `VisitorAPI.js` bestand. U moet dit bestand al hebben als u [!DNL Adobe Analytics] geïmplementeerd. Dit bestand kan ook worden toegevoegd via het dialoogvenster [[!DNL Adobe Experience Platform] extensie tags](https://experienceleague.adobe.com/docs/tags.html){target=_blank} or can be downloaded from the [Adobe Analytics Code Manager](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html){target=_blank}.
 
 **Bezoeker API.js configureren en doorverwijzen**
 
@@ -431,7 +431,7 @@ Deze stap zorgt ervoor dat de JavaScript-bibliotheek at.js wordt geladen en geï
 
 **Vereisten**
 
-* Download of vraag het digitale marketingteam naar het bibliotheekbestand van de Web SDK: `at.js 2.*x*`
+* Download of vraag uw digitale marketingteam naar de `at.js 2.*x*` JavaScript-bibliotheekbestand.
 
 *Leesingen*
 
