@@ -2,9 +2,9 @@
 user-guide-title: Adobe Target Developer Guide
 breadcrumb-title: Doelontwikkelaarsgids
 user-guide-description: Leer hoe u de ervaring van uw klanten kunt aanpassen en personaliseren om uw omzet te maximaliseren op uw websites en mobiele sites, apps, sociale media en andere digitale kanalen.
-source-git-commit: 2d1b1829a8f794e29bb054d1bfdcb5047d6b4acb
+source-git-commit: 7a79eb1d263cf42529a5a1b1ca1f9de4db218a49
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '729'
 ht-degree: 3%
 
 ---
@@ -208,10 +208,11 @@ ht-degree: 3%
    + [Adobe Experience Platform Edge Network Server-API](/help/dev/before-implement/delivery-api-overview/aep-edge-network-server-api.md)
 + Implementatiepatronen {#implementation-patterns} {#hidden}
    + [Overzicht van implementatiepatronen](/help/dev/patterns/pattern-overview.md)
-   + Doelimplementatiepatroon {#target}
-      + [SDK&#39;s initialiseren](/help/dev/patterns/initialize-sdk.md)
-      + [Gegevensverzameling configureren](/help/dev/patterns/data-collection.md)
-      + [Renderervaringen](/help/dev/patterns/render-experiences.md)
-      + [Doel op hoogte stellen](/help/dev/patterns/notify-target.md)
+   + Recommendations-implementatiepatroon met behulp van at.js {#atjs}
+      + [Recommendations-implementatiepatroon met behulp van at.js-overzicht](/help/dev/patterns/recs-atjs/recs-implementation-pattern-atjs.md)
+      + [SDK&#39;s initialiseren](/help/dev/patterns/recs-atjs/initialize-sdk.md)
+      + [Gegevensverzameling configureren](/help/dev/patterns/recs-atjs/data-collection.md)
+      + [Renderervaringen](/help/dev/patterns/recs-atjs/render-experiences.md)
+      + [Doel op hoogte stellen](/help/dev/patterns/recs-atjs/notify-target.md)
 
 

@@ -6,9 +6,9 @@ level: Experienced
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: c4b9dfed19e5e4a56bfeae26c4310b997a2d617e
+source-git-commit: 7a79eb1d263cf42529a5a1b1ca1f9de4db218a49
 workflow-type: tm+mt
-source-wordcount: '145'
+source-wordcount: '148'
 ht-degree: 0%
 
 ---
@@ -34,10 +34,10 @@ De nummers in de afbeelding geven geen bewerkingsvolgorde aan:
 
 Elk patroon bestaat uit verschillende onderdelen. Elk onderdeel voldoet aan een essentiële implementatievereiste voor uw [!DNL Target] uitvoering.
 
-Elk onderdeel wordt uitgelegd op een aparte pagina in deze handleiding. Bijvoorbeeld de [!DNL Target] het implementatiepatroon bevat de volgende pagina&#39;s:
+Elk onderdeel wordt uitgelegd op een aparte pagina in deze handleiding. Bijvoorbeeld de [[!DNL Recommendations] implementatiepatroon met behulp van at.js](/help/dev/patterns/recs-atjs/recs-implementation-pattern-atjs.md) bevat de volgende pagina&#39;s:
 
 * SDK initialiseren
-* Profiel uitbreiden
+* Gegevensverzameling configureren
 * Ervaringen renderen
 * Waarschuwen [!DNL Target]
 
