@@ -6,7 +6,7 @@ level: Experienced
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: e15513f5c52240536ccf41f16ba7f4dc6dbf9a04
+source-git-commit: 6cd78f8e3cbdd97a09b0cb6ca3af55994e85f819
 workflow-type: tm+mt
 source-wordcount: '1709'
 ht-degree: 0%
@@ -54,7 +54,7 @@ Deze stap helpt ervoor te zorgen dat de `VisitorAPI.js` de bibliotheek is correc
 
 +++Zie details
 
-![SDK-diagram voor Bezoeker-API laden](/help/dev/patterns/recs-atjs/assets/load-visitor-api-sdk.png){width="300" zoomable="yes"}
+![SDK-diagram voor Bezoeker-API laden](/help/dev/patterns/recs-atjs/assets/load-visitor-api-sdk.png){width="400" zoomable="yes"}
 
 **Vereisten**
 
@@ -90,7 +90,7 @@ Deze stap helpt ervoor te zorgen dat de bekende id&#39;s van uw bezoekers (CRM-i
 
 +++Zie details
 
-![Klant-id instellen](/help/dev/patterns/recs-atjs/assets/set-customer-id.png){width="300" zoomable="yes"}
+![Klant-id instellen](/help/dev/patterns/recs-atjs/assets/set-customer-id.png){width="400" zoomable="yes"}
 
 **Vereisten**
 
@@ -117,7 +117,7 @@ Met deze stap kan at.js alle ervaringen ophalen die op de pagina moeten worden w
 
 +++Zie details
 
-![Automatische aanvraag voor het laden van pagina&#39;s configureren](/help/dev/patterns/recs-atjs/assets/configure-automatic-page-request.png){width="300" zoomable="yes"}
+![Automatische aanvraag voor het laden van pagina&#39;s configureren](/help/dev/patterns/recs-atjs/assets/configure-automatic-page-request.png){width="400" zoomable="yes"}
 
 **Vereisten**
 
@@ -146,7 +146,7 @@ Deze stap helpt ervoor te zorgen dat er geen paginafflikkering is wanneer het le
 
 +++Zie details
 
-![Flikkeringsdiagram configureren](/help/dev/patterns/recs-atjs/assets/flicker-handling.png){width="300" zoomable="yes"}
+![Flikkeringsdiagram configureren](/help/dev/patterns/recs-atjs/assets/flicker-handling.png){width="400" zoomable="yes"}
 
 **Vereisten**
 
@@ -179,7 +179,7 @@ Deze stap helpt ervoor te zorgen dat alle gegevens die moeten worden verzonden n
 
 +++Zie details
 
-![Gegevenstoewijzingsdiagram](/help/dev/patterns/recs-atjs/assets/data-mapping.png){width="300" zoomable="yes"}
+![Gegevenstoewijzingsdiagram](/help/dev/patterns/recs-atjs/assets/data-mapping.png){width="400" zoomable="yes"}
 
 **Vereisten**
 
@@ -399,7 +399,7 @@ Deze stap zorgt ervoor dat alle gegevens die moeten worden verzonden naar [!DNL 
 
 +++Zie details
 
-![Extern gegevenstoewijzingsdiagram](/help/dev/patterns/recs-atjs/assets/remote-data-mapping.png){width="300" zoomable="yes"}
+![Extern gegevenstoewijzingsdiagram](/help/dev/patterns/recs-atjs/assets/remote-data-mapping.png){width="400" zoomable="yes"}
 
 **Vereisten**
 
@@ -427,7 +427,7 @@ Deze stap zorgt ervoor dat de JavaScript-bibliotheek at.js wordt geladen en geï
 
 +++Zie details
 
-![Adobe Target Web SDK-diagram laden](/help/dev/patterns/recs-atjs/assets/load-web-sdk.png){width="300" zoomable="yes"}
+![Adobe Target Web SDK-diagram laden](/help/dev/patterns/recs-atjs/assets/load-web-sdk.png){width="400" zoomable="yes"}
 
 **Vereisten**
 
