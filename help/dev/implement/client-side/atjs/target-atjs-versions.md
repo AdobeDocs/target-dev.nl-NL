@@ -4,9 +4,9 @@ description: Bekijk de details over wijzigingen in elke versie van het dialoogve
 title: Wat is inbegrepen in Elke Versie van at.js?
 feature: at.js
 exl-id: 609dacba-2ab8-45e9-b189-928d59938c98
-source-git-commit: dc7831e4c3eb7dfc4a11d440e55b3a116b6e28fc
+source-git-commit: 0bdbeebc07bc4e1dd0dc34171fbf2476db5c256f
 workflow-type: tm+mt
-source-wordcount: '4580'
+source-wordcount: '4612'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,12 @@ Details over de wijzigingen in elke versie van het dialoogvenster [!DNL Adobe Ta
 >
 >U zou aan de recentste versies van één van beide moeten bevorderen 1.*x* of 2.*x* om insectenmoeilijke situaties en veiligheidspatches voor kwesties te verkrijgen die in om het even welke vorige minder belangrijke versie van de overeenkomstige belangrijkste versie worden ontdekt.
 
-Tags in [Adobe Experience Platform](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) zijn de aangewezen methode om at.js te bevorderen. Extensieontwikkelaars voegen voortdurend nieuwe functies toe aan hun extensies en corrigeren vaak bugs. Deze updates worden verpakt in nieuwe versies van een extensie en worden als upgrades beschikbaar gesteld in de Adobe Experience Platform-catalogus. Zie voor meer informatie [Uitbreidingen upgraden](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/extension-upgrade.html) in de *Overzicht van codes* hulplijn.
+Tags in [Adobe Experience Platform](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) zijn de aangewezen methode om at.js te bevorderen. Extensieontwikkelaars voegen voortdurend nieuwe functies toe aan hun extensies en corrigeren vaak bugs. Deze updates worden verpakt in nieuwe versies van een extensie en worden als upgrades beschikbaar gesteld in de Adobe Experience Platform-catalogus. Zie voor meer informatie [Uitbreidingen upgraden](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/extension-upgrade.html) in de *Overzicht van codes* guide.6+
+
+## at.js versie 2.10.3 (12 september 2023)
+
+* Probleem verholpen waarbij de fout `at-content-rendering-succeeded` aangepaste gebeurtenis wanneer geen aanbiedingen worden weergegeven. De juiste gebeurtenis, `at-content-rendering-no-offers`, wordt nu geactiveerd.
+* Toegevoegd `eventToken` en `responseTokens` aan foutobject voor de `at-content-rendering-failed` aangepaste gebeurtenis.
 
 ## at.js versie 2.10.2 (7 maart 2023)
 
@@ -175,7 +180,7 @@ Deze versie van at.js bevat de volgende verbeteringen en oplossingen:
 
 Deze versie van at.js is een onderhoudsrelease en bevat de volgende verbeteringen en oplossingen:
 
-(De uitgiftenummers tussen haakjes zijn bedoeld voor intern gebruik van Adobe.)
+(De uitgiftenummers tussen haakjes zijn bedoeld voor gebruik door een interne Adobe.)
 
 * Oplossing een kwestie die veelvoudige bakens aan brand veroorzaakte toen het gebruiken van de Metrisch van het Volgen van de Klik op de pagina van Doelstellingen &amp; van Montages in Visual Experience Composer (VEC). (TNT-32812)
 * Probleem verholpen dat ertoe heeft geleid `triggerView()` om aanbiedingen niet meer dan één keer te renderen. (TNT-32780)
@@ -183,7 +188,7 @@ Deze versie van at.js is een onderhoudsrelease en bevat de volgende verbeteringe
 * Het probleem dat ervoor zorgde dat de `triggerView()` bericht wordt afgevuurd, zelfs als er geen opgeslagen weergaven zijn. (TNT-32614)
 * Probleem verholpen die een fout veroorzaakte door het gebruik van de decodeURIcomponent die problemen veroorzaakte wanneer de URL een onjuist gevormde parameter van het vraagkoord bevat. (TNT-32710)
 * De bakenvlag wordt nu geplaatst aan &quot;waar&quot;in de context van leveringsverzoeken die via `Navigator.sendBeacon()` API. (TNT-32683)
-* Probleem verholpen waarbij Recommendations-aanbiedingen voor een paar klanten niet konden worden weergegeven op websites. Klanten konden de inhoud van het aanbod zien in de vraag van de bezorgings-API, maar het aanbod is niet toegepast op de website. (TNT-32680)
+* Probleem verholpen waarbij Recommendations-aanbiedingen voor een paar klanten niet konden worden weergegeven op websites. Klanten konden de inhoud van de aanbieding zien in de vraag van de leverings-API, maar de aanbieding werd niet toegepast op de website. (TNT-32680)
 * Probleem verholpen waarbij klikken-volgen over meerdere ervaringen ertoe leidde dat het programma niet naar behoren functioneerde. (TNT-32644)
 * Probleem verholpen waardoor at.js de tweede metrische waarde niet kon toepassen na het renderen van de eerste metrische waarde. (TNT-32628)
 * Probleem verholpen bij passeren `mbox3rdPartyId` met de `targetPageParams` functie die ertoe leidde dat de verzoeklading om niet in of de vraagparameters of in de verzoeklading aanwezig was. (TNT-32613)
@@ -193,7 +198,7 @@ Deze versie van at.js is een onderhoudsrelease en bevat de volgende verbeteringe
 
 Deze release bevat de volgende functies en verbeteringen:
 
-* **Ondersteuning voor Adobe Opt-in**: Adobe Opt-In is een manier om de integratie van Adobe-oplossingen met toestemmingsbeheerplatforms te vereenvoudigen. Voor meer informatie over Adobe Opt-in, zie [Privacy en algemene gegevensbeschermingsverordening (GDPR)](/help/dev/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.md).
+* **Ondersteuning voor Adobe Option-in**: Adobe Opt-In is een manier om de integratie van oplossingen voor Adoben met toestemmingsbeheerplatforms te vereenvoudigen. Voor meer informatie over Adobe Opt-in, zie [Privacy en algemene gegevensbeschermingsverordening (GDPR)](/help/dev/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.md).
 
 * **Compatibel met industriestandaard CSP**: at.js gebruikt eval() niet meer om JavaScript uit te voeren.
 
@@ -211,7 +216,7 @@ Deze release bevat de volgende functies en verbeteringen:
 
 Dit is een onderhoudrelease met de volgende verbeteringen en oplossingen:
 
-(De uitgiftenummers tussen haakjes zijn bedoeld voor intern gebruik van Adobe.)
+(De uitgiftenummers tussen haakjes zijn bedoeld voor gebruik door een interne Adobe.)
 
 * Probleem verholpen met een zeldzame omstandigheid in de opiniepeilingscode voor DOM die JavaScript-uitzonderingen voor bepaalde klanten veroorzaakte. (TNT-31869)
 * Meldingen dat weergaven werden gerenderd, zijn losgekoppeld van gebeurtenishandlers voor het bijhouden van klikken. Aanvankelijk [!DNL Target] heeft geen meldingen verzonden als click-event-handlers die tot een weergegeven weergave behoren, niet konden worden gekoppeld. [!DNL Target] verzendt nu een meningsbericht zelfs wanneer de klikelementen niet worden gevonden. (TNT-31969)
@@ -223,7 +228,7 @@ Dit is een onderhoudrelease met de volgende verbeteringen en oplossingen:
 
 Dit is een onderhoudrelease met de volgende oplossing:
 
-(De uitgiftenummers tussen haakjes zijn bedoeld voor intern gebruik van Adobe.)
+(De uitgiftenummers tussen haakjes zijn bedoeld voor gebruik door een interne Adobe.)
 
 * Probleem verholpen met een zeldzame omstandigheid in de opiniepeilingscode voor DOM die JavaScript-uitzonderingen voor bepaalde klanten veroorzaakte. (TNT-31869)
 
@@ -253,11 +258,11 @@ Zie voor meer informatie [Bijwerken van at.js 1.x naar at.js 2.x](/help/dev/impl
 
 >[!NOTE]
 >
->Als u Adobe Opt-in-ondersteuning nodig hebt voor de [Algemene verordening inzake gegevensbescherming](/help/dev/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.md) (GDPR), moet u momenteel gebruiken om .js 1.7.0 of om .js 2.1.0 of later.
+>Als u de Adobe-plug-in voor de [Algemene verordening inzake gegevensbescherming](/help/dev/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.md) (GDPR), moet u momenteel gebruiken om .js 1.7.0 of om .js 2.1.0 of later.
 
 ## at.js versie 1.7.0
 
-at.js 1.7.0 biedt ondersteuning voor Adobe Opt-In. Adobe Opt-In is een manier om de integratie van Adobe-oplossingen met toestemmingsbeheerplatforms te vereenvoudigen.
+at.js 1.7.0 biedt ondersteuning voor Adobe Opt-In. Adobe Opt-In is een manier om de integratie van oplossingen voor Adobe met toestemmingsbeheerplatforms te vereenvoudigen.
 
 Voor meer informatie over Adobe Opt-in, zie [Privacy en algemene gegevensbeschermingsverordening](/help/dev/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.md) (GDPR).
 
@@ -265,7 +270,7 @@ In deze release is ook een probleem opgelost waarbij [!DNL Target] Het is mogeli
 
 >[!NOTE]
 >
->Als u ondersteuning voor Adobe Opt-in voor GDPR nodig hebt, moet u momenteel op 0,js 1.7.0 of op 0,js 2.1.0 of hoger gebruiken.
+>Als u ondersteuning voor Adobe Opt-in voor GDPR nodig hebt, moet u momenteel at.js 1.7.0 of at.js 2.1.0 of hoger gebruiken.
 
 ## at.js Versie 1.6.4
 
