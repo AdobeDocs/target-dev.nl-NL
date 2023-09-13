@@ -6,9 +6,9 @@ level: Experienced
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 8707fb55d66cb7a28d311a03c749acb1a1d79cf8
+source-git-commit: 3f97c3b38300ec4bbb0bffccfc0ff3f02457a0fc
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
@@ -17,15 +17,19 @@ ht-degree: 0%
 
 De [!DNL Adobe Target] implementatiepatronen bieden richtsnoeren voor de implementatie van [!DNL Target] de beste praktijken volgen en helpen implementatiekwesties voor klanten en consultants verminderen.
 
+Omdat het implementatieproces [!DNL Target] verschilt per raamwerk en platform, [!DNL Target] team is van plan implementatiepatronen te maken voor verschillende frameworks, platforms en integratie.
+
 Het volgende patroon is momenteel beschikbaar:
 
 * [[!DNL Recommendations] implementatiepatroon met behulp van at.js](/help/dev/patterns/recs-atjs/recs-implementation-pattern-atjs.md)
 
+Deze implementatiepatronen zijn bedoeld om te focussen op wat er moet gebeuren, wanneer en waar het moet gebeuren en niet op hoe het moet. Met gedetailleerde stroomdiagrammen krijgt u inzicht in de volgorde van bewerkingen en koppelingen naar relevante documentatie en krijgt u contextuele en stapsgewijze instructies.
+
 ## Suggesties doen voor nieuwe patronen of correcties op bestaande patronen
 
-De [!DNL Target] team is van plan implementatiepatronen te maken voor verschillende frameworks, platforms en integratie. Het team is ook ingenomen met suggesties voor verbeteringen in bestaande patronen.
+De [!DNL Target] team plant om diverse implementatiepatronen voor verschillende kaders, platforms, en integratie tot stand te brengen. Het team is ook ingenomen met suggesties voor verbeteringen in bestaande patronen.
 
-Om het team te helpen nieuwe patronen tot stand brengen of bestaande patronen verbeteren, gebruik **Feedbackopties** onder aan alle artikelen in *[!DNL Adobe Experience League]*.
+Om het team te helpen nieuwe patronen tot stand brengen of bestaande patronen te verbeteren, gebruik **Feedbackopties** onder aan alle artikelen in *[!DNL Adobe Experience League]*.
 
 1. Als u ideeën voor nieuwe patronen wilt voorstellen, schuift u naar de onderkant van dit artikel om de feedbackopties modaal weer te geven.
 
@@ -43,9 +47,11 @@ Om het team te helpen nieuwe patronen tot stand brengen of bestaande patronen ve
 
    1. Geef een titel op en typ vervolgens uw opmerkingen in het tekstvak.
 
+      Voeg bestanden of schermafbeeldingen bij, indien nodig.
+
    1. Klikken **[!UICONTROL Submit new issue]** wanneer gereed.
 
-1. (Voorwaardelijk) Om een artikel voor een bestaand patroon uit te geven, klik **[!UICONTROL Suggest an edit]** en klik vervolgens op de knop **[!UICONTROL Edit]** pictogram (het potloodpictogram).
+1. (Voorwaardelijk) Als u tekst voor een bestaand patroon wilt bewerken, klikt u in het model Feedbackopties op het desbetreffende artikel op **[!UICONTROL Suggest an edit]** en klik vervolgens op de knop **[!UICONTROL Edit]** pictogram (het potloodpictogram).
 
    1. Breng wijzigingen aan met de markeringssyntaxis.
 
@@ -55,7 +61,7 @@ De [!DNL Target] team kan uw opmerkingen of bewerkingen beoordelen en met u comm
 
 >[!NOTE]
 >
->[!DNL Adobe] werknemers kunnen de *Implementatiepatronen voor [!DNL Adobe Target] Implementatie* wiki voor meer informatie over hoe te om ontwerppatronen bij te dragen. Volg de bovenstaande aanwijzingen en vraag naar de koppeling en de [!DNL Target] team kan een koppeling naar de interne [!DNL Adobe] wiki.
+>[!DNL Adobe] werknemers kunnen de *Implementatiepatronen voor [!DNL Adobe Target] Implementatie* wiki voor meer informatie over hoe te om tot ontwerppatronen bij te dragen. Volg de bovenstaande aanwijzingen om een idee voor te stellen en vraag vervolgens naar de koppeling en de [!DNL Target] team kan een koppeling naar de interne [!DNL Adobe] wiki.
 
 
 
