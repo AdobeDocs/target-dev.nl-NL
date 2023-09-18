@@ -6,7 +6,7 @@ level: Experienced
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 6cd78f8e3cbdd97a09b0cb6ca3af55994e85f819
+source-git-commit: 8fae7e18f555e6b549e0b9c486be73e3483dac86
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 0%
@@ -29,13 +29,13 @@ Het nummer van de stap in de volgende afbeelding komt overeen met de onderstaand
 
 ![Doeldiagram waarschuwen](/help/dev/patterns/recs-atjs/assets/diagram-notify-target.png){width="600" zoomable="yes"}
 
-## Vuur [!DNL Adobe Target] Track-API
+## 4.1. Vuur [!DNL Adobe Target] Track-API
 
 Deze stap helpt u ervoor te zorgen dat alle gebeurtenissen waarnaar moet worden verzonden [!DNL Target] worden verzonden met de `trackEvent` methode.
 
 +++Zie details
 
-![Fire Adobe Target Track API-diagram](/help/dev/patterns/recs-atjs/assets/fire-adobe-target-track-api-diagram.png){width="400" zoomable="yes"}
+![Fire Adobe Target Track API-diagram](/help/dev/patterns/recs-atjs/assets/fire-adobe-target-track-api-diagram-combined.png){width="400" zoomable="yes"}
 
 U verzendt de kenmerken voor orderomzetting die worden vermeld in het dialoogvenster *Vereisten* hieronder. De naam van de box is niet van belang, maar de conversie moet worden gebruikt `orderConfirmPage`.
 
