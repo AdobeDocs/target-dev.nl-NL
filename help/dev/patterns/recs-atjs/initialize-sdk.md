@@ -6,9 +6,9 @@ level: Experienced
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 60b986b4d956972714cb485057484ee5d6eed2bb
+source-git-commit: a87f9a13fc1feb12c62f1b772975958541f7523a
 workflow-type: tm+mt
-source-wordcount: '1709'
+source-wordcount: '1708'
 ht-degree: 0%
 
 ---
@@ -179,7 +179,7 @@ Deze stap helpt ervoor te zorgen dat alle gegevens die moeten worden verzonden n
 
 +++Zie details
 
-![Gegevenstoewijzingsdiagram](/help/dev/patterns/recs-atjs/assets/data-mapping.png){width="400" zoomable="yes"}
+![Gegevenstoewijzingsdiagram](/help/dev/patterns/recs-atjs/assets/data-mapping-combined.png){width="400" zoomable="yes"}
 
 **Vereisten**
 
@@ -399,7 +399,7 @@ Deze stap zorgt ervoor dat alle gegevens die moeten worden verzonden naar [!DNL 
 
 +++Zie details
 
-![Extern gegevenstoewijzingsdiagram](/help/dev/patterns/recs-atjs/assets/remote-data-mapping.png){width="400" zoomable="yes"}
+![Extern gegevenstoewijzingsdiagram](/help/dev/patterns/recs-atjs/assets/remote-data-mapping-combined.png){width="400" zoomable="yes"}
 
 **Vereisten**
 
@@ -427,7 +427,7 @@ Deze stap zorgt ervoor dat de JavaScript-bibliotheek at.js wordt geladen en geï
 
 +++Zie details
 
-![Adobe Target Web SDK-diagram laden](/help/dev/patterns/recs-atjs/assets/load-web-sdk.png){width="400" zoomable="yes"}
+![Adobe Target laden bij.js-diagram](/help/dev/patterns/recs-atjs/assets/load-atjs-combined.png){width="400" zoomable="yes"}
 
 **Vereisten**
 
