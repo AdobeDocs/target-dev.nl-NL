@@ -6,7 +6,7 @@ level: Experienced
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: f2587af68a76eb700378076ad9f20844061164ae
+source-git-commit: a3644cd06c01d7b0d996aabbcb67272e1712b70c
 workflow-type: tm+mt
 source-wordcount: '1709'
 ht-degree: 0%
@@ -90,7 +90,7 @@ Deze stap helpt ervoor te zorgen dat de bekende id&#39;s van uw bezoekers (CRM-i
 
 +++Zie details
 
-![Klant-id instellen](/help/dev/patterns/recs-atjs/assets/set-customer-id.png){width="400" zoomable="yes"}
+![Klant-id instellen](/help/dev/patterns/recs-atjs/assets/set-customer-id-combined.png){width="400" zoomable="yes"}
 
 **Vereisten**
 
