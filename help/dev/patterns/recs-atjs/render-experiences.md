@@ -6,9 +6,9 @@ level: Experienced
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 85af1bad244dc0aa7665e2fbb627d82f6fabbf88
+source-git-commit: 266a8670a906e5be70f11bb05301b708f61a57d6
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: '1020'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,9 @@ Voer de stappen in het dialoogvenster *Ervaringen renderen* diagram om ervoor te
 
 De automatische uit-van-de-doos flikkerbehandeling beschikbaar met at.js is zinvol slechts wanneer u hebt [!UICONTROL Automatic Page Load Request] ingeschakeld. Met deze optie verbergt u het hele lichaam van de HTML en haalt u de ervaringen op van [!DNL Target]. In dit geval is het uw verantwoordelijkheid om flikkering te behandelen. Zoek naar implementatiepatronen beschikbaar voor flikkering behandeling voor begeleiding.
 
-De stapnummers in de volgende afbeelding komen overeen met de onderstaande secties.
+>[!NOTE]
+>
+>De stapnummers in de volgende afbeelding komen overeen met de onderstaande secties. De stapnummers staan in geen bepaalde volgorde en geven niet de volgorde weer van de stappen die in het dialoogvenster [!DNL Target] UI tijdens het maken van de activiteit.
 
 ![Renderervaringsdiagram](/help/dev/patterns/recs-atjs/assets/diagram-render-experiences-new.png){width="600" zoomable="yes"}
 

@@ -6,9 +6,9 @@ level: Experienced
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: a87f9a13fc1feb12c62f1b772975958541f7523a
+source-git-commit: 266a8670a906e5be70f11bb05301b708f61a57d6
 workflow-type: tm+mt
-source-wordcount: '1708'
+source-wordcount: '1732'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,9 @@ Voer de stappen in het dialoogvenster *SDK initialiseren* diagram om ervoor te z
 
 Voor toepassingen met meerdere pagina&#39;s vindt deze stroom elke keer dat de pagina opnieuw wordt geladen of dat de bezoeker naar een nieuwe pagina op de website navigeert.
 
-De stapnummers in de volgende afbeelding komen overeen met de onderstaande secties.
+>[!NOTE]
+>
+>De stapnummers in de volgende afbeelding komen overeen met de onderstaande secties. De stapnummers staan in geen bepaalde volgorde en geven niet de volgorde weer van de stappen die in het dialoogvenster [!DNL Target] UI tijdens het maken van de activiteit.
 
 ![SDKs-diagram initialiseren](/help/dev/patterns/recs-atjs/assets/diagram-initiaze-sdk.png){width="600" zoomable="yes"}
 
