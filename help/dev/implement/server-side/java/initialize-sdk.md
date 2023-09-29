@@ -3,9 +3,9 @@ title: De Java SDK initialiseren met de methode create
 description: Leer hoe u de methode create gebruikt om de Java SDK te initialiseren en het [!UICONTROL TargetClient] om vraag te maken aan [!DNL Adobe Target] voor experimenten en persoonlijke ervaringen.
 feature: APIs/SDKs
 exl-id: 0e0ddead-7de8-4549-b81c-e72598558e4b
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 1d080b5e402e5d55039bf06611b44678cc6c36de
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '451'
 ht-degree: 1%
 
 ---
@@ -44,6 +44,9 @@ ClientConfigBuilder ClientConfig.builder()
 | socketTimeout | Getal | Nee | 10000 | Time-out van socket voor alle aanvragen in milliseconden |
 | maxConnectionsPerHost | Getal | Nee | 100 | Max. verbindingen per [!DNL Target] host |
 | maxConnectionsTotal | Getal | Nee | 200 | Max. verbindingen inclusief alle [!DNL Target] gastheren |
+| connectionTtlMS | Getal | Nee | -1 | De totale tijd om te leven (TTL) bepaalt maximumlevensduur spanwijdte van blijvende verbindingen in milliseconden. Door gebrek zullen de verbindingen voor onbepaalde tijd in leven worden gehouden |
+| idleConnectionValidationMS | Getal | Nee | 1000 | Periode van inactiviteit in milliseconden waarna blijvende verbindingen opnieuw worden gevalideerd voordat ze opnieuw worden gebruikt |
+| evictIdleConnectionsAfterSecs | Getal | Nee | 20 | De tijd in seconden om nutteloze verbindingen van de verbindingspool uit te voeren |
 | enableRetries | Boolean | Nee | true | Automatisch opnieuw proberen voor sockettime-outs (max. 4) |
 | logRequests | Boolean | Nee | false | Logboek [!DNL Target] verzoeken en reacties in foutopsporing |
 | logRequestStatus | Boolean | Nee | false | Logboek [!DNL Target] reactietijd, status en URL |
