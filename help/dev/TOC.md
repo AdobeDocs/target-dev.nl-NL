@@ -2,7 +2,7 @@
 user-guide-title: Adobe Target Developer Guide
 breadcrumb-title: Doelontwikkelaarsgids
 user-guide-description: Leer hoe u de ervaring van uw klanten kunt aanpassen en personaliseren om uw omzet te maximaliseren op uw websites en mobiele sites, apps, sociale media en andere digitale kanalen.
-source-git-commit: 7a79eb1d263cf42529a5a1b1ca1f9de4db218a49
+source-git-commit: 723bb2f33a011995757009193ee9c48757ae1213
 workflow-type: tm+mt
 source-wordcount: '729'
 ht-degree: 3%
@@ -206,7 +206,7 @@ ht-degree: 3%
       + [Modellen-API](/help/dev/administer/models-api/models-api-overview.md)
    + [Adobe Admin Console API&#39;s](/help/dev/before-implement/delivery-api-overview/adobe-console-api.md)
    + [Adobe Experience Platform Edge Network Server-API](/help/dev/before-implement/delivery-api-overview/aep-edge-network-server-api.md)
-+ Implementatiepatronen {#implementation-patterns} {#hidden}
++ Implementatiepatronen {#implementation-patterns}
    + [Overzicht van implementatiepatronen](/help/dev/patterns/pattern-overview.md)
    + Recommendations-implementatiepatroon met behulp van at.js {#atjs}
       + [Recommendations-implementatiepatroon met behulp van at.js-overzicht](/help/dev/patterns/recs-atjs/recs-implementation-pattern-atjs.md)

@@ -4,11 +4,9 @@ description: Zorg ervoor dat alle noodzakelijke stappen voor het laden van de [!
 feature: APIs/SDKs
 level: Experienced
 role: Developer
-hide: true
-hidefromtoc: true
-source-git-commit: 266a8670a906e5be70f11bb05301b708f61a57d6
+source-git-commit: 723bb2f33a011995757009193ee9c48757ae1213
 workflow-type: tm+mt
-source-wordcount: '1732'
+source-wordcount: '1738'
 ht-degree: 0%
 
 ---
@@ -448,6 +446,8 @@ Sluit het bestand at.js in op al uw webpagina&#39;s waar u moet experimenteren, 
 +++
 
 [Keer aan het diagram bij de bovenkant van deze pagina terug.](#diagram)
+
+Ga aan Stap 2 te werk: [Gegevensverzameling configureren](/help/dev/patterns/recs-atjs/data-collection.md).
 
 
 

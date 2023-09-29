@@ -4,11 +4,9 @@ description: Zorg ervoor dat alle noodzakelijke taken voor gegevensverzameling i
 feature: APIs/SDKs
 level: Experienced
 role: Developer
-hide: true
-hidefromtoc: true
-source-git-commit: 30634afc84877a4e88e08f3b2173d4c0727f4362
+source-git-commit: 723bb2f33a011995757009193ee9c48757ae1213
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '391'
 ht-degree: 0%
 
 ---
@@ -107,4 +105,6 @@ Gebruiken [adobe.target.trackEvent(), methode](/help/dev/implement/client-side/a
 +++
 
 [Keer aan het diagram bij de bovenkant van deze pagina terug.](#diagram)
+
+Ga aan Stap 3 te werk: [Renderervaringen](/help/dev/patterns/recs-atjs/render-experiences.md)
 

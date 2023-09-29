@@ -4,11 +4,9 @@ description: Zorg ervoor dat alle gebeurtenissen die moeten worden bijgehouden d
 feature: APIs/SDKs
 level: Experienced
 role: Developer
-hide: true
-hidefromtoc: true
-source-git-commit: 013a49b92357cfb5d45f7e595b46b1b12ce91c65
+source-git-commit: 723bb2f33a011995757009193ee9c48757ae1213
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '358'
 ht-degree: 0%
 
 ---
@@ -49,6 +47,10 @@ U te hoeven niet om de attributen van de ordeconversie in deze vraag te omvatten
    * `productPurchaseId`: Product-id&#39;s die zijn aangeschaft als onderdeel van de bestelling. Scheid meerdere producten met komma&#39;s.
    * `orderTotal`: Totaal bestellen voor de aankoop.
    * `orderId`: Order-id van de aankoop.
+
+  In de volgende afbeelding ziet u een [regel voor [!DNL tags] in [!DNL Experience Platform]](https://experienceleague.adobe.com/docs/tags.html){target=_blank} die alleen op de [!UICONTROL Confirmation] pagina.
+
+  ![pagina Configuratie van handelingen](/help/dev/patterns/recs-atjs/assets/action-configuration.png){width="400" zoomable="yes"}
 
 * Als u een gebeurtenis bijhoudt voor toevoegen aan winkelwagentje, verzendt u `cartIds` als parameter. Een door komma&#39;s gescheiden lijst met product-id&#39;s kan worden doorgegeven voor `cardIds`.
 

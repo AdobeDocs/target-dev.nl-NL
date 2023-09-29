@@ -4,11 +4,9 @@ description: Zorg ervoor dat alle noodzakelijke stappen voor renderervaringen in
 feature: APIs/SDKs
 level: Experienced
 role: Developer
-hide: true
-hidefromtoc: true
-source-git-commit: 266a8670a906e5be70f11bb05301b708f61a57d6
+source-git-commit: 723bb2f33a011995757009193ee9c48757ae1213
 workflow-type: tm+mt
-source-wordcount: '1020'
+source-wordcount: '1040'
 ht-degree: 0%
 
 ---
@@ -52,7 +50,7 @@ Klik op de volgende koppelingen om naar de gewenste secties te navigeren:
 
 ## 3.1. Promotie {#promotion}
 
-Aanbevolen objecten toevoegen en de plaatsing ervan in de doelRecommendations controleren [ontwerpen](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-design/create-design.html){target=_blank}.
+Aanbevolen objecten toevoegen en hun plaatsing bepalen in het ontwerp van uw aanbevelingen door Promoties voor Voor of Terug te kiezen in het dialoogvenster [!DNL Target] UI tijdens het maken van de activiteit.
 
 +++Zie details
 
@@ -65,6 +63,10 @@ Aanbevolen objecten toevoegen en de plaatsing ervan in de doelRecommendations co
 **Vereiste parameters voor entiteit**
 
 * Objectkenmerken in promoties moeten worden doorgegeven wanneer de optie &#39;Promoten door kenmerk&#39; wordt gebruikt.
+
+**Leesingen**
+
+* [Promoties toevoegen](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-activity/adding-promotions.html){target=_blank}
 
 +++
 
@@ -297,3 +299,5 @@ Deze stap activeert een [!DNL Delivery API] bellen met `execute` > `mboxes` ladi
 +++
 
 [Keer aan het diagram bij de bovenkant van deze pagina terug.](#diagram)
+
+Ga aan Stap 4 te werk: [Doel op hoogte stellen](/help/dev/patterns/recs-atjs/notify-target.md).
