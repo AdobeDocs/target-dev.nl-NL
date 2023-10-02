@@ -4,9 +4,9 @@ description: Begrijpen hoe implementatiepatronen worden gebruikt
 feature: APIs/SDKs
 level: Experienced
 role: Developer
-source-git-commit: 723bb2f33a011995757009193ee9c48757ae1213
+source-git-commit: 09dafc7c85ea7f3600fceac4e673e8f1901771a4
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '381'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Het volgende patroon is momenteel beschikbaar:
 
 * [[!DNL Recommendations] implementatiepatroon met behulp van at.js](/help/dev/patterns/recs-atjs/recs-implementation-pattern-atjs.md)
 
-Deze implementatiepatronen zijn bedoeld om te focussen op wat er moet gebeuren, wanneer en waar het moet gebeuren en niet op hoe het moet. Met gedetailleerde stroomdiagrammen krijgt u inzicht in de volgorde van bewerkingen en koppelingen naar relevante documentatie en krijgt u contextuele en stapsgewijze instructies.
+Deze implementatiepatronen richten zich op wat te doen, wanneer en waar te het doen. Met gedetailleerde stroomdiagrammen krijgt u inzicht in de volgorde van bewerkingen en koppelingen naar relevante documentatie en krijgt u contextuele en stapsgewijze instructies.
 
 ## Suggesties doen voor nieuwe patronen of correcties op bestaande patronen
 
