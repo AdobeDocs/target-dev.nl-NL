@@ -5,16 +5,14 @@ description: Hoe implementeer en beheer ik  [!DNL Adobe Target]  en werk ik met 
 contributors: https://github.com/icaraps
 feature: APIs/SDKs
 exl-id: 655cff9b-fc04-45cf-9068-5c6c32b70d79
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 063d0574ee380bf76130fb0f17db89cd09efdb7d
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '470'
 ht-degree: 2%
 
 ---
 
 # [!DNL Adobe Target] Handleiding voor ontwikkelaars
-
-![Adobe Target-bannerafbeelding](/help/dev/assets/target-home-banner-simple.png)
 
 **([Weergave [!DNL Target] documentatie-updates](https://experienceleague.adobe.com/docs/target/using/release-notes/doc-change.html){target=_blank})**
 
@@ -86,7 +84,7 @@ Dit *[!DNL Adobe Target]Handleiding voor ontwikkelaars* biedt bronnen en hulplij
 
 [**[!DNL Target Models API]**](administer/models-api/models-api-overview.md): lijsten van gewezen personen beheren om de functies te definiëren die worden gebruikt in [!DNL Target] modellen voor machinaal leren.
 
-[**Admin Console-API&#39;s**](https://developer.adobe.com/umapi/): Beheer gebruikers en productrechten via de API&#39;s voor gebruikersbeheer en gebruikerssynchronisatie van Adobe.
+[**Admin Console-API&#39;s**](https://developer.adobe.com/umapi/): Beheer gebruikers en productrechten via de Adobe-API&#39;s Gebruikersbeheer en Gebruikerssynchronisatie.
 
 [**[!DNL Adobe Experience Platform Edge Network Server API]**](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html): Gebruik de [!DNL Adobe Experience Platform Edge Network Server] API voor een verscheidenheid van gegevensinzameling, verpersoonlijking, reclame, en marketing gebruiksgevallen.
 
