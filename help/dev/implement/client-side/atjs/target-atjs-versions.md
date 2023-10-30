@@ -4,9 +4,9 @@ description: Bekijk de details over wijzigingen in elke versie van het dialoogve
 title: Wat is inbegrepen in Elke Versie van at.js?
 feature: at.js
 exl-id: 609dacba-2ab8-45e9-b189-928d59938c98
-source-git-commit: eb82f6a0d0165d73c1c40917c96e09c8bdddf647
+source-git-commit: c5d1f477a2561a59efb3250e35563b48822fbe59
 workflow-type: tm+mt
-source-wordcount: '4655'
+source-wordcount: '4674'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,10 @@ Tags in [Adobe Experience Platform](/help/dev/implement/client-side/atjs/how-to-
 ## at.js versie 2.11.2 (26 oktober 2023)
 
 * Probleem verholpen die inconsistenties veroorzaakte in reactie op tokens die werden verzonden op aangepaste gebeurtenissen.
+
+## at.js versie 2.11.1 (13 oktober 2023)
+
+* Probleem verholpen waarbij niet-afgevangen fouten werden veroorzaakt terwijl een pagina die op.js wordt uitgevoerd, zich in de modus Kirken bevindt.
 
 ## at.js versie 2.11.0 (10 oktober 2023)
 
