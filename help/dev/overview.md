@@ -5,9 +5,9 @@ description: Hoe implementeer en beheer ik  [!DNL Adobe Target]  en werk ik met 
 contributors: https://github.com/icaraps
 feature: APIs/SDKs
 exl-id: 655cff9b-fc04-45cf-9068-5c6c32b70d79
-source-git-commit: 1d834edf4da94614e3a4be665ebd97399439ec98
+source-git-commit: d98c7b890f7456de0676cadce5d6c70bc62d6140
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '472'
 ht-degree: 2%
 
 ---
@@ -80,7 +80,7 @@ Dit *[!DNL Adobe Target]Handleiding voor ontwikkelaars* biedt bronnen en hulplij
 
 [**[!DNL Target Reporting API]**](https://developer.adobe.com/target/administer/admin-api/#tag/Reports): ophalen [!UICONTROL A/B Test] en [!UICONTROL Automated Personalization] activiteitenrapportgegevens.
 
-[**[!DNL Target Recommendations API]**](http://developers.adobetarget.com/api/recommendations/): Gebruik de [!DNL Target Recommendations] API.
+[**[!DNL Target Recommendations API]**](https://developer.adobe.com/target/administer/recommendations-api/): Gebruik de [!DNL Target Recommendations] API.
 
 [**[!DNL Target Models API]**](administer/models-api/models-api-overview.md): lijsten van gewezen personen beheren om de functies te definiëren die worden gebruikt in [!DNL Target] modellen voor machinaal leren.
 

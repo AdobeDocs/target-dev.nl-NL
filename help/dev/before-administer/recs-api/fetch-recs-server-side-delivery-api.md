@@ -6,9 +6,9 @@ kt: 3815
 thumbnail: null
 author: Judy Kim
 exl-id: 9b391f42-2922-48e0-ad7e-10edd6125be6
-source-git-commit: ba53161b2ec51af3d90994773034790feb51099c
+source-git-commit: d98c7b890f7456de0676cadce5d6c70bc62d6140
 workflow-type: tm+mt
-source-wordcount: '1493'
+source-wordcount: '1506'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ De volgende bronnen bieden voorbeelden van verschillende implementaties die niet
 | Bron | Details |
 | --- | --- |
 | [Adobe Target Overal - Implementeer server-kant of in de IoT](https://expleague.azureedge.net/labs/L733/index.html) | Adobe Summit 2019 Lab die praktijkervaring biedt voor een React-toepassing die gebruikmaakt van Adobe Target server-side API&#39;s. |
-| [Adobe Target in een mobiele toepassing zonder de Adobe-SDK](https://community.tealiumiq.com/t5/Universal-Data-Hub/Adobe-Target-in-a-Mobile-App-Without-the-Adobe-SDK/ta-p/26753) | In deze handleiding ziet u hoe u Adobe Target kunt instellen in uw mobiele app zonder de SDK van de Adobe te installeren. Deze oplossing gebruikt de webweergave van Tealium SDK en de module Externe opdrachten om aanvragen te verzenden en te ontvangen naar de Adobe Visitor API (Experience Cloud) en de Adobe Target API. |
+| [Adobe Target in een mobiele toepassing zonder de Adobe-SDK](https://community.tealiumiq.com/t5/Universal-Data-Hub/Adobe-Target-in-a-Mobile-App-Without-the-Adobe-SDK/ta-p/26753) | In deze handleiding ziet u hoe u Adobe Target kunt instellen in uw mobiele app zonder de SDK van de Adobe te installeren. Deze oplossing gebruikt de webweergave van Tealium SDK en de module Externe opdrachten om aanvragen te verzenden naar en te ontvangen van de Bezoeker-API (Experience Cloud) van de Adobe en de Adobe Target API. |
 | [De doelextensie configureren in Experience Platform Launch en doel-API&#39;s implementeren](https://developer.adobe.com/client-sdks/documentation/adobe-target/) | Stappen voor het vormen van de uitbreiding van het Doel in Experience Platform Launch, het toevoegen van de Uitbreiding van het Doel aan uw app, en het uitvoeren van Doel APIs aan verzoekactiviteiten, prefetch aanbiedingen, en Ga visuele voorproefwijze in. |
 | [Adobe Target Node-client](https://www.npmjs.com/package/@adobe/target-nodejs-sdk) | Open-sourced Target Node.js SDK v1.0 |
 | [Overzicht van de server](../../implement/server-side/server-side-overview.md) | Informatie over Adobe Target Server Side Delivery API&#39;s, Server Side Batch Delivery API&#39;s, Node.js SDK en Adobe Target Recommendations API&#39;s. |
@@ -97,22 +97,22 @@ De volgende bronnen bieden voorbeelden van verschillende implementaties die niet
 
 Meestal worden aanbevelingen geconfigureerd in de gebruikersinterface van Adobe Target en vervolgens gebruikt of benaderd via de doel-API&#39;s, om redenen zoals die vermeld zijn in de bovenstaande secties. Deze UI-API-coördinatie komt veel voor. Soms willen gebruikers echter wel alle handelingen uitvoeren via API&#39;s, zowel de setup als het gebruik van resultaten. Hoewel veel minder vaak, kunnen de gebruikers absoluut vormen, uitvoeren, *en* de resultaten van aanbevelingen volledig te benutten met behulp van de API&#39;s.
 
-We leerden in een [eerdere secties](manage-catalog.md) hoe u Adobe Target Recommendations-entiteiten beheert en op de server aanbiedt. Op dezelfde manier [Adobe Developer Console](https://developer.adobe.com/console/home) kunt u criteria, promoties, verzamelingen en ontwerpsjablonen beheren zonder u aan te melden bij Adobe Target. Een volledige lijst van alle Recommendations API&#39;s is te vinden [hier](http://developers.adobetarget.com/api/recommendations/), maar hier is een samenvatting ter referentie.
+We leerden in een [eerdere secties](manage-catalog.md) hoe u Adobe Target Recommendations-entiteiten beheert en op de server aanbiedt. Op dezelfde manier [Adobe Developer Console](https://developer.adobe.com/console/home) kunt u criteria, promoties, verzamelingen en ontwerpsjablonen beheren zonder u aan te melden bij Adobe Target. Een volledige lijst van alle Recommendations API&#39;s is te vinden [hier](https://developer.adobe.com/target/administer/recommendations-api/), maar hier is een samenvatting ter referentie.
 
 | Bron | Details |
 | --- | --- |
-| [Verzamelingen](http://developers.adobetarget.com/api/recommendations/#tag/Collections) | Verzamelingen weergeven, maken, ophalen, bewerken en verwijderen. |
-| [Criteria](http://developers.adobetarget.com/api/recommendations/#tag/Criteria) | Lijst en krijg criteria. |
-| [Ontwerpen](http://developers.adobetarget.com/api/recommendations/#tag/Designs) | Ontwerp weergeven, maken, ophalen, bewerken, verwijderen en valideren. |
-| [Entiteiten](http://developers.adobetarget.com/api/recommendations/#tag/Entities) | Entiteiten opslaan, verwijderen en ophalen. |
-| [Aanbiedingen](http://developers.adobetarget.com/api/recommendations/#tag/Promotions) | Promoties aanbieden, maken, ophalen, bewerken en verwijderen. |
-| [Categoriecriteria](http://developers.adobetarget.com/api/recommendations/#tag/Category-Criteria) | Categoriecriteria weergeven, maken, ophalen, bewerken en verwijderen. |
-| [Aangepaste criteria](http://developers.adobetarget.com/api/recommendations/#tag/Custom-Criteria) | Aangepaste criteria weergeven, maken, ophalen, bewerken en verwijderen. |
-| [Objectcriteria](http://developers.adobetarget.com/api/recommendations/#tag/Item-Criteria) | Objectcriteria weergeven, maken, ophalen, bewerken en verwijderen. |
-| [Criteria voor populariteit](http://developers.adobetarget.com/api/recommendations/#tag/Popularity-Criteria) | Maak een lijst, maak, krijg, bewerk en verwijder populiteitscriteria. |
-| [Kenmerkcriteria profiel](http://developers.adobetarget.com/api/recommendations/#tag/Profile-Attribute-Criteria) | Criteria voor profielkenmerken weergeven, maken, ophalen, bewerken en verwijderen. |
-| [Recente criteria](http://developers.adobetarget.com/api/recommendations/#tag/Recent-Criteria) | Recente criteria weergeven, maken, ophalen, bewerken en verwijderen. |
-| [Reekscriteria](http://developers.adobetarget.com/api/recommendations/#tag/Sequence-Criteria) | U kunt volgreekscriteria weergeven, maken, ophalen, bewerken en verwijderen. |
+| [Verzamelingen](https://developer.adobe.com/target/administer/recommendations-api/#tag/Collections) | Verzamelingen weergeven, maken, ophalen, bewerken en verwijderen. |
+| [Criteria](https://developer.adobe.com/target/administer/recommendations-api/#tag/Criteria) | Lijst en krijg criteria. |
+| [Ontwerpen](https://developer.adobe.com/target/administer/recommendations-api/#tag/Designs) | Ontwerp weergeven, maken, ophalen, bewerken, verwijderen en valideren. |
+| [Entiteiten](https://developer.adobe.com/target/administer/recommendations-api/#tag/Entities) | Entiteiten opslaan, verwijderen en ophalen. |
+| [Aanbiedingen](https://developer.adobe.com/target/administer/recommendations-api/#tag/Promotions) | Promoties aanbieden, maken, ophalen, bewerken en verwijderen. |
+| [Categoriecriteria](https://developer.adobe.com/target/administer/recommendations-api/#tag/Category-Criteria) | Categoriecriteria weergeven, maken, ophalen, bewerken en verwijderen. |
+| [Aangepaste criteria](https://developer.adobe.com/target/administer/recommendations-api/#tag/Custom-Criteria) | Aangepaste criteria weergeven, maken, ophalen, bewerken en verwijderen. |
+| [Objectcriteria](https://developer.adobe.com/target/administer/recommendations-api/#tag/Item-Criteria) | Objectcriteria weergeven, maken, ophalen, bewerken en verwijderen. |
+| [Criteria voor populariteit](https://developer.adobe.com/target/administer/recommendations-api/#tag/Popularity-Criteria) | Maak een lijst, maak, krijg, bewerk en verwijder populiteitscriteria. |
+| [Kenmerkcriteria profiel](https://developer.adobe.com/target/administer/recommendations-api/#tag/Profile-Attribute-Criteria) | Criteria voor profielkenmerken weergeven, maken, ophalen, bewerken en verwijderen. |
+| [Recente criteria](https://developer.adobe.com/target/administer/recommendations-api/#tag/Recent-Criteria) | Recente criteria weergeven, maken, ophalen, bewerken en verwijderen. |
+| [Reekscriteria](https://developer.adobe.com/target/administer/recommendations-api/#tag/Sequence-Criteria) | U kunt volgreekscriteria weergeven, maken, ophalen, bewerken en verwijderen. |
 
 ## Referentiedocumentatie
 
