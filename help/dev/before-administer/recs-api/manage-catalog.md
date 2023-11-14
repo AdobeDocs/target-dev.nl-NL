@@ -6,9 +6,9 @@ kt: 3815
 thumbnail: null
 author: Judy Kim
 exl-id: aea82607-cde4-456a-8dfb-2967badce455
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 2fba03b3882fd23a16342eaab9406ae4491c9044
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '895'
 ht-degree: 1%
 
 ---
@@ -17,19 +17,19 @@ ht-degree: 1%
 
 Terwijl u ervoor zorgt dat u voldoet aan de [vereisten voor het gebruik van de Recommendations API](/help/dev/before-administer/recs-api/overview.md#prerequisites), hebt u geleerd hoe te [een toegangstoken genereren](/help/dev/before-administer/configure-authentication.md) de JWT-verificatiestroom gebruiken om de [!DNL Adobe Target] Admin API&#39;s op de [Adobe Developer Console](https://developer.adobe.com/console/home).
 
-U kunt nu de opdracht [Recommendations API&#39;s](https://developers.adobetarget.com/api/recommendations/) om items toe te voegen, bij te werken of te verwijderen uit uw catalogus met aanbevelingen. Net als bij de andere Adobe Target Admin API&#39;s is verificatie vereist voor de Recommendations API&#39;s.
+U kunt nu de opdracht [Recommendations API&#39;s](https://developer.adobe.com/target/administer/recommendations-api/) om items toe te voegen, bij te werken of te verwijderen uit uw catalogus met aanbevelingen. Net als bij de andere Adobe Target Admin API&#39;s is verificatie vereist voor de Recommendations API&#39;s.
 
 >[!NOTE]
 >
->Verzend de **[!UICONTROL IMS: JWT Generate + Auth via User Token]** verzoek wanneer u uw toegangstoken voor authentificatie moet verfrissen, aangezien het na 24 uren verloopt. Zie [Adobe API-verificatie configureren](../configure-authentication.md) voor instructies.
+>Verzend de **[!UICONTROL IMS: JWT Generate + Auth via User Token]** verzoek wanneer u uw toegangstoken voor authentificatie moet verfrissen, aangezien het na 24 uren verloopt. Zie [API-verificatie voor Adobe configureren](../configure-authentication.md) voor instructies.
 
 ![JWT3ff](assets/configure-io-target-jwt3ff.png)
 
-Haal voordat u verdergaat de [Recommendations Postman-collectie](https://developers.adobetarget.com/api/recommendations/#section/Postman).
+Haal voordat u verdergaat de [Recommendations Postman-collectie](https://developer.adobe.com/target/administer/recommendations-api/#section/Postman).
 
 ## Items maken en bijwerken met de API Entiteiten opslaan
 
-Als u de Recommendations-productdatabase wilt vullen met behulp van de API in plaats van een CSV-productfeed of Target-aanvraag die wordt gestart op productpagina&#39;s, gebruikt u de optie [Entiteiten-API opslaan](https://developers.adobetarget.com/api/recommendations/#operation/saveEntities). Met deze aanvraag wordt een item toegevoegd of bijgewerkt in één doelomgeving. De syntaxis is:
+Als u de Recommendations-productdatabase wilt vullen met behulp van de API in plaats van een CSV-productfeed of Target-aanvraag die wordt gestart op productpagina&#39;s, gebruikt u de optie [Entiteiten-API opslaan](https://developer.adobe.com/target/administer/recommendations-api/#operation/saveEntities). Met deze aanvraag wordt een item toegevoegd of bijgewerkt in één doelomgeving. De syntaxis is:
 
 ```
 POST https://mc.adobe.io/{{TENANT_ID}}/target/recs/entities
@@ -124,7 +124,7 @@ Deze laatste twee items horen niet bij elkaar. Laten we ze controleren met de **
 
 ## Itemdetails ophalen met de Get Entiteit API
 
-Om de details van een bestaand punt terug te winnen, gebruik [EntiteitsAPI ophalen](https://developers.adobetarget.com/api/recommendations/#operation/getEntity). De syntaxis is:
+Om de details van een bestaand punt terug te winnen, gebruik [EntiteitsAPI ophalen](https://developer.adobe.com/target/administer/recommendations-api/#operation/getEntity). De syntaxis is:
 
 ```
 GET https://mc.adobe.io/{{TENANT_ID}}/target/recs/entities/[entity.id]
@@ -163,7 +163,7 @@ Stel dat u besluit dat deze entiteiten uit de catalogus moeten worden verwijderd
 
 ## Items verwijderen met de API Entiteiten verwijderen
 
-Als u items uit uw catalogus wilt verwijderen, gebruikt u de [Entiteiten-API verwijderen](https://developers.adobetarget.com/api/recommendations/#operation/deleteEntities). De syntaxis is:
+Als u items uit uw catalogus wilt verwijderen, gebruikt u de [Entiteiten-API verwijderen](https://developer.adobe.com/target/administer/recommendations-api/#operation/deleteEntities). De syntaxis is:
 
 ```
 DELETE https://mc.adobe.io/{{TENANT_ID}}/target/recs/entities?ids=[comma-delimited-entity-ids]&environment=[environmentId]

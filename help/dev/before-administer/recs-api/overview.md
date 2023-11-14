@@ -6,9 +6,9 @@ kt: 3815
 thumbnail: null
 author: Judy Kim
 exl-id: 0d03c650-0b00-44b8-a794-10e5d738e42c
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 2fba03b3882fd23a16342eaab9406ae4491c9044
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '339'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Deze handleiding is bedoeld voor ontwikkelaars die niet bekend zijn met doel-API
 
 ## Vereisten {#prerequisites}
 
-De API&#39;s voor doelbeheer zijn vereist [Adobe-verificatie instellen](../configure-authentication.md). Zorg ervoor dat dit is geconfigureerd voordat u de Recommendations API gebruikt.
+De API&#39;s voor doelbeheer zijn vereist [Instellingen voor verificatie van Adoben](../configure-authentication.md). Zorg ervoor dat dit is geconfigureerd voordat u de Recommendations API gebruikt.
 
 ## Bronnen
 
@@ -47,4 +47,4 @@ Neem nota van de volgende middelen, die noodzakelijk zijn om deze gids te begrij
 | Bron | Details |
 | --- | --- |
 | Postman | Krijg de [Postman-app](https://www.postman.com/downloads/) voor uw besturingssysteem. Postman basic is gratis bij het maken van accounts. Hoewel Postman niet vereist is voor het gebruik van Adobe Target API&#39;s in het algemeen, maakt het API-workflows eenvoudiger en biedt Adobe Target verschillende Postman-verzamelingen om de API&#39;s van uit te voeren en te leren hoe ze werken. Voor de rest van deze handleiding wordt uitgegaan van praktische kennis van Postman. Raadpleeg voor hulp de [Postman-documentatie](https://learning.getpostman.com/). |
-| Verwijzingen | In de rest van deze handleiding wordt ervan uitgegaan dat de volgende bronnen bekend zijn:<UL><li>[Adobe I/O Github](https://github.com/adobeio)</li><li>[Documentatie voor Admin en Profile API](../../administer/admin-api/admin-api-overview-new.md)</li><li>[Recommendations API-documentatie](https://developers.adobetarget.com/api/recommendations/)</li></UL> |
+| Verwijzingen | In de rest van deze handleiding wordt ervan uitgegaan dat de volgende bronnen bekend zijn:<UL><li>[Adobe I/O Github](https://github.com/adobeio)</li><li>[Documentatie voor Admin en Profile API](../../administer/admin-api/admin-api-overview-new.md)</li><li>[Recommendations API-documentatie](https://developer.adobe.com/target/administer/recommendations-api/)</li></UL> |

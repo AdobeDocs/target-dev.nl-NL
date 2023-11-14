@@ -3,9 +3,9 @@ title: Adobe Target API-overzicht
 description: Overzicht van de verschillende Adobe Target API's, waaronder de API voor levering, api voor rapportage, api voor beheerders, api voor profielen, api voor aanbevelingen en koppelingen naar postmanverzamelingen.
 exl-id: bf886103-36af-4061-b8be-2fe645f45ff3
 feature: APIs/SDKs
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 2fba03b3882fd23a16342eaab9406ae4491c9044
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Adobe Target API&#39;s kunnen worden gegroepeerd op type: Admin, Profile, Delive
 
 | API-type | Wat het u toelaat doen | Koppeling downloaden | Andere nuttige koppelingen |
 | --- | --- | --- |--- |
-| [Beheerder](../administer/admin-api/admin-api-overview-new.md) | Maak, wijzig en verwijder activiteiten, publiek, aanbiedingen en andere objecten (waaronder Recommendations-entiteiten, criteria, ontwerpen, enzovoort). De Recommendations API&#39;s zijn een type Admin API.) | <UL><li>[Postman-verzameling voor Admin API](https://developers.adobetarget.com/api/#admin-postman-collection)</li><li>[Recommendations API Postman Collection](https://developers.adobetarget.com/api/recommendations/#section/Postman)</li></UL> | [Recommendations API&#39;s gebruiken](../before-administer/recs-api/overview.md) |
+| [Beheerder](../administer/admin-api/admin-api-overview-new.md) | Maak, wijzig en verwijder activiteiten, publiek, aanbiedingen en andere objecten (waaronder Recommendations-entiteiten, criteria, ontwerpen, enzovoort). De Recommendations API&#39;s zijn een type Admin API.) | <UL><li>[Postman-verzameling voor Admin API](https://developers.adobetarget.com/api/#admin-postman-collection)</li><li>[Recommendations API Postman Collection](https://developer.adobe.com/target/administer/recommendations-api/#section/Postman)</li></UL> | [Recommendations API&#39;s gebruiken](../before-administer/recs-api/overview.md) |
 | Profiel | In Adobe Target opgeslagen gebruikersprofielen ophalen en wijzigen. | [Postman-verzameling voor doelprofiel](https://developers.adobetarget.com/api/#profiles) |  |
 | [Aflevering](../implement/delivery-api/overview.md) | Haal geoptimaliseerde en gepersonaliseerde inhoud van Target op voor levering aan een eindgebruiker. | [Postman-collectie voor doel-leverings-API](/help/dev/before-implement/delivery-api-overview/getting-started.md#postman) |  |
 | [Rapportage](../administer/admin-api/admin-api-overview-new.md) | Resultaten van exportactiviteiten en andere rapportresultaten. | Rapportage-API&#39;s zijn opgenomen in de [Postman-collectie voor Admin API van doel](https://developers.adobetarget.com/api/#admin-postman-collection). |  |

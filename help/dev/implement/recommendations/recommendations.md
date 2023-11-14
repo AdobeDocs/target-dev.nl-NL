@@ -4,9 +4,9 @@ description: Leer hoe u implementeert [!UICONTROL Recommendations] activiteiten 
 title: Hoe implementeren [!UICONTROL Recommendations] Activiteiten?
 feature: Recommendations
 exl-id: af1e8b60-6dbb-451b-aa4f-e167d1800d1c
-source-git-commit: 1e1bfb556005f7ea998caf97685c834825372bd6
+source-git-commit: 2fba03b3882fd23a16342eaab9406ae4491c9044
 workflow-type: tm+mt
-source-wordcount: '1402'
+source-wordcount: '1403'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Om aanbevelingen van hoge kwaliteit te doen, [!UICONTROL Target] moet weten welk
 | Methode | Wat het is | Wanneer gebruikt u het | Aanvullende informatie |
 | --- | --- | --- | --- |
 | Catalogusfeed | Plan een feed (CSV, Google Product XML of Analytics Product Classifications) die dagelijks moet worden geüpload en opgenomen. | Voor het verzenden van informatie over meerdere items tegelijk. Voor het verzenden van informatie die niet vaak wordt gewijzigd. | Zie [Feeds](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/feeds.html). |
-| Entiteiten-API | Roep API aan om updates naar de minuut voor één enkel punt te verzenden. | Voor het verzenden van updates zoals deze over één item tegelijk plaatsvinden. Voor het verzenden van informatie die regelmatig verandert (bijvoorbeeld prijs, voorraad/voorraadniveau). | Zie de [Documentatie voor ontwikkelaars van Entiteiten-API](https://developers.adobetarget.com/api/recommendations/#tag/Entities). |
+| Entiteiten-API | Roep API aan om updates naar de minuut voor één enkel punt te verzenden. | Voor het verzenden van updates zoals deze over één item tegelijk plaatsvinden. Voor het verzenden van informatie die regelmatig verandert (bijvoorbeeld prijs, voorraad/voorraadniveau). | Zie de [Documentatie voor ontwikkelaars van Entiteiten-API](https://developer.adobe.com/target/administer/recommendations-api/#tag/Entities). |
 | Updates op de pagina doorgeven | Updates voor één item verzenden met JavaScript op de pagina of met de API voor levering. | Voor het verzenden van updates zoals deze over één item tegelijk plaatsvinden. Voor het verzenden van informatie die regelmatig verandert (bijvoorbeeld prijs, voorraad/voorraadniveau). | Zie [Objectweergaven/productpagina&#39;s](#item-views-or-product-pages) hieronder. |
 
 De meeste klanten zouden minstens één voer moeten uitvoeren. Vervolgens kunt u ervoor kiezen om uw feed aan te vullen met updates voor vaak gewijzigde kenmerken of items met behulp van de Entities API of de on-the-page methode.

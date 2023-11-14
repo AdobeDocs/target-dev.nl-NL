@@ -6,9 +6,9 @@ kt: 3815
 thumbnail: null
 author: Judy Kim
 exl-id: 51a67a49-a92d-4377-9a9f-27116e011ab1
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 2fba03b3882fd23a16342eaab9406ae4491c9044
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '921'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ Als u aangepaste criteria wilt maken, definieert en importeert u de gewenste toe
 
 ## Aangepaste criteria maken
 
-Aangepaste criteria maken met de opdracht [Aangepaste criteria-API maken](https://developers.adobetarget.com/api/recommendations/#operation/createCriteriaCustom), is de syntaxis:
+Aangepaste criteria maken met de opdracht [Aangepaste criteria-API maken](https://developer.adobe.com/target/administer/recommendations-api/#operation/createCriteriaCustom), is de syntaxis:
 
 `POST https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/custom`
 
@@ -39,7 +39,7 @@ Ga pas verder met de volgende stappen nadat u de bovenstaande waarschuwing hebt 
 
    ![CreateCustomCriteria1](assets/CreateCustomCriteria1.png)
 
-1. Voeg uw **Lichaam** als **ruw** JSON die de locatie van uw CSV-bestand met aangepaste criteria definieert. Gebruik het voorbeeld in het dialoogvenster [Aangepaste criteria-API maken](https://developers.adobetarget.com/api/recommendations/#operation/getAllCriteriaCustom) documentatie als sjabloon, die uw `environmentId` en andere waarden indien nodig. Voor dit voorbeeld, gebruiken wij LAST_PURCHASED als sleutel.
+1. Voeg uw **Lichaam** als **ruw** JSON die de locatie van uw CSV-bestand met aangepaste criteria definieert. Gebruik het voorbeeld in het dialoogvenster [Aangepaste criteria-API maken](https://developer.adobe.com/target/administer/recommendations-api/#operation/getAllCriteriaCustom) documentatie als sjabloon, die uw `environmentId` en andere waarden indien nodig. Voor dit voorbeeld, gebruiken wij LAST_PURCHASED als sleutel.
 
    ![CreateCustomCriteria2](assets/CreateCustomCriteria2.png)
 
@@ -55,7 +55,7 @@ In dit geval hebben we een fout. Laten we de fout onderzoeken door de aangepaste
 
 ## Aangepaste criteria weergeven
 
-Als u een lijst met al uw aangepaste criteria wilt ophalen, gebruikt u de opdracht [Aangepaste criteria-API weergeven](https://developers.adobetarget.com/api/recommendations/#operation/getAllCriteriaCustom). De syntaxis is:
+Als u een lijst met al uw aangepaste criteria wilt ophalen, gebruikt u de opdracht [Aangepaste criteria-API weergeven](https://developer.adobe.com/target/administer/recommendations-api/#operation/getAllCriteriaCustom). De syntaxis is:
 
 `GET https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/custom`
 
@@ -66,7 +66,7 @@ In dit geval is de fout opgetreden omdat de serverinformatie onjuist is. Dit bet
 
 ## Aangepaste criteria bewerken
 
-Als u de details van een definitie voor aangepaste criteria wilt wijzigen, gebruikt u de optie [Aangepaste criteria-API bewerken](https://developers.adobetarget.com/api/recommendations/#operation/updateCriteriaCustom). De syntaxis is:
+Als u de details van een definitie voor aangepaste criteria wilt wijzigen, gebruikt u de optie [Aangepaste criteria-API bewerken](https://developer.adobe.com/target/administer/recommendations-api/#operation/updateCriteriaCustom). De syntaxis is:
 
 `POST https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/custom/:criteriaId`
 
@@ -86,7 +86,7 @@ Laten we het succes van de bijgewerkte aangepaste criteria controleren met de op
 
 ## Aangepaste criteria ophalen
 
-Als u de details van aangepaste criteria voor specifieke aangepaste criteria wilt bekijken, gebruikt u de opdracht [API voor aangepaste criteria ophalen](https://developers.adobetarget.com/api/recommendations/#operation/getCriteriaCustom). De syntaxis is:
+Als u de details van aangepaste criteria voor specifieke aangepaste criteria wilt bekijken, gebruikt u de opdracht [API voor aangepaste criteria ophalen](https://developer.adobe.com/target/administer/recommendations-api/#operation/getCriteriaCustom). De syntaxis is:
 
 `GET https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/custom/:criteriaId`
 
@@ -99,7 +99,7 @@ Als u de details van aangepaste criteria voor specifieke aangepaste criteria wil
 
 ## Aangepaste criteria verwijderen
 
-Verwijder uw aangepaste criteria met de eerder vermelde criteria aan de hand van de [Aangepaste criteria-API verwijderen](https://developers.adobetarget.com/api/recommendations/#operation/deleteCriteriaCustom). De syntaxis is:
+Verwijder uw aangepaste criteria met de eerder vermelde criteria aan de hand van de [Aangepaste criteria-API verwijderen](https://developer.adobe.com/target/administer/recommendations-api/#operation/deleteCriteriaCustom). De syntaxis is:
 
 `DELETE https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/custom/:criteriaId`
 
