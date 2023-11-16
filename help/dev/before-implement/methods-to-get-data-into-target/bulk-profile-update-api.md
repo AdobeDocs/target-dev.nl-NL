@@ -4,7 +4,7 @@ description: Gegevens ophalen in [!DNL Target] met de API voor bulkprofielupdate
 title: Hoe krijg ik gegevens in [!DNL Target] De API voor updates van bulkprofielen gebruiken?
 feature: Implementation
 exl-id: 654b13b7-1683-4c44-80e6-7557b9d29f66
-source-git-commit: 3ae2391dea9994c0ddc1df39d74cccf6e067c1a4
+source-git-commit: 773f8a2f22cfbf740a5ce68809b38b33b621f3b5
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 0%
@@ -42,7 +42,7 @@ Profielkenmerken die via de site worden verzonden, kunnen via de API worden bijg
 
 Het batchbestand moet kleiner zijn dan 50 MB. Bovendien mag het totale aantal rijen niet groter zijn dan 500.000 rijen per upload.
 
-De updates komen over het algemeen binnen onder één uur voor, maar kunnen tot 24 uur vergen om worden weerspiegeld
+Updates vinden meestal plaats binnen een uur, maar het kan 24 uur duren voordat ze worden gereflecteerd.
 
 Er geldt geen limiet voor het aantal rijen dat of de rijen die u kunt uploaden over een periode van 24 uur in volgende batches. Nochtans, zou het innameproces tijdens kantooruren kunnen worden vertraagd om ervoor te zorgen dat andere processen efficiënt lopen.
 
