@@ -4,9 +4,9 @@ description: Gegevens ophalen in [!DNL Target] met de API voor één profielupda
 title: Hoe krijg ik gegevens in [!DNL Target] De Single Profile Update API gebruiken?
 feature: Implementation
 exl-id: e6c394cb-74a3-4991-b656-5ae601f2d5e2
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 3ae2391dea9994c0ddc1df39d74cccf6e067c1a4
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '200'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Limiet van 1.000.000 API-aanroepen (1 miljoen) per periode van 24 uur
 
 Alleen profielen worden bijgewerkt. Kan geen profiel maken voor een potentiële gebruiker [!DNL Target] heeft nog niet gezien.
 
-Updates vinden meestal plaats binnen 1 uur, maar het kan 24 uur duren voordat ze worden gereflecteerd.
+Updates vinden meestal plaats binnen een uur, maar het kan 24 uur duren voordat ze worden gereflecteerd.
 
 ## Codevoorbeelden
 
