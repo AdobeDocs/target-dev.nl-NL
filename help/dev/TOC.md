@@ -2,7 +2,7 @@
 user-guide-title: Adobe Target Developer Guide
 breadcrumb-title: Doelontwikkelaarsgids
 user-guide-description: Leer hoe u de ervaring van uw klanten kunt aanpassen en personaliseren om uw omzet te maximaliseren op uw websites en mobiele sites, apps, sociale media en andere digitale kanalen.
-source-git-commit: 723bb2f33a011995757009193ee9c48757ae1213
+source-git-commit: 734bda64915a08f2edba37cbbb66b2de581c2237
 workflow-type: tm+mt
 source-wordcount: '729'
 ht-degree: 3%
@@ -33,7 +33,7 @@ ht-degree: 3%
       + [Scriptprofielkenmerken](before-implement/methods-to-get-data-into-target/script-profile-attributes.md)
       + [Gegevensleveranciers](before-implement/methods-to-get-data-into-target/data-providers.md)
       + [Bulkprofielupdate-API](before-implement/methods-to-get-data-into-target/bulk-profile-update-api.md)
-      + [API voor bijwerken van één profiel](before-implement/methods-to-get-data-into-target/single-profile-update-api.md)
+      + [Single Profile Update API](before-implement/methods-to-get-data-into-target/single-profile-update-api.md)
       + [Klantkenmerken](before-implement/methods-to-get-data-into-target/customer-attributes.md)
       + [Profiel-API-instellingen](before-implement/methods-to-get-data-into-target/profile-api-settings.md)
    + [Overzicht van doelbeveiliging](before-implement/target-security-overview.md)
