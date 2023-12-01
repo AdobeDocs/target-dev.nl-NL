@@ -3,9 +3,9 @@ title: Adobe Target API voor bijwerken van één profiel
 description: Leren gebruiken [!DNL Adobe Target] [!UICONTROL Single Profile Update API] om de profielgegevens van één bezoeker te verzenden naar [!DNL Target].
 feature: APIs/SDKs
 contributors: https://github.com/icaraps
-source-git-commit: 81bff85a9d1fe28ca267c471a470da95568fd06d
+source-git-commit: dcff5d2eb8740420a9f9cf488474c3bca1628567
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '350'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,8 @@ De voordelen van de [!UICONTROL Single Profile Update API] omvatten:
 * Updates vinden meestal plaats binnen een uur, maar het kan 24 uur duren voordat ze worden gereflecteerd.
 
   Als u meer updates moet verzenden of updates moet verwerken in kortere tijdframes, kunt u overwegen updates van transactionele profielen te verzenden via een update aan de clientzijde (voorkeur) of via de [!DNL Adobe Target] server-kant [Leverings-API](/help/dev/implement/delivery-api/overview.md).
+
+* De [!UICONTROL Single Profile Update API] is een server-aan-server API en is niet ontworpen om binnen een webpagina te werken. Als u een bezoekersprofiel vanuit uw webpagina wilt bijwerken, kunt u de opdracht [trackEvent()](/help/dev/implement/client-side/atjs/atjs-functions/adobe-target-trackevent.md) of de [Leverings-API](/help/dev/implement/delivery-api/overview.md).
 
 ## Indeling
 
