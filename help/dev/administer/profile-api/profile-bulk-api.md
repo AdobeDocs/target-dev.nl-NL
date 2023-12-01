@@ -3,9 +3,9 @@ title: Adobe Target Bulk Profile Update API
 description: Leren gebruiken [!DNL Adobe Target] [!UICONTROL Bulk Profile Update API] om profielgegevens van meerdere bezoekers te verzenden naar [!DNL Target].
 feature: APIs/SDKs
 contributors: https://github.com/icaraps
-source-git-commit: 6f7d9875e3b73352ead3a55e40a4b2f81f3d4400
+source-git-commit: 43f4fb8345a77ccb0e112fe196e7e0944cc468c9
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '693'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 De [!DNL Adobe Target] [!UICONTROL Bulk Profile Update API] Hiermee kunt u gebruikersprofielen voor meerdere bezoekers van een website in bulk bijwerken met een batchbestand.
 
-Met de [!UICONTROL Bulk Profile Update API], kunt u gedetailleerde gegevens van het bezoekersprofiel in de vorm van profielparameters voor vele gebruikers gemakkelijk verzenden aan [!DNL Target] van een externe bron. Externe bronnen kunnen systemen van het Beheer van de Verhouding van de Klant (CRM) of van het verkooppunt (POS) omvatten, die gewoonlijk niet op een Web-pagina beschikbaar zijn.
+Met de [!UICONTROL Bulk Profile Update API], kunt u gedetailleerde gegevens van het bezoekersprofiel in de vorm van profielparameters voor vele gebruikers gemakkelijk verzenden aan [!DNL Target] van een externe bron. Externe bronnen kunnen systemen van het Beheer van de Verhouding van de Klant (CRM) of van het Verkooppunt (POS) omvatten, die gewoonlijk niet op een Web-pagina beschikbaar zijn.
 
 | Versie | URL-voorbeeld | Functies |
 | --- | --- | --- |
@@ -24,6 +24,11 @@ Met de [!UICONTROL Bulk Profile Update API], kunt u gedetailleerde gegevens van 
 >[!NOTE]
 >
 >Versie 2 van de [!UICONTROL Bulk Profile Update API] is de huidige versie. Maar [!DNL Target] ondersteunt nog steeds versie 1 (v1).
+
+## Voordelen van de Bulk Profile Update API
+
+* Geen limiet voor het aantal profielkenmerken.
+* Profielkenmerken die via de site worden verzonden, kunnen via de API worden bijgewerkt en omgekeerd.
 
 ## Caveats
 
