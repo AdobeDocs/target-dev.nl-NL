@@ -2,9 +2,9 @@
 user-guide-title: Adobe Target Developer Guide
 breadcrumb-title: Doelontwikkelaarsgids
 user-guide-description: Leer hoe u de ervaring van uw klanten kunt aanpassen en personaliseren om uw omzet te maximaliseren op uw websites en mobiele sites, apps, sociale media en andere digitale kanalen.
-source-git-commit: 734bda64915a08f2edba37cbbb66b2de581c2237
+source-git-commit: af9db32d59bdf32f2b9fade267922803250377dd
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '740'
 ht-degree: 3%
 
 ---
@@ -193,7 +193,10 @@ ht-degree: 3%
    + Admin-API {#admin-api}
       + [Overzicht van Admin API](before-administer/admin-api-overview/admin-api-overview.md)
       + [Adobe Target Admin API](/help/dev/administer/admin-api/admin-api-overview-new.md)
-   + [Profielen-API](/help/dev/administer/profile-api/profile-api-overview.md)
+   + Profiel-API&#39;s {#profile-apis}
+      + [Overzicht van API&#39;s voor profielen](/help/dev/administer/profile-api/profile-api-overview.md)
+      + [Single Profile Update API](/help/dev/administer/profile-api/profile-single-api.md)
+      + [Bulkprofielupdate-API](/help/dev/administer/profile-api/profile-bulk-api.md)
    + [API voor rapportage](/help/dev/administer/reporting-api/reporting-api.md)
    + RECOMMENDATIONS API {#recommendations-api}
       + [Overzicht Recommendations API](before-administer/recs-api/overview.md)

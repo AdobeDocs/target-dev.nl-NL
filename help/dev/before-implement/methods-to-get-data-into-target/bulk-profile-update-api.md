@@ -4,9 +4,9 @@ description: Gegevens ophalen in [!DNL Target] met de [!UICONTROL Bulk Profile U
 title: Hoe krijg ik gegevens in [!DNL Target] Met de [!UICONTROL Bulk Profile Update API]?
 feature: Implementation
 exl-id: 654b13b7-1683-4c44-80e6-7557b9d29f66
-source-git-commit: 734bda64915a08f2edba37cbbb66b2de581c2237
+source-git-commit: af9db32d59bdf32f2b9fade267922803250377dd
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '373'
 ht-degree: 0%
 
 ---
@@ -44,12 +44,10 @@ Uw CRM of ander intern systeem slaat waardevolle gegevens over uw bezoekers op d
 * Het batchbestand moet kleiner zijn dan 50 MB. Bovendien mag het totale aantal rijen niet groter zijn dan 500.000 rijen per upload.
 * Updates vinden meestal plaats binnen een uur, maar het kan 24 uur duren voordat ze worden gereflecteerd.
 * Er is geen limiet voor het aantal rijen dat of de rijen die u kunt uploaden over een periode van 24 uur in volgende batches. Nochtans, zou het innameproces tijdens kantooruren kunnen worden vertraagd om ervoor te zorgen dat andere processen efficiënt lopen.
-* Opeenvolgend [V2 batch-updateaanroepen](https://developers.adobetarget.com/api/#updating-profiles) zonder mbox vraag binnen tussen zelfde `thirdPartyIds` Overschrijf de eigenschappen die in de eerste vraag van de partijupdate worden bijgewerkt.
+* Opeenvolgende V2 vraag van de partijupdate zonder mbox vraag binnen tussen voor het zelfde `thirdPartyIds` Overschrijf de eigenschappen die in de eerste vraag van de partijupdate worden bijgewerkt.
 
-## Codevoorbeelden
+## Bronnen
 
-Zie [Profielen bijwerken](https://developers.adobetarget.com/api/#updating-profiles).
-
-### Koppelingen naar relevante informatie
-
-[Profielen bijwerken](https://developers.adobetarget.com/api/#updating-profiles)
+* [[!DNL Adobe Target Profile APIs overview]](/help/dev/administer/profile-api/profile-api-overview.md)
+* [[!DNL Adobe Target Single Profile Update API]](/help/dev/administer/profile-api/profile-single-api.md)
+* [[!DNL Adobe Target Bulk Profile Update API]](/help/dev/administer/profile-api/profile-bulk-api.md)
