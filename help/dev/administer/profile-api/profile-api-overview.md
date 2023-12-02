@@ -4,9 +4,9 @@ description: Leer hoe u API's met Adobe Target-profielen kunt gebruiken om bezoe
 contributors: https://github.com/icaraps
 exl-id: 482a4175-1d02-47e9-a5c0-dd00e8560773
 feature: APIs/SDKs
-source-git-commit: 81bff85a9d1fe28ca267c471a470da95568fd06d
+source-git-commit: 1a1c3d96cf6ef5c337a63fdec8c700da695ff5d1
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -25,3 +25,5 @@ Er zijn twee manieren om profielen bij te werken via API:
 
 * [API voor bijwerken van één profiel](/help/dev/administer/profile-api/profile-single-api.md)
 * [Bulkprofielupdate via batch](/help/dev/administer/profile-api/profile-bulk-api.md)
+
+De oudere API-documentatie voor profielen vindt u hier: [https://developers.adobetarget.com/api/#profiles](https://developers.adobetarget.com/api/#profiles){target=_blank}
