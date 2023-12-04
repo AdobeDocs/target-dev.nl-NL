@@ -3,9 +3,9 @@ title: Adobe Target Bulk Profile Update API
 description: Leren gebruiken [!DNL Adobe Target] [!UICONTROL Bulk Profile Update API] om profielgegevens van meerdere bezoekers te verzenden naar [!DNL Target].
 feature: APIs/SDKs
 contributors: https://github.com/icaraps
-source-git-commit: 43f4fb8345a77ccb0e112fe196e7e0944cc468c9
+source-git-commit: 8bc819823462fae71335ac3b6c871140158638fe
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '698'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ U verwijst dit dossier in de vraag van de POST naar [!DNL Target] -servers om he
 Een HTTP-POST aanvragen om [!DNL Target] Edge-servers om het bestand te verwerken. Hier volgt een voorbeeld van een HTTP-POST-aanvraag voor het bestand batch.txt met de opdracht curl:
 
 ``````
-curl -X POST --data-binary @BATCH.TXT http://CLIENTCODE.tt.omtrdc.net/m2/ CLIENTCODE/v2/profile/batchUpdate
+curl -X POST --data-binary @BATCH.TXT http://CLIENTCODE.tt.omtrdc.net/m2/CLIENTCODE/v2/profile/batchUpdate
 ``````
 
 Waarbij:
