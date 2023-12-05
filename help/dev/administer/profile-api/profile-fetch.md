@@ -3,7 +3,7 @@ title: Ophaalprofielen
 description: Leer hoe u API's met Adobe Target Profile kunt gebruiken om bezoekersgegevens op te halen die u kunt gebruiken in [!DNL Target].
 contributors: https://github.com/icaraps
 feature: APIs/SDKs
-source-git-commit: 9707680ddcf0c373c635aa9f3cb5ba1b74cf90a3
+source-git-commit: e5a1c38d448cb7446b7b26cd0dc882976ba94dd3
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 0%
@@ -39,13 +39,13 @@ Zie [Profielen bijwerken](/help/dev/administer/profile-api/profile-api-overview.
 In het volgende voorbeeld wordt de aanvraagindeling getoond om een profiel op te halen met een `thirdPartyId`:
 
 ```
-https://<your-client-code>.tt.omtrdc.net/rest/v1/profiles/thirdPartyId/your-thirdpartyid?<your-client-code>
+https://<your-client-code>.tt.omtrdc.net/rest/v1/profiles/thirdPartyId/your-thirdpartyid?client=<your-client-code>
 ```
 
 Vervangen `<your-client-code>` en `your-thirdpartyid` en een verzoek om GET in werking te stellen. Hier is een vraag van de het halen van het voorbeeldprofiel gebruikend een [!UICONTROL thirdpartyid]:
 
 ```
-http://<your-client-code>.tt.omtrdc.net/rest/v1/profiles/thirdPartyId/a1-mbox3rdPartyId?client=<your-client-code>
+https://<your-client-code>.tt.omtrdc.net/rest/v1/profiles/thirdPartyId/a1-mbox3rdPartyId?client=<your-client-code>
 ```
 
 Wanneer deze vraag wordt gemaakt, [!DNL Target] pogingen om het profiel eerst te vinden in de cluster die in de randaanvraag is vermeld, of waar het profiel zich bevindt en de inhoud te retourneren. De inhoud van het profiel wordt geretourneerd in de JSON-indeling.

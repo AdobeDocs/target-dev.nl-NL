@@ -4,9 +4,9 @@ description: Hoe gebruik ik de [!UICONTROL Adobe Target Delivery API]?
 keywords: aflevering api
 exl-id: 142ec3be-b017-4cdc-9079-b1cc173a710a
 feature: APIs/SDKs
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: e5a1c38d448cb7446b7b26cd0dc882976ba94dd3
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: '96'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,3 @@ Voordat u een [!UICONTROL Target Delivery API] de vraag, volgt deze stappen om e
 1. Een [!DNL Target] activiteit (A/B, XT, AP of Recommendations) die het [Op formulier gebaseerde composer](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html?lang=en) of de [Visual Experience Composer](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html).
 1. Gebruik de leverings-API om een antwoord te krijgen voor de vakken die worden gebruikt in de [!DNL Target] activiteit die in Stap 2 wordt gecreeerd.
 1. Presenteer de ervaring aan de bezoeker.
-
-## Postman Collection {#postman}
-
-Postman is een toepassing waarmee het eenvoudig is API-aanroepen te starten. [Deze Postman-collectie](https://run.pstmn.io/button.svg) bevat voorbeelden van API-aanroepen voor levering.
