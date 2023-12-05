@@ -3,7 +3,7 @@ title: Ophaalprofielen
 description: Leer hoe u API's met Adobe Target Profile kunt gebruiken om bezoekersgegevens op te halen die u kunt gebruiken in [!DNL Target].
 contributors: https://github.com/icaraps
 feature: APIs/SDKs
-source-git-commit: e5a1c38d448cb7446b7b26cd0dc882976ba94dd3
+source-git-commit: ee53a8f0210480d9b70dc77a3a5cd8d92d2f2e3d
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 0%
@@ -27,7 +27,7 @@ https://<your-client-code>.tt.omtrdc.net/rest/v1/profiles/your-tnt-id?client=<yo
 Vervangen `<your-client-code>` en `your-tnt-id` en een verzoek om GET in werking te stellen. Hier is een vraag van de het halen van het voorbeeldprofiel gebruikend een `tntid`;
 
 ```
-http://<your-client-code>.tt.omtrdc.net/rest/v1/profiles/111492025094307-353046?client=<your-client-code>
+https://<your-client-code>.tt.omtrdc.net/rest/v1/profiles/111492025094307-353046?client=<your-client-code>
 ```
 
 ## Een derdePartyId gebruiken
