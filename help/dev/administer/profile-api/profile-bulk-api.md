@@ -3,9 +3,9 @@ title: Adobe Target Bulk Profile Update API
 description: Leren gebruiken [!DNL Adobe Target] [!UICONTROL Bulk Profile Update API] om profielgegevens van meerdere bezoekers te verzenden naar [!DNL Target].
 feature: APIs/SDKs
 contributors: https://github.com/icaraps
-source-git-commit: 8bc819823462fae71335ac3b6c871140158638fe
+source-git-commit: b263fef6017dc6f840037cab9045c36b9e354cee
 workflow-type: tm+mt
-source-wordcount: '698'
+source-wordcount: '741'
 ht-degree: 0%
 
 ---
@@ -72,27 +72,58 @@ Als u uw cliëntcode niet kent, in [!DNL Target] gebruikersinterface klikken **[
 
 ### Inspect: het antwoord
 
-v2 retourneert een profiel-voor-profiel status en v1 retourneert alleen de algemene status. De reactie bevat een koppeling naar een andere URL met het bericht voor het maken van een profiel.
+De API voor profielen retourneert de verzendstatus van de batch voor verwerking samen met een koppeling onder &quot;batchStatus&quot; voor een andere URL die de algemene status van de specifieke batchtaak weergeeft.
 
-### Voorbeeldreactie
+### Voorbeeld-API-reactie
+
+De volgende code die is uitgesneden, is een voorbeeld van een API-reactie voor profielen:
 
 ```
-true http://mboxedge19.tt.omtrdc.net/m2/demo/v2/profile/batchStatus?batchId=demo-1845664501&m2Node=00 Batch submitted for processing
+<response>
+    <success>true</success>
+    <batchStatus>http://mboxedge45.tt.omtrdc.net/m2/demo/profile/batchStatus?batchId=demo-1701473848678-13029383</batchStatus>
+    <message>Batch submitted for processing</message>
+</response>
 ```
 
 Als er een fout optreedt, bevat de reactie `success=false` en een gedetailleerd bericht voor de fout.
 
-Een geslaagde reactie ziet er als volgt uit:
+### Standaardbatchstatusreactie
 
-``````
-demo-1845664501 1436187396849-250353.03_03 success 2403081156529-351655.03_03 success 2403081156529-351656.03_03 success 1436187396849-250351.01_00 success 
-``````
+Een geslaagde standaardreactie bij het bovenstaande `batchStatus` Als u op een URL-koppeling klikt, ziet u er als volgt uit:
+
+```
+<response><batchId>demo4-1701473848678-13029383</batchId><status>complete</status><batchSize>1</batchSize></response>
+```
 
 De verwachte waarden voor de statusvelden zijn:
 
-**succes**: Het profiel is bijgewerkt. Als het profiel niet wordt gevonden, is er een gemaakt met de waarden uit de batch.
-**fout**: Het profiel is niet bijgewerkt of gemaakt vanwege een fout, uitzondering of verlies van berichten.
-**hangend**: Het profiel is nog niet bijgewerkt of gemaakt.
+| Status | Details |
+| --- | --- |
+| [!UICONTROL complete] | Het verzoek om de profielbatch-update is voltooid. |
+| [!UICONTROL incomplete] | Het verzoek om de profielbatch-update wordt nog steeds verwerkt en niet voltooid. |
+| [!UICONTROL stuck] | Het verzoek om de profielbatch-update blijft geldig en kan niet worden voltooid. |
 
+### Gedetailleerde batchstatus URL-reactie
 
+Een meer gedetailleerde reactie kan worden opgehaald door een parameter door te geven `showDetails=true` aan de `batchStatus` URL hierboven.
 
+Bijvoorbeeld:
+
+```
+http://mboxedge45.tt.omtrdc.net/m2/demo/profile/batchStatus?batchId=demo-1701473848678-13029383&showDetails=true
+```
+
+#### Gedetailleerde respons
+
+```
+<response>
+    <batchId>demo4-1701473848678-13029383</batchId>
+    <status>complete</status>
+    <batchSize>1</batchSize>
+    <consumedCount>1</consumedCount>
+    <successfulUpdates>1</successfulUpdates>
+    <profilesNotFound>0</profilesNotFound>
+    <failedUpdates>0</failedUpdates>
+</response>
+```
