@@ -3,9 +3,9 @@ title: Adobe Target Bulk Profile Update API
 description: Leren gebruiken [!DNL Adobe Target] [!UICONTROL Bulk Profile Update API] om profielgegevens van meerdere bezoekers te verzenden naar [!DNL Target].
 feature: APIs/SDKs
 contributors: https://github.com/icaraps
-source-git-commit: b263fef6017dc6f840037cab9045c36b9e354cee
+source-git-commit: 38a5e82d3170fa64220bd63f505f1470af43e8a3
 workflow-type: tm+mt
-source-wordcount: '741'
+source-wordcount: '792'
 ht-degree: 0%
 
 ---
@@ -35,6 +35,7 @@ Met de [!UICONTROL Bulk Profile Update API], kunt u gedetailleerde gegevens van 
 * Het batchbestand moet kleiner zijn dan 50 MB. Bovendien mag het totale aantal rijen niet groter zijn dan 500.000 rijen per upload.
 * Er is geen limiet voor het aantal rijen dat of de rijen die u kunt uploaden over een periode van 24 uur in volgende batches. Nochtans, zou het innameproces tijdens kantooruren kunnen worden vertraagd om ervoor te zorgen dat andere processen efficiënt lopen.
 * Opeenvolgende v2 vraag van de partijupdate zonder mbox vraag binnen tussen voor zelfde thirdPartyIds treedt de eigenschappen met voeten die in de eerste vraag van de partijupdate worden bijgewerkt.
+* [!DNL Adobe] garandeert niet dat 100% van de gegevens van het batchprofiel in Target zal worden bewaard en bewaard en dus beschikbaar zal zijn voor gebruik bij het bepalen van doelwitten. In het huidige ontwerp bestaat de mogelijkheid dat een klein percentage gegevens (tot 0,1% van de grote productiepartijen) niet wordt opgetekend of bewaard.
 
 ## Batchbestand
 
