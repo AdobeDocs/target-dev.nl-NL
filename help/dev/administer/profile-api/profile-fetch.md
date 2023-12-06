@@ -3,16 +3,28 @@ title: Ophaalprofielen
 description: Leer hoe u API's met Adobe Target Profile kunt gebruiken om bezoekersgegevens op te halen die u kunt gebruiken in [!DNL Target].
 contributors: https://github.com/icaraps
 feature: APIs/SDKs
-source-git-commit: ee53a8f0210480d9b70dc77a3a5cd8d92d2f2e3d
+source-git-commit: 49acf92bbe06dbcee36fef2b7394acd7ce37baad
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '290'
 ht-degree: 0%
 
 ---
 
 # Profielen bijwerken
 
-A [!DNL Target] profiel kan op twee manieren worden opgehaald: met een `tntid` of `thirdPartyId`.
+A [!DNL Target] profiel kan op drie manieren worden opgehaald: met een `[!DNL Experience Cloud Visitor ID]` (`ECID`), `tntid` of `thirdPartyId`.
+
+## Een [!DNL Experience Cloud Visitor ID] (ECID)
+
+U kunt een profiel ophalen op basis van de `ECID`. De HTTP-methode moet GET zijn.
+
+De URL ziet er als volgt uit:
+
+```
+https://<clientCode>.tt.omtrdc.net/rest/v1/profiles/marketingCloudVisitorId/<ECID>?client=<clientCode>
+```
+
+Vervangen `<clientCode>` met uw [!DNL Target] [!UICONTROL Client Code] en `<ECID>` met uw [!DNL Experience Cloud Visitor ID] ([!DNL Marketing Cloud Visitor ID]).
 
 ## Een titer gebruiken
 
@@ -24,7 +36,7 @@ In het volgende voorbeeld wordt de aanvraagindeling getoond om een profiel op te
 https://<your-client-code>.tt.omtrdc.net/rest/v1/profiles/your-tnt-id?client=<your-client-code>
 ```
 
-Vervangen `<your-client-code>` en `your-tnt-id` en een verzoek om GET in werking te stellen. Hier is een vraag van de het halen van het voorbeeldprofiel gebruikend een `tntid`;
+Vervangen `<your-client-code>` en `your-tnt-id` en een verzoek om GET in werking te stellen. Hier is een vraag van de het halen van het voorbeeldprofiel gebruikend een `tntid`:
 
 ```
 https://<your-client-code>.tt.omtrdc.net/rest/v1/profiles/111492025094307-353046?client=<your-client-code>
