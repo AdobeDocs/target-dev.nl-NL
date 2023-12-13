@@ -4,9 +4,9 @@ description: Gebruik de [!UICONTROL targetGlobalSettings()] functie voor de [!DN
 title: Hoe gebruik ik de [!UICONTROL targetGlobalSettings()] Functie?
 feature: at.js
 exl-id: f6218313-6a70-448e-8555-b7b039e64b2c
-source-git-commit: d5d25c6a559dafe446d26cca6c03d8e693cbd508
+source-git-commit: 12cf430b65695d38d1651f2a97df418d82d231f3
 workflow-type: tm+mt
-source-wordcount: '2518'
+source-wordcount: '2565'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,18 @@ U kunt instellingen in de bibliotheek at.js overschrijven met `[!UICONTROL targe
 ## Instellingen
 
 U kunt de volgende instellingen overschrijven:
+
+### aepSandboxId
+
+* **Type**: String
+* **Standaardwaarde**: null
+* **Beschrijving**: Optionele parameter gebruikt voor verzenden [!DNL Adobe Experience Platform] sandbox-id om te delen [!DNL Adobe Experience Platform] doelen die zijn gemaakt in de niet-standaardsandbox met [!DNL Target]. Indien `aepSandboxId` niet null is, `aepSandboxName` moeten ook worden verstrekt.
+
+### aepSandboxName
+
+* **Type**: String
+* **Standaardwaarde**: null
+* **Beschrijving**: Optionele parameter gebruikt voor verzenden [!DNL Adobe Experience Platform] naam van sandbox om te delen [!DNL Adobe Experience Platform] doelen die zijn gemaakt in de niet-standaardsandbox met [!DNL Target]. Indien `aepSandboxName` niet null is, `aepSandboxId` moeten ook worden verstrekt.
 
 ### artifactLocation
 
@@ -284,7 +296,7 @@ Elke gegevensaanbieder heeft de volgende structuur:
 | name | String | Naam van de provider. |
 | versie | String | Versie provider. Deze sleutel zal voor leveranciersevolutie worden gebruikt. |
 | timeout | Getal | Geeft de time-out van de provider aan als dit een netwerkaanvraag is.  Deze toets is optioneel. |
-| provider | -functie | De functie die de logica voor het ophalen van providergegevens bevat.<p>De functie heeft één vereiste parameter: `callback`. De callback-parameter is een functie die alleen moet worden aangeroepen wanneer de gegevens zijn opgehaald of er een fout optreedt.<p>Callback verwacht twee parameters:<ul><li>fout: geeft aan of er een fout is opgetreden. Als alles OK is, moet deze parameter op null worden ingesteld.</li><li>params: een JSON-object dat de parameters vertegenwoordigt die in een [!DNL Target] verzoek.</li></ul> |
+| provider | Functie | De functie die de logica voor het ophalen van providergegevens bevat.<p>De functie heeft één vereiste parameter: `callback`. De callback-parameter is een functie die alleen moet worden aangeroepen wanneer de gegevens zijn opgehaald of er een fout optreedt.<p>Callback verwacht twee parameters:<ul><li>fout: geeft aan of er een fout is opgetreden. Als alles OK is, moet deze parameter op null worden ingesteld.</li><li>params: een JSON-object dat de parameters vertegenwoordigt die in een [!DNL Target] verzoek.</li></ul> |
 
 In het volgende voorbeeld wordt getoond waar de gegevensaanbieder de synchronisatie uitvoert:
 
