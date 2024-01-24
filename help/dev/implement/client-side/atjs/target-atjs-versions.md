@@ -4,9 +4,9 @@ description: Bekijk de details over wijzigingen in elke versie van het dialoogve
 title: Wat is inbegrepen in Elke Versie van at.js?
 feature: at.js
 exl-id: 609dacba-2ab8-45e9-b189-928d59938c98
-source-git-commit: 09ecaa3be954fe5a002e09a422ceeb7a4ed0750a
+source-git-commit: 9999c1b5f603e6607bd81f6ad6a06a7f74e76acb
 workflow-type: tm+mt
-source-wordcount: '4689'
+source-wordcount: '4904'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,10 @@ Details over de wijzigingen in elke versie van het dialoogvenster [!DNL Adobe Ta
 >U zou aan de recentste versies van één van beide moeten bevorderen 1.*x* of 2.*x* om insectenmoeilijke situaties en veiligheidspatches voor kwesties te verkrijgen die in om het even welke vorige minder belangrijke versie van de overeenkomstige belangrijkste versie worden ontdekt.
 
 Tags in [Adobe Experience Platform](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) zijn de aangewezen methode om at.js te bevorderen. Extensieontwikkelaars voegen voortdurend nieuwe functies toe aan hun extensies en corrigeren vaak bugs. Deze updates worden verpakt in nieuwe versies van een extensie en worden als upgrades beschikbaar gesteld in de Adobe Experience Platform-catalogus. Zie voor meer informatie [Uitbreidingen upgraden](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/extension-upgrade.html) in de *Overzicht van codes* guide.6+
+
+## at.js versie 2.11.4 (24 januari 2024)
+
+* Bijgewerkt at.js om te voorkomen dat ongeldige geo-gegevens naar de leverings-API worden verzonden.
 
 ## at.js versie 2.11.3 (21 november 2023)
 
