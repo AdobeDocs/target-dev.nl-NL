@@ -4,9 +4,9 @@ description: Lees antwoorden op veelgestelde vragen over de [!DNL Adobe Target] 
 title: Wat zijn algemene vragen en antwoorden over at.js?
 feature: at.js
 exl-id: 362ccc5b-8731-46c0-bc52-3e55c273e216
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 448c43c0c10e22ad054f4ee98bfc282f8c96cdcb
 workflow-type: tm+mt
-source-wordcount: '2884'
+source-wordcount: '2925'
 ht-degree: 0%
 
 ---
@@ -48,9 +48,9 @@ De volgende secties beschrijven de opeenvolging van acties voor nieuwe en terugk
 1. Als de optie voor automatisch maken van globale mbox is ingeschakeld, wordt de optie [!DNL Target] JavaScript-bibliotheek:
 
    * Instantieert het object Visitor.
-   * De [!DNL Target] De bibliotheek probeert de gegevens van de Experience Cloud Visitor-id op te halen.
+   * De [!DNL Target] De bibliotheek probeert om de gegevens van de Bezoeker van het Experience Cloud terug te winnen identiteitskaart
    * Omdat deze bezoeker een nieuwe bezoeker is, leidt de bezoeker-API een aanvraag voor een ander domein in op demdex.net.
-   * Nadat de gegevens van identiteitskaart van de Bezoeker van Experience Cloud worden teruggewonnen, een verzoek aan [!DNL Target] wordt afgegaan.
+   * Nadat de gegevens van identiteitskaart van de Bezoeker van het Experience Cloud worden teruggewonnen, een verzoek aan [!DNL Target] wordt afgegaan.
 
 ### Bezoekers terugsturen
 
@@ -59,13 +59,13 @@ De volgende secties beschrijven de opeenvolging van acties voor nieuwe en terugk
 1. Als de optie voor automatisch maken van globale mbox is ingeschakeld, wordt de optie [!DNL Target] JavaScript-bibliotheek:
 
    * Instantieert het object Visitor.
-   * De [!DNL Target] De bibliotheek probeert de gegevens van de Experience Cloud Visitor-id op te halen.
+   * De [!DNL Target] De bibliotheek probeert om de gegevens van de Bezoeker van het Experience Cloud terug te winnen identiteitskaart
    * De bezoeker-API haalt gegevens op uit cookies.
-   * Nadat de gegevens van identiteitskaart van de Bezoeker van Experience Cloud worden teruggewonnen, een verzoek aan [!DNL Target] wordt afgegaan.
+   * Nadat de gegevens van identiteitskaart van de Bezoeker van het Experience Cloud worden teruggewonnen, een verzoek aan [!DNL Target] wordt afgegaan.
 
 >[!NOTE]
 >
->Voor nieuwe bezoekers, wanneer de API voor bezoekers aanwezig is, [!DNL Target] moet over de draad veelvoudige tijden gaan om ervoor te zorgen dat [!DNL Target] aanvragen bevatten Experience Cloud Visitor ID-gegevens. Voor terugkerende bezoekers [!DNL Target] gaat over de draad slechts aan [!DNL Target] om de gepersonaliseerde inhoud op te halen.
+>Voor nieuwe bezoekers, wanneer de API voor bezoekers aanwezig is, [!DNL Target] moet over de draad veelvoudige tijden gaan om ervoor te zorgen dat [!DNL Target] Aanvragen bevatten gegevens van Experience Cloud Visitor ID. Voor terugkerende bezoekers [!DNL Target] gaat over de draad slechts aan [!DNL Target] om de gepersonaliseerde inhoud op te halen.
 
 ## Waarom lijkt het alsof ik langzamere reactietijden na bevordering van een vorige versie van at.js aan versie 1.0.0 zie?
 
@@ -210,7 +210,7 @@ Als dit waarschuwingsbericht wordt weergegeven, zijn de volgende mogelijke hoofd
 
 ## Wat is het domein tt.omtrdc.net dat [!DNL Target] serveraanroepen gaan naar?
 
-tt.omtrdc.net is de domeinnaam voor Adobe EDGE netwerk, dat wordt gebruikt om alle servervraag te ontvangen [!DNL Target].
+tt.omtrdc.net is de domeinnaam voor het netwerk van EDGE van de Adobe, dat wordt gebruikt om alle servervraag te ontvangen [!DNL Target].
 
 ## Waarom gebruikt at.js altijd vlaggen van het Toegangske- en Veilige koekje HttpOnly?
 
@@ -230,7 +230,7 @@ De volgende headers worden standaard afgedwongen:
 * Opties voor X-inhoudstype
 * Referrer-Policy
 
-Alle kopteksten die al in cliëntpagina&#39;s worden gebruikt kunnen worden afgedwongen. Een algemene manier om dit te doen is door &quot;HTTP-aanvraagheaderautorisatie&quot;. De klantenservice van Adobe kan advies geven over de beste methoden en praktijken.
+Alle kopteksten die al in cliëntpagina&#39;s worden gebruikt kunnen worden afgedwongen. Een algemene manier om dit te doen is door &quot;HTTP-aanvraagheaderautorisatie&quot;. De klantenservice van de Adobe kan verder advies geven over de beste methoden en praktijken.
 
 Bovendien zijn verzoeken aan het Adobe Edge-netwerk openbaar (omdat ze ontworpen zijn om te worden gemaakt vanuit browsers van bezoekers) en bevatten ze geen zichtbare bezoekersgegevens (ze bevatten alleen een bezoekersidentiteitskaart). Deze verzoeken bieden bezoekers ervaringen en bevatten informatie over wat een bezoeker op de pagina moet zien.
 
@@ -297,3 +297,7 @@ Deze syntaxis is:
 `<!DOCTYPE html>`
 
 Het documenttype HTML 5 zorgt ervoor dat de pagina in de standaardmodus wordt geladen. Bij het laden in de modus Kirken zijn sommige JS API&#39;s waarvan at.js afhankelijk is, uitgeschakeld. [!DNL Target] Schakelt in de modus kirken de modus at.js uit.
+
+## At.js werkt in een Ionic-toepassingsomgeving.
+
+Deze implementatie is nooit getest, omdat at.js niet bedoeld was om te werken in een niet-webomgeving. [!DNL Adobe] beveelt aan [SDK&#39;s voor mobiele implementaties](/help/dev/implement/mobile/overview.md).
