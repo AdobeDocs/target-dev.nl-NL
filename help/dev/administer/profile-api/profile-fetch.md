@@ -3,14 +3,15 @@ title: Ophaalprofielen
 description: Leer hoe u API's met Adobe Target Profile kunt gebruiken om bezoekersgegevens op te halen die u kunt gebruiken in [!DNL Target].
 contributors: https://github.com/icaraps
 feature: APIs/SDKs
-source-git-commit: 49acf92bbe06dbcee36fef2b7394acd7ce37baad
+exl-id: b422ae68-49b3-4d60-9ea4-0fa67b6934b0
+source-git-commit: b8ccfdcaff6aa17a325727df0a9ffd716e44519b
 workflow-type: tm+mt
 source-wordcount: '290'
 ht-degree: 0%
 
 ---
 
-# Profielen bijwerken
+# Ophaalprofielen
 
 A [!DNL Target] profiel kan op drie manieren worden opgehaald: met een `[!DNL Experience Cloud Visitor ID]` (`ECID`), `tntid` of `thirdPartyId`.
 
