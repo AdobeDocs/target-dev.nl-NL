@@ -3,9 +3,9 @@ title: Beslissing op apparaat oplossen
 description: Leer hoe u problemen kunt oplossen [!UICONTROL on-device decisioning]
 exl-id: e76f95ce-afae-48e0-9dbb-2097133574dc
 feature: APIs/SDKs
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 1d892d4d4d6f370f7772d0308ee0dd0d5c12e700
 workflow-type: tm+mt
-source-wordcount: '1139'
+source-wordcount: '1155'
 ht-degree: 0%
 
 ---
@@ -115,7 +115,7 @@ Als u sporen inschakelt, wordt aanvullende informatie van [!DNL Adobe Target] wa
 
 ## 3. Controleer de [!UICONTROL on-device decisioning] *regelartefact* is opgehaald en in cache geplaatst volgens het gedefinieerde pollinginterval.
 
-1. Wacht de duur van het opiniepeilingsinterval (gebrek is 5 minuten) en zorg ervoor dat het artefact door SDK wordt gehaald. De zelfde eindlogboeken zullen output zijn.
+1. Wacht de duur van het opiniepeilingsinterval (gebrek is 20 minuten) en zorg ervoor dat het artefact door SDK wordt gehaald. De zelfde eindlogboeken zullen output zijn.
 
    Daarnaast wordt informatie van de[!DNL Target]Het spoor zou aan de terminal met details over het regelartefact moeten worden uitgevoerd.
 
