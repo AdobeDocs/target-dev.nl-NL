@@ -4,9 +4,9 @@ description: Hoe gebruik ik Prefetch in de [!UICONTROL Adobe Target Delivery API
 keywords: aflevering api
 exl-id: eab88e3a-442c-440b-a83d-f4512fc73e75
 feature: APIs/SDKs
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 91592a86957770c4d189115fd3ebda61ed52dd38
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '534'
 ht-degree: 0%
 
 ---
@@ -121,6 +121,51 @@ Binnen de `prefetch` veld, een of meer toevoegen `mboxes` U wilt een voorvertoni
 ```
 
 In de reactie ziet u de `content` veld met de ervaring die de gebruiker voor een bepaalde `mbox`. Dit is erg handig wanneer u een cachegeheugen op de server plaatst, zodat een gebruiker tijdens een sessie communiceert met uw web of mobiele toepassing en een `mbox` op een bepaalde pagina van uw toepassing, kan de ervaring van het geheime voorgeheugen in plaats van het maken van een andere worden geleverd [!UICONTROL Adobe Target Delivery API] vraag. Wanneer de gebruiker echter een ervaring krijgt vanuit de `mbox`, `notification` wordt verzonden via een API-aanroep voor aflevering, zodat de afdruk kan worden geregistreerd. Dit komt omdat de reactie van `prefetch` de vraag wordt in het voorgeheugen ondergebracht, wat betekent dat de gebruiker de ervaringen op het tijdstip van `prefetch` de vraag gebeurt. Voor meer informatie over de `notification` proces, zie [Meldingen](notifications.md).
+
+## Prefetch-vakken met clickTrack-meetgegevens bij gebruik [!UICONTROL Analytics for Target] (A4T)
+
+[[!UICONTROL Adobe Analytics for Target]](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html){target=_blank} (A4T) is een integratie met meerdere oplossingen waarmee u activiteiten kunt maken op basis van [!DNL Analytics] conversiemetriek en publiekssegmenten.
+
+Met het volgende codefragment kunt u een voorinstelling maken die een box met `clickTrack` cijfers voor meldingen [!DNL Analytics] dat op een voorstel is geklikt:
+
+```
+{
+  "prefetch": {
+    "mboxes": [
+      {
+        "index": 0,
+        "name": "<mboxName>",
+        "options": [
+           ...
+        ],
+        "metrics": [
+          {
+            "type": "click",
+            "eventToken": "<eventToken>",
+             "analytics": {
+               "payload": {
+                 "pe": "tnt",
+                 "tnta": "..."
+               }
+             }
+          },
+          }
+        ],
+        "analytics": {
+          "payload": {
+            "pe": "tnt",
+            "tnta": "347565:1:0|2,347565:1:0|1"
+          }
+        }
+      }
+    ]
+  }
+}
+```
+
+>[!NOTE]
+>
+>De prefetch voor een box bevat de [!DNL Analytics] alleen voor gekwalificeerde activiteiten. Het vooraf bepalen van succeswaarden voor nog niet gekwalificeerde activiteiten leidt tot inconsistenties bij de rapportage.
 
 ## Vooraf ingestelde weergaven
 
