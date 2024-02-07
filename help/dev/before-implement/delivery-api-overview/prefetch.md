@@ -4,9 +4,9 @@ description: Hoe gebruik ik Prefetch in de [!UICONTROL Adobe Target Delivery API
 keywords: aflevering api
 exl-id: eab88e3a-442c-440b-a83d-f4512fc73e75
 feature: APIs/SDKs
-source-git-commit: 91592a86957770c4d189115fd3ebda61ed52dd38
+source-git-commit: 803723d95d50cc39101d1646232446fbb0254385
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '537'
 ht-degree: 0%
 
 ---
@@ -126,7 +126,7 @@ In de reactie ziet u de `content` veld met de ervaring die de gebruiker voor een
 
 [[!UICONTROL Adobe Analytics for Target]](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html){target=_blank} (A4T) is een integratie met meerdere oplossingen waarmee u activiteiten kunt maken op basis van [!DNL Analytics] conversiemetriek en publiekssegmenten.
 
-Met het volgende codefragment kunt u een voorinstelling maken die een box met `clickTrack` cijfers voor meldingen [!DNL Analytics] dat op een voorstel is geklikt:
+Het volgende codefragment is een reactie van een prefetch die een box bevat `clickTrack` cijfers voor meldingen [!DNL Analytics] dat op een voorstel is geklikt:
 
 ```
 {
