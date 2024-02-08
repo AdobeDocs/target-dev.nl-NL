@@ -4,9 +4,9 @@ description: Hoe gebruik ik Prefetch in de [!UICONTROL Adobe Target Delivery API
 keywords: aflevering api
 exl-id: eab88e3a-442c-440b-a83d-f4512fc73e75
 feature: APIs/SDKs
-source-git-commit: 901b56a91c69c9c5a2bd322aa999d45c47058a5e
+source-git-commit: 4ff2746b8b485fe3d845337f06b5b0c1c8d411ad
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '521'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Wanneer het gebruiken van prefetch, is het belangrijk om met de volgende termijn
 
 Clients, zoals mobiele apps en servers, kunnen meerdere vakken vooraf instellen voor een bepaalde bezoeker binnen een sessie en deze in cache plaatsen om meerdere aanroepen naar de [!UICONTROL Adobe Target Delivery API].
 
-```
+```shell shell-session
 curl -X POST \
 'https://demo.tt.omtrdc.net/rest/v1/delivery?client=demo&sessionId=7abf6304b2714215b1fd39a870f01afc#1555632114' \
 -H 'Content-Type: application/json' \
@@ -71,7 +71,7 @@ curl -X POST \
 
 Binnen de `prefetch` veld, een of meer toevoegen `mboxes` u wilt minstens één keer vooraf instellen voor een bezoeker binnen een sessie. Nadat u voor hen vooraf instelt `mboxes`ontvangt u het volgende antwoord:
 
-```
+```JSON {line-numbers="true"}
 {
     "status": 200,
     "requestId": "5efee0d8-3779-4b12-a74e-e04848faf191",
@@ -128,7 +128,7 @@ In de reactie ziet u de `content` veld met de ervaring die de bezoeker voor een 
 
 Het volgende codefragment is een reactie van een prefetch van een box die `clickTrack` cijfers voor meldingen [!DNL Analytics] dat op een voorstel is geklikt:
 
-```
+```JSON {line-numbers="true"}
 {
   "prefetch": {
     "mboxes": [
@@ -169,9 +169,9 @@ Het volgende codefragment is een reactie van een prefetch van een box die `click
 
 ## Vooraf ingestelde weergaven
 
-Weergaven ondersteunen toepassingen voor één pagina (SPA) en mobiele toepassingen naadloos. Weergaven kunnen worden beschouwd als een logische groep visuele elementen die samen een SPA of mobiele ervaring vormen. Nu, door levering API, creeerde VEC AB &amp; XT activiteiten met wijzigingen op [Weergaven voor SPA](/help/dev/implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md) kan nu vooraf worden ingesteld.
+Weergaven ondersteunen toepassingen voor één pagina (SPA) en mobiele toepassingen naadloos. Weergaven kunnen worden beschouwd als een logische groep visuele elementen die samen een SPA of mobiele ervaring vormen. Nu, door levering API, VEC-gecreeerd [[!UICONTROL A/B Test]](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html){target=_blank} and [[!UICONTROL Experience Targeting]](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html){target=_blank} (X)T-activiteiten met wijzigingen op [Weergaven voor SPA](/help/dev/implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md) kan nu vooraf worden ingesteld.
 
-```
+```shell  {line-numbers="true"}
 curl -X POST \
   'https://demo.tt.omtrdc.net/rest/v1/delivery?client=demo&sessionId=a3e7368c62d944c0855d424cd7a03ab0' \
   -H 'Content-Type: application/json' \
@@ -199,9 +199,9 @@ curl -X POST \
 }'
 ```
 
-De voorbeeldvraag hierboven zal alle Weergaven vooraf intypen die door SPA VEC voor AB en XT activiteiten worden gecreeerd om voor het Web te tonen `channel`. Bericht in de vraag dat wij alle Meningen van AB of XT activiteiten willen vooraf inrichten die een bezoeker met `tntId`:`84e8d0e211054f18af365d65f45e902b.28_131` die de `url`:`https://target.enablementadobe.com/react/demo/#/` kwalificeert voor.
+De voorbeeldvraag hierboven prefetches alle Weergaven die door SPA VEC voor worden gecreeerd [!UICONTROL A/B Test] en XT-activiteiten voor weergave op het web `channel`. Bericht dat de vraag alle Meningen van de vraag vooraf instelt [!UICONTROL A/B Test] of XT-activiteiten waarmee een bezoeker `tntId`:`84e8d0e211054f18af365d65f45e902b.28_131` die de `url`:`https://target.enablementadobe.com/react/demo/#/` kwalificeert voor.
 
-```
+```JSON  {line-numbers="true"}
 {
     "status": 200,
     "requestId": "14ce028e-d2d2-4504-b3da-32740fa8dd61",
@@ -280,4 +280,4 @@ De voorbeeldvraag hierboven zal alle Weergaven vooraf intypen die door SPA VEC v
 }
 ```
 
-In de `content` velden van de reactie, metagegevens van notities zoals `type`, `selector`, `cssSelector`, en `content`, die worden gebruikt om de ervaring aan uw eind terug te geven - gebruiker wanneer een gebruiker uw pagina bezoekt. Let erop dat de `prefetched` inhoud kan in de cache worden opgeslagen en indien nodig aan de gebruiker worden gerenderd.
+In de `content` velden van de reactie, metagegevens van notities zoals `type`, `selector`, `cssSelector`, en `content`, die worden gebruikt om de ervaring aan uw bezoeker terug te geven wanneer een gebruiker uw pagina bezoekt. Let erop dat de `prefetched` inhoud kan in de cache worden opgeslagen en indien nodig aan de gebruiker worden gerenderd.
