@@ -4,28 +4,28 @@ description: Hoe gebruik ik Prefetch in de [!UICONTROL Adobe Target Delivery API
 keywords: aflevering api
 exl-id: eab88e3a-442c-440b-a83d-f4512fc73e75
 feature: APIs/SDKs
-source-git-commit: 9a3068b0765c238daa2f9af904c0f6f15b57cc24
+source-git-commit: 901b56a91c69c9c5a2bd322aa999d45c47058a5e
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '528'
 ht-degree: 0%
 
 ---
 
 # Prefetch
 
-Met Prefetching kunnen clients zoals mobiele apps en servers inhoud ophalen voor meerdere vakken of weergaven in één aanvraag, de inhoud lokaal in cache plaatsen en later op de hoogte brengen [!DNL Target] wanneer de gebruiker deze vakken of weergaven bezoekt.
+Met Prefetching kunnen clients zoals mobiele apps en servers inhoud ophalen voor meerdere vakken of weergaven in één aanvraag, de inhoud lokaal in cache plaatsen en later op de hoogte brengen [!DNL Target] wanneer de bezoeker deze vakken of weergaven bezoekt.
 
 Wanneer het gebruiken van prefetch, is het belangrijk om met de volgende termijnen vertrouwd te zijn:
 
 | Veldnaam | Beschrijving |
 | --- | --- |
-| `prefetch` | Lijst met vakken en weergaven die moeten worden opgehaald maar niet moeten worden gemarkeerd als bezocht. De [!DNL Target] Edge retourneert een `eventToke`n voor elke box of weergave in de prefetch-array. |
+| `prefetch` | Lijst met vakken en weergaven die moeten worden opgehaald maar niet moeten worden gemarkeerd als bezocht. De [!DNL Target] Edge retourneert een `eventToken` voor elke box of mening die in de prefetch serie bestaan. |
 | `notifications` | Lijst met vakken en weergaven die eerder waren voorafgegaan en die moeten worden gemarkeerd als bezocht. |
 | `eventToken` | Een gehasht gecodeerd token dat wordt geretourneerd wanneer inhoud vooraf wordt geplaatst. Deze token moet worden teruggestuurd naar [!DNL Target] in de `notifications` array. |
 
 ## Prefetch Mboxes
 
-Clients zoals mobiele apps en servers kunnen een voorvoegsel toevoegen aan meerdere vakken voor een bepaalde gebruiker binnen een sessie en deze in cache plaatsen om meerdere aanroepen naar [!UICONTROL Adobe Target Delivery API].
+Clients, zoals mobiele apps en servers, kunnen meerdere vakken vooraf instellen voor een bepaalde bezoeker binnen een sessie en deze in cache plaatsen om meerdere aanroepen naar de [!UICONTROL Adobe Target Delivery API].
 
 ```
 curl -X POST \
@@ -69,7 +69,7 @@ curl -X POST \
 }'
 ```
 
-Binnen de `prefetch` veld, een of meer toevoegen `mboxes` U wilt een voorvertoning weergeven voor een gebruiker in een sessie. Zodra u voor hen vooraf instelt `mboxes` u ontvangt het volgende antwoord:
+Binnen de `prefetch` veld, een of meer toevoegen `mboxes` u wilt minstens één keer vooraf instellen voor een bezoeker binnen een sessie. Nadat u voor hen vooraf instelt `mboxes`ontvangt u het volgende antwoord:
 
 ```
 {
@@ -120,9 +120,9 @@ Binnen de `prefetch` veld, een of meer toevoegen `mboxes` U wilt een voorvertoni
 }
 ```
 
-In de reactie ziet u de `content` veld met de ervaring die de gebruiker voor een bepaalde `mbox`. Dit is erg handig wanneer u een cachegeheugen op de server plaatst, zodat een gebruiker tijdens een sessie communiceert met uw web of mobiele toepassing en een `mbox` op een bepaalde pagina van uw toepassing, kan de ervaring van het geheime voorgeheugen in plaats van het maken van een andere worden geleverd [!UICONTROL Adobe Target Delivery API] vraag. Wanneer de gebruiker echter een ervaring krijgt vanuit de `mbox`, `notification` wordt verzonden via een API-aanroep voor aflevering, zodat de afdruk kan worden geregistreerd. Dit komt omdat de reactie van `prefetch` de vraag wordt in het voorgeheugen ondergebracht, wat betekent dat de gebruiker de ervaringen op het tijdstip van `prefetch` de vraag gebeurt. Voor meer informatie over de `notification` proces, zie [Meldingen](notifications.md).
+In de reactie ziet u de `content` veld met de ervaring die de bezoeker voor een bepaalde `mbox`. Dit is erg handig wanneer u een cachegeheugen op de server plaatst, zodat een bezoeker tijdens een sessie communiceert met uw web of mobiele toepassing en een bezoeker een `mbox` op een bepaalde pagina van uw toepassing, kan de ervaring van het geheime voorgeheugen in plaats van het maken van een andere worden geleverd [!UICONTROL Adobe Target Delivery API] vraag. Wanneer echter een ervaring wordt opgedaan bij de bezoeker van de `mbox`, `notification` wordt verzonden via een vraag van de bezorgings-API voor het registreren van de indruk. Dit komt omdat de reactie van `prefetch` oproepen worden in het cachegeheugen opgeslagen, wat betekent dat de bezoeker de ervaringen niet heeft gezien op het moment dat `prefetch` de vraag gebeurt. Meer informatie over de `notification` proces, zie [Meldingen](notifications.md).
 
-## Prefetch-vakken met clickTrack-meetgegevens bij gebruik [!UICONTROL Analytics for Target] (A4T)
+## Prefetboxes met `clickTrack` maatstaven bij gebruik [!UICONTROL Analytics for Target] (A4T)
 
 [[!UICONTROL Adobe Analytics for Target]](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html){target=_blank} (A4T) is een integratie met meerdere oplossingen waarmee u activiteiten kunt maken op basis van [!DNL Analytics] conversiemetriek en publiekssegmenten.
 
