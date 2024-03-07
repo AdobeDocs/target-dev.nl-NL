@@ -4,9 +4,9 @@ description: Gebruik koppelingen voor mobiele voorvertoningen om end-to-end kwal
 title: Hoe gebruik ik de koppelingen voor mobiele voorvertoningen in [!DNL Adobe Target] Mobiel?
 feature: Implement Mobile
 exl-id: c0c4237a-de1f-4231-b085-f8f1e96afc13
-source-git-commit: 0bcfa16cb79644e7ce10e33daf6c8385104c197f
+source-git-commit: 15e42d0fb049f9243ff5468ff5f22a8e79c55c79
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '508'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Met de functie voor mobiele voorvertoningen kunt u uw activiteiten voor mobiele 
 
 1. Geef het URL-schema van uw app op.
 
-   Het huidige URL-schema moet hetzelfde zijn als het schema dat aanwezig is in uw iOS- of Android-app. Herhaal dit proces indien nodig afzonderlijk voor iOS en Android.
+   Het URL-schema moet hetzelfde zijn als wat er in uw iOS- of Android-app aanwezig is. Herhaal dit proces indien nodig afzonderlijk voor iOS en Android.
 
    ![alternatieve afbeelding](assets/mobile-preview-enter-url-scheme.png)
 
