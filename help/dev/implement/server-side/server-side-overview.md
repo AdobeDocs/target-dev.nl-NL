@@ -4,9 +4,9 @@ description: Meer informatie over de [!DNL Adobe Target] server-side levering-AP
 title: Waar kan ik informatie over krijgen? [!DNL Target] Server-Side Delivery APIs en SDKs?
 feature: Implement Server-side
 exl-id: 3eb0a789-cf1a-4d02-acf7-3c895bcb662f
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 75af30045684b95d5989b0a1f877ba95bb8cd883
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '569'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,12 @@ ht-degree: 0%
 # Serverzijde: implementeren [!DNL Target]
 
 Informatie over [!DNL Adobe Target] server-side levering-API&#39;s, SDK&#39;s en [!DNL Target Recommendations] API&#39;s.
+
+>[!NOTE]
+>
+>Als uw implementatie at.js en [!DNL AppMeasurement] op de client moet u de opdracht [!UICONTROL Target Delivery API] en server-side SDK&#39;s die hieronder worden besproken.
+>
+>Als uw implementatie de [!UICONTROL Adobe Experience Platform Web SDK]moet u de [[!UICONTROL Adobe Experience Platform] [!UICONTROL Edge Network Server API]](https://experienceleague.adobe.com/en/docs/experience-platform/edge-network-server-api/overview){target=_blank}.
 
 Het volgende proces vindt plaats in een serverimplementatie van [!DNL Target]:
 
@@ -42,7 +48,7 @@ Via de [!DNL Target] Leverings-API, kunt u:
 * Lever ervaringen van om het even welke server-zijplatform of toepassing die HTTP/s vraag kan maken.
 * Lever consistente en gepersonaliseerde ervaringen aan een bezoeker ongeacht welk kanaal of welke apparaten de bezoeker gebruikte om met uw zaken in gesprek te gaan.
 * De ervaringen van het geheime voorgeheugen voor een bezoeker binnen een zitting op uw server zodat de veelvoudige API vraag kan worden vermeden, die betere prestaties bereikt.
-* Naadloos integreren met Adobe Experience Cloud-producten, zoals Adobe Analytics, Adobe Audience Manager (AAM) en de Experience Cloud ID-service van de server.
+* Naadloos integreren met Adobe Experience Cloud-producten, zoals Adobe Analytics, Adobe Audience Manager (AAM) en de Experience Cloud-id-service van de serverzijde.
 
 ## Server Side SDK&#39;s
 
@@ -58,7 +64,7 @@ Doorheen [!DNL Adobe Target]SDK&#39;s aan de serverzijde kunt u:
 * Uitvoeren en uitvoeren **markering functie**, **rollouts**, en **A/B-experimenten** om **bijna-nullatentie**.
 * Ervaringen bieden over **web**, inclusief **SPA**, en **mobiele kanalen** en niet op een browser **IoT-apparaten (Internet of Dingen)** zoals een aangesloten tv, kiosk of digitaal scherm in de winkel.
 * Leveren **Door machines aangedreven gepersonaliseerde ervaringen (ML)** aan een gebruiker, geen kwestie welk kanaal of apparaat de gebruiker met uw zaken in dienst heeft genomen.
-* **Naadloos integreren met Adobe Experience Cloud** producten zoals **Adobe Analytics**, **Adobe Audience Manager** en de **Experience Cloud ID-service** aan de serverzijde.
+* **Naadloos integreren met Adobe Experience Cloud** producten zoals **Adobe Analytics**, **Adobe Audience Manager** en de **Experience Cloud-id-service** aan de serverzijde.
 
 Zie de [Aan de slag](sdk-guides/getting-started/getting-started.md) pagina voor informatie over het gebruik van een eenvoudige functie voor het markeren van functies via [Apparaatbeslissingen](sdk-guides/on-device-decisioning/overview.md).
 
