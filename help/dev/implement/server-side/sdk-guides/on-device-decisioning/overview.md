@@ -4,9 +4,9 @@ description: Leren gebruiken [!UICONTROL [!UICONTROL on-device decisioning]] om 
 title: Wat is een apparaatbeslissing?
 feature: Implement Server-side
 exl-id: 22ed3072-56f0-4075-9d1a-d642afe3b649
-source-git-commit: 79ffa3f58d780f587fe1202b82d3860395504dfe
+source-git-commit: ff0becf3fe3a6fd6694e13243b6a93b910316434
 workflow-type: tm+mt
-source-wordcount: '1127'
+source-wordcount: '1022'
 ht-degree: 0%
 
 ---
@@ -105,7 +105,7 @@ U kunt ook alle activiteiten zien die [!UICONTROL on-device decisioning] geschik
 
 >[!NOTE]
 >
->Na het maken en activeren van een activiteit die [!UICONTROL on-device decisioning] geschikt, kan het 5-10 minuten nemen alvorens het in het regelvervorming inbegrepen is die aan Akamai CDN PoPs wordt geproduceerd en verspreid.
+>Na het maken en activeren van een activiteit die [!UICONTROL on-device decisioning] geschikt, kan het 20 minuten nemen alvorens het in het regelvervorming inbegrepen is die aan Akamai CDN PoPs wordt geproduceerd en verspreid.
 
 ## Wat is de samenvatting van de stappen die ik moet volgen om mijn [!UICONTROL on-device decisioning] activiteiten worden via [!DNL Adobe Target]SDK aan serverzijde?
 
