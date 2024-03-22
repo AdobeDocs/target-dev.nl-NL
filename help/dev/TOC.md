@@ -2,7 +2,7 @@
 user-guide-title: Adobe Target Developer Guide
 breadcrumb-title: Doelontwikkelaarsgids
 user-guide-description: Leer hoe u de ervaring van uw klanten kunt aanpassen en personaliseren om uw omzet te maximaliseren op uw websites en mobiele sites, apps, sociale media en andere digitale kanalen.
-source-git-commit: 49b6572c0d414ab304712691c97794bb0b1e3781
+source-git-commit: 54647001c4e5dc5ce208430c7fea103a720b0980
 workflow-type: tm+mt
 source-wordcount: '753'
 ht-degree: 3%
@@ -22,7 +22,7 @@ ht-degree: 3%
       + [Regels inzake privacy en gegevensbescherming](before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.md)
       + [Doelcookies](before-implement/privacy/cookie-behavior.md)
       + [Het doelcookie verwijderen](before-implement/privacy/cookie-deleting.md)
-      + [Het effect van de afleiding van cookies van derden op Target (at.js)](/help/dev/before-implement/privacy/third_party_cookie_deprecation)
+      + [Het effect van de afleiding van cookies van derden op Target (at.js)](/help/dev/before-implement/privacy/third-party-cookie-deprecation.md)
       + [Beleid voor cookies van Google Chrome SameSite](before-implement/privacy/google-chrome-samesite-cookie-policies.md)
       + [Apple Intelligent Tracking Prevention (ITP) 2.x](before-implement/privacy/apple-itp-2x.md)
       + [Inhoudsbeveiligingsbeleid (CSP)-instructies](before-implement/privacy/content-security-policy.md)
