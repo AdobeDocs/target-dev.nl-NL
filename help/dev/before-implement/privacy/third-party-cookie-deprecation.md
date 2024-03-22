@@ -3,7 +3,7 @@ keywords: Overzicht en referentie, cookies, eerste partij, derde partij, eerste 
 description: Meer informatie over de gevolgen van de afleiding van cookies van andere bedrijven op [!DNL Adobe Target] (om.js)
 title: De gevolgen van de Afleiding van het Koekje van de derde op [!DNL Adobe Target] (om.js)
 feature: at.js
-source-git-commit: 54647001c4e5dc5ce208430c7fea103a720b0980
+source-git-commit: 705b94d60690a6e32185908c4bc53d8a3cee70bb
 workflow-type: tm+mt
 source-wordcount: '77'
 ht-degree: 0%
