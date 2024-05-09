@@ -4,10 +4,10 @@ description: Leer hoe u implementeert [!DNL Adobe Target] voor client-side web m
 title: Hoe implementeren [!DNL Target] voor Client-Side Web
 feature: at.js
 exl-id: b3a850ff-ace0-4eea-955a-aa71dfad256f
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 2d2a593df661c7e6c6e6384af6042e8aa4575fdb
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 2%
+source-wordcount: '207'
+ht-degree: 0%
 
 ---
 
@@ -24,3 +24,6 @@ Om [!DNL Target] aan clientzijde moet u een van de volgende JavaScript-bibliothe
 * [[!DNL Target] at.js JavaScript-bibliotheek](/help/dev/implement/client-side/atjs/how-atjs-works/overview.md)
 
   De JavaScript-bibliotheek at.js verbetert de laadtijden van pagina&#39;s voor webimplementaties, verbetert de beveiliging en biedt betere implementatieopties voor toepassingen op één pagina. Als u naar at.js wilt migreren, raadpleegt u [Hoe werkt At.js](/help/dev/implement/client-side/atjs/how-atjs-works/overview.md) en [[!DNL Adobe Target] Skill Builder: chatten met ontwikkelaars, migreren Adobe Target mbox.js naar at.js](https://seminars.adobeconnect.com/ptdo6mfo6qn6/?proto=true).
+
+
+Zie [Het vergelijken van de bibliotheek at.js met het Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/personalization/adobe-target/web-sdk-atjs-comparison){target=_blank} kennis te nemen van de verschillen tussen de twee uitvoeringsmethoden .
