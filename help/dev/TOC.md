@@ -2,9 +2,9 @@
 user-guide-title: Adobe Target Developer Guide
 breadcrumb-title: Doelontwikkelaarsgids
 user-guide-description: Leer hoe u de ervaring van uw klanten kunt aanpassen en personaliseren om uw omzet te maximaliseren op uw websites en mobiele sites, apps, sociale media en andere digitale kanalen.
-source-git-commit: 54647001c4e5dc5ce208430c7fea103a720b0980
+source-git-commit: c963a070a7a4c5e7dc2915eb5ac7d60895340705
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '756'
 ht-degree: 3%
 
 ---
@@ -164,6 +164,7 @@ ht-degree: 3%
       + [Logger (Python)](implement/server-side/python/logger.md)
 + [Hybride implementatie](implement/hybrid/hybrid-overview.md)
 + [Recommendations-implementatie](implement/recommendations/recommendations.md)
++ [Recommendations-implementatiebèta](/help/dev/implement/recommendations/recommendations-beta.md)
 + Implementatie van mobiele apps {#mobile-apps}
    + [Overzicht van het doel voor mobiele apps](implement/mobile/overview.md)
    + [Voorvertoning voor mobiele doelversie](implement/mobile/target-mobile-preview.md)
