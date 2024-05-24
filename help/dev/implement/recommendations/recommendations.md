@@ -4,9 +4,9 @@ description: Leer hoe u implementeert [!UICONTROL Recommendations] activiteiten 
 title: Hoe implementeren [!UICONTROL Recommendations] Activiteiten?
 feature: Recommendations
 exl-id: af1e8b60-6dbb-451b-aa4f-e167d1800d1c
-source-git-commit: 2fba03b3882fd23a16342eaab9406ae4491c9044
+source-git-commit: 777c8b9aeb866e1b20ec24e85532a99f57d1fe72
 workflow-type: tm+mt
-source-wordcount: '1403'
+source-wordcount: '1365'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Informatie om u te helpen plannen en uitvoeren [!DNL Adobe Target Recommendation
 
 >[!NOTE]
 >
->Naast dit artikel [Adobe Target Business Practice Guide](https://experienceleague.adobe.com/docs/target/using/target-home.html){target=_blank} contains in-depth information about [Target Recommendations](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations.html){target=_blank}.
+>Naast dit artikel [Adobe Target Business Practice Guide](https://experienceleague.adobe.com/docs/target/using/target-home.html){target=_blank} bevat uitgebreide informatie over [Doel Recommendations](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations.html){target=_blank}.
 
 Voordat u de eerste instelt [!UICONTROL Recommendations] activiteit in [!DNL Adobe Target]Voer de volgende stappen uit:
 
@@ -137,7 +137,7 @@ Instellingen gebruiken om uw [!UICONTROL Recommendations] uitvoering.
 
 Als u toegang wilt krijgen tot **[!UICONTROL Recommendations Settings]** opties, opent u Doel in de [!DNL Adobe Experience Cloud]en klik vervolgens op **[!UICONTROL Recommendations]** > **[!UICONTROL Settings]**.
 
-![alternatieve afbeelding](assets/recs_settings.png)
+![Recommendations Settings, pagina](/help/dev/implement/recommendations/assets/recs_settings.png)
 
 De volgende opties zijn beschikbaar:
 
