@@ -4,9 +4,9 @@ description: Leren gebruiken [!DNL Adobe Target] [!UICONTROL Bulk Profile Update
 feature: APIs/SDKs
 contributors: https://github.com/icaraps
 exl-id: 0f38d109-5273-4f73-9488-80eca115d44d
-source-git-commit: 3d90616b0a920abea380d4cfcd1227eafde86adb
+source-git-commit: 2934fbaa1dc3cd92bc5a434937e5db9a617009a9
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '828'
 ht-degree: 0%
 
 ---
@@ -44,8 +44,16 @@ Met de [!UICONTROL Bulk Profile Update API], kunt u gedetailleerde gegevens van 
 Als u profielgegevens bulksgewijs wilt bijwerken, maakt u een batchbestand. Het batchbestand is een tekstbestand met waarden gescheiden door komma&#39;s die lijken op het volgende voorbeeldbestand.
 
 ``````
-batch=pcId, param1, param2, param3, param4 123, value1 124, value1,,, value4 125,, value2 126, value1, value2, value3, value4
+batch=pcId,param1,param2,param3,param4
+123,value1
+124,value1,,,value4
+125,,value2
+126,value1,value2,value3,value4
 ``````
+
+>[!NOTE]
+>
+>De `batch=` parameter is vereist en moet aan het begin van het bestand worden opgegeven.
 
 U verwijst dit dossier in de vraag van de POST naar [!DNL Target] -servers om het bestand te verwerken. Houd rekening met het volgende wanneer u het batchbestand maakt:
 
