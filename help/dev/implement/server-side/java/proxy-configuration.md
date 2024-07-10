@@ -3,9 +3,9 @@ title: Voer volmachtsconfiguratie in uit [!DNL Adobe Target] Java SDK
 description: Leer hoe te om de volmachtsconfiguratie te vormen TargetClient in [!DNL Adobe Target] Java SDK.
 feature: APIs/SDKs
 exl-id: 32e8277d-3bba-4621-b9c7-3a49ac48a466
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 59ab3f53e2efcbb9f7b1b2073060bbd6a173e380
 workflow-type: tm+mt
-source-wordcount: '88'
+source-wordcount: '170'
 ht-degree: 0%
 
 ---
@@ -41,3 +41,17 @@ ClientConfig clientConfig = ClientConfig.builder()
     .build();
 TargetClient targetClient = TargetClient.create(clientConfig);
 ```
+
+## Apparaatbeslissingen
+
+Voor verzoeken om het regelartefact te halen, zou uw volmacht moeten worden gevormd om de reactie niet in het voorgeheugen onder te brengen. Nochtans, als het niet mogelijk is om het caching mechanisme van de volmacht voor dat verzoek te vormen, gebruik een configuratieoptie als oplossing om het volmacht-vlakke geheime voorgeheugen te mijden. Deze tijdelijke oplossing voegt de `Authorization` header met een lege tekenreekswaarde op de regelingenaanvraag, die aan de proxy moet aangeven dat de reactie niet in de cache moet worden opgeslagen.
+
+Stel het volgende in om deze tijdelijke oplossing in te schakelen:
+
+```java {line-numbers="true"}
+ClientConfig.builder()
+    .shouldArtifactRequestBypassProxyCache(true)
+    .build();
+```
+
+
