@@ -1,21 +1,21 @@
 ---
 title: Adobe Target Bulk Profile Update API
-description: Leren gebruiken [!DNL Adobe Target] [!UICONTROL Bulk Profile Update API] om profielgegevens van meerdere bezoekers te verzenden naar [!DNL Target] voor gebruik bij doelwitten.
+description: Leer hoe te om  [!DNL Adobe Target] [!UICONTROL Bulk Profile Update API] te gebruiken om de profielgegevens van veelvoudige bezoekers naar  [!DNL Target]  voor gebruik te verzenden in het richten.
 feature: APIs/SDKs
 contributors: https://github.com/icaraps
 exl-id: 0f38d109-5273-4f73-9488-80eca115d44d
-source-git-commit: 2934fbaa1dc3cd92bc5a434937e5db9a617009a9
+source-git-commit: bee8752dd212a14f8414879e03565867eb87f6b9
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '829'
 ht-degree: 0%
 
 ---
 
 # [!DNL Adobe Target Bulk Profile Update API]
 
-De [!DNL Adobe Target] [!UICONTROL Bulk Profile Update API] Hiermee kunt u gebruikersprofielen voor meerdere bezoekers van een website in bulk bijwerken met een batchbestand.
+Met [!DNL Adobe Target] [!UICONTROL Bulk Profile Update API] kunt u gebruikersprofielen voor meerdere bezoekers van een website in bulk bijwerken met behulp van een batchbestand.
 
-Met de [!UICONTROL Bulk Profile Update API], kunt u gedetailleerde gegevens van het bezoekersprofiel in de vorm van profielparameters voor vele gebruikers gemakkelijk verzenden aan [!DNL Target] van een externe bron. Externe bronnen kunnen systemen van het Beheer van de Verhouding van de Klant (CRM) of van het Verkooppunt (POS) omvatten, die gewoonlijk niet op een Web-pagina beschikbaar zijn.
+Met de [!UICONTROL Bulk Profile Update API] kunt u eenvoudig gedetailleerde gegevens van het bezoekersprofiel in de vorm van profielparameters voor veel gebruikers naar [!DNL Target] verzenden vanuit een externe bron. Externe bronnen kunnen systemen van het Beheer van de Verhouding van de Klant (CRM) of van het Verkooppunt (POS) omvatten, die gewoonlijk niet op een Web-pagina beschikbaar zijn.
 
 | Versie | URL-voorbeeld | Functies |
 | --- | --- | --- |
@@ -24,7 +24,7 @@ Met de [!UICONTROL Bulk Profile Update API], kunt u gedetailleerde gegevens van 
 
 >[!NOTE]
 >
->Versie 2 van de [!UICONTROL Bulk Profile Update API] is de huidige versie. Maar [!DNL Target] ondersteunt nog steeds versie 1 (v1).
+>Versie 2 (v2) van de [!UICONTROL Bulk Profile Update API] is de huidige versie. [!DNL Target] ondersteunt echter nog steeds versie 1 (v1).
 
 ## Voordelen van de Bulk Profile Update API
 
@@ -37,7 +37,7 @@ Met de [!UICONTROL Bulk Profile Update API], kunt u gedetailleerde gegevens van 
 * Updates vinden meestal plaats binnen een uur, maar het kan 24 uur duren voordat ze worden gereflecteerd.
 * Er is geen limiet voor het aantal rijen dat of de rijen die u kunt uploaden over een periode van 24 uur in volgende batches. Nochtans, zou het innameproces tijdens kantooruren kunnen worden vertraagd om ervoor te zorgen dat andere processen efficiënt lopen.
 * Opeenvolgende v2 vraag van de partijupdate zonder mbox vraag binnen tussen voor zelfde thirdPartyIds treedt de eigenschappen met voeten die in de eerste vraag van de partijupdate worden bijgewerkt.
-* [!DNL Adobe] garandeert niet dat 100% van de gegevens van het batchprofiel in Target zal worden bewaard en bewaard en dus beschikbaar zal zijn voor gebruik bij het bepalen van doelwitten. In het huidige ontwerp bestaat de mogelijkheid dat een klein percentage gegevens (tot 0,1% van de grote productiepartijen) niet wordt opgetekend of bewaard.
+* [!DNL Adobe] garandeert niet dat 100% van de gegevens van het batchprofiel in Target wordt gecontroleerd en bewaard en dus beschikbaar is voor gebruik bij het zoeken naar gegevens. In het huidige ontwerp bestaat de mogelijkheid dat een klein percentage gegevens (tot 0,1% van de grote productiepartijen) niet wordt opgetekend of bewaard.
 
 ## Batchbestand
 
@@ -53,23 +53,23 @@ batch=pcId,param1,param2,param3,param4
 
 >[!NOTE]
 >
->De `batch=` parameter is vereist en moet aan het begin van het bestand worden opgegeven.
+>De parameter `batch=` is vereist en moet aan het begin van het bestand worden opgegeven.
 
-U verwijst dit dossier in de vraag van de POST naar [!DNL Target] -servers om het bestand te verwerken. Houd rekening met het volgende wanneer u het batchbestand maakt:
+U verwijst dit bestand in de aanroep van de POST naar [!DNL Target] servers om het bestand te verwerken. Houd rekening met het volgende wanneer u het batchbestand maakt:
 
 * In de eerste rij van het bestand moeten kolomkoppen worden opgegeven.
-* De eerste header moet een van de `pcId` of `thirdPartyId`. De [!UICONTROL Marketing Cloud visitor ID] wordt niet ondersteund. [!UICONTROL pcId] is een [!DNL Target]-generated bezoekerID. `thirdPartyId` is een id die is opgegeven door de clienttoepassing en die wordt doorgegeven aan [!DNL Target] door een mbox vraag zoals `mbox3rdPartyId`. Hier moet naar worden verwezen als `thirdPartyId`.
+* De eerste header moet een `pcId` of `thirdPartyId` zijn. [!UICONTROL Marketing Cloud visitor ID] wordt niet ondersteund. [!UICONTROL pcId] is een door [!DNL Target] gegenereerde bezoeker-id. `thirdPartyId` is een id die door de clienttoepassing is opgegeven en die via een mbox-aanroep als `mbox3rdPartyId` aan [!DNL Target] wordt doorgegeven. U moet hier naar dit item verwijzen als `thirdPartyId` .
 * Parameters en waarden die u in het batchbestand opgeeft, moeten uit veiligheidsoverwegingen URL-gecodeerd zijn met UTF-8. Parameters en waarden kunnen naar andere randknooppunten worden doorgestuurd voor verwerking door HTTP-aanvragen.
-* De parameters moeten in het formaat zijn `paramName` alleen. Parameters worden weergegeven in [!DNL Target] als `profile.paramName`.
-* Als u [!UICONTROL Bulk Profile Update API] v2, hoeft u niet voor elke parameter alle waarden op te geven `pcId`. Profielen worden gemaakt voor alle `pcId` of `mbox3rdPartyId` dat niet wordt gevonden in [!DNL Target]. Als u v1 gebruikt, worden er geen profielen gemaakt voor ontbrekende pcIds of mbox3rdPartyIds.
+* De parameters mogen alleen de notatie `paramName` hebben. Parameters worden weergegeven in [!DNL Target] als `profile.paramName` .
+* Als u [!UICONTROL Bulk Profile Update API] v2 gebruikt, hoeft u niet alle parameterwaarden voor elke `pcId` op te geven. Profielen worden gemaakt voor `pcId` of `mbox3rdPartyId` die niet worden gevonden in [!DNL Target] . Als u v1 gebruikt, worden er geen profielen gemaakt voor ontbrekende pcIds of mbox3rdPartyIds.
 * Het batchbestand moet kleiner zijn dan 50 MB. Bovendien mag het totale aantal rijen niet groter zijn dan 500.000. Deze limiet zorgt ervoor dat servers niet overstroomd raken met te veel verzoeken.
 * U kunt meerdere bestanden verzenden. Het totaal van de rijen van alle bestanden die u op een dag verzendt, mag echter niet hoger zijn dan 1 miljoen voor elke client.
-* Er is geen limiet voor het aantal kenmerken dat u uploadt. De totale grootte van een profiel, inclusief systeemgegevens, mag echter niet groter zijn dan 2000 kB. [!DNL Adobe] U wordt aangeraden minder dan 1000 kB opslagruimte te gebruiken voor profielkenmerken.
+* Er is geen beperking op het aantal kenmerken dat u kunt uploaden. De totale grootte van de externe profielgegevens, die klantkenmerken, profiel-API, In-Mbox-profielparameters en profielscriptuitvoer bevatten, mag echter niet groter zijn dan 64 kB.
 * Parameters en waarden zijn hoofdlettergevoelig.
 
 ## HTTP POST request
 
-Een HTTP-POST aanvragen om [!DNL Target] Edge-servers om het bestand te verwerken. Hier volgt een voorbeeld van een HTTP-POST-aanvraag voor het bestand batch.txt met de opdracht curl:
+Voer een HTTP-POST in bij [!DNL Target] Edge-servers om het bestand te verwerken. Hier volgt een voorbeeld van een HTTP-POST-aanvraag voor het bestand batch.txt met de opdracht curl:
 
 ``````
 curl -X POST --data-binary @BATCH.TXT http://CLIENTCODE.tt.omtrdc.net/m2/CLIENTCODE/v2/profile/batchUpdate
@@ -79,7 +79,7 @@ Waarbij:
 
 BATCH.TXT is de bestandsnaam. CLIENTCODE is de [!DNL Target] clientcode.
 
-Als u uw cliëntcode niet kent, in [!DNL Target] gebruikersinterface klikken **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**. De clientcode wordt weergegeven in het dialoogvenster [!UICONTROL Account Details] sectie.
+Als u de clientcode niet kent, klikt u in de [!DNL Target] gebruikersinterface op **[!UICONTROL Administration]** > **[!UICONTROL Implementation]** . De clientcode wordt weergegeven in de sectie [!UICONTROL Account Details] .
 
 ### Inspect: het antwoord
 
@@ -97,11 +97,11 @@ De volgende code die is uitgesneden, is een voorbeeld van een API-reactie voor p
 </response>
 ```
 
-Als er een fout optreedt, bevat de reactie `success=false` en een gedetailleerd bericht voor de fout.
+Als er een fout is, bevat de reactie `success=false` en een gedetailleerd bericht voor de fout.
 
 ### Standaardbatchstatusreactie
 
-Een geslaagde standaardreactie bij het bovenstaande `batchStatus` Als u op een URL-koppeling klikt, ziet u er als volgt uit:
+Een succesvol standaardantwoord wanneer op de bovenstaande `batchStatus` URL-koppeling wordt geklikt, ziet er als volgt uit:
 
 ```
 <response><batchId>demo4-1701473848678-13029383</batchId><status>complete</status><batchSize>1</batchSize></response>
@@ -117,7 +117,7 @@ De verwachte waarden voor de statusvelden zijn:
 
 ### Gedetailleerde batchstatus URL-reactie
 
-Een meer gedetailleerde reactie kan worden opgehaald door een parameter door te geven `showDetails=true` aan de `batchStatus` URL hierboven.
+Een gedetailleerdere reactie kan worden opgehaald door een parameter `showDetails=true` door te geven aan de bovenstaande `batchStatus` url.
 
 Bijvoorbeeld:
 
