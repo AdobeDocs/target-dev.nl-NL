@@ -1,19 +1,19 @@
 ---
 keywords: adobe.target.triggerView, triggerView, triggerView, triggerView, at.js, functions, function, viewName, viewname, view name, adobe.target.triggerView1
-description: Gebruik de functie adobe.target.triggerView() voor de [!DNL Adobe Target] at.js JavaScript-bibliotheek voor gebruik in toepassingen voor één pagina (SPA). (om 2.x.js)
+description: Gebruik de functie adobe.target.triggerView () voor de { [!DNL Adobe Target]  at.js JavaScript bibliotheek voor gebruik in de Toepassingen van de Enige Pagina (SPA). (om 2.x.js)
 title: Hoe gebruik ik de functie adobe.target.triggerView()?
 feature: at.js
 exl-id: d6130c56-4e77-4668-ad21-a5b335f8b234
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: fe4e607173c760f782035a10f52936d96e9db300
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '406'
 ht-degree: 0%
 
 ---
 
 # adobe.target.triggerView (viewName, options) - at.js 2.x
 
-Deze functie kan worden aangeroepen wanneer een nieuwe pagina wordt geladen of wanneer een component op een pagina opnieuw wordt weergegeven. `adobe.target.triggerView()` moet worden geïmplementeerd voor toepassingen van één pagina (SPA) om de [!UICONTROL Visual Experience Composer] (VEC) om [!UICONTROL A/B Test] en [!UICONTROL Experience Targeting] (XT) activiteiten. Indien `[!UICONTROL adobe.target.triggerView()]` niet op het terrein wordt geïmplementeerd, kan de VEC niet voor SPA worden gebruikt. Zie voor meer informatie [Toepassing van één pagina](/help/dev/implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md).
+Deze functie kan worden aangeroepen wanneer een nieuwe pagina wordt geladen of wanneer een component op een pagina opnieuw wordt weergegeven. `adobe.target.triggerView()` moet worden geïmplementeerd voor toepassingen op één pagina (SPA) om [!UICONTROL Visual Experience Composer] (VEC) te gebruiken voor het maken van [!UICONTROL A/B Test] - en [!UICONTROL Experience Targeting] (XT)-activiteiten. Als `[!UICONTROL adobe.target.triggerView()]` niet op de plaats wordt uitgevoerd, kan VEC niet voor SPA worden gebruikt. Voor meer informatie, zie [ Enige implementatie van de Toepassing van de Pagina ](/help/dev/implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md).
 
 >[!NOTE]
 >
@@ -21,13 +21,13 @@ Deze functie kan worden aangeroepen wanneer een nieuwe pagina wordt geladen of w
 
 | Parameter | Type | Vereist? | Beschrijving |
 | --- | --- | --- | --- |
-| viewName | String | Ja | Geef elke naam door als een type tekenreeks dat u de weergave wilt vertegenwoordigen. Deze weergavenaam wordt weergegeven in het dialoogvenster [!UICONTROL Modifications] deelvenster VEC voor marketers om handelingen te maken en hun [!UICONTROL A/B Test] en [!UICONTROL Experience Targeting] XT-activiteiten. |
+| viewName | String | Ja | Geef elke naam door als een type tekenreeks dat u de weergave wilt vertegenwoordigen. Deze weergavenaam wordt in het deelvenster [!UICONTROL Modifications] van de VEC weergegeven, zodat marketers handelingen kunnen maken en hun [!UICONTROL A/B Test] - en [!UICONTROL Experience Targeting] XT-activiteiten kunnen uitvoeren. |
 | opties | Object | Nee |  |
-| opties > pagina | Boolean | Nee | **TRUE:** De standaardwaarde van de pagina is true. Als page=true is, worden meldingen verzonden naar de [!DNL Target] voor het verhogen van het aantal imkers.<P>Een bericht wordt altijd standaard verzonden wanneer een `[!UICONTROL triggerView]` wordt aangeroepen, behalve wanneer opties > pagina is ingesteld op false.<P>**FALSE:** Wanneer page=false, worden geen meldingen verzonden voor het verhogen van het aantal impressies. Deze benadering zou moeten worden gebruikt wanneer u een component op een pagina met een aanbieding slechts opnieuw wilt teruggeven.<P>**Opmerking**: Aanbiedingen voor aangepaste code in de VEC worden niet opnieuw weergegeven wanneer `[!UICONTROL triggerView()]` wordt aangeroepen met `{page: false}` als de optie. |
+| opties > pagina | Boolean | Nee | **WAAR:** De standaardwaarde van pagina is waar. Wanneer page=true, worden meldingen naar de [!DNL Target] backend verzonden voor een toename van het aantal impressies.<P>Er wordt altijd standaard een melding verzonden wanneer een `[!UICONTROL triggerView]` wordt aangeroepen, behalve wanneer opties > pagina is ingesteld op false.<P>**VALS:** Wanneer page=false, worden de berichten niet verzonden voor het verhogen van beeldtelling. Deze benadering zou moeten worden gebruikt wanneer u een component op een pagina met een aanbieding slechts opnieuw wilt teruggeven.<P>**Nota**: De aanbiedingen van de Code van de douane in VEC worden niet opnieuw teruggegeven wanneer `[!UICONTROL triggerView()]` met `{page: false}` als optie wordt geroepen. |
 
 ## Voorbeeld: Waar
 
-`[!UICONTROL triggerView()]` oproep om een bericht naar de [!DNL Target] back-end voor het verhogen van activiteitsimpressies en andere metriek.
+`[!UICONTROL triggerView()]` -aanroep om een melding naar de [!DNL Target] -backend te verzenden voor het verhogen van activiteitsimpressies en andere metriek.
 
 ```javascript {line-numbers="true"}
 adobe.target.triggerView("homeView")
@@ -35,15 +35,15 @@ adobe.target.triggerView("homeView")
 
 ## Voorbeeld: Onwaar
 
-`[!UICONTROL triggerView()]` oproep om geen meldingen naar de [!DNL Target] voor het tellen van de indruk.
+`[!UICONTROL triggerView()]` roept op om geen meldingen naar de [!DNL Target] backend te laten verzenden voor het tellen van de indruk.
 
 ```javascript {line-numbers="true"}
 adobe.target.triggerView("homeView", {page: false})
 ```
 
-## Voorbeeld: beloften koppelen met `getoffers()` en `applyOffers()`
+## Voorbeeld: Promise chaining with `getoffers()` and `applyOffers()`
 
-Uitvoeren `triggerView()` wanneer de `getOffers()` belofte is opgelost, het is belangrijk om uit te voeren `triggerView()` op het laatste blok, zoals in het onderstaande voorbeeld wordt getoond. Dit is nodig voor de VEC om `Views` in de ontwerpmodus.
+Als u `triggerView()` wilt uitvoeren wanneer de `getOffers()` promise is opgelost, is het belangrijk `triggerView()` uit te voeren op het laatste blok, zoals in het onderstaande voorbeeld wordt getoond. Dit is noodzakelijk voor VEC om `Views` in auteurswijze te ontdekken.
 
 ```javascript {line-numbers="true"}
 adobe.target.getOffers({
@@ -69,3 +69,29 @@ adobe.target.getOffers({
     console.log('AT: View triggered on : ' + pageView);
 });
 ```
+
+## Voorbeeld: De beste compatibiliteit voor `triggerView()` met de [!UICONTROL Adobe Visual Editing Helper extension]
+
+Overweeg het volgende wanneer het gebruiken van de [ Adobe Visuele het Uitgeven uitbreiding van de Helper ](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension) {target=_blank}:
+
+Vanwege het nieuwe v3 Manifest-beleid van [!DNL Googl] moet de [!UICONTROL Visual Editing Helper extension] op de `DOMContentLoaded` -gebeurtenis wachten voordat de [!DNL Target] -bibliotheken in de VEC worden geladen. [!DNL Chrome] Deze vertraging kan ertoe leiden dat webpagina&#39;s de `triggerView()` -aanroep starten voordat de ontwerpbibliotheken gereed zijn, waardoor de weergave tijdens het laden niet wordt gevuld.
+
+Gebruik een listener voor de gebeurtenis page `load` om dit probleem op te lossen.
+
+Hier volgt een voorbeeldimplementatie:
+
+```javascript
+function triggerViewIfLoaded() {
+    adobe.target.triggerView("homeView");
+}
+
+if (document.readyState === "complete") {
+    // If the page is already loaded
+    triggerViewIfLoaded();
+} else {
+    // If the page is not yet loaded, set up an event listener
+    window.addEventListener("load", triggerViewIfLoaded);
+}
+```
+
+
