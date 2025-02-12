@@ -1,30 +1,30 @@
 ---
 keywords: Browsers, vereisten, vereisten, internetverkenner, chroom, firefox, safari, android, oppervlak, browsers0
-description: Meer informatie over browsers op internet [!DNL Adobe Target] ondersteunt de interface en de levering van inhoud.
-title: Wat browsers doen [!DNL Target] Ondersteuning?
+description: Leer welke Internet browsers  [!DNL Adobe Target]  voor zijn interface en voor inhoudslevering steunt.
+title: Welke browsers steunt  [!DNL Target] ?
 feature: Implementation
 exl-id: 1d778e14-26b0-477b-ac28-d304db70a133
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: f194c6de43070443b78c9a69b4233c27d70b8858
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
 
 # Ondersteunde browsers
 
-De [!DNL Adobe Target] de toepassing en de inhoudslevering zijn getest in een groot aantal browsers en apparaten.
+De toepassing van [!DNL Adobe Target] en de levering van inhoud zijn getest voor een groot aantal browsers en apparaten.
 
-Voor meer belangrijke informatie over TLS raadpleegt u [De Veranderingen van de Encryptie van TLS (de Veiligheid van de Laag van het Vervoer)](tls-transport-layer-security-encryption.md).
+Voor meer belangrijke informatie over TLS, zie [ de Veranderingen van de Encryptie van TLS (de Veiligheid van de Laag van het Vervoer) ](tls-transport-layer-security-encryption.md).
 
-## [!DNL Target] Standaard/Premium-interface
+## [!DNL Target] Standard/Premium-interface
 
-De [!DNL Target] interface ondersteunt de volgende browsers en apparaten:
+De interface [!DNL Target] ondersteunt de volgende browsers en apparaten:
 
 | Apparaattype | Browserversie |
 |--- |--- |
 | Windows | <ul><li>Microsoft Edge</li><li>Google Chrome (laatste, laatste min 1)</li><li>Mozilla Firefox (laatste, laatste min 1)</li></ul> |
-| Mac | <ul><li>Firefox (laatste, laatste min 1)</li><li>Chrome (nieuwste, laatste min 1)</li></ul> |
+| Mac | <ul><li>Firefox (laatste, laatste min 1)</li><li>Chrome (laatste, laatste min 1)</li></ul> |
 
 ## Inhoud leveren
 
@@ -32,13 +32,14 @@ De levering van inhoud is getest in de volgende browsers en apparaten:
 
 | Apparaattype | Browserversie |
 |--- |--- |
-| Windows | <ul><li>Microsoft Internet Explorer 9 en 10. Getest in emulatiemodus. **Opmerking**: De levering van inhoud op IE 9 wordt niet meer ondersteund met at.js 1.3.0 (en hoger). De levering van inhoud op IE 10, 11, en alle oudere versies wordt niet meer gesteund met at.js 2.5.0 (en later).</li><li>Internet Explorer 11. **Opmerking**: De levering van inhoud op IE 10, 11 en alle oudere versies wordt niet meer ondersteund met at.js 2.5.0 (en hoger).</li><li>Microsoft Edge</li><li>Chrome (nieuwste, laatste min 1)</li><li>Firefox (laatste, laatste min 1)</li></ul> |
-| Mac | <ul><li>Apple Safari (nieuwste). **Opmerking**: Voor meer informatie over hoe Safari cookies van eerste en van derde partijen verwerkt, raadpleegt u [Doelcookie](../implement/client-side/atjs/atjs-cookies.md).</li><li>Firefox (laatste, laatste min 1)</li><li>Chrome (nieuwste, laatste min 1)</li></ul> |
-| Mobiel/tablet | <ul><li>Apple iOS (nieuwste)</li><li>Android-apparaten en -tablets (Android 4 en hoger)</li><li>Microsoft-oppervlak (Windows 8.1)</li></ul> |
+| Windows | <ul><li>Microsoft Internet Explorer 9 en 10. Getest in emulatiemodus. **Nota**: De levering van de inhoud op IE 9 wordt niet meer gesteund met at.js 1.3.0 (en later). De levering van inhoud op IE 10, 11, en alle oudere versies wordt niet meer gesteund met at.js 2.5.0 (en later).</li><li>Internet Explorer 11. **Nota**: De levering van de inhoud op IE 10, 11, en alle oudere versies wordt niet meer gesteund met at.js 2.5.0 (en later).</li><li>Microsoft Edge</li><li>Chrome (laatste, laatste min 1)</li><li>Firefox (laatste, laatste min 1)</li></ul> |
+| Mac | <ul><li>Apple Safari (nieuwste). **Nota**: Voor meer informatie over hoe de handvatten Safari eerste en derdekoekjes, [ Koekje van het Doel ](../implement/client-side/atjs/atjs-cookies.md) zien.</li><li>Firefox (laatste, laatste min 1)</li><li>Chrome (laatste, laatste min 1)</li></ul> |
+| Mobiel/tablet | <ul><li>Apple iOS (nieuwste)</li><li>Android devices en tablets (Android 4 en hoger)</li><li>Microsoft-oppervlak (Windows 8.1)</li></ul> |
 
 Let op het volgende:
 
-* Voor implementaties van at.js, [!DNL Target] Hiermee geeft u standaardinhoud weer in eerdere versies van Internet Explorer en mogelijk in eerdere versies van de hierboven vermelde browsers.
+* [!DNL Adobe Experience Platform Web SDK] is ontworpen om optimaal te werken in de nieuwste versies van [!DNL Google Chrome] , [!DNL Safari] , [!DNL Firefox] en [!DNL Microsoft Edge Chromium] . Mogelijk kunt u problemen ondervinden bij het gebruik van bepaalde functies in oudere versies van deze browsers of afgekeurde browsers, zoals [!DNL Internet Explorer] .
+* Voor at.js-implementaties geeft [!DNL Target] standaardinhoud weer in eerdere versies van Internet Explorer en mogelijk in eerdere versies van de hierboven vermelde browsers.
 * Internet Explorer behandelt alle onbekende elementen (zoals aangepaste elementen) als hetzelfde elementtype. Dientengevolge, werkt de levering niet met douaneelementen.
-* [!DNL Target] geeft standaardinhoud weer in browsers die hierboven niet worden vermeld en in browsers die [quirks, modus](https://en.wikipedia.org/wiki/Quirks_mode). at.js vereist een documenttype dat op standaardwijze teruggeeft, bijvoorbeeld: `<!DOCTYPE html>` .
-* [!DNL Adobe] Leveringsinfrastructuur wordt na 12 september 2018 beveiligd om GEEN TLS 1.0-apparaten en browsers te ondersteunen. Zie [De Veranderingen van de Encryptie van TLS (de Veiligheid van de Laag van het Vervoer)](../before-implement/tls-transport-layer-security-encryption.md) inzicht te krijgen in de algemene gevolgen van deze wijziging.
+* [!DNL Target] vertoningen standaardinhoud in browsers hierboven niet vermeld en in browsers gebruikend [ kronkelwijze ](https://en.wikipedia.org/wiki/Quirks_mode). at.js vereist een documenttype dat in de standaardmodus wordt weergegeven, bijvoorbeeld: `<!DOCTYPE html>` .
+* [!DNL Adobe] Leveringsinfrastructuur wordt na 12 september 2018 beveiligd voor NIET-ondersteuning van TLS 1.0-apparaten en browsers. Zie [ TLS (de Veiligheid van de Laag van het Vervoer) de Veranderingen van de Encryptie ](../before-implement/tls-transport-layer-security-encryption.md) om het algemene effect van deze verandering te begrijpen.
