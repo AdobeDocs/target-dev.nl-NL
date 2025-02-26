@@ -4,9 +4,9 @@ description: Bekijk de details over veranderingen in elke versie van de { [!DNL 
 title: Wat is inbegrepen in Elke Versie van at.js?
 feature: at.js
 exl-id: 609dacba-2ab8-45e9-b189-928d59938c98
-source-git-commit: bee8752dd212a14f8414879e03565867eb87f6b9
+source-git-commit: 3deeee2838d02d578bb653a4911313463b962050
 workflow-type: tm+mt
-source-wordcount: '4967'
+source-wordcount: '4994'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,10 @@ Informatie over de wijzigingen in elke versie van de JavaScript-bibliotheek [!DN
 >U zou aan de recentste versies van één van beide moeten bevorderen 1.*x* of 2.*x* om insectenmoeilijke situaties en veiligheidspatches voor kwesties te verkrijgen die in om het even welke vorige minder belangrijke versie van de overeenkomstige belangrijkste versie worden ontdekt.
 
 De markeringen in [ Adobe Experience Platform ](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) zijn de aangewezen methode om at.js te bevorderen. Extensieontwikkelaars voegen voortdurend nieuwe functies toe aan hun extensies en corrigeren vaak bugs. Deze updates worden verpakt in nieuwe versies van een extensie en worden als upgrades beschikbaar gesteld in de Adobe Experience Platform-catalogus. Voor meer informatie, zie [ de verbeteringen van de Uitbreiding ](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/extension-upgrade.html) in de *overzicht van Markeringen* gids.
+
+## at.js versie 2.11.7 (26 februari 2025)
+
+* Logboekregistratie van Telemetrie is opgelost wanneer `localStorage` niet beschikbaar is. Telemetrie zorgde voor een probleem voor sommige klanten die `localStorage` hadden uitgeschakeld in hun browsers.
 
 ## at.js versie 2.11.6 (29 september 2024)
 
@@ -100,7 +104,7 @@ Deze release bevat de volgende verbeteringen:
 
 Deze release bevat de volgende wijzigingen:
 
-* De modules `reactor-window` en `reactor-document` Adobe Experience Platform Launch zijn verwijderd om ervoor te zorgen dat de Platform launch correct functioneert voor klanten die `window.default` of `document-default` hebben ingesteld.
+* De modules `reactor-window` en `reactor-document` Adobe Experience Platform Launch zijn verwijderd om ervoor te zorgen dat de Platform Launch correct functioneert voor klanten die `window.default` of `document-default` hebben ingesteld.
 * at.js 1.8.3 stelt nu expliciet `Samesite=None` en `Secure` in om ervoor te zorgen dat cookies van andere bedrijven correct worden ingesteld.
 
 ## om 2.6.1.2021 (16 augustus 2021)
@@ -115,7 +119,7 @@ Deze release bevat de volgende wijzigingen:
 * [!UICONTROL Analytics for Target] (A4T) Klik op de metagegevens worden correct geretourneerd wanneer u `prefetch` -aanvragen gebruikt.
 * Bij het genereren van UUID wordt niet langer `Math.random()` gebruikt, maar wordt `window.crypto` gebruikt.
 * De vervaldatum van het `sessionId` -cookie wordt correct verlengd bij elke netwerkaanroep.
-* De initialisatie van het cachegeheugen voor de weergave Eén pagina (SPA) wordt nu correct afgehandeld en voldoet aan de `viewsEnabled` -instellingen. Als u `viewsEnabled` instelt op de waarde `false` , wordt de functie `triggerView()` nu uitgeschakeld. Zie [ Orde van verrichtingen voor aanvankelijke paginading ](/help/dev/implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md#order).
+* De initialisatie van het weergavecache van Single Page Application (SPA) wordt nu correct afgehandeld en houdt zich aan de `viewsEnabled` -instellingen. Als u `viewsEnabled` instelt op de waarde `false` , wordt de functie `triggerView()` nu uitgeschakeld. Zie [ Orde van verrichtingen voor aanvankelijke paginading ](/help/dev/implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md#order).
 
 ## om 2.5.0 uur (13 mei 2021)
 
@@ -210,15 +214,15 @@ Deze versie van at.js bevat de volgende verbeteringen en oplossingen:
 
 Deze versie van at.js is een onderhoudsrelease en bevat de volgende verbeteringen en oplossingen:
 
-(De uitgiftenummers tussen haakjes zijn bedoeld voor gebruik door een interne Adobe.)
+(De uitgiftenummers tussen haakjes zijn bedoeld voor intern gebruik door Adobe.)
 
 * Oplossing een kwestie die veelvoudige bakens aan brand veroorzaakte toen het gebruiken van de Metrisch van het Volgen van de Klik op de pagina van Doelstellingen &amp; van Montages in Visual Experience Composer (VEC). (TNT-32812)
 * Correctie van een probleem dat ertoe leidde dat `triggerView()` de rendering niet meer dan één keer toepast. (TNT-32780)
-* Correctie van een probleem met `triggerView()` om ervoor te zorgen dat de aanvraag MCID-gegevens (Marketing Cloud-id) bevat. (TNT-32776)
+* Correctie van een probleem met `triggerView()` om ervoor te zorgen dat de aanvraag informatie over Marketing Cloud ID (MCID) bevat. (TNT-32776)
 * Probleem verholpen waardoor het bericht van `triggerView()` niet kon worden uitgevoerd, zelfs als er geen opgeslagen weergaven zijn. (TNT-32614)
 * Probleem verholpen die een fout veroorzaakte door het gebruik van de decodeURIcomponent die problemen veroorzaakte wanneer de URL een onjuist gevormde parameter van het vraagkoord bevat. (TNT-32710)
 * De bakenmarkering is nu ingesteld op &quot;true&quot; in de context van leveringsverzoeken die via de `Navigator.sendBeacon()` API worden verzonden. (TNT-32683)
-* Probleem verholpen waarbij Recommendations-aanbiedingen voor een paar klanten niet konden worden weergegeven op websites. Klanten konden de inhoud van de aanbieding zien in de vraag van de leverings-API, maar de aanbieding werd niet toegepast op de website. (TNT-32680)
+* Probleem verholpen waarbij Aanbevelingen voor een paar klanten niet konden worden weergegeven op websites. Klanten konden de inhoud van de aanbieding zien in de vraag van de leverings-API, maar de aanbieding werd niet toegepast op de website. (TNT-32680)
 * Probleem verholpen waarbij klikken-volgen over meerdere ervaringen ertoe leidde dat het programma niet naar behoren functioneerde. (TNT-32644)
 * Probleem verholpen waardoor at.js de tweede metrische waarde niet kon toepassen na het renderen van de eerste metrische waarde. (TNT-32628)
 * Probleem verholpen bij het doorgeven van `mbox3rdPartyId` met de functie `targetPageParams` die ervoor zorgde dat de payload van de aanvraag niet aanwezig was in de queryparameters of in de payload van de aanvraag. (TNT-32613)
@@ -228,7 +232,7 @@ Deze versie van at.js is een onderhoudsrelease en bevat de volgende verbeteringe
 
 Deze release bevat de volgende functies en verbeteringen:
 
-* **Adobe open-binnen steun**: Adobe open-binnen is een manier om de integratie van de oplossingen van de Adobe met de platforms van het toestemmingsbeheer te vereenvoudigen. Voor meer informatie over Adobe open-binnen, zie [ Privacy en Algemene Verordening van de Bescherming van Gegevens (GDPR) ](/help/dev/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.md).
+* **Opt-in van Adobe steun**: Adobe Opt-binnen is een manier om de oplossingen van Adobe integratie met toestemmingsbeheerplatforms te vereenvoudigen. Voor meer informatie over Adobe Opt-binnen, zie [ Privacy en Algemene Verordening van de Bescherming van Gegevens (GDPR) ](/help/dev/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.md).
 
 * **industrie-standaard volgzame CSP**: at.js gebruikt niet meer eval () om JavaScript uit te voeren.
 
@@ -246,7 +250,7 @@ Deze release bevat de volgende functies en verbeteringen:
 
 Dit is een onderhoudrelease met de volgende verbeteringen en oplossingen:
 
-(De uitgiftenummers tussen haakjes zijn bedoeld voor gebruik door een interne Adobe.)
+(De uitgiftenummers tussen haakjes zijn bedoeld voor intern gebruik door Adobe.)
 
 * Probleem verholpen met een zeldzame omstandigheid in de opiniepeilingscode voor DOM die JavaScript-uitzonderingen voor bepaalde klanten veroorzaakte. (TNT-31869)
 * Meldingen dat weergaven werden gerenderd, zijn losgekoppeld van gebeurtenishandlers voor het bijhouden van klikken. In eerste instantie heeft [!DNL Target] geen meldingen verzonden als click-event-handlers die tot een weergegeven weergave behoren, niet konden worden gekoppeld. [!DNL Target] verzendt nu een weergavemelding, zelfs als klikelementen niet worden gevonden. (TNT-31969)
@@ -258,13 +262,13 @@ Dit is een onderhoudrelease met de volgende verbeteringen en oplossingen:
 
 Dit is een onderhoudrelease met de volgende oplossing:
 
-(De uitgiftenummers tussen haakjes zijn bedoeld voor gebruik door een interne Adobe.)
+(De uitgiftenummers tussen haakjes zijn bedoeld voor intern gebruik door Adobe.)
 
 * Probleem verholpen met een zeldzame omstandigheid in de opiniepeilingscode voor DOM die JavaScript-uitzonderingen voor bepaalde klanten veroorzaakte. (TNT-31869)
 
 ## at.js Versie 2.0.0
 
-at.js 2.x verstrekt rijke eigenschapreeksen die uw zaken uitrusten om verpersoonlijking op volgende generatie cliënt-zijtechnologieën uit te voeren. Deze nieuwe versie is gericht op het upgraden van at.js voor harmonieuze interacties met toepassingen van één pagina (SPA).
+at.js 2.x verstrekt rijke eigenschapreeksen die uw zaken uitrusten om verpersoonlijking op volgende generatie cliënt-zijtechnologieën uit te voeren. Deze nieuwe versie wordt geconcentreerd op bevordering at.js om harmonieuze interactie met enige paginatoepassingen (SPAs) te hebben.
 
 Hier volgen enkele voordelen van het gebruik van at.js 2.x die niet beschikbaar zijn in eerdere versies:
 
@@ -288,19 +292,19 @@ Voor meer informatie, zie [ Bevorderend van at.js 1.x aan at.js 2.x ](/help/dev/
 
 >[!NOTE]
 >
->Als u Adobe open-binnen steun voor de [ Algemene Verordening van de Bescherming van Gegevens ](/help/dev/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.md) (GDPR) vereist, moet u momenteel gebruiken at.js 1.7.0, of at.js 2.1.0 of later.
+>Als u Adobe Opt-binnen steun voor de [ Algemene Verordening van de Bescherming van Gegevens ](/help/dev/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.md) (GDPR) vereist, moet u momenteel gebruiken at.js 1.7.0, of at.js 2.1.0 of later.
 
 ## at.js versie 1.7.0
 
-at.js 1.7.0 biedt ondersteuning voor Adobe Opt-In. Adobe Opt-In is een manier om de integratie van oplossingen voor Adobe met toestemmingsbeheerplatforms te vereenvoudigen.
+at.js 1.7.0 biedt ondersteuning voor Adobe Opt-In. Adobe Opt-In is een manier om de integratie van Adobe-oplossingen met toestemmingsbeheerplatforms te vereenvoudigen.
 
-Voor meer informatie over Adobe open-binnen, zie [ Privacy en Algemene Verordening van de Bescherming van Gegevens ](/help/dev/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.md) (GDPR).
+Voor meer informatie over Adobe Opt-binnen, zie [ Privacy en Algemene Verordening van de Bescherming van Gegevens ](/help/dev/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.md) (GDPR).
 
 Deze release verhelpt ook een probleem waarbij [!DNL Target] URL-parameters voor omleiding kan negeren met parameters die afkomstig zijn van de omleidings-URL.
 
 >[!NOTE]
 >
->Als u ondersteuning voor Adobe Opt-in voor GDPR nodig hebt, moet u momenteel at.js 1.7.0 of at.js 2.1.0 of hoger gebruiken.
+>Als u Adobe Opt-in ondersteuning voor GDPR nodig hebt, moet u momenteel om 1.js 1.7.0 of om 2.1.0 of hoger gebruiken.
 
 ## at.js Versie 1.6.4
 
@@ -352,7 +356,7 @@ at.js versie 1.5.0 is nu beschikbaar.
 * Probleem verholpen waarbij `window.targetGlobalSettings.enabled` mislukte met een runtime-uitzondering als deze was ingesteld op false. (TNT-29829)
 * Probleem verholpen die ertoe leidde dat de pagina mislukte tijdens het laden in Visual Experience Composer (VEC) als het gebruiken van douanecode aan een brand globale mbox verzoek en het gebruiken van lichaam het verbergen. (TNT-29795)
 * Extra ondersteuning voor `screenOrientation` , `devicePixelRatio` en `webGLRenderer` . Deze nieuwe [!DNL Target] aanvraagparameters worden gebruikt voor iPhone X en andere moderne apparaatdetectie. Voor meer informatie, zie [ Mobiel ](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/mobile.html). (TNT-29781)
-* Probleem verholpen waarbij de locatie-hint van de Adobe Audience Manager (AAM) niet altijd werd verzonden. (TNT-29695)
+* Probleem verholpen waarbij de locatiehint van Adobe Audience Manager (AAM) niet altijd werd verzonden. (TNT-29695)
 * Voor browsers die dit ondersteunen, schakelt at.js 1.5.0 over naar MutationObserver voor kiezersopiniepeiling. In versies vóór at.js 1.0.0 werd een MutationObserver-polyfill gebruikt, wat problematisch bleek te zijn. Om de polyfill problemen te voorkomen, gebruikt versie 1.5.0 de volgende pseudo-code om te bepalen welk planningsmechanisme moet worden gebruikt:
 
   ```
@@ -382,7 +386,7 @@ at.js versie 1.3.0 is nu beschikbaar.
 
   Voor meer informatie, zie [ Leveranciers van Gegevens ](atjs-functions/targetglobalsettings.md#data-providers).
 
-* bij.js-aanvragen wordt nu GET gebruikt, maar er wordt overgeschakeld naar POST wanneer de URL groter is dan 2048 tekens. Er is een nieuwe eigenschap met de naam `urlSizeLimit` waarmee u de maximale grootte indien nodig kunt verhogen. Door deze wijziging kan [!DNL Target] at.js uitlijnen op AppMeasurement, dat dezelfde techniek gebruikt.
+* Bij.js-aanvragen wordt nu GET gebruikt, maar er wordt overgeschakeld naar POST als de URL groter is dan 2048 tekens. Er is een nieuwe eigenschap met de naam `urlSizeLimit` waarmee u de maximale grootte indien nodig kunt verhogen. Door deze wijziging kan [!DNL Target] at.js uitlijnen op AppMeasurement, dat dezelfde techniek gebruikt.
 * [!DNL Target] dwingt nu af of de `mbox` -toets in de `adobe.target.applyOffer(options)` -functie wordt gebruikt. Deze sleutel is in het verleden vereist, maar [!DNL Target] dwingt nu het gebruik ervan af om ervoor te zorgen dat [!DNL Target] de juiste validatie heeft en klanten de functie correct gebruiken.
 * at.js heeft de functie voor het bijhouden van gebeurtenissen verbeterd en klikt op tracking. at.js gebruikt `navigator.sendBeacon()` om gegevens voor het bijhouden van gebeurtenissen te verzenden en fallback naar synchrone XHR wanneer `navigator.sendBeacon()` niet wordt ondersteund. Deze fallback heeft vooral invloed op Internet Explorer 10 en 11 en op sommige versies van Safari. Safari voegt ondersteuning voor `navigator.sendBeacon()` toe in de komende iOS 11.3-release.
 * Met at.js kunt u nu aanbiedingen renderen, zelfs als een pagina wordt geopend op tabbladen op de achtergrond. Sommige klanten van [!DNL Target] kwamen een probleem tegen toen `requestAnimationFrame()` was uitgeschakeld vanwege het browsergedrag voor achtergrondtabbladen.
@@ -432,7 +436,7 @@ at.js versie 1.2 is nu beschikbaar als onderhoudsversie die hoofdzakelijk insect
 De volgende verbeteringen en correcties zijn opgenomen in at.js versie 1.1:
 
 * Toegevoegde verwerking van responstoken. Voor meer informatie, zie [ Tokens van de Reactie ](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html).
-* Correctie van het probleem zodat `document.currentScript polyfill` niet interfereert met Angular 1.X.
+* Correctie van het probleem zodat `document.currentScript polyfill` zich niet mengt in Angular 1.X.
 * Wijzigingen aangebracht om ervoor te zorgen dat het bijhouden van klikken geen invloed heeft op de zichtbaarheidseigenschap. Klik op volgelementen om de CSS-klasse in plaats van `at-element-marker` op te geven. `at-element-click-tracking`
 
 ## at.js Versie 1.0.0
