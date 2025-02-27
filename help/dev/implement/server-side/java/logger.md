@@ -1,11 +1,11 @@
 ---
-title: Initialiseer de [!DNL Adobe Target] Java SDK om aanvragen te registreren
-description: Leer hoe te om verzoeken in te loggen [!DNL Adobe Target] Java SDK.
+title: Initialiseer  [!DNL Adobe Target]  Java SDK om verzoeken te registreren
+description: Leer hoe te om verzoeken in  [!DNL Adobe Target]  Java SDK te registreren.
 feature: APIs/SDKs
 exl-id: 85d1a6ef-0b08-4948-8133-740b7d6141dd
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 526445fccee9b778b7ac0d7245338f235f11d333
 workflow-type: tm+mt
-source-wordcount: '124'
+source-wordcount: '118'
 ht-degree: 0%
 
 ---
@@ -14,22 +14,22 @@ ht-degree: 0%
 
 ## Beschrijving
 
-Wanneer [initialiseren SDK](initialize-sdk.md)Er zijn verschillende opties voor de `ClientConfig` -object, dat kan worden ingesteld op logverzoeken.
+Wanneer [ het initialiseren van SDK ](initialize-sdk.md), zijn er verscheidene opties op het `ClientConfig` voorwerp, dat aan logboekverzoeken kan worden geplaatst.
 
 | Optie | Beschrijving |
 | --- | --- |
 | `logRequests` | Logs gehele verzoeklichaam evenals reactielichaam. |
 | `logRequestStatus` | De URL van het verzoek van logs, status samen met reactietijd. |
 
-[!DNL Target] Java SDK gebruikt `slf4j` registreren. U moet uw implementatie van registreerapparaat zoals verstrekken `java.util.logging`, `logback`, en `log4j`. Zie [http://www.slf4j.org/manual.html](http://www.slf4j.org/manual.html) voor meer informatie . Alle logbestanden worden afgedrukt in `debug`.
+[!DNL Target] Java SDK gebruikt `slf4j` -logboekregistratie. U moet uw implementatie van registreerapparaten zoals `java.util.logging`, `logback`, en `log4j` verstrekken. Verwijs naar [ https://www.slf4j.org/manual.html ](https://www.slf4j.org/manual.html) voor meer informatie. Alle logbestanden worden afgedrukt in `debug` .
 
 ## Voorbeeld
 
-Voeg de `slf4j` afhankelijkheid.
+Voeg de `slf4j` afhankelijkheid toe.
 
 >[!BEGINTABS]
 
->[!TAB Gradient]
+>[!TAB  Gradle ]
 
 ### Gradient
 
@@ -37,7 +37,7 @@ Voeg de `slf4j` afhankelijkheid.
 compile 'org.slf4j:slf4j-simple:2.0.0-alpha0'
 ```
 
->[!TAB Maven]
+>[!TAB  Gemaakt ]
 
 ```javascript {line-numbers="true"}
 <dependency>
@@ -49,7 +49,7 @@ compile 'org.slf4j:slf4j-simple:2.0.0-alpha0'
 
 >[!ENDTABS]
 
-De optie `DEBUG` logboeken die op uw implementatie worden gebaseerd, en merken de vlaggen van het verzoekregistreren.
+Schakel de `DEBUG` -logboeken in op basis van uw implementatie en markeer de aanvraaglogboekmarkeringen.
 
 ### Foutopsporing
 
