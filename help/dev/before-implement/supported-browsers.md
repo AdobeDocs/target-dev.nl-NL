@@ -4,9 +4,9 @@ description: Leer welke Internet browsers  [!DNL Adobe Target]  voor zijn interf
 title: Welke browsers steunt  [!DNL Target] ?
 feature: Implementation
 exl-id: 1d778e14-26b0-477b-ac28-d304db70a133
-source-git-commit: f194c6de43070443b78c9a69b4233c27d70b8858
+source-git-commit: 1b6dcb24d677b758ed1daf85dc0a7e9e5b42680d
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
@@ -21,10 +21,24 @@ Voor meer belangrijke informatie over TLS, zie [ de Veranderingen van de Encrypt
 
 De interface [!DNL Target] ondersteunt de volgende browsers en apparaten:
 
+>[!NOTE]
+>
+>Doel ondersteunt de nieuwste versie van elke weergegeven browser en de nieuwste versie min 1.
+
+
 | Apparaattype | Browserversie |
 |--- |--- |
-| Windows | <ul><li>Microsoft Edge</li><li>Google Chrome (laatste, laatste min 1)</li><li>Mozilla Firefox (laatste, laatste min 1)</li></ul> |
-| Mac | <ul><li>Firefox (laatste, laatste min 1)</li><li>Chrome (laatste, laatste min 1)</li></ul> |
+| [!DNL Windows] | <ul><li>[!DNL Microsoft Edge]</li><li>[!DNL Google Chrome]</li><li>[!DNL Mozilla Firefox]</li></ul> |
+| [!DNL Mac] | <ul><li>[!DNL Microsoft Edge]</li><li>[!DNL Google Chrome]</li><li>[!DNL Mozilla Firefox]</li></ul> |
+
+## Vereisten voor visuele bewerking
+
+Om uw Web-pagina&#39;s in [!UICONTROL Visual Experience Composer] (VEC) betrouwbaar te kunnen openen, auteur, en voorproef, moet u de [ Adobe Experience Cloud Visuele het Uitgeven browser van de Helper browser van de Helper ](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension) {target=_blank} hebben die op uw Webbrowser of gebruik [!UICONTROL Enhanced Experience Composer (EEC)] wordt geïnstalleerd.
+
+>[!NOTE]
+>
+>[!DNL Google Chrome] en [!DNL Microsoft Edge] zijn momenteel de enige browsers die visuele bewerking van webpagina&#39;s in [!DNL Adobe Target] ondersteunen.
+
 
 ## Inhoud leveren
 
