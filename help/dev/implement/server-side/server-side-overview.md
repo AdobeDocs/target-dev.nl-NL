@@ -19,7 +19,7 @@ Informatie over [!DNL Adobe Target] server-side levering-API&#39;s, SDK&#39;s en
 >
 >Als uw implementatie at.js en [!DNL AppMeasurement] op de client moet u de opdracht [!UICONTROL Target Delivery API] en server-side SDK&#39;s die hieronder worden besproken.
 >
->Als uw implementatie de [!UICONTROL Adobe Experience Platform Web SDK]moet u de [[!UICONTROL Adobe Experience Platform] [!UICONTROL Edge Network Server API]](https://experienceleague.adobe.com/en/docs/experience-platform/edge-network-server-api/overview){target=_blank}.
+>Als uw implementatie de [!UICONTROL Adobe Experience Platform Web SDK]moet u de [[!UICONTROL Adobe Experience Platform] [!UICONTROL Edge Network Server API]](https://experienceleague.adobe.com/nl/docs/experience-platform/edge-network-server-api/overview){target=_blank}.
 
 Het volgende proces vindt plaats in een serverimplementatie van [!DNL Target]:
 

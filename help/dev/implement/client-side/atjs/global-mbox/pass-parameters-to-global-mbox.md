@@ -29,7 +29,7 @@ U kunt parameters doorgeven aan `target-global-mbox` met de `targetPageParams()`
 * Een JSON-object
 * Een door ampersand gescheiden lijst
 
-Gebruik deze drie methoden om te controleren of de parameters correct worden doorgegeven. Mogelijk kunt u ook controleren of parameters zijn doorgegeven met de opdracht [Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html).
+Gebruik deze drie methoden om te controleren of de parameters correct worden doorgegeven. Mogelijk kunt u ook controleren of parameters zijn doorgegeven met de opdracht [Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html?lang=nl-NL).
 
 U moet de JavaScript-functie definiëren voordat u het globale vakje aan de pagina toevoegt. De naam moet `targetPageParams`.
 

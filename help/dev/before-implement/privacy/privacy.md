@@ -43,7 +43,7 @@ De volgende instellingen zijn beschikbaar in de [!DNL Target] UI door te naviger
 
 Wanneer u de opdracht [!DNL Platform Web SDK] (versie 23.4 of recenter), het datastream-niveau IP obfuscation plaatsen neemt belangrijkheid over om het even welke IP die optieoptie in [!DNL Target]. Bijvoorbeeld, als de datastream-vlakke IP verduisteringsoptie wordt geplaatst aan [!UICONTROL Full] en de [!DNL Target] IP de optie van de verwarring wordt geplaatst aan [!UICONTROL Last octet obfuscation], [!DNL Target] ontvangt volledig verduisterde IP.
 
-Zie voor meer informatie [!UICONTROL IP Obfuscation] in [Een gegevensstroom configureren](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html){target=_blank} in de *[!DNL Adobe Experience Platfrom]Handleiding gegevensstromen*.
+Zie voor meer informatie [!UICONTROL IP Obfuscation] in [Een gegevensstroom configureren](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=nl-NL){target=_blank} in de *[!DNL Adobe Experience Platfrom]Handleiding gegevensstromen*.
 
 ## GeoSegmentation
 

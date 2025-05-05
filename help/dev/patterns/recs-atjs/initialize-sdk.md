@@ -58,27 +58,27 @@ Deze stap helpt ervoor te zorgen dat de `VisitorAPI.js` de bibliotheek is correc
 
 **Vereisten**
 
-* Als u de Bezoeker-id/API-service wilt gebruiken, moet uw bedrijf zijn ingeschakeld voor de [!DNL Adobe Experience Cloud] en een [!UICONTROL Organization ID]. Zie voor meer informatie [Vereisten voor Experience Cloud: organisatie-id](https://experienceleague.adobe.com/docs/id-service/using/reference/requirements.html?){target=_blank} in de *Help bij Identiteitsservice* hulplijn.
-* U hebt de `VisitorAPI.js` bestand. U moet dit bestand al hebben als u [!DNL Adobe Analytics] geïmplementeerd. Dit bestand kan ook worden toegevoegd via het dialoogvenster [[!DNL Adobe Experience Platform] extensie tags](https://experienceleague.adobe.com/docs/tags.html){target=_blank} or can be downloaded from the [Adobe Analytics Code Manager](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html){target=_blank}.
+* Als u de Bezoeker-id/API-service wilt gebruiken, moet uw bedrijf zijn ingeschakeld voor de [!DNL Adobe Experience Cloud] en een [!UICONTROL Organization ID]. Zie voor meer informatie [Vereisten voor Experience Cloud: organisatie-id](https://experienceleague.adobe.com/docs/id-service/using/reference/requirements.html?lang=nl-NL&){target=_blank} in de *Help bij Identiteitsservice* hulplijn.
+* U hebt de `VisitorAPI.js` bestand. U moet dit bestand al hebben als u [!DNL Adobe Analytics] geïmplementeerd. Dit bestand kan ook worden toegevoegd via het dialoogvenster [[!DNL Adobe Experience Platform] extensie tags](https://experienceleague.adobe.com/docs/tags.html?lang=nl-NL){target=_blank} or can be downloaded from the [Adobe Analytics Code Manager](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=nl-NL){target=_blank}.
 
 **Bezoeker API.js configureren en doorverwijzen**
 
-Zie voor meer informatie [Voer de Dienst van het Experience Cloud voor Doel uit](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-target.html){target=_blank}.
+Zie voor meer informatie [Voer de Dienst van het Experience Cloud voor Doel uit](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-target.html?lang=nl-NL){target=_blank}.
 
 **Leesingen**
 
-* [Overzicht van Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html){target=_blank}
-* [Over de id-service](https://experienceleague.adobe.com/docs/id-service/using/intro/about-id-service.html){target=_blank}
-* [Cookies en de identiteitsservice van Experiencen Cloud](https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html){target=_blank}
-* [Hoe de Dienst van de Identiteit van het Experience Cloud verzoekt en identiteitskaart plaatst](https://experienceleague.adobe.com/docs/id-service/using/intro/id-request.html){target=_blank}
-* [ID-synchronisatie en overeenkomende snelheden](https://experienceleague.adobe.com/docs/id-service/using/intro/match-rates.html){target=_blank}
+* [Overzicht van Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html?lang=nl-NL){target=_blank}
+* [Over de id-service](https://experienceleague.adobe.com/docs/id-service/using/intro/about-id-service.html?lang=nl-NL){target=_blank}
+* [Cookies en de identiteitsservice van Experiencen Cloud](https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html?lang=nl-NL){target=_blank}
+* [Hoe de Dienst van de Identiteit van het Experience Cloud verzoekt en identiteitskaart plaatst](https://experienceleague.adobe.com/docs/id-service/using/intro/id-request.html?lang=nl-NL){target=_blank}
+* [ID-synchronisatie en overeenkomende snelheden](https://experienceleague.adobe.com/docs/id-service/using/intro/match-rates.html?lang=nl-NL){target=_blank}
 
 **Handelingen**
 
 * De `VisitorAPI.js` op uw webpagina&#39;s.
-* Meer informatie over de [beschikbare configuraties voor de Bezoeker-id/API-service](https://experienceleague.adobe.com/docs/id-service/using/reference/requirements.html){target=_blank}.
+* Meer informatie over de [beschikbare configuraties voor de Bezoeker-id/API-service](https://experienceleague.adobe.com/docs/id-service/using/reference/requirements.html?lang=nl-NL){target=_blank}.
 * Na de `VisitorAPI.js` bestand is geladen, gebruikt u de `Visitor.getInstance` methode om te initialiseren gebruikend de noodzakelijke configuraties u wenst.
-* Verken uzelf met de [beschikbare methoden](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/get-set.html){target=_blank}.
+* Verken uzelf met de [beschikbare methoden](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/get-set.html?lang=nl-NL){target=_blank}.
 
 +++
 
@@ -97,11 +97,11 @@ Deze stap helpt ervoor te zorgen dat de bekende id&#39;s van uw bezoekers (CRM-i
 * De bekende id van de bezoeker moet beschikbaar zijn in de gegevenslaag.
 
 **Klant-id instellen**
-Zie voor meer informatie [setCustomerIDs](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/setcustomerids.html){target=_blank}.
+Zie voor meer informatie [setCustomerIDs](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/setcustomerids.html?lang=nl-NL){target=_blank}.
 
 **Leesingen**
 
-* [Real-time profielsynchronisatie voor mbox3rdPartyId](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html){target=_blank}
+* [Real-time profielsynchronisatie voor mbox3rdPartyId](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html?lang=nl-NL){target=_blank}
 
 **Handelingen**
 
@@ -212,15 +212,15 @@ Zie voor meer informatie [targetPageParams()](/help/dev/implement/client-side/at
 
 ## 1.6. Promotie {#promotion}
 
-Aanbevolen objecten toevoegen en de plaatsing ervan in uw [!DNL Target Recommendations] [ontwerpen](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-design/create-design.html){target=_blank}.
+Aanbevolen objecten toevoegen en de plaatsing ervan in uw [!DNL Target Recommendations] [ontwerpen](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-design/create-design.html?lang=nl-NL){target=_blank}.
 
 +++Zie details
 
 **Beschikbare opties**
 
 * Promoten met id&#39;s
-* [Bevorderen per collectie](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/collections.html){target=_blank}
-* [Promoten op kenmerk](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html){target=_blank}
+* [Bevorderen per collectie](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/collections.html?lang=nl-NL){target=_blank}
+* [Promoten op kenmerk](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html?lang=nl-NL){target=_blank}
 
 **Vereiste parameters voor entiteit**
 
@@ -248,7 +248,7 @@ Aanbevelingen doen op basis van de inhoud van het winkelwagentje.
 
 **Leesingen**
 
-* [Op basis van winkelwagentje](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=en#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
+* [Op basis van winkelwagentje](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=nl-NL#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
 
 +++
 
@@ -277,7 +277,7 @@ Aanbevelingen doen op basis van de algemene populariteit van een item op uw site
 
 **Leesingen**
 
-* [Gebaseerd op populariteit](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=en#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
+* [Gebaseerd op populariteit](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=nl-NL#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
 
 +++
 
@@ -302,7 +302,7 @@ Aanbevelingen doen op basis van het zoeken naar objecten die vergelijkbaar zijn 
 
 **Leesingen**
 
-* [Object gebaseerd](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=en#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
+* [Object gebaseerd](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=nl-NL#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
 
 +++
 
@@ -325,7 +325,7 @@ Aanbevelingen doen op basis van het gedrag van de gebruiker.
 
 **Leesingen**
 
-* [Op gebruiker gebaseerd](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=en#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
+* [Op gebruiker gebaseerd](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=nl-NL#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
 
 +++
 
@@ -347,7 +347,7 @@ Aanbevelingen doen op basis van een aangepast bestand dat u uploadt.
 
 **Leesingen**
 
-* [Aangepaste criteria](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=en#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
+* [Aangepaste criteria](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=nl-NL#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
 
 +++
 
@@ -359,7 +359,7 @@ Aanbevelingen doen op basis van een aangepast bestand dat u uploadt.
 
 **Leesingen**
 
-* [Regels voor dynamische en statische integratie gebruiken](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/dynamic-static/use-dynamic-and-static-inclusion-rules.html){target=_blank}
+* [Regels voor dynamische en statische integratie gebruiken](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/dynamic-static/use-dynamic-and-static-inclusion-rules.html?lang=nl-NL){target=_blank}
 
 +++
 
@@ -373,7 +373,7 @@ Geef entiteit-id&#39;s door voor entiteiten die u wilt uitsluiten van uw aanbeve
 
 **Leesingen**
 
-* [Kan ik een entiteit dynamisch uitsluiten?](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-faq/recommendations-faq.html?lang=en#exclude){target=_blank}
+* [Kan ik een entiteit dynamisch uitsluiten?](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-faq/recommendations-faq.html?lang=nl-NL#exclude){target=_blank}
 
 +++
 
@@ -387,7 +387,7 @@ Entiteitskenmerken gebruiken om product- of inhoudsinformatie door te geven aan 
 
 **Leesingen**
 
-* [Entiteitskenmerken](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html?lang=en){target=_blank}
+* [Entiteitskenmerken](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html?lang=nl-NL){target=_blank}
 
 +++
 
@@ -435,7 +435,7 @@ Deze stap zorgt ervoor dat de JavaScript-bibliotheek at.js wordt geladen en geï
 
 *Leesingen*
 
-* [Hoe Target werkt](https://experienceleague.adobe.com/docs/target/using/introduction/how-target-works.html){target=_blank}
+* [Hoe Target werkt](https://experienceleague.adobe.com/docs/target/using/introduction/how-target-works.html?lang=nl-NL){target=_blank}
 * [Hoe werkt at.js](/help/dev/implement/client-side/atjs/how-atjs-works/how-atjs-works.md)
 * [Doel implementeren zonder tagbeheer](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager.md)
 

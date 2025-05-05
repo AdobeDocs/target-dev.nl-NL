@@ -21,7 +21,7 @@ Er zijn meerdere manieren waarop een gebruiker kan worden geïdentificeerd binne
 | `tntID` | De `tntId` is de primaire id in [!DNL Target] voor een gebruiker. U kunt deze id opgeven, of [!DNL Target] automatisch genereren als de aanvraag geen verzoek bevat. |
 | `thirdPartyId` | De `thirdPartyId` is het herkenningsteken van uw bedrijf voor de gebruiker, die u met elke vraag kunt verzenden. Wanneer een gebruiker zich bij de plaats van een bedrijf aanmeldt, leidt het bedrijf typisch tot een identiteitskaart die aan de rekening van de bezoeker, de loyaliteitskaart, het lidmaatschapsaantal, of andere toepasselijke herkenningstekens voor dat bedrijf gebonden is. |
 | `marketingCloudVisitorId` | De `marketingCloudVisitorId` wordt gebruikt om gegevens tussen verschillende Adobe oplossingen samen te voegen en te delen. De marketingCloudVisitorId is vereist voor integratie met Adobe Analytics en Adobe Audience Manager. |
-| `customerIds` | Samen met de Experience Cloud-bezoeker-id [klant-id&#39;s](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html) en een voor authentiek verklaarde status voor elke bezoeker kan ook worden gebruikt. |
+| `customerIds` | Samen met de Experience Cloud-bezoeker-id [klant-id&#39;s](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html?lang=nl-NL) en een voor authentiek verklaarde status voor elke bezoeker kan ook worden gebruikt. |
 
 ## [!DNL Target] ID (tntID)
 
@@ -233,7 +233,7 @@ In dit scenario: [!DNL Target] zal een `tntId` aangezien het niet in de originel
 
 ## Klant-id (customerIds)
 
-[Klant-id&#39;s](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html) kan worden toegevoegd aan of gekoppeld aan een Experience Cloud-bezoeker-id. Wanneer u `customerIds`de `marketingCloudVisitorId` moeten ook worden verstrekt. Bovendien kan een authentificatiestatus samen met elk worden verstrekt `customerId` voor elke bezoeker. De volgende verificatiestatus kan worden gebruikt:
+[Klant-id&#39;s](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html?lang=nl-NL) kan worden toegevoegd aan of gekoppeld aan een Experience Cloud-bezoeker-id. Wanneer u `customerIds`de `marketingCloudVisitorId` moeten ook worden verstrekt. Bovendien kan een authentificatiestatus samen met elk worden verstrekt `customerId` voor elke bezoeker. De volgende verificatiestatus kan worden gebruikt:
 
 | Status van verificatie | Gebruikersstatus |
 | --- | --- |
@@ -311,11 +311,11 @@ TargetDeliveryResponse offers = targetClient.getOffers(request);
 
 >[!ENDTABS]
 
-In het bovenstaande voorbeeld ziet u hoe u een `customerId` met een `authenticatedState`. Wanneer u een `customerId`de `integrationCode`, `id`, en `authenticatedState` en de `marketingCloudVisitorId` zijn vereist. De `integrationCode` is de alias van de [klantkenmerkbestand](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/working-with-customer-attributes.html) via CRS.
+In het bovenstaande voorbeeld ziet u hoe u een `customerId` met een `authenticatedState`. Wanneer u een `customerId`de `integrationCode`, `id`, en `authenticatedState` en de `marketingCloudVisitorId` zijn vereist. De `integrationCode` is de alias van de [klantkenmerkbestand](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/working-with-customer-attributes.html?lang=nl-NL) via CRS.
 
 ## Samengevoegd profiel
 
-U kunt `tntId`, `thirdPartyID`, en `marketingCloudVisitorId` in hetzelfde verzoek. In dit scenario: [!DNL Adobe Target] Hiermee wordt de toewijzing van al deze id&#39;s behouden en vastgezet aan een bezoeker. Meer informatie over profielen [samengevoegd en in real time gesynchroniseerd](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html) de verschillende id&#39;s gebruiken.
+U kunt `tntId`, `thirdPartyID`, en `marketingCloudVisitorId` in hetzelfde verzoek. In dit scenario: [!DNL Adobe Target] Hiermee wordt de toewijzing van al deze id&#39;s behouden en vastgezet aan een bezoeker. Meer informatie over profielen [samengevoegd en in real time gesynchroniseerd](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html?lang=nl-NL) de verschillende id&#39;s gebruiken.
 
 >[!BEGINTABS]
 

@@ -19,7 +19,7 @@ Lijst met veelgestelde vragen (FAQ&#39;s) over globale vakken.
 
 Er wordt slechts één globale box ondersteund voor uw account.
 
-U kunt beperken waar uw activiteiten lopen door URL-regels aan uw activiteiten toe te voegen. Zie voor meer informatie [Dezelfde ervaring opnemen op vergelijkbare pagina&#39;s](https://experienceleague.adobe.com/docs/target/using/experiences/vec/temtest.html).
+U kunt beperken waar uw activiteiten lopen door URL-regels aan uw activiteiten toe te voegen. Zie voor meer informatie [Dezelfde ervaring opnemen op vergelijkbare pagina&#39;s](https://experienceleague.adobe.com/docs/target/using/experiences/vec/temtest.html?lang=nl-NL).
 
 U kunt ook een parameter op de pagina doorgeven met [targetPageParams](/help/dev/implement/client-side/atjs/atjs-functions/targetpageparams.md) en selecteer vervolgens de parameters in de sectie &quot;URL configureren&quot; in het dialoogvenster [!UICONTROL Visual Experience Composer] (VEC) of door de parameters toe te voegen als &quot;verfijningen&quot; in de [!UICONTROL Form-Based Experience Composer].
 

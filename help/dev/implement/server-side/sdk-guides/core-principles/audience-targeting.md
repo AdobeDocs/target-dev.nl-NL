@@ -14,11 +14,11 @@ ht-degree: 0%
 
 ## Overzicht
 
-Het publiek kan worden gebruikt om uw experimenten en verpersoonlijkingsactiviteiten te richten. [!DNL Adobe Target] biedt ondersteuning voor een groot aantal krachtige doelgroepen die hun mogelijkheden uit de box willen halen. De volgende kenmerken zijn beschikbaar voor [doelgerichte doelgroep](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/create-audience.html):
+Het publiek kan worden gebruikt om uw experimenten en verpersoonlijkingsactiviteiten te richten. [!DNL Adobe Target] biedt ondersteuning voor een groot aantal krachtige doelgroepen die hun mogelijkheden uit de box willen halen. De volgende kenmerken zijn beschikbaar voor [doelgerichte doelgroep](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/create-audience.html?lang=nl-NL):
 
 ### [!DNL Target] Bibliotheek
 
-Zie voor meer informatie [[!DNL Target] Bibliotheek](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/target-library.html). &#x200B;
+Zie voor meer informatie [[!DNL Target] Bibliotheek](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/target-library.html?lang=nl-NL). &#x200B;
 * Verwezen van Bing
 * Chrome-browser
 * Firefox-browser
@@ -35,7 +35,7 @@ Zie voor meer informatie [[!DNL Target] Bibliotheek](https://experienceleague.ad
 
 ### Geo
 
-Zie voor meer informatie [Geo](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/geo.html). &#x200B; &#x200B;
+Zie voor meer informatie [Geo](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/geo.html?lang=nl-NL). &#x200B; &#x200B;
 * Land/regio
 * Staat
 * Plaats
@@ -47,7 +47,7 @@ Zie voor meer informatie [Geo](https://experienceleague.adobe.com/docs/target/us
 
 ### Netwerk
 
-Zie voor meer informatie [Netwerk](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/network.html).
+Zie voor meer informatie [Netwerk](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/network.html?lang=nl-NL).
 
 * ISP
 * Domeinnaam
@@ -55,7 +55,7 @@ Zie voor meer informatie [Netwerk](https://experienceleague.adobe.com/docs/targe
 
 ### Mobiel
 
-Zie voor meer informatie [Mobiel](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/mobile.html).
+Zie voor meer informatie [Mobiel](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/mobile.html?lang=nl-NL).
 
 * Marketingnaam apparaat
 * Apparaatmodel
@@ -69,13 +69,13 @@ Zie voor meer informatie [Mobiel](https://experienceleague.adobe.com/docs/target
 
 ### Aangepast
 
-Zie voor meer informatie [Aangepaste parameters](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html).
+Zie voor meer informatie [Aangepaste parameters](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html?lang=nl-NL).
 
 * een sleutel/waardepaar
 
 ### Besturingssysteem
 
-Zie voor meer informatie [Besturingssysteem](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/operating-system.html).
+Zie voor meer informatie [Besturingssysteem](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/operating-system.html?lang=nl-NL).
 
 * Linux
 * Macintosh
@@ -83,7 +83,7 @@ Zie voor meer informatie [Besturingssysteem](https://experienceleague.adobe.com/
 
 ### Sitepagina&#39;s
 
-Zie voor meer informatie [Sitepagina&#39;s](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/site-pages.html).
+Zie voor meer informatie [Sitepagina&#39;s](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/site-pages.html?lang=nl-NL).
 
 * Huidige pagina
 * Vorige pagina
@@ -92,7 +92,7 @@ Zie voor meer informatie [Sitepagina&#39;s](https://experienceleague.adobe.com/d
 
 ### Browser
 
-Zie voor meer informatie [Browser](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/browser.html).
+Zie voor meer informatie [Browser](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/browser.html?lang=nl-NL).
 
 * Type
 * Taal
@@ -100,13 +100,13 @@ Zie voor meer informatie [Browser](https://experienceleague.adobe.com/docs/targe
 
 ### Bezoekerprofiel
 
-Zie voor meer informatie [Bezoekerprofiel](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html).
+Zie voor meer informatie [Bezoekerprofiel](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html?lang=nl-NL).
 
 * om het even welk sleutel/waardepaar, dat wordt voortgeduurd
 
 ### verkeersbronnen
 
-Zie voor meer informatie [verkeersbronnen](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html).
+Zie voor meer informatie [verkeersbronnen](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html?lang=nl-NL).
 
 * Van Baidu
 * Vanaf band
@@ -118,7 +118,7 @@ Zie voor meer informatie [verkeersbronnen](https://experienceleague.adobe.com/do
 
 ### Tijdschema
 
-Zie voor meer informatie [Tijdschema](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/time-frame.html).
+Zie voor meer informatie [Tijdschema](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/time-frame.html?lang=nl-NL).
 
 * Begindatum / Einddatum
 
@@ -195,17 +195,17 @@ In de volgende tabel wordt aangegeven welke publieksregels worden ondersteund vo
 
 | Auditieregel | Apparaatbeslissingen |
 | --- | --- |
-| [Geo](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/geo.html) | Ja |
-| [Netwerk](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/network.html) | Nee |
-| [Mobiel](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/mobile.html) | Nee |
-| [Aangepaste parameters](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html) | Ja |
-| [Besturingssysteem](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/operating-system.html) | Ja |
-| [Sitepagina&#39;s](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/site-pages.html) | Ja |
-| [Browser](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/browser.html) | Ja |
-| [Bezoekerprofiel](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html) | Nee |
-| [verkeersbronnen](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html) | Nee |
-| [Tijdschema](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/time-frame.html) | Ja |
-| [Experience Cloud publiek](https://experienceleague.adobe.com/docs/target/using/integrate/mmp.html) (Soorten publiek uit Adobe Audience Manager, Adobe Analytics en Adobe Experience Manager) | Nee |
+| [Geo](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/geo.html?lang=nl-NL) | Ja |
+| [Netwerk](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/network.html?lang=nl-NL) | Nee |
+| [Mobiel](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/mobile.html?lang=nl-NL) | Nee |
+| [Aangepaste parameters](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html?lang=nl-NL) | Ja |
+| [Besturingssysteem](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/operating-system.html?lang=nl-NL) | Ja |
+| [Sitepagina&#39;s](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/site-pages.html?lang=nl-NL) | Ja |
+| [Browser](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/browser.html?lang=nl-NL) | Ja |
+| [Bezoekerprofiel](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html?lang=nl-NL) | Nee |
+| [verkeersbronnen](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html?lang=nl-NL) | Nee |
+| [Tijdschema](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/time-frame.html?lang=nl-NL) | Ja |
+| [Experience Cloud publiek](https://experienceleague.adobe.com/docs/target/using/integrate/mmp.html?lang=nl-NL) (Soorten publiek uit Adobe Audience Manager, Adobe Analytics en Adobe Experience Manager) | Nee |
 
 ### Geo targeting voor apparaatbesluitvorming
 
@@ -322,14 +322,14 @@ In de volgende tabel wordt aangegeven welke publieksregels worden ondersteund vo
 
 | Auditieregel | Beslissing op de server |
 | --- | --- |
-| [Geo](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/geo.html) | Ja |
-| [Netwerk](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/network.html) | Ja |
-| [Mobiel](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/mobile.html) | Ja |
-| [Aangepaste parameters](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html) | Ja |
-| [Besturingssysteem](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/operating-system.html) | Ja |
-| [Sitepagina&#39;s](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/site-pages.html) | Ja |
-| [Browser](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/browser.html) | Ja |
-| [Bezoekerprofiel](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html) | Ja |
-| [verkeersbronnen](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html) | Ja |
-| [Tijdschema](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/time-frame.html) | Ja |
-| [Experience Cloud publiek](https://experienceleague.adobe.com/docs/target/using/integrate/mmp.html) (Soorten publiek uit Adobe Audience Manager, Adobe Analytics en Adobe Experience Manager) | Ja |
+| [Geo](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/geo.html?lang=nl-NL) | Ja |
+| [Netwerk](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/network.html?lang=nl-NL) | Ja |
+| [Mobiel](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/mobile.html?lang=nl-NL) | Ja |
+| [Aangepaste parameters](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html?lang=nl-NL) | Ja |
+| [Besturingssysteem](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/operating-system.html?lang=nl-NL) | Ja |
+| [Sitepagina&#39;s](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/site-pages.html?lang=nl-NL) | Ja |
+| [Browser](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/browser.html?lang=nl-NL) | Ja |
+| [Bezoekerprofiel](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html?lang=nl-NL) | Ja |
+| [verkeersbronnen](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html?lang=nl-NL) | Ja |
+| [Tijdschema](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/time-frame.html?lang=nl-NL) | Ja |
+| [Experience Cloud publiek](https://experienceleague.adobe.com/docs/target/using/integrate/mmp.html?lang=nl-NL) (Soorten publiek uit Adobe Audience Manager, Adobe Analytics en Adobe Experience Manager) | Ja |

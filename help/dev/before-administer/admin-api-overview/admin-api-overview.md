@@ -16,7 +16,7 @@ Dit artikel biedt een overzicht van de achtergrondinformatie die nodig is om dez
 
 >[!NOTE]
 >
->Indien u wilt toedienen [!DNL Target] via de interface [rubriek van de *Adobe Target Business Practice Guide*](https://experienceleague.adobe.com/docs/target/using/administer/administrating-target.html?lang=en).
+>Indien u wilt toedienen [!DNL Target] via de interface [rubriek van de *Adobe Target Business Practice Guide*](https://experienceleague.adobe.com/docs/target/using/administer/administrating-target.html?lang=nl-NL).
 >
 >De API&#39;s voor beheerders en profiel-API&#39;s worden vaak gezamenlijk genoemd (&quot;Admin en Profile API&#39;s&quot;), maar kunnen ook afzonderlijk worden vermeld (&quot;Admin API&#39;s&quot; en &quot;Profile API&#39;s&quot;). De Recommendations API is een specifieke implementatie van een [!DNL Target] Admin API.
 
@@ -74,11 +74,11 @@ Hier volgen de algemene responscodes voor de API&#39;s voor doelbeheer.
 
 Met een activiteit kunt u inhoud voor uw gebruikers testen of aanpassen. De activiteiten kunnen een van de volgende soorten activiteiten zijn:
 
-* [A/B](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html)
-* [Gericht op ervaring (XT)](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html)
-* [Recommendations](https://experienceleague.adobe.com/docs/target/using/activities/recommendations-activity.html)
-* [Automated Personalization](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html)
-* [MVT (Multivariate Test)](https://experienceleague.adobe.com/docs/target/using/activities/multivariate-test/multivariate-testing.html)
+* [A/B](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=nl-NL)
+* [Gericht op ervaring (XT)](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html?lang=nl-NL)
+* [Recommendations](https://experienceleague.adobe.com/docs/target/using/activities/recommendations-activity.html?lang=nl-NL)
+* [Automated Personalization](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html?lang=nl-NL)
+* [MVT (Multivariate Test)](https://experienceleague.adobe.com/docs/target/using/activities/multivariate-test/multivariate-testing.html?lang=nl-NL)
 
 ## Batchupdates
 

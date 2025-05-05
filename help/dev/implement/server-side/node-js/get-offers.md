@@ -52,7 +52,7 @@ De `options` object heeft de volgende structuur:
 | targetCookie | Object | [!DNL Target] koekje |
 | targetLocationHintCookie | Object | [!DNL Target] locatiehintcookie |
 | analyticsDetails | Array | Analyselading, in geval van client-side Analytics-gebruik |
-| responseTokens | Array | Een lijst van [Reactietokens](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html?). |
+| responseTokens | Array | Een lijst van [Reactietokens](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html?lang=nl-NL&). |
 | traceren | Array | Samengevoegde spoorgegevens voor alle verzoekdozen/meningen |
 | status | Object | Een object dat de status van het antwoord bevat. |
 | determinoningMethod | String | Bepaalt welke beslissingsmethode moet worden gebruikt ([op apparaat](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/overview.md), server-kant, hybride) |

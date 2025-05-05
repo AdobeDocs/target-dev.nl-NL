@@ -17,7 +17,7 @@ Informatie over het gebruik van de [!UICONTROL Adobe Experience Cloud Debugger] 
 
 U kunt uw bibliotheekconfiguratie snel bekijken, verzoeken onderzoeken om ervoor te zorgen uw douaneparameters correct worden overgegaan, console het registreren inschakelen, en allen onbruikbaar maken [!DNL Target] verzoeken. Verifiëren in de [!DNL Experience Cloud] en u kunt het krachtige hulpmiddel van het Spoor Mbox gebruiken om uw activiteit en publiekskwalificaties evenals uw bezoekersprofiel te inspecteren.
 
-Controleer de [Overzicht van Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html){target=_blank}.
+Controleer de [Overzicht van Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=nl-NL){target=_blank}.
 
 ## Trainingsvideo&#39;s
 

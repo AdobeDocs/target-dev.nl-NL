@@ -17,7 +17,7 @@ ht-degree: 1%
 
 Soms kunnen de algoritmen die door Recommendations worden aangeboden, geen specifieke items weergeven die u wilt promoten. In een dergelijke situatie bieden aangepaste criteria u een manier om een specifieke reeks aanbevolen items voor een bepaald sleutelitem of een bepaalde categorie te leveren.
 
-Als u aangepaste criteria wilt maken, definieert en importeert u de gewenste toewijzing tussen het sleutelitem of de categorie en de aanbevolen items. Dit proces wordt beschreven in het dialoogvenster [documentatie met aangepaste criteria](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/recommendations-csv.html). Zoals vermeld in die documentatie, kunt u douanecriteria tot stand brengen uitgeven en schrappen door het gebruikersinterface van het Doel (UI). Target biedt echter ook een set API&#39;s met aangepaste criteria waarmee u uw aangepaste criteria gedetailleerder kunt beheren.
+Als u aangepaste criteria wilt maken, definieert en importeert u de gewenste toewijzing tussen het sleutelitem of de categorie en de aanbevolen items. Dit proces wordt beschreven in het dialoogvenster [documentatie met aangepaste criteria](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/recommendations-csv.html?lang=nl-NL). Zoals vermeld in die documentatie, kunt u douanecriteria tot stand brengen uitgeven en schrappen door het gebruikersinterface van het Doel (UI). Target biedt echter ook een set API&#39;s met aangepaste criteria waarmee u uw aangepaste criteria gedetailleerder kunt beheren.
 
 >[!WARNING]
 >
@@ -31,7 +31,7 @@ Aangepaste criteria maken met de opdracht [Aangepaste criteria-API maken](https:
 
 >[!WARNING]
 >
->Aangepaste criteria die zijn gemaakt met de Create Custom Criteria API (Aangepaste criteria maken), zoals in deze exercitie wordt beschreven, worden weergegeven in de gebruikersinterface, waar ze blijven bestaan. U kunt ze niet bewerken of verwijderen uit de gebruikersinterface. U kunt ze bewerken of verwijderen **via API**, maar in beide gevallen blijven deze zichtbaar in de doelinterface. Als u de optie voor het bewerken of verwijderen van de interface wilt behouden, maakt u de aangepaste criteria met behulp van de interface per [de documentatie](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/recommendations-csv.html)in plaats van de API Aangepaste criteria maken te gebruiken.
+>Aangepaste criteria die zijn gemaakt met de Create Custom Criteria API (Aangepaste criteria maken), zoals in deze exercitie wordt beschreven, worden weergegeven in de gebruikersinterface, waar ze blijven bestaan. U kunt ze niet bewerken of verwijderen uit de gebruikersinterface. U kunt ze bewerken of verwijderen **via API**, maar in beide gevallen blijven deze zichtbaar in de doelinterface. Als u de optie voor het bewerken of verwijderen van de interface wilt behouden, maakt u de aangepaste criteria met behulp van de interface per [de documentatie](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/recommendations-csv.html?lang=nl-NL)in plaats van de API Aangepaste criteria maken te gebruiken.
 
 Ga pas verder met de volgende stappen nadat u de bovenstaande waarschuwing hebt gelezen en u vertrouwd bent met het maken van nieuwe aangepaste criteria die vervolgens niet uit de gebruikersinterface kunnen worden verwijderd.
 

@@ -49,6 +49,6 @@ De `clientCode` kan worden opgehaald uit de [!DNL Target] UI door te navigeren n
 
 Voordat u een [!UICONTROL Target Delivery API] de vraag, volgt deze stappen om ervoor te zorgen een antwoord de relevante ervaring bevat om eind - gebruikers te tonen:
 
-1. Een [!DNL Target] activiteit (A/B, XT, AP of Recommendations) die het [Op formulier gebaseerde composer](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html?lang=en) of de [Visual Experience Composer](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html).
+1. Een [!DNL Target] activiteit (A/B, XT, AP of Recommendations) die het [Op formulier gebaseerde composer](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html?lang=nl-NL) of de [Visual Experience Composer](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html?lang=nl-NL).
 1. Gebruik de leverings-API om een antwoord te krijgen voor de vakken die worden gebruikt in de [!DNL Target] activiteit die in Stap 2 wordt gecreeerd.
 1. Presenteer de ervaring aan de bezoeker.

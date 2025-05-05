@@ -15,13 +15,13 @@ ht-degree: 2%
 
 Om [!DNL Adobe Target] aan clientzijde, moet u de JavaScript-bibliotheek at.js gebruiken.
 
-Bij een clientimplementatie van [!DNL Adobe Target], [!DNL Target] levert de ervaringen verbonden aan een activiteit rechtstreeks aan cliëntbrowser. De browser bepaalt welke ervaring wordt weergegeven en geeft deze weer. Met een cliënt-zijimplementatie, kunt u een redacteur gebruiken WYSIWYG, [Visual Experience Composer](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html) (VEC) of een niet-visuele interface [Form-based Experience Composer](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html), om uw test- en personaliservaringen te maken.
+Bij een clientimplementatie van [!DNL Adobe Target], [!DNL Target] levert de ervaringen verbonden aan een activiteit rechtstreeks aan cliëntbrowser. De browser bepaalt welke ervaring wordt weergegeven en geeft deze weer. Met een cliënt-zijimplementatie, kunt u een redacteur gebruiken WYSIWYG, [Visual Experience Composer](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html?lang=nl-NL) (VEC) of een niet-visuele interface [Form-based Experience Composer](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html?lang=nl-NL), om uw test- en personaliservaringen te maken.
 
 ## Wat is at.js?
 
 De bibliotheek at.js is de implementatiebibliotheek voor client-side implementatie van [!DNL Adobe Target]. De bibliotheek at.js verbetert de laadtijden voor webimplementaties en biedt betere implementatieopties voor toepassingen van één pagina. at.js is de aanbevolen implementatiebibliotheek en wordt regelmatig bijgewerkt met nieuwe mogelijkheden. Wij adviseren dat alle klanten uitvoeren of aan migreren [nieuwste versie van at.js](/help/dev/implement/client-side/atjs/target-atjs-versions.md).
 
-Zie voor meer informatie [JavaScript-doelbibliotheken](https://experienceleague.adobe.com/docs/target/using/introduction/how-target-works.html#libraries).
+Zie voor meer informatie [JavaScript-doelbibliotheken](https://experienceleague.adobe.com/docs/target/using/introduction/how-target-works.html?lang=nl-NL#libraries).
 
 In de [!DNL Target]de volgende Adobe Experience Cloud-oplossingen worden geïmplementeerd: [!DNL Analytics], Doel en [!DNL Audience Manager]. Daarnaast worden de volgende [!DNL Experience Cloud] de kerndiensten worden uitgevoerd : [!DNL Adobe Experience Platform], [!UICONTROL Audiences], en [!UICONTROL Visitor ID Service].
 
@@ -74,7 +74,7 @@ at.js 2.x verbetert de Adobe Target-ondersteuning voor SPA en integreert deze me
 
 >[!VIDEO](https://video.tv.adobe.com/v/26250/?quality=12)
 
-Zie [Begrijpen hoe at.js 2.x werkt](https://experienceleague.adobe.com/docs/target-learn/tutorials/implementation/understanding-how-atjs-20-works.html) voor meer informatie .
+Zie [Begrijpen hoe at.js 2.x werkt](https://experienceleague.adobe.com/docs/target-learn/tutorials/implementation/understanding-how-atjs-20-works.html?lang=nl-NL) voor meer informatie .
 
 ## bij.js 1.x-diagram
 

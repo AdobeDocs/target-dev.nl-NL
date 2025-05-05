@@ -56,13 +56,13 @@ Voordat u een redirector kunt gebruiken, moet u deze maken.
 
    >[!WARNING]
    >
-   >Merk op dat u met Redirector aan een risico van Open Redirect Kwetsbaarheid kunt worden blootgesteld. Om het ongeoorloofde gebruik van verbindingen van Redirector door derden te vermijden, adviseert Adobe u &quot;geautoriseerde gastheren&quot;gebruiken om de standaard omleiding URL domeinen te lijsten van gewenste personen. [!DNL Target] gebruikt gastheren aan lijst van gewenste personen domeinen waaraan u redirects wilt toestaan. Zie voor meer informatie [Creeer Lijsten van gewenste personen die gastheren specificeren die worden gemachtigd om mbox vraag te verzenden naar [!DNL Target]](https://experienceleague.adobe.com/docs/target/using/administer/hosts.html#allowlist) in *Gastheren*.
+   >Merk op dat u met Redirector aan een risico van Open Redirect Kwetsbaarheid kunt worden blootgesteld. Om het ongeoorloofde gebruik van verbindingen van Redirector door derden te vermijden, adviseert Adobe u &quot;geautoriseerde gastheren&quot;gebruiken om de standaard omleiding URL domeinen te lijsten van gewenste personen. [!DNL Target] gebruikt gastheren aan lijst van gewenste personen domeinen waaraan u redirects wilt toestaan. Zie voor meer informatie [Creeer Lijsten van gewenste personen die gastheren specificeren die worden gemachtigd om mbox vraag te verzenden naar [!DNL Target]](https://experienceleague.adobe.com/docs/target/using/administer/hosts.html?lang=nl-NL#allowlist) in *Gastheren*.
 
 1. Valideer Redirector.
    1. *Beste praktijken van de veiligheid*: Zorg ervoor dat het domein dat in Redirector wordt gebruikt, zoals hierboven vermeld wordt gevoegd op lijst van gewenste personen. Als u een domein gebruikt dat niet gevoegd op lijst van gewenste personen is, zal Adobe om het even welke vraag aan dat domein blokkeren om kwaadwillige acteurs te verhinderen Redirector te gebruiken om aan potentieel kwaadwillige domeinen om te leiden.
    2. Voeg de Redirector-URL in een browser in en vernieuw deze.
    3. Meld u aan bij uw account, vernieuw de keuzelijst en controleer of de nieuwe Redirector als een box wordt weergegeven.
-1. Als u verschillende bestemmingen voor één advertentie zult testen, creeer [Omleidingsvoorstellen](https://experienceleague.adobe.com/docs/target/using/experiences/vec/redirect-offer.html) voor elke versie.
+1. Als u verschillende bestemmingen voor één advertentie zult testen, creeer [Omleidingsvoorstellen](https://experienceleague.adobe.com/docs/target/using/experiences/vec/redirect-offer.html?lang=nl-NL) voor elke versie.
 1. Maak de campagne.
 
    Zie [Implementaties die niet op JavaScript zijn gebaseerd](/help/dev/implement/email/overview.md) voor de juiste opstelling om uw doelstellingen te ontmoeten.

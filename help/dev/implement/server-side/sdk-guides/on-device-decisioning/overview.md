@@ -42,7 +42,7 @@ Het volgende diagram toont het [!UICONTROL on-device decisioning] architectuur. 
 
 ### Activiteiten
 
-Apparaatbeslissingen ondersteunen de volgende activiteitstypen die door de [Form-based Experience Composer](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html):
+Apparaatbeslissingen ondersteunen de volgende activiteitstypen die door de [Form-based Experience Composer](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html?lang=nl-NL):
 
 * [!UICONTROL A/B Test]
 * [!UICONTROL Experience Targeting] (XT)
@@ -59,17 +59,17 @@ De besluitvorming op het apparaat ondersteunt de volgende publieksregels:
 
 | Auditieregel | Apparaatbeslissingen |
 | --- | --- |
-| [Geo](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/geo.html) | Ja<P>Bij gebruik van apparaatbeslissingen worden de volgende geografische kenmerken ondersteund:<ul><li>Land/regio</li><li>Plaats</li><li>Breedte</li><li>Lengtegraad</li></ul> |
-| [Netwerk](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/network.html) | Nee |
-| [Mobiel](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/mobile.html) | Nee |
-| [Aangepaste parameters](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html) | Ja |
-| [Besturingssysteem](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/operating-system.html) | Ja |
-| [Sitepagina&#39;s](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/site-pages.html) | Ja |
-| [Browser](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/browser.html) | Ja |
-| [Bezoekerprofiel](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html) | Nee |
-| [verkeersbronnen](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html) | Nee |
-| [Tijdschema](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/time-frame.html) | Ja |
-| [Soorten publiek Experience Cloud](https://experienceleague.adobe.com/docs/target/using/integrate/mmp.html) (Soorten publiek uit Adobe Audience Manager, Adobe Analytics en Adobe Experience Manager) | Nee |
+| [Geo](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/geo.html?lang=nl-NL) | Ja<P>Bij gebruik van apparaatbeslissingen worden de volgende geografische kenmerken ondersteund:<ul><li>Land/regio</li><li>Plaats</li><li>Breedte</li><li>Lengtegraad</li></ul> |
+| [Netwerk](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/network.html?lang=nl-NL) | Nee |
+| [Mobiel](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/mobile.html?lang=nl-NL) | Nee |
+| [Aangepaste parameters](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html?lang=nl-NL) | Ja |
+| [Besturingssysteem](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/operating-system.html?lang=nl-NL) | Ja |
+| [Sitepagina&#39;s](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/site-pages.html?lang=nl-NL) | Ja |
+| [Browser](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/browser.html?lang=nl-NL) | Ja |
+| [Bezoekerprofiel](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html?lang=nl-NL) | Nee |
+| [verkeersbronnen](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html?lang=nl-NL) | Nee |
+| [Tijdschema](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/time-frame.html?lang=nl-NL) | Ja |
+| [Soorten publiek Experience Cloud](https://experienceleague.adobe.com/docs/target/using/integrate/mmp.html?lang=nl-NL) (Soorten publiek uit Adobe Audience Manager, Adobe Analytics en Adobe Experience Manager) | Nee |
 
 ## Hoe kan ik mijn klant voorzien van [!UICONTROL on-device decisioning]?
 
@@ -144,7 +144,7 @@ Deze video van 7 minuten:
 
 >[!VIDEO](https://video.tv.adobe.com/v/329032/?quality=12)
 
-Zie de [[!DNL Adobe Target] Tutorials](https://experienceleague.adobe.com/docs/target-learn/tutorials/overview.html).
+Zie de [[!DNL Adobe Target] Tutorials](https://experienceleague.adobe.com/docs/target-learn/tutorials/overview.html?lang=nl-NL).
 
 ### Tech Blog Adobe - Deel 1: Uitvoeren [!DNL Adobe Target] NodeJS SDK voor experimenteren en personalisatie op Edge-platforms (Akamai Edge Workers)
 

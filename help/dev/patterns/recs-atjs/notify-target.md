@@ -48,7 +48,7 @@ U te hoeven niet om de attributen van de ordeconversie in deze vraag te omvatten
    * `orderTotal`: Totaal bestellen voor de aankoop.
    * `orderId`: Order-id van de aankoop.
 
-  In de volgende afbeelding ziet u een [regel voor [!DNL tags] in [!DNL Experience Platform]](https://experienceleague.adobe.com/docs/tags.html){target=_blank} die alleen op de [!UICONTROL Confirmation] pagina.
+  In de volgende afbeelding ziet u een [regel voor [!DNL tags] in [!DNL Experience Platform]](https://experienceleague.adobe.com/docs/tags.html?lang=nl-NL){target=_blank} die alleen op de [!UICONTROL Confirmation] pagina.
 
   ![pagina Configuratie van handelingen](/help/dev/patterns/recs-atjs/assets/action-configuration.png){width="400" zoomable="yes"}
 
@@ -57,7 +57,7 @@ U te hoeven niet om de attributen van de ordeconversie in deze vraag te omvatten
 **Leesingen**
 
 * [adobe.target.trackEvent(), methode](/help/dev/implement/client-side/atjs/atjs-functions/adobe-target-trackevent.md)
-* [cartID&#39;s voor op karretjes gebaseerde criteria](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/base-the-recommendation-on-a-recommendation-key.html?lang=en#cart-based){target=_blank}
+* [cartID&#39;s voor op karretjes gebaseerde criteria](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/base-the-recommendation-on-a-recommendation-key.html?lang=nl-NL#cart-based){target=_blank}
 
 **Handelingen**
 

@@ -17,15 +17,15 @@ Tags in [!DNL Adobe Experience Platform] zijn de volgende generatie mogelijkhede
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch is omgedoopt tot een reeks technologieën voor gegevensverzameling in [!DNL Adobe Experience Platform]. Diverse terminologische wijzigingen zijn als gevolg hiervan in de productdocumentatie doorgevoerd. Raadpleeg het volgende [document](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?) voor een geconsolideerde referentie van de terminologische wijzigingen.
+>Adobe Experience Platform Launch is omgedoopt tot een reeks technologieën voor gegevensverzameling in [!DNL Adobe Experience Platform]. Diverse terminologische wijzigingen zijn als gevolg hiervan in de productdocumentatie doorgevoerd. Raadpleeg het volgende [document](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=nl-NL&) voor een geconsolideerde referentie van de terminologische wijzigingen.
 
 In de volgende tabel worden de verschillende bronnen weergegeven waar u meer informatie kunt vinden:
 
 | Bron | Details |
 |--- |--- |
-| [Adobe Target toevoegen](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/implement-solutions/target.html#implement-solutions) | Deze zelfstudie bevat stapsgewijze instructies voor het implementeren [!DNL Target] in een website met tags in [!DNL Adobe Experience Platform]. Tot de onderwerpen behoren het toevoegen van de JavaScript-bibliotheek at.js, het afvuren van de globale box, het toevoegen van parameters en het integreren met andere oplossingen. Dit artikel maakt deel uit van een grotere zelfstudie die u laat zien hoe u Adobe Experience Platform en andere Adobe Experience Cloud-oplossingen implementeert. |
-| [Snelstartgids](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html) | Informatie over het opstellen van en het beheren van de analytische, marketing, en reclame markeringen noodzakelijk om relevante klantenervaringen te aandrijven. |
-| [Adobe [!DNL Target] extensieoverzicht](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/target/overview.html) | Informatie over de uitvoering [!DNL Target] gebruiken [!DNL Adobe Experience Platform]. |
+| [Adobe Target toevoegen](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/implement-solutions/target.html?lang=nl-NL#implement-solutions) | Deze zelfstudie bevat stapsgewijze instructies voor het implementeren [!DNL Target] in een website met tags in [!DNL Adobe Experience Platform]. Tot de onderwerpen behoren het toevoegen van de JavaScript-bibliotheek at.js, het afvuren van de globale box, het toevoegen van parameters en het integreren met andere oplossingen. Dit artikel maakt deel uit van een grotere zelfstudie die u laat zien hoe u Adobe Experience Platform en andere Adobe Experience Cloud-oplossingen implementeert. |
+| [Snelstartgids](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html?lang=nl-NL) | Informatie over het opstellen van en het beheren van de analytische, marketing, en reclame markeringen noodzakelijk om relevante klantenervaringen te aandrijven. |
+| [Adobe [!DNL Target] extensieoverzicht](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/target/overview.html?lang=nl-NL) | Informatie over de uitvoering [!DNL Target] gebruiken [!DNL Adobe Experience Platform]. |
 
 ## Voordelen van de implementatie van at.js met behulp van de [!DNL Target] extension
 

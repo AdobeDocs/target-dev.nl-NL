@@ -148,7 +148,7 @@ Om Safari bezoekers te ondersteunen, zou een beter X-Domein &quot;gehandicapt&qu
 
 ## Kan ik het doel gebruiken [!UICONTROL Visual Experience Composer] (VEC) in mijn toepassingen van één pagina?
 
-Ja, u kunt VEC voor uw SPA gebruiken als u at.js 2.x gebruikt. Zie voor meer informatie [Single Page (SPA) Visual Experience Composer](https://experienceleague.adobe.com/docs/target/using/experiences/spa-visual-experience-composer.html).
+Ja, u kunt VEC voor uw SPA gebruiken als u at.js 2.x gebruikt. Zie voor meer informatie [Single Page (SPA) Visual Experience Composer](https://experienceleague.adobe.com/docs/target/using/experiences/spa-visual-experience-composer.html?lang=nl-NL).
 
 ## Kan ik de Adobe Experience Cloud Debugger gebruiken met at.js implementaties?
 
@@ -239,7 +239,7 @@ Merk op dat voor reactietokens en zitting IDs die in deze verzoeken worden overg
 * Ze houden communicatiesessies bij
 * Ze bestaan uit willekeurige tekens
 * Sessie-id&#39;s zijn 30 minuten geldig
-* Responstokens kunnen worden uitgeschakeld ([Reactietokens](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html))
+* Responstokens kunnen worden uitgeschakeld ([Reactietokens](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html?lang=nl-NL))
 * Ze zijn alleen nuttig in de omgeving van Adobe-oplossingen.
 
 Verwacht wordt dat de `Access-Control-Allow-Origin` header met de waarde &quot;*&quot; in at.js-aanvragen, omdat ze openbaar zijn, is verificatie niet vereist en moet het Adobe Edge-netwerk via JavaScript-aanroepen vanuit elk domein worden benaderd.

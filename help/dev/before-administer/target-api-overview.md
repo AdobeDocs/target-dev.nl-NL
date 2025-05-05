@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Overzicht doelAPI
 
-In dit artikel worden de verschillende doel-API&#39;s in het algemeen beschreven voordat u zich richt op specifieke vereisten voor de API&#39;s Admin en Profile. Als u Doel via de gebruikersinterface wilt beheren, raadpleegt u de [rubriek van de *Adobe Target Business User Guide*](https://experienceleague.adobe.com/docs/target/using/administer/administrating-target.html?lang=en).
+In dit artikel worden de verschillende doel-API&#39;s in het algemeen beschreven voordat u zich richt op specifieke vereisten voor de API&#39;s Admin en Profile. Als u Doel via de gebruikersinterface wilt beheren, raadpleegt u de [rubriek van de *Adobe Target Business User Guide*](https://experienceleague.adobe.com/docs/target/using/administer/administrating-target.html?lang=nl-NL).
 
 ## API-typen
 

@@ -24,6 +24,6 @@ Er zijn verschillende verschillen tussen een standaard mbox (non-global mbox) en
 | Een standaardkader loopt gewoonlijk rond de inhoud door een `<DIV>` -tag. | Het algemene mbox is &quot;leeg&quot; en loopt niet rond inhoud. |
 | Inhoud van slechts één activiteit kan in een normale doos worden geleverd. | Inhoud uit meerdere activiteiten kan in één reactie op een global box worden geleverd. |
 
-Als er meerdere activiteiten worden geleverd via de globale box of via meerdere gewone boxes, is het doel [bepaalt de prioriteit](https://experienceleague.adobe.com/docs/target/using/activities/priority.html) waardoor de activiteit (of activiteiten) aan een webpagina wordt (worden) geleverd.
+Als er meerdere activiteiten worden geleverd via de globale box of via meerdere gewone boxes, is het doel [bepaalt de prioriteit](https://experienceleague.adobe.com/docs/target/using/activities/priority.html?lang=nl-NL) waardoor de activiteit (of activiteiten) aan een webpagina wordt (worden) geleverd.
 
 Er kunnen aanvullende gegevens op paginaniveau worden verzonden naar [!DNL Target] samen met de globale box door `[!UICONTROL targetPageParams]` functie. Dit is vergelijkbaar met de functionaliteit van de mbox-parameter. Zie voor meer informatie [Parameters doorgeven aan een globale box](/help/dev/implement/client-side/atjs/global-mbox/pass-parameters-to-global-mbox.md).

@@ -70,11 +70,11 @@ Koppeling naar entiteitskenmerken om de productcatalogus bij te werken voor [!DN
 
 **Leesingen**
 
-* [Entiteitskenmerken](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html){target=_blank}
+* [Entiteitskenmerken](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html?lang=nl-NL){target=_blank}
 
 **Overwegingen**
 
-* Een andere manier om entiteitattributen door te geven is de productcatalogus in bij te werken [!DNL Target] Gebruikersinterface [Recommendations-productfeeds](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/feeds.html){target=_blank}.
+* Een andere manier om entiteitattributen door te geven is de productcatalogus in bij te werken [!DNL Target] Gebruikersinterface [Recommendations-productfeeds](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/feeds.html?lang=nl-NL){target=_blank}.
 * Het overgaan van entiteitattributen is van toepassing slechts op pagina&#39;s waar product-catalogus gegevens op de gegevenslaag beschikbaar zijn.
 * Het overgaan van `entity.event.detailsOnly=true` parameter in om het even welke vraag neemt prioriteit.
 

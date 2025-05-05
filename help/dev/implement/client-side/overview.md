@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Overzicht: implementeren [!DNL Target] voor client-side web
 
-Bij een clientimplementatie van [!DNL Adobe Target], [!DNL Target] levert de ervaringen verbonden aan een activiteit rechtstreeks aan cliëntbrowser. De browser bepaalt welke ervaring wordt weergegeven en geeft deze weer. Met een cliënt-zijimplementatie, kunt u een redacteur gebruiken WYSIWYG, [Visual Experience Composer](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html) (VEC) of een niet-visuele interface [Form-based Experience Composer](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html), om uw activiteiten en personalisatie-ervaringen te creëren.
+Bij een clientimplementatie van [!DNL Adobe Target], [!DNL Target] levert de ervaringen verbonden aan een activiteit rechtstreeks aan cliëntbrowser. De browser bepaalt welke ervaring wordt weergegeven en geeft deze weer. Met een cliënt-zijimplementatie, kunt u een redacteur gebruiken WYSIWYG, [Visual Experience Composer](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html?lang=nl-NL) (VEC) of een niet-visuele interface [Form-based Experience Composer](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html?lang=nl-NL), om uw activiteiten en personalisatie-ervaringen te creëren.
 
 Om [!DNL Target] aan clientzijde moet u een van de volgende JavaScript-bibliotheken gebruiken:
 
@@ -26,4 +26,4 @@ Om [!DNL Target] aan clientzijde moet u een van de volgende JavaScript-bibliothe
   De JavaScript-bibliotheek at.js verbetert de laadtijden van pagina&#39;s voor webimplementaties, verbetert de beveiliging en biedt betere implementatieopties voor toepassingen op één pagina. Als u naar at.js wilt migreren, raadpleegt u [Hoe werkt At.js](/help/dev/implement/client-side/atjs/how-atjs-works/overview.md) en [[!DNL Adobe Target] Skill Builder: chatten met ontwikkelaars, migreren Adobe Target mbox.js naar at.js](https://seminars.adobeconnect.com/ptdo6mfo6qn6/?proto=true).
 
 
-Zie [Het vergelijken van de bibliotheek at.js met het Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/personalization/adobe-target/web-sdk-atjs-comparison){target=_blank} kennis te nemen van de verschillen tussen de twee uitvoeringsmethoden .
+Zie [Het vergelijken van de bibliotheek at.js met het Web SDK](https://experienceleague.adobe.com/nl/docs/experience-platform/web-sdk/personalization/adobe-target/web-sdk-atjs-comparison){target=_blank} kennis te nemen van de verschillen tussen de twee uitvoeringsmethoden .

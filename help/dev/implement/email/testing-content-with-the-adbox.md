@@ -39,7 +39,7 @@ Zie voor hulp bij het selecteren van de juiste instellingen [Implementaties die 
 
      Dit moet URL gecodeerd zijn en moet een absolute verwijzing zijn. U kunt de [HTML URL-coderingsverwijzing](https://www.w3schools.com/tags/ref_urlencode.asp) om uw URL&#39;s snel te coderen.
 
-1. Maken [Omleidingsvoorstellen](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html) voor elke alternatieve afbeelding.
+1. Maken [Omleidingsvoorstellen](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html?lang=nl-NL) voor elke alternatieve afbeelding.
 
    >[!NOTE]
    >

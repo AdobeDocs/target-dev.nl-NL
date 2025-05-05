@@ -149,7 +149,7 @@ Als er een fout optreedt die aangeeft dat de entiteit niet is gevonden, zoals in
 
    >[!NOTE]
    >
-   >Als geen milieu uitdrukkelijk wordt gespecificeerd, krijg de pogingen van de Entiteit om de entiteit van uw te krijgen [standaardomgeving](https://experienceleague.adobe.com/docs/target/using/administer/environments.html) alleen. Als u van om het even welke milieu buiten uw standaardomgeving wenst te trekken, moet u milieu-identiteitskaart specificeren.
+   >Als geen milieu uitdrukkelijk wordt gespecificeerd, krijg de pogingen van de Entiteit om de entiteit van uw te krijgen [standaardomgeving](https://experienceleague.adobe.com/docs/target/using/administer/environments.html?lang=nl-NL) alleen. Als u van om het even welke milieu buiten uw standaardomgeving wenst te trekken, moet u milieu-identiteitskaart specificeren.
 
 1. Voeg zo nodig de `environmentId` en de aanvraag opnieuw verzenden.
 

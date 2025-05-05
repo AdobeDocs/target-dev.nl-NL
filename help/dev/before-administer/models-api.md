@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Met de API Modellen, ook wel de Lijst van gewezen personen-API genoemd, kunnen gebruikers de lijst met functies weergeven en beheren die in modellen voor machinaal leren worden gebruikt voor [!UICONTROL Automated Personalization] (AP) en [!DNL Auto-Target] (AT) activiteiten. Als een gebruiker een eigenschap van door de modellen voor AP of bij activiteiten zou willen uitsluiten worden gebruikt, kunnen zij Modellen API gebruiken om die eigenschap aan de &quot;lijst van gewezen personen toe te voegen.&quot;
 
-A **[!UICONTROL blocklist]** definieert de reeks functies die worden uitgesloten door [!DNL Adobe Target] van zijn modellen voor machinaal leren. Zie voor meer informatie over functies [Door [!DNL Target] computerleeralgoritmen](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/ap-data.html).
+A **[!UICONTROL blocklist]** definieert de reeks functies die worden uitgesloten door [!DNL Adobe Target] van zijn modellen voor machinaal leren. Zie voor meer informatie over functies [Door [!DNL Target] computerleeralgoritmen](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/ap-data.html?lang=nl-NL).
 
 Lijsten van gewezen personen kunnen per activiteit (activiteitsniveau) of voor alle activiteiten binnen een [!DNL Target] account (algemeen niveau).
 
@@ -100,7 +100,7 @@ In het hier getoonde voorbeeld, controleert de gebruiker om de lijst van eigensc
 >
 >Navigeer naar de Activiteitenlijst in het dialoogvenster [!DNL Target] UI. Klik op de activiteit van belang. De activiteit-id wordt weergegeven in de hoofdtekst van de resulterende pagina Overzicht van activiteiten en aan het einde van de URL voor die pagina.
 
-De **[!UICONTROL externalName]** is een gebruiksvriendelijke naam voor een functie. Het wordt gemaakt door [!DNL Target]en het is mogelijk dat deze waarde in de loop der tijd verandert. Gebruikers kunnen deze gebruikersvriendelijke namen weergeven in het dialoogvenster [Verslag over persoonlijke inzichten](https://experienceleague.adobe.com/docs/target/using/reports/insights/personalization-insights-reports.html).
+De **[!UICONTROL externalName]** is een gebruiksvriendelijke naam voor een functie. Het wordt gemaakt door [!DNL Target]en het is mogelijk dat deze waarde in de loop der tijd verandert. Gebruikers kunnen deze gebruikersvriendelijke namen weergeven in het dialoogvenster [Verslag over persoonlijke inzichten](https://experienceleague.adobe.com/docs/target/using/reports/insights/personalization-insights-reports.html?lang=nl-NL).
 
 De **[!UICONTROL internalName]** is de werkelijke id van de functie. Het wordt ook gemaakt door [!DNL Target], maar het kan niet worden gewijzigd. Dit is de waarde waarnaar u moet verwijzen om de functie(s) te identificeren die u wilt lijsten van gewezen personen.
 

@@ -1,7 +1,7 @@
 ---
 title: Adobe Target Delivery API-gebruikersmachtigingen
 description: Adobe Target Delivery API-gebruikersmachtigingen
-badgePremium: label="Premium" type="Positive" url="https://experienceleague.adobe.com/docs/target/using/introduction/intro.html?lang=en#premium newtab=true" tooltip="Zie wat er in Target Premium is opgenomen."
+badgePremium: label="Premium" type="Positive" url="https://experienceleague.adobe.com/docs/target/using/introduction/intro.html?lang=nl-NL#premium newtab=true" tooltip="Zie wat er in Target Premium is opgenomen."
 keywords: aflevering api
 exl-id: 332f90bd-4079-4653-aa38-b35837631c94
 feature: APIs/SDKs
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Gebruikersmachtigingen (Premium)
 
-[!DNL Adobe] kunnen klanten machtigingen voor hun gebruikers beheren wanneer ze Adobe Target gebruiken. Met het oog op een succesvolle [!UICONTROL Adobe Target Delivery API] aanroep, moet een token met de juiste machtigingen binnen de API-aanroep worden doorgegeven. Ga voor meer informatie over gebruikerstoegang en het ophalen van het token-bezoek [deze documentatie](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html).
+[!DNL Adobe] kunnen klanten machtigingen voor hun gebruikers beheren wanneer ze Adobe Target gebruiken. Met het oog op een succesvolle [!UICONTROL Adobe Target Delivery API] aanroep, moet een token met de juiste machtigingen binnen de API-aanroep worden doorgegeven. Ga voor meer informatie over gebruikerstoegang en het ophalen van het token-bezoek [deze documentatie](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html?lang=nl-NL).
 
 ```
 curl -X POST \

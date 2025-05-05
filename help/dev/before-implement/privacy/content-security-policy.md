@@ -37,7 +37,7 @@ Verwacht wordt dat [!DNL Target] vanuit elk domein toegankelijk zijn via JavaScr
 
 ### Hoe kan ik toestaan of voorkomen dat mijn site wordt ingesloten als een iFrame onder externe domeinen?
 
-Om de [Visual Experience Composer](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html){target=_blank} (VEC) Als u uw website wilt insluiten in een iFrame, moet de CSP (indien ingesteld) worden gewijzigd in de instelling van de webserver. [!DNL Adobe] domeinen moeten worden gewhitelisteerd en geconfigureerd.
+Om de [Visual Experience Composer](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html?lang=nl-NL){target=_blank} (VEC) Als u uw website wilt insluiten in een iFrame, moet de CSP (indien ingesteld) worden gewijzigd in de instelling van de webserver. [!DNL Adobe] domeinen moeten worden gewhitelisteerd en geconfigureerd.
 
 Om veiligheidsredenen is het wellicht verstandig om te voorkomen dat uw site wordt ingesloten als een iFrame onder externe domeinen.
 

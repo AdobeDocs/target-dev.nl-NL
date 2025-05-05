@@ -18,7 +18,7 @@ Informatie om u te helpen plannen en uitvoeren [!DNL Adobe Target Recommendation
 
 >[!NOTE]
 >
->Naast dit artikel [Adobe Target Business Practice Guide](https://experienceleague.adobe.com/en/docs/target/using/target-home){target=_blank} bevat uitgebreide informatie over [Doel Recommendations](https://experienceleague.adobe.com/en/docs/target/using/recommendations/recommendations){target=_blank}.
+>Naast dit artikel [Adobe Target Business Practice Guide](https://experienceleague.adobe.com/nl/docs/target/using/target-home){target=_blank} bevat uitgebreide informatie over [Doel Recommendations](https://experienceleague.adobe.com/nl/docs/target/using/recommendations/recommendations){target=_blank}.
 
 Voordat u de eerste instelt [!UICONTROL Recommendations] activiteit in [!DNL Adobe Target]Voer de volgende stappen uit:
 
@@ -45,7 +45,7 @@ Om aanbevelingen van hoge kwaliteit te doen, [!UICONTROL Target] moet weten welk
 
 | Methode | Wat het is | Wanneer gebruikt u het | Aanvullende informatie |
 | --- | --- | --- | --- |
-| Catalogusfeed | een diervoeder inplannen (CSV, [!DNL Google] product-XML, of [!UICONTROL Analytics Product Classifications]) die dagelijks worden geüpload en opgenomen. | Voor het verzenden van informatie over meerdere items tegelijk. Voor het verzenden van informatie die niet vaak wordt gewijzigd. | Zie [Feeds](https://experienceleague.adobe.com/en/docs/target/using/recommendations/entities/feeds). |
+| Catalogusfeed | een diervoeder inplannen (CSV, [!DNL Google] product-XML, of [!UICONTROL Analytics Product Classifications]) die dagelijks worden geüpload en opgenomen. | Voor het verzenden van informatie over meerdere items tegelijk. Voor het verzenden van informatie die niet vaak wordt gewijzigd. | Zie [Feeds](https://experienceleague.adobe.com/nl/docs/target/using/recommendations/entities/feeds). |
 | Entiteiten-API | Roep API aan om updates naar de minuut voor één enkel punt te verzenden. | Voor het verzenden van updates zoals deze over één item tegelijk plaatsvinden. Voor het verzenden van informatie die regelmatig verandert (bijvoorbeeld prijs, voorraad/voorraadniveau). | Zie de [Documentatie voor ontwikkelaars van Entiteiten-API](https://developer.adobe.com/target/administer/recommendations-api/#tag/Entities). |
 | Updates op de pagina doorgeven | Updates voor één item verzenden met JavaScript op de pagina of met de API voor levering. | Voor het verzenden van updates zoals deze over één item tegelijk plaatsvinden. Voor het verzenden van informatie die regelmatig verandert (bijvoorbeeld prijs, voorraad/voorraadniveau). | Zie [Objectweergaven/productpagina&#39;s](#item-views-or-product-pages) hieronder. |
 
@@ -108,7 +108,7 @@ function targetPageParams() {
 }
 ```
 
-Zie voor meer informatie over op winkelwagentjes gebaseerde aanbevelingen [Op basis van winkelwagentje](https://experienceleague.adobe.com/en/docs/target/using/recommendations/criteria/base-the-recommendation-on-a-recommendation-key#cart-based) in de *[!DNL Adobe Target]Handelspraktijken*.
+Zie voor meer informatie over op winkelwagentjes gebaseerde aanbevelingen [Op basis van winkelwagentje](https://experienceleague.adobe.com/nl/docs/target/using/recommendations/criteria/base-the-recommendation-on-a-recommendation-key#cart-based) in de *[!DNL Adobe Target]Handelspraktijken*.
 
 ### Objecten uitsluiten die al in de winkelwagentje van de bezoeker staan
 
@@ -130,7 +130,7 @@ Wanneer een aankoopgebeurtenis plaatsvindt, geeft u de identiteit door van het g
 
 ## 4. Algemene uitsluitingen configureren
 
-Sluit items op algemeen niveau uit die u nooit aan een bezoeker wilt aanbevelen. Zie [Uitsluitingen](https://experienceleague.adobe.com/en/docs/target/using/recommendations/entities/exclusions) in de *[!DNL Adobe Target]Handelspraktijken*.
+Sluit items op algemeen niveau uit die u nooit aan een bezoeker wilt aanbevelen. Zie [Uitsluitingen](https://experienceleague.adobe.com/nl/docs/target/using/recommendations/entities/exclusions) in de *[!DNL Adobe Target]Handelspraktijken*.
 
 ## 5. Configureren [!UICONTROL Recommendations] instellingen
 
@@ -168,7 +168,7 @@ Kennis van de verticale branche van uw site helpt Doelcriteria kiezen voor uw aa
 
 Criteria in [!DNL Recommendations] zijn regels die bepalen welke producten of inhoud moet worden aanbevolen op basis van een vooraf bepaalde set gedragingen van bezoekers. De criteria kunnen op populaire tendensen, het huidige en vroegere gedrag van een bezoeker, of gelijkaardige producten en inhoud worden gebaseerd. U kunt veelvoudige aanbevelingstypes tegen elkaar testen door veelvoudige criteria toe te voegen.
 
-Zie voor meer informatie [Criteria](https://experienceleague.adobe.com/en/docs/target/using/recommendations/criteria/algorithms){target=_blank} in de *Adobe Target Business Practitioner Guide.*
+Zie voor meer informatie [Criteria](https://experienceleague.adobe.com/nl/docs/target/using/recommendations/criteria/algorithms){target=_blank} in de *Adobe Target Business Practitioner Guide.*
 
 De volgende instellingen zijn beschikbaar in de [!UICONTROL Criteria] sectie:
 
@@ -191,7 +191,7 @@ Over het algemeen is het beter alleen compatibele criteria te laten zien. Schake
 
 Adobe raadt u aan deze optie uit te schakelen als u een oplossing voor tagbeheer gebruikt.
 
-Zie voor meer informatie over deze optie [[!UICONTROL Recommendations] Veelgestelde vragen](https://experienceleague.adobe.com/en/docs/target/using/recommendations/recommendations-faq/recommendations-faq){target=_blank} in de *[!DNL Adobe Target]Handelspraktijken*.
+Zie voor meer informatie over deze optie [[!UICONTROL Recommendations] Veelgestelde vragen](https://experienceleague.adobe.com/nl/docs/target/using/recommendations/recommendations-faq/recommendations-faq){target=_blank} in de *[!DNL Adobe Target]Handelspraktijken*.
 
 ### [!UICONTROL Product Catalog]
 
@@ -218,7 +218,7 @@ De **[!UICONTROL Environment]** is beschikbaar op de volgende plaatsen in het Do
 * Dialoogvenster Uitsluiting maken (**[!UICONTROL Recommendations]** > **[!UICONTROL Exclusions]** > **[!UICONTROL Create exclusion]**)
 * Dialoogvenster Uitsluiting bijwerken (**[!UICONTROL Recommendations]** > **[!UICONTROL Exclusions]** > **[!UICONTROL Edit]**)
 
-Zie voor meer informatie [Gastheren](https://experienceleague.adobe.com/en/docs/target/using/administer/hosts){target=_blank} in de *[!DNL Adobe Target]Handelspraktijken*.
+Zie voor meer informatie [Gastheren](https://experienceleague.adobe.com/nl/docs/target/using/administer/hosts){target=_blank} in de *[!DNL Adobe Target]Handelspraktijken*.
 
 #### [!UICONTROL Thumbnail Base]
 

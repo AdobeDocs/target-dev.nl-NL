@@ -37,7 +37,7 @@ Het toelaten van op apparaat beslist verzekert en [!UICONTROL A/B Test] activite
 
 >[!NOTE]
 >
->U moet beschikken over **[!UICONTROL Admin]** of **[!UICONTROL Approver]** [gebruikersrol](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html) om de **[!UICONTROL On-Device Decisioning]** schakelen.
+>U moet beschikken over **[!UICONTROL Admin]** of **[!UICONTROL Approver]** [gebruikersrol](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html?lang=nl-NL) om de **[!UICONTROL On-Device Decisioning]** schakelen.
 
 Nadat u het dialoogvenster **[!UICONTROL On-Device Decisioning]** schakelen, [!DNL Adobe Target] Beginnen met genereren [regelartefacten](../on-device-decisioning/rule-artifact-overview.md) voor uw client.
 
@@ -388,6 +388,6 @@ target_client.send_notifications({
 
    >[!NOTE]
    >
-   >U moet beschikken over **[!UICONTROL Approver]** of **[!UICONTROL Publisher]** [gebruikersrol](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html) om deze stap uit te voeren.
+   >U moet beschikken over **[!UICONTROL Approver]** of **[!UICONTROL Publisher]** [gebruikersrol](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html?lang=nl-NL) om deze stap uit te voeren.
 
    ![alternatieve afbeelding](assets/asset-activate.png)

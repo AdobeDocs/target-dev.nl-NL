@@ -220,7 +220,7 @@ Nu, overal `triggerView()` wordt geïmplementeerd op uw SPA, worden de weergaven
 
 ## Single Page App Visual Experience Composer
 
-Nadat u klaar bent met het installeren van at.js 2.x en het toevoegen `triggerView()` aan uw plaats, gebruik VEC om A/B en XT activiteiten in werking te stellen. Zie voor meer informatie [Single Page App (SPA) Visual Experience Composer](https://experienceleague.adobe.com/docs/target/using/experiences/spa-visual-experience-composer.html).
+Nadat u klaar bent met het installeren van at.js 2.x en het toevoegen `triggerView()` aan uw plaats, gebruik VEC om A/B en XT activiteiten in werking te stellen. Zie voor meer informatie [Single Page App (SPA) Visual Experience Composer](https://experienceleague.adobe.com/docs/target/using/experiences/spa-visual-experience-composer.html?lang=nl-NL).
 
 >[!NOTE]
 >
@@ -228,7 +228,7 @@ Nadat u klaar bent met het installeren van at.js 2.x en het toevoegen `triggerVi
 
 ## Gebruik TriggerView om ervoor te zorgen dat A4T correct met at.js 2.x en SPA werkt
 
-Om ervoor te zorgen dat [Analyses voor doel](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) (A4T) werkt correct met at.js 2.x, ben zeker om het zelfde SDID in te verzenden [!DNL Target] en in de [!DNL Analytics] verzoek.
+Om ervoor te zorgen dat [Analyses voor doel](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=nl-NL) (A4T) werkt correct met at.js 2.x, ben zeker om het zelfde SDID in te verzenden [!DNL Target] en in de [!DNL Analytics] verzoek.
 
 Als beste praktijken met betrekking tot SPA:
 
@@ -311,16 +311,16 @@ De volgende video&#39;s bevatten meer informatie:
 
 >[!VIDEO](https://video.tv.adobe.com/v/26250/?quality=12)
 
-Zie [Begrijpen hoe at.js 2.x werkt](https://experienceleague.adobe.com/docs/target-learn/tutorials/implementation/understanding-how-atjs-20-works.html) voor meer informatie .
+Zie [Begrijpen hoe at.js 2.x werkt](https://experienceleague.adobe.com/docs/target-learn/tutorials/implementation/understanding-how-atjs-20-works.html?lang=nl-NL) voor meer informatie .
 
 ### Implementeren bij .js 2.x in een SPA
 
 >[!VIDEO](https://video.tv.adobe.com/v/26248/?quality=12)
 
-Zie [Adobe Target- in.js 2.x implementeren in een toepassing voor één pagina (SPA)](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer-for-single-page-applications.html) voor meer informatie .
+Zie [Adobe Target- in.js 2.x implementeren in een toepassing voor één pagina (SPA)](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer-for-single-page-applications.html?lang=nl-NL) voor meer informatie .
 
 ### VEC gebruiken voor SPA in [!DNL Adobe Target]
 
 >[!VIDEO](https://video.tv.adobe.com/v/26249/?quality=12)
 
-Zie [De Visual Experience Composer gebruiken voor de Toepassing van de Enige Pagina (SPA VEC) in Adobe Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer-for-single-page-applications.html) voor meer informatie .
+Zie [De Visual Experience Composer gebruiken voor de Toepassing van de Enige Pagina (SPA VEC) in Adobe Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer-for-single-page-applications.html?lang=nl-NL) voor meer informatie .

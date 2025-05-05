@@ -294,7 +294,7 @@ In punt 2.js.*x*, HTTP-GET wordt niet gebruikt. In plaats daarvan wordt HTTP-POS
 
 Als u interdomeintracering wilt gebruiken voor at.js v2.10 of hoger, kunt u een van de volgende handelingen uitvoeren:
 
-1. Installeer de [ECID-bibliotheek v4.3.0+](https://experienceleague.adobe.com/docs/id-service/using/release-notes/release-notes.html) in combinatie met at.js 2.*x*. De ECID-bibliotheek bestaat voor het beheer van permanente id&#39;s waarmee een bezoeker zelfs in verschillende domeinen kan worden geïdentificeerd. Na installatie van de ECID-bibliotheek v4.3.0+ en at.js 2.*x*, kunt u activiteiten maken die zich uitstrekken over unieke domeinen en gebruikers bijhouden. Het is belangrijk om op te merken dat deze functionaliteit slechts werkt nadat de zitting verloopt.
+1. Installeer de [ECID-bibliotheek v4.3.0+](https://experienceleague.adobe.com/docs/id-service/using/release-notes/release-notes.html?lang=nl-NL) in combinatie met at.js 2.*x*. De ECID-bibliotheek bestaat voor het beheer van permanente id&#39;s waarmee een bezoeker zelfs in verschillende domeinen kan worden geïdentificeerd. Na installatie van de ECID-bibliotheek v4.3.0+ en at.js 2.*x*, kunt u activiteiten maken die zich uitstrekken over unieke domeinen en gebruikers bijhouden. Het is belangrijk om op te merken dat deze functionaliteit slechts werkt nadat de zitting verloopt.
 
 1. Als u at.js v2.10 of hoger hebt, kunt u in plaats van de ECID-bibliotheek te installeren de instelling Cross-Domain inschakelen in het dialoogvenster [!DNL Target] UI in **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**. (U kunt ook de _crossDomain_ optie voor _enabled_ in de code at.js.)
 
@@ -405,7 +405,7 @@ In de volgende tabellen wordt om .js uitgelegd. 2.*x* compatibiliteit met versch
 
 ## Reactietokens
 
-te.js 2.*x*, net als bij.js 1.*x* gebruikt u de aangepaste gebeurtenis `at-request-succeeded` op tokens voor oppervlakreactie. Voor codevoorbeelden met de `at-request-succeeded` aangepaste gebeurtenis, zie [Reactietokens](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html).
+te.js 2.*x*, net als bij.js 1.*x* gebruikt u de aangepaste gebeurtenis `at-request-succeeded` op tokens voor oppervlakreactie. Voor codevoorbeelden met de `at-request-succeeded` aangepaste gebeurtenis, zie [Reactietokens](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html?lang=nl-NL).
 
 ## te.js 1.*x* parameters tot at.js 2.*x* lading toewijzen
 
@@ -428,7 +428,7 @@ De volgende secties maken een lijst van elk bij.js 1.*x* parameter, de beschrijv
 
 (te.js 1.*x* parameter)
 
-Gebruikt voor [Machtigingen voor zakelijke gebruikers](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html).
+Gebruikt voor [Machtigingen voor zakelijke gebruikers](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html?lang=nl-NL).
 
 ```json {line-numbers="true"}
 {
@@ -772,4 +772,4 @@ te.js 2.*x* verbetert Adobe [!DNL Target]De ondersteuning voor SPA en integreert
 
 >[!VIDEO](https://video.tv.adobe.com/v/26250/?quality=12)
 
-Zie [Begrijpen hoe at.js 2.*x* werken](https://experienceleague.adobe.com/docs/target-learn/tutorials/implementation/understanding-how-atjs-20-works.html) voor meer informatie .
+Zie [Begrijpen hoe at.js 2.*x* werken](https://experienceleague.adobe.com/docs/target-learn/tutorials/implementation/understanding-how-atjs-20-works.html?lang=nl-NL) voor meer informatie .

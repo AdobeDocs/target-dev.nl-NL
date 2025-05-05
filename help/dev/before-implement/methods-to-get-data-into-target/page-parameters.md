@@ -68,8 +68,8 @@ targetPageParams (voegt de parameters aan globale mbox op de pagina toe):
 
 ## Koppelingen naar relevante informatie
 
-Recommendations: [Implementatie volgens paginatype](https://experienceleague.adobe.com/docs/target/using/recommendations/plan-implement.html)
+Recommendations: [Implementatie volgens paginatype](https://experienceleague.adobe.com/docs/target/using/recommendations/plan-implement.html?lang=nl-NL)
 
 Bevestiging van bestelling: [Conversies bijhouden](../../implement/client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager.md#track-conversions)
 
-Categorie-affiniteit: [Categorie-affiniteit](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/category-affinity.html)
+Categorie-affiniteit: [Categorie-affiniteit](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/category-affinity.html?lang=nl-NL)

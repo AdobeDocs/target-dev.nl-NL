@@ -15,4 +15,4 @@ ht-degree: 0%
 
 [!DNL Adobe Target] biedt een uniek hybride plaatsingsmodel voor verpersoonlijking-mengende cliënt-kant en server-zijimplementaties aan. Dit hybride model staat niet-technische gebruikers toe om een experiment of een verpersoonlijkingsactiviteit te ontwerpen gebruikend WYSIWYG [!UICONTROL Visual Experience Composer] (VEC) en zorgen dat de ervaring wordt uitgevoerd, geleverd en gerenderd door de server voor een zeer krachtige levering.
 
-Zie voor meer informatie [Adobe Hybride implementatie](https://experienceleague.adobe.com/docs/target-learn/tutorials/implementation/hybrid-deployment.html) in [Adobe Target Tutorials](https://experienceleague.adobe.com/docs/target-learn/tutorials/overview.html).
+Zie voor meer informatie [Adobe Hybride implementatie](https://experienceleague.adobe.com/docs/target-learn/tutorials/implementation/hybrid-deployment.html?lang=nl-NL) in [Adobe Target Tutorials](https://experienceleague.adobe.com/docs/target-learn/tutorials/overview.html?lang=nl-NL).

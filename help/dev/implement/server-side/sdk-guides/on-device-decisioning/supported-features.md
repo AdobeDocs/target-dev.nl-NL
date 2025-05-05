@@ -20,18 +20,18 @@ ht-degree: 0%
 
 ## Typen activiteiten
 
-De volgende tabel geeft aan welke [activiteitstypen](https://experienceleague.adobe.com/docs/target/using/activities/target-activities-guide.html) gemaakt met de [Form-based Experience Composer](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html?) worden ondersteund of niet ondersteund voor [!UICONTROL on-device decisioning].
+De volgende tabel geeft aan welke [activiteitstypen](https://experienceleague.adobe.com/docs/target/using/activities/target-activities-guide.html?lang=nl-NL) gemaakt met de [Form-based Experience Composer](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html?lang=nl-NL&) worden ondersteund of niet ondersteund voor [!UICONTROL on-device decisioning].
 
 | Type activiteit | Ondersteund |
 | --- | --- |
-| [A/B-test](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html) | Ja |
-| [Automatisch toewijzen](https://experienceleague.adobe.com/docs/target/using/activities/auto-allocate/automated-traffic-allocation.html) | Nee |
-| [Automatisch doel](https://experienceleague.adobe.com/docs/target/using/activities/auto-target/auto-target-to-optimize.html) | Nee |
-| [Analyses voor doel](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) (A4T) | Ja |
-| [Multivariatietest](https://experienceleague.adobe.com/docs/target/using/activities/multivariate-test/multivariate-testing.html) (MVT) | Nee |
-| [Gericht op ervaring](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html) (XT) | Ja |
-| [Automated Personalization](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html) (AP) | Nee |
-| [Recommendations](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations.html) | Nee |
+| [A/B-test](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=nl-NL) | Ja |
+| [Automatisch toewijzen](https://experienceleague.adobe.com/docs/target/using/activities/auto-allocate/automated-traffic-allocation.html?lang=nl-NL) | Nee |
+| [Automatisch doel](https://experienceleague.adobe.com/docs/target/using/activities/auto-target/auto-target-to-optimize.html?lang=nl-NL) | Nee |
+| [Analyses voor doel](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=nl-NL) (A4T) | Ja |
+| [Multivariatietest](https://experienceleague.adobe.com/docs/target/using/activities/multivariate-test/multivariate-testing.html?lang=nl-NL) (MVT) | Nee |
+| [Gericht op ervaring](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html?lang=nl-NL) (XT) | Ja |
+| [Automated Personalization](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html?lang=nl-NL) (AP) | Nee |
+| [Recommendations](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations.html?lang=nl-NL) | Nee |
 
 
 ## Doelgerichtheid publiek
@@ -40,17 +40,17 @@ In de volgende tabel wordt aangegeven voor welke publieksregels deze worden onde
 
 | Auditieregel | Apparaatbeslissingen |
 | --- | --- |
-| [Geo](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/geo.html) | Ja |
-| [Netwerk](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/network.html) | Nee |
-| [Mobiel](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/mobile.html) | Nee |
-| [Aangepaste parameters](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html) | Ja |
-| [Besturingssysteem](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/operating-system.html) | Ja |
-| [Sitepagina&#39;s](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/site-pages.html) | Ja |
-| [Browser](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/browser.html) | Ja |
-| [Bezoekerprofiel](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html) | Nee |
-| [verkeersbronnen](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html) | Nee |
-| [Tijdschema](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/time-frame.html) | Ja |
-| [Experience Cloud publiek](https://experienceleague.adobe.com/docs/target/using/integrate/mmp.html) (Soorten publiek uit Adobe Audience Manager, Adobe Analytics en Adobe Experience Manager) | Nee |
+| [Geo](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/geo.html?lang=nl-NL) | Ja |
+| [Netwerk](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/network.html?lang=nl-NL) | Nee |
+| [Mobiel](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/mobile.html?lang=nl-NL) | Nee |
+| [Aangepaste parameters](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html?lang=nl-NL) | Ja |
+| [Besturingssysteem](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/operating-system.html?lang=nl-NL) | Ja |
+| [Sitepagina&#39;s](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/site-pages.html?lang=nl-NL) | Ja |
+| [Browser](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/browser.html?lang=nl-NL) | Ja |
+| [Bezoekerprofiel](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html?lang=nl-NL) | Nee |
+| [verkeersbronnen](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html?lang=nl-NL) | Nee |
+| [Tijdschema](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/time-frame.html?lang=nl-NL) | Ja |
+| [Experience Cloud publiek](https://experienceleague.adobe.com/docs/target/using/integrate/mmp.html?lang=nl-NL) (Soorten publiek uit Adobe Audience Manager, Adobe Analytics en Adobe Experience Manager) | Nee |
 
 ### Geo targeting voor [!UICONTROL on-device decisioning]
 
@@ -170,5 +170,5 @@ In de volgende tabel wordt aangegeven voor welke toewijzingsmethoden wel of niet
 | Toewijzingsmethode | Ondersteund |
 | --- | --- |
 | Handmatig | Ja |
-| [Automatisch toewijzen aan de beste ervaring](https://experienceleague.adobe.com/docs/target/using/activities/auto-allocate/automated-traffic-allocation.html) | Nee |
-| [Automatisch richten voor persoonlijke ervaringen](https://experienceleague.adobe.com/docs/target/using/activities/auto-target-to-optimize.html) | Nee |
+| [Automatisch toewijzen aan de beste ervaring](https://experienceleague.adobe.com/docs/target/using/activities/auto-allocate/automated-traffic-allocation.html?lang=nl-NL) | Nee |
+| [Automatisch richten voor persoonlijke ervaringen](https://experienceleague.adobe.com/docs/target/using/activities/auto-target-to-optimize.html?lang=nl-NL) | Nee |

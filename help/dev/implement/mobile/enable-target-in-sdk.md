@@ -25,7 +25,7 @@ Voeg de [!UICONTROL Adobe Mobile Services SDK] naar uw app.
 
 1. Voeg de [!DNL Adobe Mobile Services SDK] naar uw app.
 
-   U vindt de instructies onder [Core-implementatie en levenscyclus](https://experienceleague.adobe.com/docs/mobile-services/ios/getting-started-ios/dev-qs.html).
+   U vindt de instructies onder [Core-implementatie en levenscyclus](https://experienceleague.adobe.com/docs/mobile-services/ios/getting-started-ios/dev-qs.html?lang=nl-NL).
 
 1. Voeg cliëntcode toe, onderbreking en laat SSL toe.
 

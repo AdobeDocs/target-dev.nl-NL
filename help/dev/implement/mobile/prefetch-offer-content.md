@@ -26,9 +26,9 @@ Dit proces verkort de ladingstijd, verhindert veelvoudige netwerkvraag, en staat
 Houd rekening met de volgende beperkingen wanneer u de prefetch-methode gebruikt met de iOS en Android Mobile SDK&#39;s:
 
 * Prefetch-inhoud blijft niet behouden bij alle opstarters. De prefetch-inhoud wordt in de cache geplaatst zolang de toepassing actief is of totdat de `clearPrefetchCache()` wordt aangeroepen.
-* Prefetch-functionaliteit wordt niet ondersteund voor [!UICONTROL Auto-Allocate] en [!UICONTROL Auto-Target] verkeerstoewijzingsmethoden, voor [!UICONTROL Automated Personalization] of [!UICONTROL Recommendations] typen activiteit, of voor [aanbevelingen worden aangeboden binnen een A/B- of XT-activiteit](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-as-an-offer.html).
+* Prefetch-functionaliteit wordt niet ondersteund voor [!UICONTROL Auto-Allocate] en [!UICONTROL Auto-Target] verkeerstoewijzingsmethoden, voor [!UICONTROL Automated Personalization] of [!UICONTROL Recommendations] typen activiteit, of voor [aanbevelingen worden aangeboden binnen een A/B- of XT-activiteit](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-as-an-offer.html?lang=nl-NL).
 
 Voor meer informatie, met inbegrip van prefetch methodes, openbare klassen, en codesteekproeven, zie:
 
-* **iOS:**  [Prefetch-aanbiedingsinhoud in iOS](https://experienceleague.adobe.com/docs/mobile-services/ios/target-ios/c-mob-target-prefetch-ios.html) in de *Help bij Mobile Services iOS SDK*.
+* **iOS:**  [Prefetch-aanbiedingsinhoud in iOS](https://experienceleague.adobe.com/docs/mobile-services/ios/target-ios/c-mob-target-prefetch-ios.html?lang=nl-NL) in de *Help bij Mobile Services iOS SDK*.
 * **Android:**  [Inhoud van Prefetch-aanbieding in Android](https://experienceleague.adobe.com/docs/mobile-services/android/target-android/c-mob-target-prefetch-android.html) in de *Help bij Mobile Services Android SDK*.

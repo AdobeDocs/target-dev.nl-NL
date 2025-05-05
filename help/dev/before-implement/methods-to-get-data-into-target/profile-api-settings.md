@@ -36,11 +36,11 @@ Voor extra veiligheid, kunt u vereisen dat de Bulk API vraag van de Update een g
 
    * Beheerdersrol of hebben ten minste rechten van fiatteurs
 
-     Voor meer informatie voor de Standaardklanten van het Doel, zie [Rollen en machtigingen opgeven](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/users/user-management.html#roles-permissions) in *Gebruikers*. Voor meer informatie voor [!DNL Target Premium] klanten, zie [Bedrijfsmachtigingen configureren](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html).
+     Voor meer informatie voor de Standaardklanten van het Doel, zie [Rollen en machtigingen opgeven](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/users/user-management.html?lang=nl-NL#roles-permissions) in *Gebruikers*. Voor meer informatie voor [!DNL Target Premium] klanten, zie [Bedrijfsmachtigingen configureren](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html?lang=nl-NL).
 
    * Beheerdersrol op het niveau van de werkruimte/het productprofiel
 
-     Werkruimten zijn beschikbaar voor [!DNL Target Premium] alleen aan klanten. Zie voor meer informatie [Bedrijfsmachtigingen configureren](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html).
+     Werkruimten zijn beschikbaar voor [!DNL Target Premium] alleen aan klanten. Zie voor meer informatie [Bedrijfsmachtigingen configureren](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html?lang=nl-NL).
 
    * Admin Rights (bevoegdheid Sysadmin) op de [!DNL Adobe Target] productniveau
 

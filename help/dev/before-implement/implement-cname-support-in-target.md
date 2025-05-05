@@ -31,7 +31,7 @@ Instructies voor het werken met [!DNL Adobe Client Care] om ondersteuning voor C
    >
    >DigiCert, de certificeringsinstantie van Adobe, kan pas een certificaat uitgeven als deze stap is voltooid. Daarom kan Adobe niet aan uw verzoek om een CNAME-implementatie voldoen totdat deze stap is voltooid.
 
-1. [Vul dit formulier](assets/FPC_Request_Form.xlsx) in en voeg het toe wanneer u een Adobe Client Care-ticket opent waarin CNAME-ondersteuning [&#128279;](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?#reference_ACA3391A00EF467B87930A450050077C)wordt aangevraagd:
+1. [Vul dit formulier](assets/FPC_Request_Form.xlsx) in en voeg het toe wanneer u een Adobe Client Care-ticket opent waarin CNAME-ondersteuning [&#128279;](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?lang=nl-NL&#reference_ACA3391A00EF467B87930A450050077C)wordt aangevraagd:
 
    * [!DNL Adobe Target] clientcode:
    * SSL-certificaathostnamen (bijvoorbeeld: `target.example.com target.example.org`):

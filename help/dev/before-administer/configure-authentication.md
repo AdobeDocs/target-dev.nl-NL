@@ -44,7 +44,7 @@ In deze sectie krijgt u toegang tot de [!DNL Adobe Developer Console] en maak ee
 
 &lt;!---(1. Genereer uw persoonlijke sleutel en openbaar certificaat per [documentatie over verificatie](https://developer.adobe.com/developer-console/docs/guides/authentication/). // [//]: # (zoals beschreven in **Stap 1** van [Hoe te opstelling Adobe IO: Authentificatie - Stap voor Stap](https://helpx.adobe.com/marketing-cloud-core/kb/adobe-io-authentication-step-by-step.html). Na de voltooiing van Stap 1, terugkeer aan deze gids en hervat met Stap 2, hieronder. // Het resultaat van deze stap moet de instelling van een `private.key` en een `certificate_pub.crt` bestand. Keer terug naar deze gids zodra u deze twee dossiers hebt geproduceerd.)—>
 
-1. In de [Adobe Admin Console](https://adminconsole.adobe.com/), zorg ervoor dat uw [!DNL Adobe] gebruikersaccount is toegekend aan beide [Productbeheerder](https://helpx.adobe.com/enterprise/using/admin-roles.html) en [Ontwikkelaar](https://helpx.adobe.com/enterprise/using/manage-developers.html) toegang tot [!DNL Target].
+1. In de [Adobe Admin Console](https://adminconsole.adobe.com/), zorg ervoor dat uw [!DNL Adobe] gebruikersaccount is toegekend aan beide [Productbeheerder](https://helpx.adobe.com/nl/enterprise/using/admin-roles.html) en [Ontwikkelaar](https://helpx.adobe.com/nl/enterprise/using/manage-developers.html) toegang tot [!DNL Target].
 
 1. In de [Adobe Developer Console](https://developer.adobe.com/console/home), selecteert u de [!UICONTROL Experience Cloud Organization] waarvoor u deze integratie wilt creëren. (Let op: u hebt waarschijnlijk slechts toegang tot één [!UICONTROL Experience Cloud Organization].)
 
@@ -74,7 +74,7 @@ In deze sectie krijgt u toegang tot de [!DNL Adobe Developer Console] en maak ee
 
    ![configure-io-target-createproject8](assets/configure-io-target-createproject8.png)
 
-1. Selecteer in de Adobe Developer Console de optie [productprofiel(en)](https://helpx.adobe.com/enterprise/using/manage-products-and-profiles.html) komt overeen met de eigenschappen waarin u Adobe Recommendations gebruikt. (Als u geen eigenschappen gebruikt, selecteert u de optie Standaardwerkruimte.) Klik op **[!UICONTROL Save configured API]**.
+1. Selecteer in de Adobe Developer Console de optie [productprofiel(en)](https://helpx.adobe.com/nl/enterprise/using/manage-products-and-profiles.html) komt overeen met de eigenschappen waarin u Adobe Recommendations gebruikt. (Als u geen eigenschappen gebruikt, selecteert u de optie Standaardwerkruimte.) Klik op **[!UICONTROL Save configured API]**.
 
    ![configure-io-target-createproject9](assets/configure-io-target-createproject9.png)
 
@@ -95,7 +95,7 @@ Er zijn vele manieren om de details van uw project in Postman te specificeren, m
 
 >[!NOTE]
 >
->Voor video-instructies die van toepassing zijn op alle Experiencen Cloud, waaronder [!DNL Target], zie [Postman gebruiken met Experience Platform-API&#39;s](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html). De volgende punten zijn relevant voor de [!DNL Target] API&#39;s: 1. Experience Platform-API maken en exporteren naar Postman 2. Genereer een toegangstoken met Postman. Deze stappen worden ook hieronder gegeven.
+>Voor video-instructies die van toepassing zijn op alle Experiencen Cloud, waaronder [!DNL Target], zie [Postman gebruiken met Experience Platform-API&#39;s](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html?lang=nl-NL). De volgende punten zijn relevant voor de [!DNL Target] API&#39;s: 1. Experience Platform-API maken en exporteren naar Postman 2. Genereer een toegangstoken met Postman. Deze stappen worden ook hieronder gegeven.
 
 1. Nog steeds in de [Adobe Developer Console](https://developer.adobe.com/console/home), navigeert u om de **[!UICONTROL Service Account (JWT)]** referenties. Gebruik de linkernavigatie of de **[!UICONTROL Credentials]** zoals weergegeven.
 

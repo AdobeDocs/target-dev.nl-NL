@@ -57,8 +57,8 @@ Aanbevolen objecten toevoegen en hun plaatsing bepalen in het ontwerp van uw aan
 **Beschikbare opties**
 
 * Promoten met id&#39;s
-* [Bevorderen per collectie](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/collections.html){target=_blank}
-* [Promoten op kenmerk](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html){target=_blank}
+* [Bevorderen per collectie](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/collections.html?lang=nl-NL){target=_blank}
+* [Promoten op kenmerk](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html?lang=nl-NL){target=_blank}
 
 **Vereiste parameters voor entiteit**
 
@@ -66,7 +66,7 @@ Aanbevolen objecten toevoegen en hun plaatsing bepalen in het ontwerp van uw aan
 
 **Leesingen**
 
-* [Promoties toevoegen](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-activity/adding-promotions.html){target=_blank}
+* [Promoties toevoegen](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-activity/adding-promotions.html?lang=nl-NL){target=_blank}
 
 +++
 
@@ -90,7 +90,7 @@ Aanbevelingen doen op basis van de inhoud van het winkelwagentje.
 
 **Leesingen**
 
-* [Op basis van winkelwagentje](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=en#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
+* [Op basis van winkelwagentje](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=nl-NL#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
 
 +++
 
@@ -119,7 +119,7 @@ Aanbevelingen doen op basis van de algemene populariteit van een item op uw site
 
 **Leesingen**
 
-* [Gebaseerd op populariteit](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=en#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
+* [Gebaseerd op populariteit](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=nl-NL#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
 
 +++
 
@@ -145,7 +145,7 @@ Aanbevelingen doen op basis van het zoeken naar objecten die vergelijkbaar zijn 
 
 **Leesingen**
 
-* [Object gebaseerd](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=en#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
+* [Object gebaseerd](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=nl-NL#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
 
 +++
 
@@ -168,7 +168,7 @@ Aanbevelingen doen op basis van het gedrag van de gebruiker.
 
 **Leesingen**
 
-* [Op gebruiker gebaseerd](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=en#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
+* [Op gebruiker gebaseerd](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=nl-NL#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
 
 +++
 
@@ -190,7 +190,7 @@ Aanbevelingen doen op basis van een aangepast bestand dat u uploadt.
 
 **Leesingen**
 
-* [Aangepaste criteria](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=en#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
+* [Aangepaste criteria](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=nl-NL#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
 
 +++
 
@@ -202,7 +202,7 @@ Aanbevelingen doen op basis van een aangepast bestand dat u uploadt.
 
 **Leesingen**
 
-* [Regels voor dynamische en statische integratie gebruiken](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/dynamic-static/use-dynamic-and-static-inclusion-rules.html){target=_blank}
+* [Regels voor dynamische en statische integratie gebruiken](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/dynamic-static/use-dynamic-and-static-inclusion-rules.html?lang=nl-NL){target=_blank}
 
 +++
 
@@ -216,7 +216,7 @@ Geef entiteit-id&#39;s door voor entiteiten die u wilt uitsluiten van uw aanbeve
 
 **Leesingen**
 
-* [Kan ik een entiteit dynamisch uitsluiten?](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-faq/recommendations-faq.html?lang=en#exclude){target=_blank}
+* [Kan ik een entiteit dynamisch uitsluiten?](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-faq/recommendations-faq.html?lang=nl-NL#exclude){target=_blank}
 
 +++
 
@@ -228,9 +228,9 @@ Geef entiteit-id&#39;s door voor entiteiten die u wilt uitsluiten van uw aanbeve
 
 **Leesingen**
 
-* [Entiteitskenmerken](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html){target=_blank}
+* [Entiteitskenmerken](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html?lang=nl-NL){target=_blank}
 
-U kunt deze stap ook uitvoeren door [productfeeds](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/feeds.html){target=_blank} met de [!DNL Target] UI voor het bijwerken van de productcatalogus voor [!DNL Recommendations].
+U kunt deze stap ook uitvoeren door [productfeeds](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/feeds.html?lang=nl-NL){target=_blank} met de [!DNL Target] UI voor het bijwerken van de productcatalogus voor [!DNL Recommendations].
 
 +++
 
@@ -244,7 +244,7 @@ Geef de profielkenmerken op die als sleutels voor inclusieregels in de hierboven
 
 **Leesingen**
 
-* [Profielkenmerken](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html){target=_blank}
+* [Profielkenmerken](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html?lang=nl-NL){target=_blank}
 
 +++
 
@@ -252,7 +252,7 @@ Geef de profielkenmerken op die als sleutels voor inclusieregels in de hierboven
 
 ## 3.11: Aanvraag voor het laden van een brandpagina {#fire}
 
-Deze stap activeert een [!DNL Delivery API] bellen met `execute` > `pageLoad` lading in het verzoek. De `getOffers()` de methode haalt de ervaring en `applyOffers()` geeft de ervaring op de pagina weer. De `pageLoad` verzoek is nodig voor het renderen van ervaringen die zijn geschreven in de [Visual Experience Composer](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html){target=_blank} (VEC).
+Deze stap activeert een [!DNL Delivery API] bellen met `execute` > `pageLoad` lading in het verzoek. De `getOffers()` de methode haalt de ervaring en `applyOffers()` geeft de ervaring op de pagina weer. De `pageLoad` verzoek is nodig voor het renderen van ervaringen die zijn geschreven in de [Visual Experience Composer](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html?lang=nl-NL){target=_blank} (VEC).
 
 +++Zie details
 

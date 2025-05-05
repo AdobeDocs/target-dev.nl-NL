@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Gebruikersmachtigingen en -eigenschappen
 
-De [!DNL Target] SDK&#39;s bieden ondersteuning voor gebruikersmachtigingen en -eigenschappen. Als u niet weet hoe [!DNL Adobe Target] behandelt ondernemingstoestemmingen via werkruimten en eigenschappen, kunt u meer over het in lezen [Machtigingen voor Enterprise-gebruikers](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html).
+De [!DNL Target] SDK&#39;s bieden ondersteuning voor gebruikersmachtigingen en -eigenschappen. Als u niet weet hoe [!DNL Adobe Target] behandelt ondernemingstoestemmingen via werkruimten en eigenschappen, kunt u meer over het in lezen [Machtigingen voor Enterprise-gebruikers](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html?lang=nl-NL).
 
 De client kan op twee manieren een eigenschapstoken gebruiken.
 

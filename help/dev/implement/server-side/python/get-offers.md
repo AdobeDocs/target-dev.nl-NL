@@ -51,7 +51,7 @@ Retourneert een `TargetDeliveryResponse` indien synchroon (standaard), of een `A
 | target_location_hint_cookie | dict | [!DNL Target] locatiehintcookie |
 | analytics_details | list[AnalyticsResponse] | Analytische lading, in geval van client side Analytics gebruik |
 | traceren | list[dict] | Samengevoegde spoorgegevens voor alle verzoekdozen/meningen |
-| response_tokens | list[dict] | Een lijst met &#x200B;[Reactiepunten](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html) |
+| response_tokens | list[dict] | Een lijst met &#x200B;[Reactiepunten](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html?lang=nl-NL) |
 | meta | dict | Aanvullende beslissingsmetagegevens voor gebruik met apparaatbesluitvorming |
 
 `target_cookie` en `target_location_hint_cookie` objecten die worden gebruikt voor het doorgeven van gegevens naar de browser, hebben de volgende structuur:

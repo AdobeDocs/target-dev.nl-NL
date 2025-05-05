@@ -38,7 +38,7 @@ Het toelaten van op-apparatenbesluit verzekert een activiteit A/B bij bijna-nul 
 
 >[!NOTE]
 >
->U moet de beheerder of fiatteur hebben [gebruikersrol](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html) om de **[!UICONTROL On-Device Decisioning]** schakelen.
+>U moet de beheerder of fiatteur hebben [gebruikersrol](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html?lang=nl-NL) om de **[!UICONTROL On-Device Decisioning]** schakelen.
 
 Nadat u het dialoogvenster **[!UICONTROL On-Device Decisioning]** schakelen, [!DNL Adobe Target] Beginnen met genereren *regelartefacten* voor uw client.
 

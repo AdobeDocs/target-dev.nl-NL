@@ -53,5 +53,5 @@ Documentatie: [Gegevensleveranciers](../../implement/client-side/atjs/atjs-funct
 
 ## Trainingsvideo&#39;s:
 
-* [Gegevensleveranciers gebruiken in Adobe Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html)
-* [Gegevensleveranciers implementeren in Adobe Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/implement-data-providers-to-integrate-third-party-data.html)
+* [Gegevensleveranciers gebruiken in Adobe Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html?lang=nl-NL)
+* [Gegevensleveranciers implementeren in Adobe Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/implement-data-providers-to-integrate-third-party-data.html?lang=nl-NL)

@@ -21,11 +21,11 @@ Te gebruiken [!DNL Target] in uw mobiele app een locatie en succesmaatstaf maken
 >
 >De [Adobe Experience Platform SDK voor mobiele apps](https://developer.adobe.com/client-sdks/documentation/){target=_blank} is de aanbevolen oplossing voor stroom [!DNL Adobe Experience Cloud] oplossingen en services in uw mobiele apps.
 
-Deze sectie bevat voorbeeldcode die als sjabloon voor uw app kan worden gebruikt. De voorbeelden in deze sectie bevatten code voor iOS. Dezelfde patronen gelden voor Android. Specifieke Android-syntaxis vindt u in het gedeelte [Android SDK 4.x voor Experience Cloud-oplossingen](https://experienceleague.adobe.com/docs/mobile-services/android/target-android/target-main.html) hulplijn.
+Deze sectie bevat voorbeeldcode die als sjabloon voor uw app kan worden gebruikt. De voorbeelden in deze sectie bevatten code voor iOS. Dezelfde patronen gelden voor Android. Specifieke Android-syntaxis vindt u in het gedeelte [Android SDK 4.x voor Experience Cloud-oplossingen](https://experienceleague.adobe.com/docs/mobile-services/android/target-android/target-main.html?lang=nl-NL) hulplijn.
 
 >[!NOTE]
 >
->Zie de [Mobiele documentatie](https://experienceleague.adobe.com/docs/mobile-services/ios/target-ios/c-target-methods.html) voor een lijst van alle beschikbare [!DNL Target] methoden.
+>Zie de [Mobiele documentatie](https://experienceleague.adobe.com/docs/mobile-services/ios/target-ios/c-target-methods.html?lang=nl-NL) voor een lijst van alle beschikbare [!DNL Target] methoden.
 
 Een [!DNL Target] er zijn twee primaire methoden:
 

@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Deze functie voert een verzoek in om gebruikersacties, zoals kliks en omzettingen te melden. Het levert geen activiteiten in de reactie.
 
-Deze gebeurtenis-volgende mbox vraag kan dan worden gebruikt om metriek in activiteiten te bepalen. Zie voor meer informatie [Succeswaarden](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html) en [Conversies bijhouden](../how-to-deployatjs/implement-target-without-a-tag-manager.md#track-conversions).
+Deze gebeurtenis-volgende mbox vraag kan dan worden gebruikt om metriek in activiteiten te bepalen. Zie voor meer informatie [Succeswaarden](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=nl-NL) en [Conversies bijhouden](../how-to-deployatjs/implement-target-without-a-tag-manager.md#track-conversions).
 
 Hier volgen de API-details:
 

@@ -124,7 +124,7 @@ In de reactie ziet u de `content` veld met de ervaring die de bezoeker voor een 
 
 ## Prefetboxes met `clickTrack` maatstaven bij gebruik [!UICONTROL Analytics for Target] (A4T)
 
-[[!UICONTROL Adobe Analytics for Target]](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html){target=_blank} (A4T) is een integratie met meerdere oplossingen waarmee u activiteiten kunt maken op basis van [!DNL Analytics] conversiemetriek en publiekssegmenten.
+[[!UICONTROL Adobe Analytics for Target]](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=nl-NL){target=_blank} (A4T) is een integratie met meerdere oplossingen waarmee u activiteiten kunt maken op basis van [!DNL Analytics] conversiemetriek en publiekssegmenten.
 
 Het volgende codefragment is een reactie van een prefetch van een box die `clickTrack` cijfers voor meldingen [!DNL Analytics] dat op een voorstel is geklikt:
 
@@ -169,7 +169,7 @@ Het volgende codefragment is een reactie van een prefetch van een box die `click
 
 ## Vooraf ingestelde weergaven
 
-Weergaven ondersteunen toepassingen voor één pagina (SPA) en mobiele toepassingen naadloos. Weergaven kunnen worden beschouwd als een logische groep visuele elementen die samen een SPA of mobiele ervaring vormen. Nu, door levering API, VEC-gecreeerd [[!UICONTROL A/B Test]](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html){target=_blank} and [[!UICONTROL Experience Targeting]](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html){target=_blank} (X)T-activiteiten met wijzigingen op [Weergaven voor SPA](/help/dev/implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md) kan nu vooraf worden ingesteld.
+Weergaven ondersteunen toepassingen voor één pagina (SPA) en mobiele toepassingen naadloos. Weergaven kunnen worden beschouwd als een logische groep visuele elementen die samen een SPA of mobiele ervaring vormen. Nu, door levering API, VEC-gecreeerd [[!UICONTROL A/B Test]](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=nl-NL){target=_blank} and [[!UICONTROL Experience Targeting]](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html?lang=nl-NL){target=_blank} (X)T-activiteiten met wijzigingen op [Weergaven voor SPA](/help/dev/implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md) kan nu vooraf worden ingesteld.
 
 ```shell  {line-numbers="true"}
 curl -X POST \

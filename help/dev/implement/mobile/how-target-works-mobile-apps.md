@@ -24,7 +24,7 @@ De [!DNL Adobe Mobile SDK] neemt contact op met [!DNL Target] om de inhoud samen
 
 A *doellocatie* wordt ook mbox genoemd. Een geïdentificeerde locatie in de app is geschikt voor testen of personalisatie (bijvoorbeeld het welkomstbericht op het thuisscherm). Deze locaties worden tijdens het maken van de test geïdentificeerd.
 
-A *[succesmetrisch](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html)* is een actie die door de gebruiker wordt uitgevoerd en die aangeeft of een bepaalde activiteit succesvol was (zoals aanmelden, kopen, een ticket boeken, enzovoort).
+A *[succesmetrisch](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=nl-NL)* is een actie die door de gebruiker wordt uitgevoerd en die aangeeft of een bepaalde activiteit succesvol was (zoals aanmelden, kopen, een ticket boeken, enzovoort).
 
 ![alternatieve afbeelding](assets/mobile-target-location.png)
 

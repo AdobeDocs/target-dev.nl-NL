@@ -25,7 +25,7 @@ Informatie over de wijzigingen in elke versie van de JavaScript-bibliotheek [!DN
 >
 >U zou aan de recentste versies van één van beide moeten bevorderen 1.*x* of 2.*x* om insectenmoeilijke situaties en veiligheidspatches voor kwesties te verkrijgen die in om het even welke vorige minder belangrijke versie van de overeenkomstige belangrijkste versie worden ontdekt.
 
-De markeringen in [ Adobe Experience Platform ](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) zijn de aangewezen methode om at.js te bevorderen. Extensieontwikkelaars voegen voortdurend nieuwe functies toe aan hun extensies en corrigeren vaak bugs. Deze updates worden verpakt in nieuwe versies van een extensie en worden als upgrades beschikbaar gesteld in de Adobe Experience Platform-catalogus. Voor meer informatie, zie [ de verbeteringen van de Uitbreiding ](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/extension-upgrade.html) in de *overzicht van Markeringen* gids.
+De markeringen in [ Adobe Experience Platform ](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) zijn de aangewezen methode om at.js te bevorderen. Extensieontwikkelaars voegen voortdurend nieuwe functies toe aan hun extensies en corrigeren vaak bugs. Deze updates worden verpakt in nieuwe versies van een extensie en worden als upgrades beschikbaar gesteld in de Adobe Experience Platform-catalogus. Voor meer informatie, zie [ de verbeteringen van de Uitbreiding ](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/extension-upgrade.html?lang=nl-NL) in de *overzicht van Markeringen* gids.
 
 ## at.js versie 2.11.8 (31 maart 2025)
 
@@ -130,7 +130,7 @@ Deze release bevat de volgende wijzigingen:
 Deze versie van at.js bevat de volgende verbeteringen en wijzigingen:
 
 * [ op-apparatenbeslist ](/help/dev/implement/client-side/atjs/on-device-decisioning/on-device-decisioning.md) steun voor at.js.
-* [ de verbindingen van de Voorproef ](https://experienceleague.adobe.com/docs/target/using/activities/activity-qa/activity-qa.html) steun voor de activiteiten van Automated Personalization
+* [ de verbindingen van de Voorproef ](https://experienceleague.adobe.com/docs/target/using/activities/activity-qa/activity-qa.html?lang=nl-NL) steun voor de activiteiten van Automated Personalization
 
 Deze release verwijdert ook ondersteuning voor Microsoft Internet Explorer 10 en hoger.
 
@@ -242,7 +242,7 @@ Deze release bevat de volgende functies en verbeteringen:
 
 * **cliënt-kant analyseregistreren**: Geef klanten volledige controle op hoe zij analysegegevens naar [!DNL Adobe Analytics] willen verzenden, of op de cliënt-kant of server-kant.
 
-  Voor meer informatie, zie [ cliënt-kant  [!DNL Analytics]  registreren ](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/before-implement.html#client-side).
+  Voor meer informatie, zie [ cliënt-kant  [!DNL Analytics]  registreren ](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/before-implement.html?lang=nl-NL#client-side).
 
 * **verzendt berichten**: Sta ontwikkelaars toe om berichten te verzenden wanneer een ervaring door hun code in plaats van het gebruiken van `applyOffer()` of `applyOffers()` wordt teruggegeven.
 
@@ -359,7 +359,7 @@ at.js versie 1.5.0 is nu beschikbaar.
 * De details van de `at-request-succeeded` -gebeurtenis bevatten de omleidingsvlag. Met deze markering kunt u bepalen of de pagina wordt omgeleid naar een andere URL. Als u de URL wilt weten, meldt u zich aan `at-content-rendering-redirect`. (TNT-29834)
 * Probleem verholpen waarbij `window.targetGlobalSettings.enabled` mislukte met een runtime-uitzondering als deze was ingesteld op false. (TNT-29829)
 * Probleem verholpen die ertoe leidde dat de pagina mislukte tijdens het laden in Visual Experience Composer (VEC) als het gebruiken van douanecode aan een brand globale mbox verzoek en het gebruiken van lichaam het verbergen. (TNT-29795)
-* Extra ondersteuning voor `screenOrientation` , `devicePixelRatio` en `webGLRenderer` . Deze nieuwe [!DNL Target] aanvraagparameters worden gebruikt voor iPhone X en andere moderne apparaatdetectie. Voor meer informatie, zie [ Mobiel ](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/mobile.html). (TNT-29781)
+* Extra ondersteuning voor `screenOrientation` , `devicePixelRatio` en `webGLRenderer` . Deze nieuwe [!DNL Target] aanvraagparameters worden gebruikt voor iPhone X en andere moderne apparaatdetectie. Voor meer informatie, zie [ Mobiel ](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/mobile.html?lang=nl-NL). (TNT-29781)
 * Probleem verholpen waarbij de locatiehint van Adobe Audience Manager (AAM) niet altijd werd verzonden. (TNT-29695)
 * Voor browsers die dit ondersteunen, schakelt at.js 1.5.0 over naar MutationObserver voor kiezersopiniepeiling. In versies vóór at.js 1.0.0 werd een MutationObserver-polyfill gebruikt, wat problematisch bleek te zijn. Om de polyfill problemen te voorkomen, gebruikt versie 1.5.0 de volgende pseudo-code om te bepalen welk planningsmechanisme moet worden gebruikt:
 
@@ -401,7 +401,7 @@ at.js versie 1.3.0 is nu beschikbaar.
 
 at.js versie 1.2.3 is nu beschikbaar.
 
-* Voegt ondersteuning toe voor JSON-aanbiedingen. JSON-aanbiedingen worden alleen ondersteund in activiteiten die zijn gemaakt met de Form-based Experience Composer. De enige manier om JSON-aanbiedingen te gebruiken is momenteel via directe API-aanroepen. Zie [ Aanbiedingen JSON ](https://experienceleague.adobe.com/docs/target/using/experiences/offers/create-json-offer.html) creëren.
+* Voegt ondersteuning toe voor JSON-aanbiedingen. JSON-aanbiedingen worden alleen ondersteund in activiteiten die zijn gemaakt met de Form-based Experience Composer. De enige manier om JSON-aanbiedingen te gebruiken is momenteel via directe API-aanroepen. Zie [ Aanbiedingen JSON ](https://experienceleague.adobe.com/docs/target/using/experiences/offers/create-json-offer.html?lang=nl-NL) creëren.
 
 ## at.js versie 1.2.2
 
@@ -439,7 +439,7 @@ at.js versie 1.2 is nu beschikbaar als onderhoudsversie die hoofdzakelijk insect
 
 De volgende verbeteringen en correcties zijn opgenomen in at.js versie 1.1:
 
-* Toegevoegde verwerking van responstoken. Voor meer informatie, zie [ Tokens van de Reactie ](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html).
+* Toegevoegde verwerking van responstoken. Voor meer informatie, zie [ Tokens van de Reactie ](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html?lang=nl-NL).
 * Correctie van het probleem zodat `document.currentScript polyfill` zich niet mengt in Angular 1.X.
 * Wijzigingen aangebracht om ervoor te zorgen dat het bijhouden van klikken geen invloed heeft op de zichtbaarheidseigenschap. Klik op volgelementen om de CSS-klasse in plaats van `at-element-marker` op te geven. `at-element-click-tracking`
 
@@ -473,7 +473,7 @@ De volgende verbeteringen en correcties zijn opgenomen in at.js versie 0.9.7:
 
 De volgende verbeteringen en correcties zijn opgenomen in at.js versie 0.9.6:
 
-* Omleiding biedt ondersteuning voor A4T. Nadat u hebt gedownload en geïnstalleerd op versie 0.js 0.9.6, kunt u de redirect aanbiedingen in activiteiten gebruiken die [!UICONTROL Adobe Analytics as the Reporting Source for Target] (A4T) gebruiken. Naast at.js versie 0.9.6, zijn er andere minimumvereisten uw implementatie moet voldoen om te gebruiken doorleidt aanbiedingen en A4T. Voor meer informatie en extra belangrijke informatie zou u moeten kennen, zie [ Aanbiedingen opnieuw richten - Veelgestelde vragen A4T ](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t-faq/a4t-faq-redirect-offers.html).
+* Omleiding biedt ondersteuning voor A4T. Nadat u hebt gedownload en geïnstalleerd op versie 0.js 0.9.6, kunt u de redirect aanbiedingen in activiteiten gebruiken die [!UICONTROL Adobe Analytics as the Reporting Source for Target] (A4T) gebruiken. Naast at.js versie 0.9.6, zijn er andere minimumvereisten uw implementatie moet voldoen om te gebruiken doorleidt aanbiedingen en A4T. Voor meer informatie en extra belangrijke informatie zou u moeten kennen, zie [ Aanbiedingen opnieuw richten - Veelgestelde vragen A4T ](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t-faq/a4t-faq-redirect-offers.html?lang=nl-NL).
 * Vóór 0.js 0.9.6, toen de bezoeker-API aanwezig was op de pagina en de instelling `visitorApiTimeout` te agressief was, kon [!DNL Target] in een situatie terechtkomen waarin geen MCID-gegevens werden verzonden in de aanvraag [!DNL Target] . Dit kan leiden tot problemen zoals onverwachte resultaten in [!DNL Analytics] bij het gebruik van A4T.
 
   Dit gedrag is gewijzigd in 0.js 0.9.6, zelfs als `visitorApiTimeout` is ingesteld op 1 ms, zal [!DNL Target] proberen SDID-, trackingservers- en klant-id-gegevens te verzamelen en deze in de [!DNL Target] -aanvraag te verzenden.
