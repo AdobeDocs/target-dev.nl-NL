@@ -33,7 +33,7 @@ De interface [!DNL Target] ondersteunt de volgende browsers en apparaten:
 
 ## Vereisten voor visuele bewerking
 
-Om uw Web-pagina&#39;s in [!UICONTROL Visual Experience Composer] (VEC) betrouwbaar te kunnen openen, auteur, en voorproef, moet u de [ Adobe Experience Cloud Visuele het Uitgeven browser van de Helper browser van de Helper ](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension) {target=_blank} hebben die op uw Webbrowser of gebruik [!UICONTROL Enhanced Experience Composer (EEC)] wordt geïnstalleerd.
+Om uw Web-pagina&#39;s in [!UICONTROL Visual Experience Composer] (VEC) betrouwbaar te kunnen openen, auteur, en voorproef, moet u de [ Adobe Experience Cloud Visuele het Uitgeven browser van de Helper browser van de Helper ](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension){target=_blank}  hebben die op uw Webbrowser of gebruik [!UICONTROL Enhanced Experience Composer (EEC)] wordt geïnstalleerd.
 
 >[!NOTE]
 >

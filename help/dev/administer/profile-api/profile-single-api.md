@@ -36,15 +36,15 @@ De profielparameters in de indeling opgeven `profile.paramName=value`.
 
 Het profiel bijwerken voor een `pcId`, gebruik:
 
-``````
-https://<your-client-code>.tt.omtrdc.net/m2/client/profile/update?mboxPC=1368007744041-575948.01_00&profile.attr=0&profile.attr2=1...
-``````
+``` ```
+https://&lt;your-client-code>.tt.omtrdc.net/m2/client/profile/update?mboxPC=1368007744041-575948.01_00&profile.attr=0&profile.attr2=1...
+``` ```
 
 Als u het profiel voor een `mbox3rdPartyId`, gebruik:
 
-``````
-shell http://<your-client-code>.tt.omtrdc.net/m2/client/profile/update?mbox3rdPartyId=123456&profile.attr=0&profile.attr2=1...
-``````
+``` ```
+shell http://&lt;your-client-code>.tt.omtrdc.net/m2/client/profile/update?mbox3rdPartyId=123456&profile.attr=0&profile.attr2=1...
+``` ```
 
 De [!UICONTROL Single Profile Update API] is alleen voor updates. Als er niets wordt gevonden, wordt er geen profiel gemaakt.
 

@@ -66,7 +66,7 @@ In het volgende diagram ziet u de interactie tussen uw bezoeker, de browser, at.
 
 (Klik op de afbeelding om deze uit te breiden naar de volledige breedte.)
 
-![Stroomdiagram alleen op de server](/help/dev/implement/client-side/atjs/on-device-decisioning/assets/server-side-only.png "Stroomdiagram alleen op de server"){zoomable=&quot;yes&quot;}
+![Stroomdiagram alleen op de server](/help/dev/implement/client-side/atjs/on-device-decisioning/assets/server-side-only.png "Stroomdiagram alleen op de server"){zoomable="yes"}
 
 De volgende lijst komt overeen met de cijfers in het diagram:
 
@@ -101,7 +101,7 @@ In het volgende diagram ziet u de interactie tussen uw bezoeker, de browser, at.
 
 (Klik op de afbeelding om deze uit te breiden naar de volledige breedte.)
 
-![Stroomdiagram alleen op apparaat](/help/dev/implement/client-side/atjs/on-device-decisioning/assets/on-device-only.png "Stroomdiagram alleen op apparaat"){zoomable=&quot;yes&quot;}
+![Stroomdiagram alleen op apparaat](/help/dev/implement/client-side/atjs/on-device-decisioning/assets/on-device-only.png "Stroomdiagram alleen op apparaat"){zoomable="yes"}
 
 De volgende lijst komt overeen met de cijfers in het diagram:
 
@@ -128,7 +128,7 @@ In het volgende diagram ziet u de interactie tussen uw bezoeker, de browser, op 
 
 (Klik op de afbeelding om deze uit te breiden naar de volledige breedte.)
 
-![Stroomdiagram alleen op apparaat voor paginanavigatie en herhaalde bezoeken](/help/dev/implement/client-side/atjs/on-device-decisioning/assets/on-device-only-subsequent.png "Stroomdiagram alleen op apparaat voor paginanavigatie en herhaalde bezoeken"){zoomable=&quot;yes&quot;}
+![Stroomdiagram alleen op apparaat voor paginanavigatie en herhaalde bezoeken](/help/dev/implement/client-side/atjs/on-device-decisioning/assets/on-device-only-subsequent.png "Stroomdiagram alleen op apparaat voor paginanavigatie en herhaalde bezoeken"){zoomable="yes"}
 
 De volgende lijst komt overeen met de cijfers in het diagram:
 
@@ -163,7 +163,7 @@ Deze benadering zorgt ervoor dat de grootte van het artefact, dat vele activitei
 
 (Klik op de afbeelding om deze uit te breiden naar de volledige breedte.)
 
-![Hybride-stroomdiagram voor een eerste bezoeker](/help/dev/implement/client-side/atjs/on-device-decisioning/assets/hybrid-first-time-visitor.png "Hybride-stroomdiagram voor een eerste bezoeker"){zoomable=&quot;yes&quot;}
+![Hybride-stroomdiagram voor een eerste bezoeker](/help/dev/implement/client-side/atjs/on-device-decisioning/assets/hybrid-first-time-visitor.png "Hybride-stroomdiagram voor een eerste bezoeker"){zoomable="yes"}
 
 De volgende lijst komt overeen met de cijfers in het diagram:
 
@@ -193,7 +193,7 @@ Het volgende diagram illustreert de interactie tussen uw bezoeker, browser, at.j
 
 (Klik op de afbeelding om deze uit te breiden naar de volledige breedte.)
 
-![Hybride-stroomdiagram voor paginanavigatie en herhaalde bezoeken](/help/dev/implement/client-side/atjs/on-device-decisioning/assets/hybrid-subsequent.png "Hybride-stroomdiagram voor paginanavigatie en herhaalde bezoeken"){zoomable=&quot;yes&quot;}
+![Hybride-stroomdiagram voor paginanavigatie en herhaalde bezoeken](/help/dev/implement/client-side/atjs/on-device-decisioning/assets/hybrid-subsequent.png "Hybride-stroomdiagram voor paginanavigatie en herhaalde bezoeken"){zoomable="yes"}
 
 De volgende lijst komt overeen met de cijfers in het diagram:
 

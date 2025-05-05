@@ -23,7 +23,7 @@ U kunt indien gewenst randknooppunten van [!DNL Target] lijsten van gewenste per
 >
 >Naast het voegend op lijst van gewenste personen de IP van de Vertaling van het Adres van het Netwerk (NATIONAAL) adressen van [!DNL Target] randen en [!DNL Target] randIP adressen die in het artikel worden besproken, zou u alle [!DNL Adobe Analytics] IP adresblokken ook moeten lijsten van gewenste personen.
 >
->Voor meer informatie, zie [ Alle het adresblokken van Adobe Analytics IP ](https://experienceleague.adobe.com/docs/analytics/technotes/ip-addresses.html?lang=en#all-adobe-analytics-ip-address-blocks) {target=_blank} in de *technische nota&#39;s van Adobe Analytics* documentatie.
+>Voor meer informatie, zie [ Alle het adresblokken van Adobe Analytics IP ](https://experienceleague.adobe.com/docs/analytics/technotes/ip-addresses.html?lang=en#all-adobe-analytics-ip-address-blocks){target=_blank}  in de *technische nota&#39;s van Adobe Analytics* documentatie.
 >
 >[!DNL Adobe Target] wordt de infrastructuur bijgewerkt en de klanten die adressen willen lijsten van gewenste personen moeten beide reeksen IPs gebruiken. Het nalaten om dit te doen zal klanten gebruikend server-kant of hybride implementaties beïnvloeden waar de vraag van doel API voor het halen van ervaringen uit binnen een netwerk achter een firewall voortkomt die wordt gevormd om een lijst van gewenste personen te gebruiken.
 >

@@ -1,6 +1,6 @@
 ---
 keywords: adobe.target.sendNotifications, sendNotifications, send notifications, send meldingen, notifications, at.js, functions, function, $9
-description: Gebruiken [!UICONTROL adobe.target.sendNotifications()] voor om.js om berichten naar [!DNL Target] rand wanneer een ervaring wordt weergegeven die niet wordt gebruikt [!UICONTROL applyOffer](s). (js.2.1 +)
+description: Gebruiken [!UICONTROL adobe.target.sendNotifications()] voor om.js om berichten naar [!DNL Target] rand wanneer een ervaring wordt weergegeven die niet wordt gebruikt [!UICONTROL applyOffer] (s). (js.2.1 +)
 title: Hoe gebruik ik de functie adobe.target.sendNotifications()?
 feature: at.js
 exl-id: 1a08da10-31a0-4b0b-af7d-91ed7d32c308

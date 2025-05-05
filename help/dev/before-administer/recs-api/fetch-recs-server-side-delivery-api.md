@@ -62,12 +62,13 @@ De syntaxis voor [ Levering API ](/help/dev/implement/delivery-api/overview.md) 
 
 `POST https://{{CLIENT_CODE}}.tt.omtrdc.net/rest/v1/delivery`
 
-1. Let op: de clientcode is vereist. Ter herinnering, uw clientcode kunt u vinden in Adobe Target door naar **[!UICONTROL Recommendations]** > **[!UICONTROL Settings]** te navigeren. Noteer de **waarde van de Code van de 0} Cliënt in de** Symbolische van Aanbeveling API **sectie.**
+1. Let op: de clientcode is vereist. Ter herinnering, uw clientcode kunt u vinden in Adobe Target door naar **[!UICONTROL Recommendations]** > **[!UICONTROL Settings]** te navigeren. Noteer de **waarde van de Code van de 0&rbrace; Cliënt in de** Symbolische van Aanbeveling API **sectie.**
    ![ cliënt-code.png ](assets/client-code.png)
 1. Zodra u uw cliëntcode hebt, construeer uw levering API vraag. Het voorbeeld hieronder begint met **[!UICONTROL Web Batched Mboxes Delivery API Call]** die in de [ levering API inzameling van Postman ](../../implement/delivery-api/overview.md/#section/Getting-Started/Postman-Collection) wordt verstrekt, die relevante wijzigingen aanbrengen. Bijvoorbeeld:
    * de **browser** en **adres** voorwerpen werden verwijderd uit het **Lichaam**, aangezien zij niet voor niet-HTML gebruiksgevallen worden vereist
    * *api_charter* is vermeld als plaatsnaam in dit voorbeeld
    * de entiteit.id wordt opgegeven, omdat deze aanbeveling is gebaseerd op Content Gelijksheid, waarvoor een huidige itemsleutel moet worden doorgegeven aan Target.
+
      ![ server-zij-levering-API-call.png ](assets/server-side-delivery-api-call2.png)
 Herinner me om uw vraagparameters correct te vormen. Stel bijvoorbeeld dat u `{{CLIENT_CODE}}` opgeeft als dat nodig is. &lt;!— Q: In de bijgewerkte vraagsyntaxis, wordt entity.id vermeld als profileParameter in plaats van een mboxParameter zoals in oudere versies. —> &lt;!— Q: Oude beeld ![ server-kant-creatie-recs-post.png ](assets/server-side-create-recs-post.png) Oude begeleidende tekst: &quot;Merk op deze aanbeveling gebaseerd op Inhoud Vergelijkbare producten die op entiteit.id worden gebaseerd die via mboxParameters wordt verzonden.&quot; —>
      ![ cliënt-code3 ](assets/client-code3.png)
@@ -106,7 +107,7 @@ Wij leerden in een [ vroegere sectie ](manage-catalog.md) hoe te om de entiteite
 | [ Bevorderingen ](https://developer.adobe.com/target/administer/recommendations-api/#tag/Promotions) | Promoties aanbieden, maken, ophalen, bewerken en verwijderen. |
 | [ Criteria van de Categorie ](https://developer.adobe.com/target/administer/recommendations-api/#tag/Category-Criteria) | Categoriecriteria weergeven, maken, ophalen, bewerken en verwijderen. |
 | [ Criteria van de Douane ](https://developer.adobe.com/target/administer/recommendations-api/#tag/Custom-Criteria) | Aangepaste criteria weergeven, maken, ophalen, bewerken en verwijderen. |
-| ](https://developer.adobe.com/target/administer/recommendations-api/#tag/Item-Criteria) Criteria van 0} Punt[ | Objectcriteria weergeven, maken, ophalen, bewerken en verwijderen. |
+| [&#128279;](https://developer.adobe.com/target/administer/recommendations-api/#tag/Item-Criteria) Criteria van 0&rbrace; Punt | Objectcriteria weergeven, maken, ophalen, bewerken en verwijderen. |
 | [ Popularity Criteria ](https://developer.adobe.com/target/administer/recommendations-api/#tag/Popularity-Criteria) | Maak een lijst, maak, krijg, bewerk en verwijder populiteitscriteria. |
 | [ Criteria van het Attribuut van het Profiel ](https://developer.adobe.com/target/administer/recommendations-api/#tag/Profile-Attribute-Criteria) | Criteria voor profielkenmerken weergeven, maken, ophalen, bewerken en verwijderen. |
 | [ Recente Criteria ](https://developer.adobe.com/target/administer/recommendations-api/#tag/Recent-Criteria) | Recente criteria weergeven, maken, ophalen, bewerken en verwijderen. |

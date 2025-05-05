@@ -1,6 +1,6 @@
 ---
 keywords: at.js-releases, at.js-versies, releaseopmerkingen
-description: Bekijk de details over veranderingen in elke versie van de { [!DNL Adobe Target]  at.js JavaScript bibliotheek.
+description: Bekijk de details over veranderingen in elke versie van de &lbrace; [!DNL Adobe Target]  at.js JavaScript bibliotheek.
 title: Wat is inbegrepen in Elke Versie van at.js?
 feature: at.js
 exl-id: 609dacba-2ab8-45e9-b189-928d59938c98
@@ -85,7 +85,7 @@ De markeringen in [ Adobe Experience Platform ](/help/dev/implement/client-side/
 
 ## at.js versie 2.9.0 (27 mei 2022)
 
-* Toegevoegde ](user-agent-and-client-hints.md) steun van de Hints van de Cliënt van de Agent van 0} Gebruiker.[
+* Toegevoegde [&#128279;](user-agent-and-client-hints.md) steun van de Hints van de Cliënt van de Agent van 0&rbrace; Gebruiker.
 * Probleem verholpen waarbij meerdere mbox-aanvragen op dezelfde pagina verschillende beeld-id&#39;s hebben.
 
 ## at.js versie 2.8.1 (28 januari 2022)

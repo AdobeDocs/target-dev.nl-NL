@@ -39,7 +39,7 @@ Versie 79.0
 
 1. Klik op de knop **[!UICONTROL Firefox]** menu > **[!UICONTROL Preferences]**.
 1. Klik op de knop **[!UICONTROL Privacy and Security]** tab.
-1. Onder **Cookies en sitegegevens*, klikt u op **[!UICONTROL Manage Data]**.
+1. Onder **Cookies en sitegegevens*, klikt u op &#x200B;** [!UICONTROL Manage Data]**.
 1. Selecteer de `adobe.com` site, en klik vervolgens op **[!UICONTROL Remove Selected]**.
 
 >[!WARNING]

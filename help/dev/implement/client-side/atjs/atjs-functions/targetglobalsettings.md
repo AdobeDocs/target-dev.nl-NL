@@ -67,7 +67,7 @@ U kunt de volgende instellingen overschrijven:
 
 * **Type**: String
 * **Standaardwaarde**: Waarde ingesteld via UI.
-* **Beschrijving**: Geeft aan of interdomeinspatiëring is ingeschakeld. De toegestane waarden zijn afhankelijk van uw versie at.js. Voor at.js v1.*x*, specificeer of de dwars-domeinmogelijkheden zijn `disabled` (browsers stellen alleen cookies in uw domein in (cookies van de eerste partij), `x only` (browsers stellen cookies in [!DNL Target](alleen domein van het domein) of beide door `enabled` (browsers stellen cookies van zowel de eerste als de derde partij in). Geef voor at.js v2.10 en hoger op of de mogelijkheden voor verschillende domeinen `enabled` (browsers stellen cookies van zowel de 1e als de 3de partij in) of `disabled` (browsers kunnen cookies van derden niet instellen).
+* **Beschrijving**: Geeft aan of interdomeinspatiëring is ingeschakeld. De toegestane waarden zijn afhankelijk van uw versie at.js. Voor at.js v1.*x*, specificeer of de dwars-domeinmogelijkheden zijn `disabled` (browsers stellen alleen cookies in uw domein in (cookies van de eerste partij), `x only` (browsers stellen cookies in [!DNL Target] (alleen domein van het domein) of beide door `enabled` (browsers stellen cookies van zowel de eerste als de derde partij in). Geef voor at.js v2.10 en hoger op of de mogelijkheden voor verschillende domeinen `enabled` (browsers stellen cookies van zowel de 1e als de 3de partij in) of `disabled` (browsers kunnen cookies van derden niet instellen).
 
 ### cspScriptNonce
 

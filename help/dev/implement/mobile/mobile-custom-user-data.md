@@ -69,6 +69,6 @@ Hoewel er enkele gereserveerde toetsen zijn, kunnen zowel profiel- als mapoparam
 
       (Klik op de afbeelding om deze uit te breiden naar de volledige breedte.)
 
-      ![Doellocatie in de foutopsporingsconsole](/help/dev/implement/mobile/assets/mobile-debug.png "Doellocatie in de foutopsporingsconsole"){zoomable=&quot;yes&quot;}
+      ![Doellocatie in de foutopsporingsconsole](/help/dev/implement/mobile/assets/mobile-debug.png "Doellocatie in de foutopsporingsconsole"){zoomable="yes"}
 
    U kunt een publiek maken en de weergave van inhoud beperken of instellen met behulp van deze parameters in [!DNL Target].

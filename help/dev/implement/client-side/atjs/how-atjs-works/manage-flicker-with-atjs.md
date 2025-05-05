@@ -33,13 +33,13 @@ De volgende illustratie toont het Lichaam van de Huid en toont de vraag van het 
 
 (Klik op de afbeelding om deze uit te breiden naar de volledige breedte.)
 
-![Doelstroom: pagina.js laden verzoek](/help/dev/implement/client-side/assets/atjs-20-flow-page-load-request.png "Doelstroom: pagina.js laden verzoek"){zoomable=&quot;yes&quot;}
+![Doelstroom: pagina.js laden verzoek](/help/dev/implement/client-side/assets/atjs-20-flow-page-load-request.png "Doelstroom: pagina.js laden verzoek"){zoomable="yes"}
 
 **te.js 1.*x***
 
 (Klik op de afbeelding om deze uit te breiden naar de volledige breedte.)
 
-![Doelstroom: automatisch gemaakt algemeen mbox](/help/dev/implement/client-side/atjs/how-atjs-works/assets/target-flow2.png "doelstroom: automatisch gemaakt algemeen mbox"){zoomable=&quot;yes&quot;}
+![Doelstroom: automatisch gemaakt algemeen mbox](/help/dev/implement/client-side/atjs/how-atjs-works/assets/target-flow2.png "doelstroom: automatisch gemaakt algemeen mbox"){zoomable="yes"}
 
 Voor meer informatie over de `bodyHiddenStyle` override, zie [targetGlobalSettings()](/help/dev/implement/client-side/atjs/atjs-functions/targetglobalsettings.md).
 

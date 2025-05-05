@@ -17,7 +17,7 @@ Het gedrag van de cookie hangt af van het feit of het een cookie van een eerste 
 
 >[!NOTE]
 >
->Voor gedetailleerde informatie over de verschillende koekjes die door [!DNL Target] worden gebruikt, zie [[!DNL Adobe Target]  koekjes ](https://experienceleague.adobe.com/docs/core-services/interface/administration/ec-cookies/cookies-target.html) {target=_blank} in de *Gids van de Componenten van de Interface van het Experience Cloud Centrale*.
+>Voor gedetailleerde informatie over de verschillende koekjes die door [!DNL Target] worden gebruikt, zie [[!DNL Adobe Target]  koekjes ](https://experienceleague.adobe.com/docs/core-services/interface/administration/ec-cookies/cookies-target.html){target=_blank}  in de *Gids van de Componenten van de Interface van het Experience Cloud Centrale*.
 >
 >Dit onderwerp bevat informatie over `mboxSession` en `mboxPC` . Op basis van de best practices voor implementatie wordt aanbevolen geen vertrouwelijke informatie te koppelen of op te slaan met de cookiegegevens: `mboxSession` of `mboxPC` .
 

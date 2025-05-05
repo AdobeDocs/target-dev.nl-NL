@@ -19,7 +19,7 @@ Als meldingen moeten worden afgespeeld voor de rechterbox of weergave, moet u de
 
 ## Meldingen voor vooraf ingestelde maboxen
 
-Een of meer meldingen kunnen via één leveringsoproep worden verzonden. Bepaal of de metrische waarde die moet worden bijgehouden een van beide is `click` of `display` voor elke box zodat de `type` van de kennisgeving correct kan worden weergegeven. Geef ook een `id` voor elk bericht zodat men kan bepalen of een bericht correct door[!UICONTROL  Adobe Target Delivery API]. De `timestamp` is ook van belang om door te sturen naar [!DNL Target] om aan te geven wanneer de `click` of `display` is opgetreden voor een bepaalde box voor rapportagedoeleinden.
+Een of meer meldingen kunnen via één leveringsoproep worden verzonden. Bepaal of de metrische waarde die moet worden bijgehouden een van beide is `click` of `display` voor elke box zodat de `type` van de kennisgeving correct kan worden weergegeven. Geef ook een `id` voor elk bericht zodat men kan bepalen of een bericht correct door[!UICONTROL &#x200B; Adobe Target Delivery API]. De `timestamp` is ook van belang om door te sturen naar [!DNL Target] om aan te geven wanneer de `click` of `display` is opgetreden voor een bepaalde box voor rapportagedoeleinden.
 
 ```
 curl -X POST \

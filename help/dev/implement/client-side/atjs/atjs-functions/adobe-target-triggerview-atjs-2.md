@@ -1,6 +1,6 @@
 ---
 keywords: adobe.target.triggerView, triggerView, triggerView, triggerView, at.js, functions, function, viewName, viewname, view name, adobe.target.triggerView1
-description: Gebruik de functie adobe.target.triggerView () voor de { [!DNL Adobe Target]  at.js JavaScript bibliotheek voor gebruik in de Toepassingen van de Enige Pagina (SPA). (om 2.x.js)
+description: Gebruik de functie adobe.target.triggerView () voor de &lbrace; [!DNL Adobe Target]  at.js JavaScript bibliotheek voor gebruik in de Toepassingen van de Enige Pagina (SPA). (om 2.x.js)
 title: Hoe gebruik ik de functie adobe.target.triggerView()?
 feature: at.js
 exl-id: d6130c56-4e77-4668-ad21-a5b335f8b234
@@ -72,7 +72,7 @@ adobe.target.getOffers({
 
 ## Voorbeeld: De beste compatibiliteit voor `triggerView()` met de [!UICONTROL Adobe Visual Editing Helper extension]
 
-Overweeg het volgende wanneer het gebruiken van de [ Adobe Visuele het Uitgeven uitbreiding van de Helper ](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension) {target=_blank}:
+Overweeg het volgende wanneer het gebruiken van de [ Adobe Visuele het Uitgeven uitbreiding van de Helper ](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension){target=_blank} :
 
 Vanwege het nieuwe v3 Manifest-beleid van [!DNL Googl] moet de [!UICONTROL Visual Editing Helper extension] op de `DOMContentLoaded` -gebeurtenis wachten voordat de [!DNL Target] -bibliotheken in de VEC worden geladen. [!DNL Chrome] Deze vertraging kan ertoe leiden dat webpagina&#39;s de `triggerView()` -aanroep starten voordat de ontwerpbibliotheken gereed zijn, waardoor de weergave tijdens het laden niet wordt gevuld.
 

@@ -25,7 +25,7 @@ In het volgende diagram worden de prestaties bij het laden van een pagina geïll
 
 (Klik op de afbeelding om deze uit te breiden naar de volledige breedte.)
 
-![Paginaprestatiediagram waarin mbox.js wordt vergeleken met at.js](/help/dev/implement/client-side/atjs/assets/atjs_versus_mboxjs.png "Paginaprestatiediagram waarin mbox.js wordt vergeleken met at.js"){zoomable=&quot;yes&quot;}
+![Paginaprestatiediagram waarin mbox.js wordt vergeleken met at.js](/help/dev/implement/client-side/atjs/assets/atjs_versus_mboxjs.png "Paginaprestatiediagram waarin mbox.js wordt vergeleken met at.js"){zoomable="yes"}
 
 Zoals hierboven is geïllustreerd, is met mbox.js de pagina-inhoud pas na de gebeurtenis [!DNL Target] de vraag is volledig. Wanneer u at.js gebruikt, wordt pagina-inhoud geladen wanneer de [!DNL Target] de vraag wordt in werking gesteld en wacht niet tot de vraag volledig is.
 

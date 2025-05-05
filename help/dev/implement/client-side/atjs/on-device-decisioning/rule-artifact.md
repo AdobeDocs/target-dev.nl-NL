@@ -1,6 +1,6 @@
 ---
 keywords: implementatie, javascript bibliotheek, js, atjs, op apparatenbesluit, op apparatenbesluit, regelartefact, $8
-description: Meer informatie over de JSON-regel die wordt gebruikt door [!UICONTROL on-device decisioning]].
+description: Meer informatie over de JSON-regel die wordt gebruikt door [!UICONTROL on-device decisioning]&rbrack;.
 title: Wat doet de Artifact van de Regel JSON in Apparaatbesluit?
 feature: at.js
 exl-id: 14413ccf-b55e-48a8-a474-4401eb1b50fc

@@ -40,7 +40,7 @@ De volgende diagrammen helpen u het werkschema van at.js 2.x begrijpen met [!UIC
 
 (Klik op de afbeelding om deze uit te breiden naar de volledige breedte.)
 
-![Doelstroom met at.js 2.x](/help/dev/implement/client-side/assets/system-diagram-atjs-20.png "Doelstroom met at.js 2.x"){zoomable=&quot;yes&quot;}
+![Doelstroom met at.js 2.x](/help/dev/implement/client-side/assets/system-diagram-atjs-20.png "Doelstroom met at.js 2.x"){zoomable="yes"}
 
 | Stap | Details |
 | --- | --- |
@@ -57,7 +57,7 @@ Nu, overal `triggerView()` wordt geïmplementeerd op uw SPA, [!UICONTROL Views] 
 
 (Klik op de afbeelding om deze uit te breiden naar de volledige breedte.)
 
-![Doelstroom bij.js 2.x triggerView](/help/dev/implement/client-side/assets/atjs-20-triggerview.png "Doelstroom bij.js 2.x triggerView"){zoomable=&quot;yes&quot;}
+![Doelstroom bij.js 2.x triggerView](/help/dev/implement/client-side/assets/atjs-20-triggerview.png "Doelstroom bij.js 2.x triggerView"){zoomable="yes"}
 
 | Stap | Details |
 | --- | --- |
@@ -82,7 +82,7 @@ Met de volgende diagrammen krijgt u inzicht in de workflow van at.js 1.x.
 
 (Klik op de afbeelding om deze uit te breiden naar de volledige breedte.)
 
-![Doelstroom bij.js 1.x](/help/dev/implement/client-side/assets/target-flow.png "Doelstroom bij.js 1.x"){zoomable=&quot;yes&quot;}
+![Doelstroom bij.js 1.x](/help/dev/implement/client-side/assets/target-flow.png "Doelstroom bij.js 1.x"){zoomable="yes"}
 
 | Stap | Beschrijving | Bellen | Beschrijving |
 |--- |--- |--- |--- |

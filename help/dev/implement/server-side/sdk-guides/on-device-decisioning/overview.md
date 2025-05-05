@@ -29,7 +29,7 @@ Het volgende diagram toont het [!UICONTROL on-device decisioning] architectuur. 
 
 (Klik op de afbeelding om deze uit te breiden naar de volledige breedte.)
 
-![Apparaatdiagram voor beslissingsarchitectuur](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/assets/asset-sdk-local-decisioning-architecture-diagram.png "Apparaatdiagram voor beslissingsarchitectuur"){zoomable=&quot;yes&quot;}
+![Apparaatdiagram voor beslissingsarchitectuur](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/assets/asset-sdk-local-decisioning-architecture-diagram.png "Apparaatdiagram voor beslissingsarchitectuur"){zoomable="yes"}
 
 ## Wat zijn de voordelen?
 

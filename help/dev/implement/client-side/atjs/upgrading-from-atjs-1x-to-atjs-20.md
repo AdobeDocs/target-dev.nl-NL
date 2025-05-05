@@ -27,7 +27,7 @@ De volgende diagrammen helpen u het werkschema van at.js 2 begrijpen.*x* met Wee
 
 (Klik op de afbeelding om deze uit te breiden naar de volledige breedte.)
 
-![Doelstroom met at.js 2.x](/help/dev/implement/client-side/assets/system-diagram-atjs-20.png "Doelstroom met at.js 2.x"){zoomable=&quot;yes&quot;}
+![Doelstroom met at.js 2.x](/help/dev/implement/client-side/assets/system-diagram-atjs-20.png "Doelstroom met at.js 2.x"){zoomable="yes"}
 
 | Bellen | Details |
 | --- | --- |
@@ -44,7 +44,7 @@ Nu, overal `triggerView()` wordt geïmplementeerd op uw SPA, worden de weergaven
 
 (Klik op de afbeelding om deze uit te breiden naar de volledige breedte.)
 
-![Doelstroom bij.js 2.*x* triggerView](/help/dev/implement/client-side/assets/atjs-20-triggerview.png "Doelstroom bij.js 2.*x* triggerView"){zoomable=&quot;yes&quot;}
+![Doelstroom bij.js 2.*x* triggerView](/help/dev/implement/client-side/assets/atjs-20-triggerview.png "Doelstroom bij.js 2.*x* triggerView"){zoomable="yes"}
 
 | Bellen | Details |
 | --- | --- |
@@ -317,7 +317,7 @@ Klanten kunnen een algemene mbox-naam opgeven via **[!UICONTROL Target]** > **[!
 
 Ja, de aangepaste gebeurtenissen at.js zijn van toepassing op `triggerView()` ook.
 
-### Het zegt wanneer ik bel `triggerView()` met &amp;accolade;`"page" : "true"`&amp;Broce; hiermee wordt een bericht verzonden naar de [!DNL Target] de indruk vergroten. Zorgt het er ook voor dat de profielscripts worden uitgevoerd?
+### Het zegt wanneer ik bel `triggerView()` met &accolade;`"page" : "true"`&Broce; hiermee wordt een bericht verzonden naar de [!DNL Target] de indruk vergroten. Zorgt het er ook voor dat de profielscripts worden uitgevoerd?
 
 Wanneer een prefetch vraag aan wordt gemaakt [!DNL Target] als achtergrond, worden de profielmanuscripten uitgevoerd. Daarna worden de profielgegevens gecodeerd en teruggestuurd naar de clientzijde. Na `triggerView()` with `{"page": "true"}` wordt aangeroepen, wordt een melding samen met de gecodeerde profielgegevens verzonden. Dit is wanneer de [!DNL Target] backend zal dan de profielgegevens decrypteren en in de gegevensbestanden opslaan.
 

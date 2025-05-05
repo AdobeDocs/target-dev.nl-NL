@@ -30,7 +30,7 @@ De volgende illustratie toont deze berichten in het consolelogboek:
 
 (Klik op de afbeelding om deze uit te breiden naar de volledige breedte.)
 
-![Logbestand van console met artefactberichten](/help/dev/implement/client-side/atjs/on-device-decisioning/assets/browser-console.png "Logbestand van console met artefactberichten"){zoomable=&quot;yes&quot;}
+![Logbestand van console met artefactberichten](/help/dev/implement/client-side/atjs/on-device-decisioning/assets/browser-console.png "Logbestand van console met artefactberichten"){zoomable="yes"}
 
 ## Stap 2: Verifieer de download van het regelartefact in het lusje van het Netwerk van uw browser
 
