@@ -31,4 +31,4 @@ Houd rekening met de volgende beperkingen wanneer u de prefetch-methode gebruikt
 Voor meer informatie, met inbegrip van prefetch methodes, openbare klassen, en codesteekproeven, zie:
 
 * **iOS:**  [Prefetch-aanbiedingsinhoud in iOS](https://experienceleague.adobe.com/docs/mobile-services/ios/target-ios/c-mob-target-prefetch-ios.html?lang=nl-NL) in de *Help bij Mobile Services iOS SDK*.
-* **Android:**  [Inhoud van Prefetch-aanbieding in Android](https://experienceleague.adobe.com/docs/mobile-services/android/target-android/c-mob-target-prefetch-android.html) in de *Help bij Mobile Services Android SDK*.
+* **Android:**  [Inhoud van Prefetch-aanbieding in Android](https://experienceleague.adobe.com/docs/mobile-services/android/target-android/c-mob-target-prefetch-android.html?lang=nl-NL) in de *Help bij Mobile Services Android SDK*.
