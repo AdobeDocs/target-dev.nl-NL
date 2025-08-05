@@ -2,9 +2,9 @@
 user-guide-title: Adobe Target Developer Guide
 breadcrumb-title: Doelontwikkelaarsgids
 user-guide-description: Leer hoe u de ervaring van uw klanten kunt aanpassen en personaliseren om uw omzet te maximaliseren op uw websites en mobiele sites, apps, sociale media en andere digitale kanalen.
-source-git-commit: ac5531cfda1c47248160d18ffc501bf2e70c9d0e
+source-git-commit: 524eb6aea6141d69eb7f30795d6b16a3f07cccd9
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '777'
 ht-degree: 3%
 
 ---
@@ -46,6 +46,8 @@ ht-degree: 3%
    + Adobe Experience Platform Web SDK-implementatie {#aep}
       + [Implementatieoverzicht van Adobe Experience Platform Web SDK](/help/dev/implement/client-side/aep-web-sdk/aep-web-sdk-overview.md)
       + [Implementatie van één pagina](/help/dev/implement/client-side/aep-web-sdk/spa-implementation.md)
+      + [Toegang krijgen tot reactietokens](/help/dev/implement/client-side/aep-web-sdk/accessing-response-tokens.md)
+      + [De at.js-bibliotheek vergelijken met de Platform Web SDK](/help/dev/implement/client-side/aep-web-sdk/web-sdk-atjs-comparison.md)
    + at.js-implementatie {#at-js-implementation}
       + [at.js, overzicht](implement/client-side/atjs/how-atjs-works/overview.md)
       + Hoe werkt at.js {#at-js}
