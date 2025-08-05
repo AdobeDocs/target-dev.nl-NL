@@ -2,9 +2,9 @@
 user-guide-title: Adobe Target Developer Guide
 breadcrumb-title: Doelontwikkelaarsgids
 user-guide-description: Leer hoe u de ervaring van uw klanten kunt aanpassen en personaliseren om uw omzet te maximaliseren op uw websites en mobiele sites, apps, sociale media en andere digitale kanalen.
-source-git-commit: c963a070a7a4c5e7dc2915eb5ac7d60895340705
+source-git-commit: ac13e0dd7f67de50b77778921c90a95f12c2b9e4
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '769'
 ht-degree: 3%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 3%
       + [Doelcookies](before-implement/privacy/cookie-behavior.md)
       + [Het doelcookie verwijderen](before-implement/privacy/cookie-deleting.md)
       + [Het effect van de afleiding van cookies van derden op Target (at.js)](/help/dev/before-implement/privacy/third-party-cookie-deprecation.md)
-      + [Beleid voor cookies van Google Chrome SameSite](before-implement/privacy/google-chrome-samesite-cookie-policies.md)
+      + [Google Chrome SameSite cookie beleidsregels](before-implement/privacy/google-chrome-samesite-cookie-policies.md)
       + [Apple Intelligent Tracking Prevention (ITP) 2.x](before-implement/privacy/apple-itp-2x.md)
       + [Inhoudsbeveiligingsbeleid (CSP)-instructies](before-implement/privacy/content-security-policy.md)
       + [Lijst van gewenste personen randknooppunten doel](before-implement/privacy/allowlist-edges.md)
@@ -43,7 +43,9 @@ ht-degree: 3%
    + [CNAME en Adobe Target](before-implement/implement-cname-support-in-target.md)
 + Implementatie op de client {#client-side}
    + [Overzicht: Doel implementeren voor web op client](implement/client-side/overview.md)
-   + [Overzicht Adobe Experience Platform Web SDK-implementatie](implement/client-side/aep-web-sdk.md)
+   + Adobe Experience Platform Web SDK {#web-sdk}
+      + [Implementatieoverzicht van Adobe Experience Platform Web SDK](/help/dev/implement/client-side/aep-web-sdk/aep-web-sdk-overview.md)
+      + [Adobe Target en Web SDK gebruiken voor personalisatie](/help/dev/implement/client-side/aep-web-sdk/target-overview.md)
    + at.js-implementatie {#at-js-implementation}
       + [at.js, overzicht](implement/client-side/atjs/how-atjs-works/overview.md)
       + Hoe werkt at.js {#at-js}
@@ -55,7 +57,7 @@ ht-degree: 3%
          + [Doel implementeren met Adobe Experience Platform](implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md)
          + [Doel implementeren zonder tagbeheer](implement/client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager.md)
          + [Doel implementeren met Dynamic Tag Manager (DTM)](implement/client-side/atjs/how-to-deployatjs/implement-target-using-dtm.md)
-         + [Doel implementeren voor toepassingen van één pagina (SPA)](implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md)
+         + [Doel implementeren voor toepassingen van één pagina (SPAs)](implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md)
       + Apparaatbeslissingen {#on-device-decisioning}
          + [Overzicht van apparaatbeslissingen](implement/client-side/atjs/on-device-decisioning/on-device-decisioning.md)
          + [Ondersteunde functies](implement/client-side/atjs/on-device-decisioning/supported-features.md)
@@ -94,7 +96,7 @@ ht-degree: 3%
    + [Serverzijde: Overzicht van doel implementeren](implement/server-side/server-side-overview.md)
    + [Aan de slag met doel-SDK&#39;s](implement/server-side/sdk-guides/getting-started/getting-started.md)
    + [Voorbeeldtoepassingen](implement/server-side/sdk-guides/sample-apps/sample-apps.md)
-   + [Overgang van oudere API&#39;s van Target naar Adobe I/O](implement/server-side/transition-from-target-classic-apis.md)
+   + [Overgang van verouderde API&#39;s van Target naar Adobe I/O](implement/server-side/transition-from-target-classic-apis.md)
    + Basisbeginselen {#core-principles}
       + [Overzicht van kernbeginselen](implement/server-side/sdk-guides/core-principles/overview.md)
       + [Gebruikersnaam en wachtwoord](implement/server-side/sdk-guides/core-principles/user-identification-and-bucketing.md)
@@ -105,7 +107,7 @@ ht-degree: 3%
       + [Overzicht van integratie](implement/server-side/sdk-guides/integration-with-experience-cloud/overview.md)
       + [Experience Cloud ID Service (ECID)](implement/server-side/sdk-guides/integration-with-experience-cloud/ecid.md)
       + [Analyses voor doelrapportage (A4T)](implement/server-side/sdk-guides/integration-with-experience-cloud/a4t-reporting.md)
-      + [AAM](implement/server-side/sdk-guides/integration-with-experience-cloud/aam-segments.md)
+      + [AAM-segmenten](implement/server-side/sdk-guides/integration-with-experience-cloud/aam-segments.md)
    + Apparaatbeslissingen {#on-device-decisioning}
       + [Overzicht van apparaatbeslissingen](implement/server-side/sdk-guides/on-device-decisioning/overview.md)
       + Artefact {#rule-artifact}
@@ -120,51 +122,51 @@ ht-degree: 3%
       + [Overzicht van ondersteunde functies](implement/server-side/sdk-guides/on-device-decisioning/supported-features.md)
       + [Problemen met apparaatbeslissingen oplossen](implement/server-side/sdk-guides/on-device-decisioning/troubleshooting.md)
       + [Aanbevolen procedures](implement/server-side/sdk-guides/best-practices/best-practices.md)
-   + Naslaggids voor Node.js SDK {#node-js}
+   + Node.js SDK Reference {#node-js}
       + [Overzicht van Node.js SDK](implement/server-side/node-js/overview.md)
-      + [De SDK van Node.js installeren](implement/server-side/node-js/install-sdk.md)
-      + [De SDK van Node.js initialiseren](implement/server-side/node-js/initialize-sdk.md)
+      + [De SDK Node.js installeren](implement/server-side/node-js/install-sdk.md)
+      + [De SDK Node.js initialiseren](implement/server-side/node-js/initialize-sdk.md)
       + [Offertes ophalen (Node.js)](implement/server-side/node-js/get-offers.md)
       + [Kenmerken ophalen (Node.js)](implement/server-side/node-js/get-attributes.md)
       + [Meldingen verzenden (Node.js)](implement/server-side/node-js/send-notifications.md)
-      + [SDK-gebeurtenissen (Node.js)](implement/server-side/node-js/sdk-events.md)
+      + [SDK Events (Node.js)](implement/server-side/node-js/sdk-events.md)
       + [Logger (Node.js)](implement/server-side/node-js/logger.md)
       + [Proxyconfiguratie (Node.js)](implement/server-side/node-js/proxy-configuration.md)
    + Java SDK Reference {#java}
-      + [Overzicht van Java SDK](implement/server-side/java/overview.md)
-      + [De SDK van Java installeren](implement/server-side/java/install-sdk.md)
-      + [De SDK van Java initialiseren](implement/server-side/java/initialize-sdk.md)
+      + [Java SDK - overzicht](implement/server-side/java/overview.md)
+      + [Java SDK installeren](implement/server-side/java/install-sdk.md)
+      + [De Java SDK initialiseren](implement/server-side/java/initialize-sdk.md)
       + [Voorstel ophalen (Java)](implement/server-side/java/get-offers.md)
       + [Kenmerken ophalen (Java)](implement/server-side/java/get-attributes.md)
       + [Meldingen verzenden (Java)](implement/server-side/java/send-notifications.md)
-      + [SDK-gebeurtenissen (Java)](implement/server-side/java/sdk-events.md)
+      + [SDK Events (Java)](implement/server-side/java/sdk-events.md)
       + [Aanmelder (Java)](implement/server-side/java/logger.md)
       + [Asynchrone verzoeken (Java)](implement/server-side/java/asynchronous-requests.md)
       + [Proxyconfiguratie (Java)](implement/server-side/java/proxy-configuration.md)
       + [Aangepaste HTTP Client Configuration (Java)](implement/server-side/java/custom-http-client.md)
       + [Hulpprogrammamethoden (Java)](implement/server-side/java/utility-methods.md)
-   + Naslaggids voor .NET SDK {#net}
-      + [Overzicht van .NET SDK](implement/server-side/net/overview.md)
-      + [De .Net SDK installeren](implement/server-side/net/install-sdk.md)
-      + [Initialiseer .NET SDK](implement/server-side/net/initialize-sdk.md)
+   + .NET SDK Reference {#net}
+      + [.NET SDK-overzicht](implement/server-side/net/overview.md)
+      + [.Net SDK installeren](implement/server-side/net/install-sdk.md)
+      + [De .NET SDK initialiseren](implement/server-side/net/initialize-sdk.md)
       + [Aanbiedingen ophalen (.NET)](implement/server-side/net/get-offers.md)
       + [Kenmerken ophalen (.NET)](implement/server-side/net/get-attributes.md)
       + [Meldingen verzenden (.NET)](implement/server-side/net/send-notifications.md)
-      + [SDK-gebeurtenissen (.NET)](implement/server-side/net/sdk-events.md)
+      + [SDK Events (.NET)](implement/server-side/net/sdk-events.md)
       + [Asynchrone verzoeken (.NET)](implement/server-side/net/asynchronous-requests.md)
-   + Naslaggids voor Python SDK {#python}
+   + Referentie Python SDK {#python}
       + [Overzicht van Python SDK](implement/server-side/python/overview.md)
-      + [De Python SDK installeren](implement/server-side/python/install-sdk.md)
+      + [Python SDK installeren](implement/server-side/python/install-sdk.md)
       + [De Python SDK initialiseren](implement/server-side/python/initialize-sdk.md)
       + [Voorstel ophalen (Python)](implement/server-side/python/get-offers.md)
       + [Kenmerken ophalen (Python)](implement/server-side/python/get-attributes.md)
       + [Meldingen verzenden (Python)](implement/server-side/python/send-notifications.md)
-      + [SDK-gebeurtenissen (Python)](implement/server-side/python/sdk-events.md)
+      + [SDK Events (Python)](implement/server-side/python/sdk-events.md)
       + [Asynchrone verzoeken (Python)](implement/server-side/python/asynchronous-requests.md)
       + [Logger (Python)](implement/server-side/python/logger.md)
 + [Hybride implementatie](implement/hybrid/hybrid-overview.md)
-+ [Recommendations-implementatie](implement/recommendations/recommendations.md)
-+ [Recommendations-implementatiebèta](/help/dev/implement/recommendations/recommendations-beta.md)
++ [Implementatie van aanbevelingen](implement/recommendations/recommendations.md)
++ [bèta implementatie van aanbevelingen](/help/dev/implement/recommendations/recommendations-beta.md)
 + Implementatie van mobiele apps {#mobile-apps}
    + [Overzicht van het doel voor mobiele apps](implement/mobile/overview.md)
    + [Voorvertoning voor mobiele doelversie](implement/mobile/target-mobile-preview.md)
@@ -202,12 +204,12 @@ ht-degree: 3%
       + [Single Profile Update API](/help/dev/administer/profile-api/profile-single-api.md)
       + [Bulkprofielupdate-API](/help/dev/administer/profile-api/profile-bulk-api.md)
    + [API voor rapportage](/help/dev/administer/reporting-api/reporting-api.md)
-   + RECOMMENDATIONS API {#recommendations-api}
-      + [Overzicht Recommendations API](before-administer/recs-api/overview.md)
+   + Aanbevelingen-API {#recommendations-api}
+      + [Overzicht van de aanbevelingen-API](before-administer/recs-api/overview.md)
       + [Uw catalogus beheren met API&#39;s](before-administer/recs-api/manage-catalog.md)
       + [Aangepaste criteria beheren](before-administer/recs-api/manage-custom-criteria.md)
-      + [De leverings-API gebruiken met Recommendations](before-administer/recs-api/fetch-recs-server-side-delivery-api.md)
-      + [RECOMMENDATIONS API](/help/dev/administer/recommendations-api/recommendations-api.md)
+      + [De leverings-API gebruiken met aanbevelingen](before-administer/recs-api/fetch-recs-server-side-delivery-api.md)
+      + [Aanbevelingen-API](/help/dev/administer/recommendations-api/recommendations-api.md)
    + Modellen-API {#models-api}
       + [Overzicht van de model-API (Voegend op lijst van gewenste personen)](before-administer/models-api.md)
       + [Modellen-API](/help/dev/administer/models-api/models-api-overview.md)
@@ -215,8 +217,8 @@ ht-degree: 3%
    + [Adobe Experience Platform Edge Network Server-API](/help/dev/before-implement/delivery-api-overview/aep-edge-network-server-api.md)
 + Implementatiepatronen {#implementation-patterns}
    + [Overzicht van implementatiepatronen](/help/dev/patterns/pattern-overview.md)
-   + Recommendations-implementatiepatroon met behulp van at.js {#atjs}
-      + [Recommendations-implementatiepatroon met behulp van at.js-overzicht](/help/dev/patterns/recs-atjs/recs-implementation-pattern-atjs.md)
+   + Implementatiepatroon voor aanbevelingen met behulp van at.js {#atjs}
+      + [Implementatiepatroon voor aanbevelingen met behulp van het overzicht at.js](/help/dev/patterns/recs-atjs/recs-implementation-pattern-atjs.md)
       + [SDK&#39;s initialiseren](/help/dev/patterns/recs-atjs/initialize-sdk.md)
       + [Gegevensverzameling configureren](/help/dev/patterns/recs-atjs/data-collection.md)
       + [Renderervaringen](/help/dev/patterns/recs-atjs/render-experiences.md)

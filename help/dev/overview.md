@@ -1,11 +1,11 @@
 ---
 keywords: doelontwikkelaarsgids; overzicht;thuis
 title: Adobe Target Developer Guide
-description: Hoe kan ik implementeren en beheren [!DNL Adobe Target] en met zijn API's en SDK's werken?
+description: Hoe voer ik uit en beheer  [!DNL Adobe Target]  en werk met zijn APIs en SDKs?
 contributors: https://github.com/icaraps
 feature: APIs/SDKs
 exl-id: 655cff9b-fc04-45cf-9068-5c6c32b70d79
-source-git-commit: dadc3804da4592dba4ad88b8c5c9f804c56e232b
+source-git-commit: 599aa4c965e331bb2681523d50708a03fc933875
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 0%
@@ -14,90 +14,90 @@ ht-degree: 0%
 
 # [!DNL Adobe Target] Handleiding voor ontwikkelaars
 
-**([Weergave [!DNL Target] documentatie-updates](https://experienceleague.adobe.com/docs/target/using/release-notes/doc-change.html?lang=nl-NL){target=_blank})**
+**([ de documentatieupdates van de Mening  [!DNL Target]  ](https://experienceleague.adobe.com/docs/target/using/release-notes/doc-change.html){target=_blank})**
 
-Dit *[!DNL Adobe Target]Handleiding voor ontwikkelaars* biedt bronnen en hulplijnen voor [!DNL Target] ontwikkelaars, inclusief API- en SDK-documentatie voor implementatie en beheer [!DNL Target].
+Deze *[!DNL Adobe Target]handleiding voor ontwikkelaars* biedt bronnen en hulplijnen voor [!DNL Target] -ontwikkelaars, waaronder API- en SDK-documentatie voor implementatie en beheer van [!DNL Target] .
 
 >[!NOTE]
 >
->Naast deze handleiding wordt het volgende [!DNL Adobe Target] hulplijnen zijn ook beschikbaar :
+>Naast deze handleiding zijn ook de volgende [!DNL Adobe Target] hulplijnen beschikbaar:
 >
->* [*[!DNL Adobe Target] Handelspraktijken *](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=nl-NL){target=_blank}
+>* [*[!DNL Adobe Target] Gids Bedrijfs van de Praktijk *](https://experienceleague.adobe.com/docs/target/using/target-home.html){target=_blank}
 >
->* [*[!DNL Adobe Target] Tutorials *](https://experienceleague.adobe.com/docs/target-learn/tutorials/overview.html?lang=nl-NL){target=_blank}
+>* [*[!DNL Adobe Target] Zelfstudies *](https://experienceleague.adobe.com/docs/target-learn/tutorials/overview.html){target=_blank}
 >
->Zie voor informatie over releases [Opmerkingen bij de doelversie (huidig)](https://experienceleague.adobe.com/docs/target/using/release-notes/release-notes.html?lang=nl-NL){target=_blank} in de *[!DNL Adobe Target]Handelspraktijken*.
+>Voor versieinformatie, zie [ de versienota&#39;s van het Doel (huidig) ](https://experienceleague.adobe.com/docs/target/using/release-notes/release-notes.html){target=_blank} in de *[!DNL Adobe Target]Gids Bedrijfs van de Praktijk*.
 
 ## Aan de slag met de implementatie
 
-**[Voordat u implementeert](/help/dev/before-implement/considerations-before-you-implement-target.md)**: Overwegingen die u moet aanspreken voordat u implementeert [!DNL Adobe Target].
+**[alvorens u](/help/dev/before-implement/considerations-before-you-implement-target.md)** uitvoert: Overwegingen zou u moeten richten alvorens u [!DNL Adobe Target] uitvoert.
 
 ## Clientimplementatie
 
-[**Adobe Experience Platform Web SDK**](/help/dev/implement/client-side/aep-web-sdk.md): De [!DNL Adobe Experience Platform Web SDK] biedt u de mogelijkheid om te communiceren met de verschillende services in de [!DNL Experience Cloud] (inclusief [!DNL Target]) via de [!UICONTROL Adobe Experience Edge Network].
+[**SDK van het Web van Adobe Experience Platform**](/help/dev/implement/client-side/aep-web-sdk/aep-web-sdk-overview.md): [!DNL Adobe Experience Platform Web SDK] laat u met de diverse diensten in [!DNL Experience Cloud] (met inbegrip van [!DNL Target]) door [!UICONTROL Adobe Experience Edge Network] in wisselwerking staan.
 
-[**Doel in JavaScript-bibliotheek.js**](/help/dev/implement/client-side/overview.md): De JavaScript-bibliotheek at.js verbetert de laadtijden van pagina&#39;s voor webimplementaties, verbetert de beveiliging en biedt betere implementatieopties voor toepassingen van één pagina.
+[**Doel bij.js de bibliotheek van JavaScript**](/help/dev/implement/client-side/overview.md): De bibliotheek at.js JavaScript verbetert de tijden van de paginalading voor Webimplementaties, verbetert veiligheid, en verstrekt betere implementatieopties voor enig-paginatoepassingen.
 
 ## Implementatie op de server
 
-[**Overzicht van doel-SDK**](implement/server-side/server-side-overview.md): Aan de slag met [!DNL Adobe Target] SDK&#39;s, inclusief apparaatbeslissingen.
+[**Overzicht van SDK van het Doel**](implement/server-side/server-side-overview.md): Krijg begonnen met [!DNL Adobe Target] SDKs, met inbegrip van Beslissing op apparaat.
 
-[**Node.js SDK**](implement/server-side/node-js/overview.md): Hoe wordt het [!DNL Target] Node.js SDK.
+[**Node.js SDK**](implement/server-side/node-js/overview.md): Hoe te om [!DNL Target] Node.js SDK te gebruiken.
 
-[**Java SDK**](implement/server-side/java/overview.md): Hoe wordt het [!DNL Target] Java SDK.
+[**Java SDK**](implement/server-side/java/overview.md): Hoe te om [!DNL Target] Java SDK te gebruiken.
 
-[**.NET SDK**](implement/server-side/net/overview.md): Hoe wordt het [!DNL Target] .NET SDK.
+[**.NET SDK**](implement/server-side/net/overview.md): Hoe te om [!DNL Target] .NET SDK te gebruiken.
 
-[**Python SDK**](implement/server-side/python/overview.md): Hoe wordt het [!DNL Target] Python SDK.
+[**Python SDK**](implement/server-side/python/overview.md): Hoe te om [!DNL Target] Python SDK te gebruiken.
 
 ## Hybride implementatie
 
-[**Hybride implementatie**](implement/hybrid/hybrid-overview.md): Implementeren [!DNL Target] met een combinatie van client-side en server-side implementatie.
+[**Hybride plaatsing**](implement/hybrid/hybrid-overview.md): voer [!DNL Target] uit gebruikend een combinatie cliënt-kant en server-zijimplementatie.
 
-## Recommendations-implementatie
+## Implementatie van aanbevelingen
 
-[**Recommendations-implementatie**](implement/recommendations/recommendations.md): Plan en implementatie [!DNL Adobe Target Recommendations].
+[**implementatie van Aanbevelingen**](implement/recommendations/recommendations.md): Plan en voer [!DNL Adobe Target Recommendations] uit.
 
 ## Implementatie van mobiele toepassing
 
-[**Overzicht AEP Mobile SDK**](implement/mobile/overview.md): Overzicht van de implementatie [!DNL Adobe Target] with [!DNL Adobe Experience Platform] Mobiele SDK&#39;s.
+[**AEP Mobile SDK overzicht**](implement/mobile/overview.md): Overzicht van hoe te om [!DNL Adobe Target] met [!DNL Adobe Experience Platform] Mobiele SDKs uit te voeren.
 
-[**AEP Mobile SDK-referentie**](https://developer.adobe.com/client-sdks/documentation/): Implementeren [!DNL Adobe Target] with [!DNL Adobe Experience Platform] Mobiele SDK&#39;s.
+[**AEP Mobile SDK verwijzing** ](https://developer.adobe.com/client-sdks/documentation/): voer [!DNL Adobe Target] met [!DNL Adobe Experience Platform] Mobiele SDKs uit.
 
 ## E-mailimplementatie
 
-[**E-mailoverzicht**](implement/email/overview.md): Overzicht van de implementatie [!DNL Adobe Target] in e-mails.
+[**E-mailoverzicht**](implement/email/overview.md): Overzicht van hoe te om [!DNL Adobe Target] in e-mails uit te voeren.
 
 ## API-hulplijnen
 
-[**Inleiding**](before-administer/target-api-overview.md): Overzicht van [!DNL Adobe Target] API&#39;s.
+[**Inleiding**](before-administer/target-api-overview.md): Overzicht van [!DNL Adobe Target] APIs.
 
-[**[!DNL Target Delivery API]**](/help/dev/implement/delivery-api/overview.md): Gebruik de [!DNL Adobe Target] Lever APIs om ervaringen over Web en mobiele kanalen evenals niet browser gebaseerde IoT apparaten zoals aangesloten TV, kiosk, of in-store digitaal scherm te leveren.
+[**[!DNL Target Delivery API]**](/help/dev/implement/delivery-api/overview.md): gebruik de [!DNL Adobe Target] bezorgings-API&#39;s om ervaringen op te doen op het web en mobiele kanalen, maar ook op niet-browsergebaseerde IoT-apparaten, zoals een aangesloten tv, kiosk of een digitaal scherm in de winkel.
 
-[**[!DNL Target Admin API]**](administer/admin-api/admin-api-overview-new.md): Gebruik de [!DNL Adobe Target] Admin API om eigenschappen, activiteiten, publiek, aanbiedingen, eigenschappen, rapporten, dozen, gastheren, milieu&#39;s, en meer te beheren.
+[**[!DNL Target Admin API]**](administer/admin-api/admin-api-overview-new.md): gebruik de [!DNL Adobe Target] Admin API om eigenschappen, activiteiten, publiek, aanbiedingen, eigenschappen, rapporten, dozen, gastheren, milieu&#39;s, en meer te beheren.
 
-[**[!DNL Target Profile API]**](/help/dev/administer/profile-api/profiles-api.md): ophalen [!DNL Adobe Target] gebruikersprofielgegevens.
+[**[!DNL Target Profile API]**](/help/dev/administer/profile-api/profiles-api.md) : wint [!DNL Adobe Target] -gebruikersprofielgegevens op.
 
-[**[!DNL Target Reporting API]**](https://developer.adobe.com/target/administer/admin-api/#tag/Reports): ophalen [!UICONTROL A/B Test] en [!UICONTROL Automated Personalization] activiteitenrapportgegevens.
+[**[!DNL Target Reporting API]**](https://developer.adobe.com/target/administer/admin-api/#tag/Reports) : wint [!UICONTROL A/B Test] en [!UICONTROL Automated Personalization] activiteitenrapportgegevens op.
 
-[**[!DNL Target Recommendations API]**](https://developer.adobe.com/target/administer/recommendations-api/): Gebruik de [!DNL Target Recommendations] API.
+[**[!DNL Target Recommendations API]**](https://developer.adobe.com/target/administer/recommendations-api/): gebruik de [!DNL Target Recommendations] API.
 
-[**[!DNL Target Models API]**](administer/models-api/models-api-overview.md): lijsten van gewezen personen beheren om de functies te definiëren die worden gebruikt in [!DNL Target] modellen voor machinaal leren.
+[**[!DNL Target Models API]**](administer/models-api/models-api-overview.md): beheer lijsten van gewezen personen om de functies te definiëren die in [!DNL Target] -modellen voor machinaal leren worden gebruikt.
 
-[**Admin Console-API&#39;s**](https://developer.adobe.com/umapi/): Beheer gebruikers en productrechten via de Adobe-API&#39;s Gebruikersbeheer en Gebruikerssynchronisatie.
+[**Admin Console APIs** ](https://developer.adobe.com/umapi/): Beheer gebruikers en productrechten door het Beheer van de Gebruiker van Adobe en de Synchronisatie APIs van de Gebruiker.
 
-[**[!DNL Adobe Experience Platform Edge Network Server API]**](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=nl-NL): Gebruik de [!DNL Adobe Experience Platform Edge Network Server] API voor een verscheidenheid van gegevensinzameling, verpersoonlijking, reclame, en marketing gebruiksgevallen.
+[**[!DNL Adobe Experience Platform Edge Network Server API]**](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html): gebruik de [!DNL Adobe Experience Platform Edge Network Server] API voor een verscheidenheid van gegevensinzameling, verpersoonlijking, reclame, en marketing gebruiksgevallen.
 
 ## Bronnen
 
-* [Adobe opensource-repo](https://github.com/adobe)
-* [JS SDK-bron voor doelknooppunt](https://github.com/adobe/target-nodejs-sdk)
-* [Reactie van JS SDK-voorbeelden voor doelknooppunt](https://github.com/adobe/target-nodejs-sdk-samples)
-* [Bron doelJava SDK](https://github.com/adobe/target-java-sdk)
-* [Voorbeeld-repo doelJava SDK](https://github.com/adobe/target-java-sdk-samples)
+* [ open bronrepo van Adobe ](https://github.com/adobe)
+* [ Knoop JS SDK Source van het Doel ](https://github.com/adobe/target-nodejs-sdk)
+* [ de VoorbeeldenRepo van de Knoop JS van het Doel ](https://github.com/adobe/target-nodejs-sdk-samples)
+* [ Doel Java SDK Source ](https://github.com/adobe/target-java-sdk)
+* [ Reactie van het Voorbeeld van Java SDK van het Doel ](https://github.com/adobe/target-java-sdk-samples)
 * [Doelimplementatie](./before-implement/prepare-to-implement-target.md)
 * [Doelbeheer](./before-administer/target-api-overview.md)
-* [Adobe Target Dev Docs GitHub Repo](https://github.com/AdobeDocs/target-developers)
-* [Opmerkingen bij de release van Adobe Target](https://experienceleague.adobe.com/docs/target/using/release-notes/release-notes.html?lang=nl-NL)
-* [Adobe Target Business User Guide](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=nl-NL)
+* [ Adobe Target Dev Docs GitHub Repo ](https://github.com/AdobeDocs/target-developers)
+* [ de Nota&#39;s van de Versie van Adobe Target ](https://experienceleague.adobe.com/docs/target/using/release-notes/release-notes.html)
+* [ Van Bedrijfs Adobe Target Gids van Gebruiker ](https://experienceleague.adobe.com/docs/target/using/target-home.html)
 

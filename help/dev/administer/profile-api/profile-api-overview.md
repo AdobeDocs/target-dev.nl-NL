@@ -1,10 +1,10 @@
 ---
 title: Profielen bijwerken
-description: Leer hoe u API's met Adobe Target-profielen kunt gebruiken om bezoekersgegevens te verzenden naar [!DNL Target].
+description: Leer hoe u API's met Adobe Target-profielen gebruikt om bezoekersgegevens te verzenden naar  [!DNL Target] .
 contributors: https://github.com/icaraps
 exl-id: 482a4175-1d02-47e9-a5c0-dd00e8560773
 feature: APIs/SDKs
-source-git-commit: 289299a52e5611c0da341f313aa4a447fcf3666a
+source-git-commit: 315e8fbe67938588c3c9a0135e0cd85fa1f12187
 workflow-type: tm+mt
 source-wordcount: '215'
 ht-degree: 0%
@@ -17,9 +17,9 @@ Een gebruikersprofiel bevat demografische en gedragsinformatie van een bezoeker 
 
 De profielgegevens voor elke bezoeker worden opgeslagen in cookies of in apps van derden.
 
-Als uw webpagina de [!DNL Target] code ([at.js](/help/dev/implement/client-side/atjs/how-atjs-works/overview.md) of de [Adobe Experience Platform Web SDK](/help/dev/implement/client-side/aep-web-sdk.md)), de profielgegevens van de cookies worden doorgegeven aan [!DNL Target] met profielparameters. [!DNL Target] identificeert elke bezoeker uniek door een `pcID` in de cookies van de bezoeker. U kunt profielparameters echter via mbox-aanroepen vanuit een externe toepassing doorgeven met `mbox3rdPartyIds`.
+Als uw Web-pagina de [!DNL Target] code ([ at.js ](/help/dev/implement/client-side/atjs/how-atjs-works/overview.md) of [ SDK van het Web van Adobe Experience Platform ](/help/dev/implement/client-side/aep-web-sdk/aep-web-sdk-overview.md)) uitvoert, wordt de profielinformatie van de koekjes overgegaan tot [!DNL Target] gebruikend profielparameters. [!DNL Target] identificeert elke bezoeker op unieke wijze via een `pcID` die deze in de cookies van de bezoeker genereert. U kunt profielparameters echter via mbox-aanroepen vanuit een externe toepassing doorgeven met `mbox3rdPartyIds` .
 
-Gebruik de [!DNL Adobe Target] profiel-API&#39;s wanneer u profielgegevens van uw bezoekers kunt verzenden naar [!DNL Target] dat u niet kunt of wilt verzenden als onderdeel van uw op pagina&#39;s gebaseerde integratie met [!DNL Target]. Dit kunnen gegevens zijn van een systeem van het Beheer van de Verhouding van de Klant (CRM) of van het verkooppunt (POS) dat niet beschikbaar op de pagina is. Of deze gegevens zijn wellicht gevoeliger en het heeft geen zin de pagina door te geven.
+Gebruik de [!DNL Adobe Target] -profiel-API&#39;s wanneer u profielgegevens over uw bezoekers naar [!DNL Target] wilt verzenden die u niet kunt of wilt verzenden als onderdeel van de op pagina&#39;s gebaseerde integratie met [!DNL Target] . Dit kunnen gegevens zijn van een systeem van het Beheer van de Verhouding van de Klant (CRM) of van het verkooppunt (POS) dat niet beschikbaar op de pagina is. Of deze gegevens zijn wellicht gevoeliger en het heeft geen zin de pagina door te geven.
 
 Er zijn twee manieren om profielen bij te werken via API:
 
