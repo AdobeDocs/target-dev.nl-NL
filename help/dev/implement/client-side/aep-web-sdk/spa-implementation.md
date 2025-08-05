@@ -278,12 +278,12 @@ Om deze updates in VEC te maken, zijn de volgende stappen vereist:
 2. Voeg op de site producten toe aan het winkelwagentje.
 3. Selecteer het winkelwagentje in de rechterbovenhoek van de site.
 4. Selecteer **Controle uw Orde**.
-5. Selecteer het **Uitdrukkelijke 1} radioknoop van de Levering {** Voorkeur van de Levering **.**
+5. Selecteer het **Uitdrukkelijke 1&rbrace; radioknoop van de Levering &lbrace;** Voorkeur van de Levering **.**
 6. Selecteer **samenstellen** in VEC.
 7. Verander de **de knoopkleur van het Betalen** in rood.
 
 >[!NOTE]
 >
->Het &quot;uitchecken-uitdrukken&quot; [!UICONTROL View] verschijnt niet in het [!UICONTROL Modifications] paneel tot het **Uitdrukkelijke radioknoop van de Levering** wordt geselecteerd. Dit is omdat de `sendEvent()` functie wordt uitgevoerd wanneer het **Uitdrukkelijke 2} radioknoop van de Levering {wordt geselecteerd, daarom is VEC zich niet bewust van &quot;checkout-express&quot;** tot het radioknoop wordt geselecteerd.[!UICONTROL View]
+>Het &quot;uitchecken-uitdrukken&quot; [!UICONTROL View] verschijnt niet in het [!UICONTROL Modifications] paneel tot het **Uitdrukkelijke radioknoop van de Levering** wordt geselecteerd. Dit is omdat de `sendEvent()` functie wordt uitgevoerd wanneer het **Uitdrukkelijke 2&rbrace; radioknoop van de Levering &lbrace;wordt geselecteerd, daarom is VEC zich niet bewust van &quot;checkout-express&quot;** tot het radioknoop wordt geselecteerd.[!UICONTROL View]
 
 ![ Visuele Composer die van de Ervaring leveringsvoorkeur selecteur tonen.](/help/dev/implement/client-side/aep-web-sdk/assets/vec-delivery-preference.png)
