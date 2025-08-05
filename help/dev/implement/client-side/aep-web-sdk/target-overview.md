@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >Leer hoe te om uw [!DNL Target] implementatie aan [!DNL Experience Platform Web SDK] met [ te migreren Migrate Doel van at.js 2.x aan Experience Platform Web SDK ](https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html) leerprogramma.
 >
->Leer hoe te om [!DNL Target] voor het eerst met [ uit te voeren Adobe Experience Cloud met het 2} leerprogramma van SDK van het Web {. ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html) Voor informatie specifiek voor [!DNL Target], zie de tutorial sectie getiteld [ Vastgestelde Doel van de Opstelling met het Web SDK van Experience Platform ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html).
+>Leer hoe te om [!DNL Target] voor het eerst met [ uit te voeren Adobe Experience Cloud met het 2&rbrace; leerprogramma van SDK van het Web &lbrace;. ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html) Voor informatie specifiek voor [!DNL Target], zie de tutorial sectie getiteld [ Vastgestelde Doel van de Opstelling met het Web SDK van Experience Platform ](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html).
 
 De volgende functies zijn getest en worden momenteel ondersteund in [!DNL Target] :
 
