@@ -61,7 +61,7 @@ Het concept van [!UICONTROL Views] kan veel verder worden uitgebreid dan dit sce
 
 [!UICONTROL XDM Views] kan in [!DNL Target] worden gebruikt om marketers in staat te stellen A/B- en XT-tests uit te voeren op SPA&#39;s via de [!UICONTROL Visual Experience Composer] . Hiervoor moeten de volgende stappen worden uitgevoerd om een eenmalige ontwikkelaarsinstelling te voltooien:
 
-1. Installeer [ SDK van het Web van Adobe Experience Platform ](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/overview).
+1. Installeer [ SDK van het Web van Adobe Experience Platform ](https://experienceleague.adobe.com/nl/docs/experience-platform/web-sdk/install/overview).
 2. Bepaal alle [!UICONTROL XDM Views] in de toepassing van één pagina die u wilt aanpassen.
 3. Nadat u [!UICONTROL XDM Views] hebt gedefinieerd, kunt u voor het uitvoeren van A/B- of XT VEC-activiteiten de functie `sendEvent()` met `renderDecisions` ingesteld op `true` en de bijbehorende [!UICONTROL XDM View] functie in de toepassing Eén pagina implementeren. De [!UICONTROL XDM View] moet worden doorgegeven in `xdm.web.webPageDetails.viewName` . Met deze stap kunnen marketers de [!UICONTROL Visual Experience Composer] gebruiken om A/B- en XT-tests voor deze XDM-tests te starten.
 
@@ -221,7 +221,7 @@ Wanneer u klaar bent met het definiëren van uw [!UICONTROL XDM Views] en `sendE
 
 >[!NOTE]
 >
->Om VEC voor uw KUUROORD te gebruiken, moet u of de [ Uitbreiding van de Helper van Firefox ](https://addons.mozilla.org/en-US/firefox/addon/adobe-target-vec-helper/) of [ van Chrome VEC ](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension) installeren en activeren.
+>Om VEC voor uw KUUROORD te gebruiken, moet u of de [ Uitbreiding van de Helper van Firefox ](https://addons.mozilla.org/en-US/firefox/addon/adobe-target-vec-helper/) of [ van Chrome VEC ](https://experienceleague.adobe.com/nl/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension) installeren en activeren.
 
 ### [!UICONTROL Modifications] deelvenster
 
