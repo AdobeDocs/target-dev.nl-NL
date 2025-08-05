@@ -1,9 +1,9 @@
 ---
-title: De Implementatie van de Toepassing van één pagina voor [!DNL &#x200B; Adobe Experience Platform Web SDK]
+title: De Implementatie van de Toepassing van één pagina voor [!DNL Adobe Experience Platform Web SDK]
 description: Leer hoe te om een enig-paginatoepassing (SPA) implementatie van  [!DNL Adobe Experience Platform Web SDK] tot stand te brengen gebruikend  [!DNL Target].
 keywords: doel;adobe target;xdm meningen; meningen;enige paginatoepassingen;SPA;SPA levenscyclus;cliënt-kant;AB het testen;AB;Beleving gericht;XT;VEC
 feature: AEP Web SDK
-source-git-commit: f4e0e1b202863eb9fddb40836cf53d2df7cdbebe
+source-git-commit: 9a2c35b2d150638fbda00be866f84d2a6faa4300
 workflow-type: tm+mt
 source-wordcount: '1680'
 ht-degree: 0%
@@ -61,7 +61,7 @@ Het concept van [!UICONTROL Views] kan veel verder worden uitgebreid dan dit sce
 
 [!UICONTROL XDM Views] kan in [!DNL Target] worden gebruikt om marketers in staat te stellen A/B- en XT-tests uit te voeren op SPA&#39;s via de [!UICONTROL Visual Experience Composer] . Hiervoor moeten de volgende stappen worden uitgevoerd om een eenmalige ontwikkelaarsinstelling te voltooien:
 
-1. Installeer [ SDK van het Web van Adobe Experience Platform ](https://experienceleague.adobe.com/nl/docs/experience-platform/web-sdk/install/overview).
+1. Installeer [ SDK van het Web van Adobe Experience Platform ](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/overview).
 2. Bepaal alle [!UICONTROL XDM Views] in de toepassing van één pagina die u wilt aanpassen.
 3. Nadat u [!UICONTROL XDM Views] hebt gedefinieerd, kunt u voor het uitvoeren van A/B- of XT VEC-activiteiten de functie `sendEvent()` met `renderDecisions` ingesteld op `true` en de bijbehorende [!UICONTROL XDM View] functie in de toepassing Eén pagina implementeren. De [!UICONTROL XDM View] moet worden doorgegeven in `xdm.web.webPageDetails.viewName` . Met deze stap kunnen marketers de [!UICONTROL Visual Experience Composer] gebruiken om A/B- en XT-tests voor deze XDM-tests te starten.
 
@@ -221,7 +221,7 @@ Wanneer u klaar bent met het definiëren van uw [!UICONTROL XDM Views] en `sendE
 
 >[!NOTE]
 >
->Om VEC voor uw KUUROORD te gebruiken, moet u of de [ Uitbreiding van de Helper van Firefox ](https://addons.mozilla.org/en-US/firefox/addon/adobe-target-vec-helper/) of [ van Chrome VEC ](https://experienceleague.adobe.com/nl/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension) installeren en activeren.
+>Om VEC voor uw KUUROORD te gebruiken, moet u of de [ Uitbreiding van de Helper van Firefox ](https://addons.mozilla.org/en-US/firefox/addon/adobe-target-vec-helper/) of [ van Chrome VEC ](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension) installeren en activeren.
 
 ### [!UICONTROL Modifications] deelvenster
 
@@ -278,12 +278,12 @@ Om deze updates in VEC te maken, zijn de volgende stappen vereist:
 2. Voeg op de site producten toe aan het winkelwagentje.
 3. Selecteer het winkelwagentje in de rechterbovenhoek van de site.
 4. Selecteer **Controle uw Orde**.
-5. Selecteer het **Uitdrukkelijke 1&rbrace; radioknoop van de Levering &lbrace;** Voorkeur van de Levering **.**
+5. Selecteer het **Uitdrukkelijke 1} radioknoop van de Levering {** Voorkeur van de Levering **.**
 6. Selecteer **samenstellen** in VEC.
 7. Verander de **de knoopkleur van het Betalen** in rood.
 
 >[!NOTE]
 >
->Het &quot;uitchecken-uitdrukken&quot; [!UICONTROL View] verschijnt niet in het [!UICONTROL Modifications] paneel tot het **Uitdrukkelijke radioknoop van de Levering** wordt geselecteerd. Dit is omdat de `sendEvent()` functie wordt uitgevoerd wanneer het **Uitdrukkelijke 2&rbrace; radioknoop van de Levering &lbrace;wordt geselecteerd, daarom is VEC zich niet bewust van &quot;checkout-express&quot;** tot het radioknoop wordt geselecteerd.[!UICONTROL View]
+>Het &quot;uitchecken-uitdrukken&quot; [!UICONTROL View] verschijnt niet in het [!UICONTROL Modifications] paneel tot het **Uitdrukkelijke radioknoop van de Levering** wordt geselecteerd. Dit is omdat de `sendEvent()` functie wordt uitgevoerd wanneer het **Uitdrukkelijke 2} radioknoop van de Levering {wordt geselecteerd, daarom is VEC zich niet bewust van &quot;checkout-express&quot;** tot het radioknoop wordt geselecteerd.[!UICONTROL View]
 
 ![ Visuele Composer die van de Ervaring leveringsvoorkeur selecteur tonen.](/help/dev/implement/client-side/aep-web-sdk/assets/vec-delivery-preference.png)
