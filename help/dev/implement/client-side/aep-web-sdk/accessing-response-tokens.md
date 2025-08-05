@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Toegang krijgen tot reactietokens
 
-De inhoud van Personalization die van [!DNL Adobe Target] is teruggekeerd omvat [ reactietokens ](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html), die details over de activiteit, de aanbieding, de ervaring, het gebruikersprofiel, geo informatie, en meer zijn. Deze details kunnen met derdehulpmiddelen worden gedeeld of voor het zuiveren worden gebruikt. De tokens van de reactie kunnen in het [!DNL Target] gebruikersinterface worden gevormd.
+De inhoud van Personalization die van [!DNL Adobe Target] is teruggekeerd omvat [ reactietokens ](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html?lang=nl-NL), die details over de activiteit, de aanbieding, de ervaring, het gebruikersprofiel, geo informatie, en meer zijn. Deze details kunnen met derdehulpmiddelen worden gedeeld of voor het zuiveren worden gebruikt. De tokens van de reactie kunnen in het [!DNL Target] gebruikersinterface worden gevormd.
 
 Om tot om het even welke verpersoonlijkingsinhoud toegang te hebben, verstrek een callback functie wanneer het verzenden van een gebeurtenis. Deze callback wordt geroepen nadat de SDK een succesvolle reactie van de server ontvangt. De callback is voorzien van een `result` -object dat een `propositions` -eigenschap kan bevatten met geretourneerde personalisatie-inhoud. Hieronder ziet u een voorbeeld van een callback-functie.
 
@@ -27,7 +27,7 @@ alloy("sendEvent", {
   });
 ```
 
-In dit voorbeeld is `result.propositions` , indien aanwezig, een array met verpersoonlijkingsvoorstellingen die betrekking hebben op de gebeurtenis. Zie [ teruggevend verpersoonlijkingsinhoud ](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/personalization/rendering-personalization-content) voor meer informatie over de inhoud van `result.propositions.`
+In dit voorbeeld is `result.propositions` , indien aanwezig, een array met verpersoonlijkingsvoorstellingen die betrekking hebben op de gebeurtenis. Zie [ teruggevend verpersoonlijkingsinhoud ](https://experienceleague.adobe.com/nl/docs/experience-platform/web-sdk/personalization/rendering-personalization-content) voor meer informatie over de inhoud van `result.propositions.`
 
 Veronderstel u alle activiteitennamen van alle voorstellen wilt verzamelen die automatisch door het Web SDK werden teruggegeven en hen duwen in één enkele serie. Vervolgens kunt u de ene array naar een derde verzenden. In dit geval:
 
