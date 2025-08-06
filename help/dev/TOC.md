@@ -2,9 +2,9 @@
 user-guide-title: Adobe Target Developer Guide
 breadcrumb-title: Doelontwikkelaarsgids
 user-guide-description: Leer hoe u de ervaring van uw klanten kunt aanpassen en personaliseren om uw omzet te maximaliseren op uw websites en mobiele sites, apps, sociale media en andere digitale kanalen.
-source-git-commit: 697822cd7c5afcaac988d61035af56491301dc74
+source-git-commit: 777feec0cd9b2bd6a9c7167acf1371fa1184af89
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '788'
 ht-degree: 3%
 
 ---
@@ -40,54 +40,55 @@ ht-degree: 3%
    + [Overzicht van doelbeveiliging](before-implement/target-security-overview.md)
    + [Ondersteunde browsers](before-implement/supported-browsers.md)
    + [TLS (Transport Layer Security)-coderingswijzigingen](before-implement/tls-transport-layer-security-encryption.md)
-   + [CNAME en Adobe Target](before-implement/implement-cname-support-in-target.md)
+   + [ NAAM en Adobe Target ](before-implement/implement-cname-support-in-target.md)
 + Implementatie op de client {#client-side}
    + [Overzicht: Doel implementeren voor web op client](implement/client-side/overview.md)
    + Adobe Experience Platform Web SDK-implementatie {#aep}
       + [Implementatieoverzicht van Adobe Experience Platform Web SDK](/help/dev/implement/client-side/aep-web-sdk/aep-web-sdk-overview.md)
-      + [Adobe Target en Platform Web SDK gebruiken voor personalisatie](/help/dev/implement/client-side/aep-web-sdk/target-overview.md)
+      + [Adobe Target en Web SDK gebruiken voor personalisatie](/help/dev/implement/client-side/aep-web-sdk/target-overview.md)
       + [Implementatie van één pagina](/help/dev/implement/client-side/aep-web-sdk/spa-implementation.md)
-      + [Toegang krijgen tot reactietokens](/help/dev/implement/client-side/aep-web-sdk/accessing-response-tokens.md)
-      + [Id van derde partij gebruiken](/help/dev/implement/client-side/aep-web-sdk/using-mbox-3rdpartyid.md)
-      + [De bibliotheek at.js vergelijken met de Web SDK](/help/dev/implement/client-side/aep-web-sdk/web-sdk-atjs-comparison.md)
-   + Hoe werkt at.js {#at-js}
-      + [at.js JavaScript-bibliotheekoverzicht](/help/dev/implement/client-side/atjs/how-atjs-works/overview.md)
-      + [at.js-werkoverzicht](/help/dev/implement/client-side/atjs/how-atjs-works/how-atjs-works.md)
-      + [Hoe at.js flikkering beheert](/help/dev/implement/client-side/atjs/how-atjs-works/manage-flicker-with-atjs.md)
-      + [at.js-integratie](/help/dev/implement/client-side/atjs/how-atjs-works/target-atjs-integrations.md)
-   + Hoe te opstellen bij.js {#deploy-at-js}
-      + [Hoe te opstellen bij.js](implement/client-side/atjs/how-to-deployatjs/how-to-deployatjs.md)
-      + [Doel implementeren met Adobe Experience Platform](implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md)
-      + [Doel implementeren zonder tagbeheer](implement/client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager.md)
-      + [Doel implementeren met Dynamic Tag Manager (DTM)](implement/client-side/atjs/how-to-deployatjs/implement-target-using-dtm.md)
-      + [Doel implementeren voor toepassingen van één pagina (SPAs)](implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md)
-   + Apparaatbeslissingen {#on-device-decisioning}
-      + [Overzicht van apparaatbeslissingen](implement/client-side/atjs/on-device-decisioning/on-device-decisioning.md)
-      + [Ondersteunde functies](implement/client-side/atjs/on-device-decisioning/supported-features.md)
-      + [Artefact](implement/client-side/atjs/on-device-decisioning/rule-artifact.md)
-      + [Problemen oplossen](implement/client-side/atjs/on-device-decisioning/troubleshooting-on-device-decisioning.md)
-   + at.js-functies {#functions-overview}
-      + [at.js, functieoverzicht](implement/client-side/atjs/atjs-functions/atjs-functions.md)
-      + [adobe.target.getOffer()](implement/client-side/atjs/atjs-functions/adobe-target-getoffer.md)
-      + [adobe.target.getOffers() - at.js 2.x](implement/client-side/atjs/atjs-functions/adobe-target-getoffers-atjs-2.md)
-      + [adobe.target.applyOffer()](implement/client-side/atjs/atjs-functions/adobe-target-applyoffer.md)
-      + [adobe.target.applyOffers() - at.js 2.x](implement/client-side/atjs/atjs-functions/adobe-target-applyoffers-atjs-2.md)
-      + [adobe.target.triggerView() - at.js 2.x](implement/client-side/atjs/atjs-functions/adobe-target-triggerview-atjs-2.md)
-      + [adobe.target.trackEvent()](implement/client-side/atjs/atjs-functions/adobe-target-trackevent.md)
-      + [mboxCreate() - at.js 1.x](implement/client-side/atjs/atjs-functions/mboxcreate-atjs.md)
-      + [targetGlobalSettings()](implement/client-side/atjs/atjs-functions/targetglobalsettings.md)
-      + [mboxDefine() en mboxUpdate() - at.js 1.x](implement/client-side/atjs/atjs-functions/mboxdefine-mboxupdate-atjs-1x.md)
-      + [targetPageParams()](implement/client-side/atjs/atjs-functions/targetpageparams.md)
-      + [targetPageParamsAll()](implement/client-side/atjs/atjs-functions/targetpageparamsall.md)
-      + [registerExtension() - at.js 1.x](implement/client-side/atjs/atjs-functions/registerextension-atjs-1x.md)
-      + [sendNotifications() - at.js 2.1](implement/client-side/atjs/atjs-functions/adobe-target-sendnotifications-atjs-21.md)
-      + [at.js, aangepaste gebeurtenissen](implement/client-side/atjs/atjs-functions/atjs-custom-events.md)
-      + [Foutopsporing in.js met Adobe Experience Cloud Debugger](implement/client-side/target-debugging-atjs/target-debugging-atjs.md)
-      + [Gebruik cloudgebaseerde instanties met Doel](implement/client-side/target-debugging-atjs/targeting-using-cloud-based-instances.md)
-   + [at.js Veelgestelde vragen](implement/client-side/atjs/target-atjs-faq.md)
-   + [details at.js-versie](implement/client-side/atjs/target-atjs-versions.md)
-   + [Bijwerken van at.js 1.x naar at.js 2.x](implement/client-side/atjs/upgrading-from-atjs-1x-to-atjs-20.md)
-   + [at.js, cookies](implement/client-side/atjs/atjs-cookies.md)
+      + [Reactieknoppen openen](/help/dev/implement/client-side/aep-web-sdk/accessing-response-tokens.md)
+      + [use mbox3rdPartyId](/help/dev/implement/client-side/aep-web-sdk/using-mbox-3rdpartyid.md)
+      + [Vergelijk de bibliotheek at.js met het Web SDK van het Platform](/help/dev/implement/client-side/aep-web-sdk/web-sdk-atjs-comparison.md)
+   + at.js-implementatie {#at-js-implementation}
+      + Hoe werkt at.js {#at-js}
+         + [at.js JavaScript-bibliotheekoverzicht](/help/dev/implement/client-side/atjs/how-atjs-works/overview.md)
+         + [at.js-werkoverzicht](/help/dev/implement/client-side/atjs/how-atjs-works/how-atjs-works.md)
+         + [Hoe at.js flikkering beheert](/help/dev/implement/client-side/atjs/how-atjs-works/manage-flicker-with-atjs.md)
+         + [at.js-integratie](/help/dev/implement/client-side/atjs/how-atjs-works/target-atjs-integrations.md)
+      + Hoe te opstellen bij.js {#deploy-at-js}
+         + [Hoe te opstellen bij.js](implement/client-side/atjs/how-to-deployatjs/how-to-deployatjs.md)
+         + [Doel implementeren met Adobe Experience Platform](implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md)
+         + [Doel implementeren zonder tagbeheer](implement/client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager.md)
+         + [Doel implementeren met Dynamic Tag Manager (DTM)](implement/client-side/atjs/how-to-deployatjs/implement-target-using-dtm.md)
+         + [Doel implementeren voor toepassingen van één pagina (SPAs)](implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md)
+      + Apparaatbeslissingen {#on-device-decisioning}
+         + [Overzicht van apparaatbeslissingen](implement/client-side/atjs/on-device-decisioning/on-device-decisioning.md)
+         + [Ondersteunde functies](implement/client-side/atjs/on-device-decisioning/supported-features.md)
+         + [Artefact](implement/client-side/atjs/on-device-decisioning/rule-artifact.md)
+         + [Problemen oplossen](implement/client-side/atjs/on-device-decisioning/troubleshooting-on-device-decisioning.md)
+      + at.js-functies {#functions-overview}
+         + [at.js, functieoverzicht](implement/client-side/atjs/atjs-functions/atjs-functions.md)
+         + [adobe.target.getOffer()](implement/client-side/atjs/atjs-functions/adobe-target-getoffer.md)
+         + [adobe.target.getOffers() - at.js 2.x](implement/client-side/atjs/atjs-functions/adobe-target-getoffers-atjs-2.md)
+         + [adobe.target.applyOffer()](implement/client-side/atjs/atjs-functions/adobe-target-applyoffer.md)
+         + [adobe.target.applyOffers() - at.js 2.x](implement/client-side/atjs/atjs-functions/adobe-target-applyoffers-atjs-2.md)
+         + [adobe.target.triggerView() - at.js 2.x](implement/client-side/atjs/atjs-functions/adobe-target-triggerview-atjs-2.md)
+         + [adobe.target.trackEvent()](implement/client-side/atjs/atjs-functions/adobe-target-trackevent.md)
+         + [mboxCreate() - at.js 1.x](implement/client-side/atjs/atjs-functions/mboxcreate-atjs.md)
+         + [targetGlobalSettings()](implement/client-side/atjs/atjs-functions/targetglobalsettings.md)
+         + [mboxDefine() en mboxUpdate() - at.js 1.x](implement/client-side/atjs/atjs-functions/mboxdefine-mboxupdate-atjs-1x.md)
+         + [targetPageParams()](implement/client-side/atjs/atjs-functions/targetpageparams.md)
+         + [targetPageParamsAll()](implement/client-side/atjs/atjs-functions/targetpageparamsall.md)
+         + [registerExtension() - at.js 1.x](implement/client-side/atjs/atjs-functions/registerextension-atjs-1x.md)
+         + [sendNotifications() - at.js 2.1](implement/client-side/atjs/atjs-functions/adobe-target-sendnotifications-atjs-21.md)
+         + [at.js, aangepaste gebeurtenissen](implement/client-side/atjs/atjs-functions/atjs-custom-events.md)
+         + [Foutopsporing in.js met Adobe Experience Cloud Debugger](implement/client-side/target-debugging-atjs/target-debugging-atjs.md)
+         + [Gebruik cloudgebaseerde instanties met Doel](implement/client-side/target-debugging-atjs/targeting-using-cloud-based-instances.md)
+      + [at.js Veelgestelde vragen](implement/client-side/atjs/target-atjs-faq.md)
+      + [details at.js-versie](implement/client-side/atjs/target-atjs-versions.md)
+      + [Bijwerken van at.js 1.x naar at.js 2.x](implement/client-side/atjs/upgrading-from-atjs-1x-to-atjs-20.md)
+      + [at.js, cookies](implement/client-side/atjs/atjs-cookies.md)
    + [Gebruiker-agent en cliëntwenken](implement/client-side/atjs/user-agent-and-client-hints.md)
    + De globale box begrijpen {#global-mbox}
       + [Globaal mbox-overzicht](implement/client-side/atjs/global-mbox/global-mbox-overview.md)
@@ -226,5 +227,3 @@ ht-degree: 3%
       + [Gegevensverzameling configureren](/help/dev/patterns/recs-atjs/data-collection.md)
       + [Renderervaringen](/help/dev/patterns/recs-atjs/render-experiences.md)
       + [Doel op hoogte stellen](/help/dev/patterns/recs-atjs/notify-target.md)
-
-
