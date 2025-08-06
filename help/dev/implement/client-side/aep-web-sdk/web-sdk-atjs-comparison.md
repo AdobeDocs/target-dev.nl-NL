@@ -815,7 +815,7 @@ Als deze optie is ingesteld, ziet de indeling van de geretourneerde lading er al
 }
 ```
 
-De lading kan dan aan [!DNL Analytics] via [!DNL  Data Insertion API] door:sturen.
+De lading kan dan aan [!DNL Analytics] via [!DNL &#x200B; Data Insertion API] door:sturen.
 
 Voorbeeld 2: Het vormen het in elke `getOffers` functie:
 
