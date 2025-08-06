@@ -2,7 +2,7 @@
 user-guide-title: Adobe Target Developer Guide
 breadcrumb-title: Doelontwikkelaarsgids
 user-guide-description: Leer hoe u de ervaring van uw klanten kunt aanpassen en personaliseren om uw omzet te maximaliseren op uw websites en mobiele sites, apps, sociale media en andere digitale kanalen.
-source-git-commit: 777feec0cd9b2bd6a9c7167acf1371fa1184af89
+source-git-commit: 8f24ffe82e16de0dbbd86d3baf0e76d826a98a9a
 workflow-type: tm+mt
 source-wordcount: '788'
 ht-degree: 3%
@@ -40,7 +40,7 @@ ht-degree: 3%
    + [Overzicht van doelbeveiliging](before-implement/target-security-overview.md)
    + [Ondersteunde browsers](before-implement/supported-browsers.md)
    + [TLS (Transport Layer Security)-coderingswijzigingen](before-implement/tls-transport-layer-security-encryption.md)
-   + [ NAAM en Adobe Target ](before-implement/implement-cname-support-in-target.md)
+   + [CNAME en Adobe Target](before-implement/implement-cname-support-in-target.md)
 + Implementatie op de client {#client-side}
    + [Overzicht: Doel implementeren voor web op client](implement/client-side/overview.md)
    + Adobe Experience Platform Web SDK-implementatie {#aep}
