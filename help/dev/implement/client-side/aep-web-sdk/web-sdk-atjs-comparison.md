@@ -27,7 +27,7 @@ Met [!DNL Adobe] kunnen klanten de bibliotheek rechtstreeks downloaden vanaf het
 
 De vooraf gebouwde versie is beschikbaar op een CDN. U kunt de bibliotheek op CDN rechtstreeks op uw pagina van verwijzingen voorzien, of het downloaden en ontvangen op uw eigen infrastructuur. Het is beschikbaar in geminiatuurde en ongeminificeerde formaten. De ongeminificeerde versie is handig voor foutopsporingsdoeleinden.
 
-Zie [ SDK van het Web installeren gebruikend de bibliotheek van JavaScript ](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/library) voor meer informatie.
+Zie [ SDK van het Web installeren gebruikend de bibliotheek van JavaScript ](https://experienceleague.adobe.com/nl/docs/experience-platform/web-sdk/install/library) voor meer informatie.
 
 ## De bibliotheken configureren
 
@@ -73,7 +73,7 @@ window.adobe.target.init(window, document, {
 
 ### De Platform Web SDK configureren
 
-De configuratie voor SDK wordt gedaan met het [`configure` ](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/overview) bevel. Het `configure` bevel is altijd ** geroepen eerst.
+De configuratie voor SDK wordt gedaan met het [`configure` ](https://experienceleague.adobe.com/nl/docs/experience-platform/web-sdk/commands/configure/overview) bevel. Het `configure` bevel is altijd ** geroepen eerst.
 
 ## Aanbiedingen voor het aanvragen en automatisch renderen van het laden van pagina&#39;s [!DNL Target]
 
@@ -83,7 +83,7 @@ Als u de instelling `pageLoadEnabled,` inschakelt, activeert de bibliotheek met 
 
 ### [!DNL PLatform Web SDK] gebruiken
 
-De inhoud die binnen [!DNL Target] [ wordt gecreeerd Visuele Composer van de Ervaring ](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/visual-experience-composer) kan automatisch door SDK worden teruggewonnen en worden teruggegeven.
+De inhoud die binnen [!DNL Target] [ wordt gecreeerd Visuele Composer van de Ervaring ](https://experienceleague.adobe.com/nl/docs/target/using/experiences/vec/visual-experience-composer) kan automatisch door SDK worden teruggewonnen en worden teruggegeven.
 
 Als u [!DNL Target] -aanbiedingen wilt aanvragen en automatisch wilt renderen, gebruikt u de opdracht `sendEvent` en stelt u de optie `renderDecisions` in op `true.` Zo dwingt u de SDK om automatisch gepersonaliseerde inhoud te renderen die in aanmerking komt voor automatische rendering.
 
@@ -183,7 +183,7 @@ alloy("sendEvent", {
 }
 ```
 
-[ Leer meer ](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/personalization/rendering-personalization-content)
+[ Leer meer ](https://experienceleague.adobe.com/nl/docs/experience-platform/web-sdk/personalization/rendering-personalization-content)
 
 ## Hoe te om te verzoeken en *NIET* automatisch de aanbiedingen van het Doel van de Lading van de Pagina terug te geven
 
@@ -215,7 +215,7 @@ adobe.target.getOffers({
 .catch(console.error);
 ```
 
-[ Leer meer ](https://experienceleague.adobe.com/en/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/atjs-functions)
+[ Leer meer ](https://experienceleague.adobe.com/nl/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/atjs-functions)
 
 ### [!DNL Platform Web SDK] gebruiken
 
@@ -262,7 +262,7 @@ alloy("sendEvent", {
   });
 ```
 
-[ Leer meer ](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/personalization/rendering-personalization-content)
+[ Leer meer ](https://experienceleague.adobe.com/nl/docs/experience-platform/web-sdk/personalization/rendering-personalization-content)
 
 ## Specifieke doelvakken voor formulieren aanvragen
 
@@ -298,7 +298,7 @@ adobe.target.getOffers({
 .catch(console.error);
 ```
 
-[ Leer meer ](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/atjs-functions.html)
+[ Leer meer ](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/atjs-functions.html?lang=nl-NL)
 
 ### [!DNL Platform Web SDK] gebruiken
 
@@ -419,7 +419,7 @@ alloy("sendEvent", {
 });
 ```
 
-[ Leer meer ](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/personalization/rendering-personalization-content)
+[ Leer meer ](https://experienceleague.adobe.com/nl/docs/experience-platform/web-sdk/personalization/rendering-personalization-content)
 
 ## De [!DNL Target] -activiteiten toepassen
 
@@ -436,7 +436,7 @@ adobe.target.getOffers({...})
   .catch(error => console.log("Error", error));
 ```
 
-Leer meer over het `applyOffers` bevel van de [ specifieke documentatie ](https://experienceleague.adobe.com/en/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-applyoffers-atjs-2).
+Leer meer over het `applyOffers` bevel van de [ specifieke documentatie ](https://experienceleague.adobe.com/nl/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-applyoffers-atjs-2).
 
 ### [!DNL Platform Web SDK] gebruiken
 
@@ -450,7 +450,7 @@ alloy("applyPropositions", {
 });
 ```
 
-Leer meer over het `applyPropositions` bevel van de [ specifieke documentatie ](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/personalization/rendering-personalization-content).
+Leer meer over het `applyPropositions` bevel van de [ specifieke documentatie ](https://experienceleague.adobe.com/nl/docs/experience-platform/web-sdk/personalization/rendering-personalization-content).
 
 ## Hoe kan ik gebeurtenissen volgen?
 
@@ -486,7 +486,7 @@ adobe.target.sendNotifications({
 });
 ```
 
-[ Leer meer ](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/at-js-implementation/functions-overview/adobe-target-trackevent.html)
+[ Leer meer ](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/at-js-implementation/functions-overview/adobe-target-trackevent.html?lang=nl-NL)
 
 ### [!DNL Platform Web SDK] gebruiken
 
@@ -604,7 +604,7 @@ alloy("sendEvent", {
 });
 ```
 
-[ Leer meer ](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/personalization/rendering-personalization-content#manual)
+[ Leer meer ](https://experienceleague.adobe.com/nl/docs/experience-platform/web-sdk/personalization/rendering-personalization-content#manual)
 
 **Voorbeeld 3 - spoor een gebeurtenis die na het uitvoeren van een actie** wordt ontbrand
 
@@ -686,7 +686,7 @@ alloy("sendEvent", {
 
 ## Betere benutting [!UICONTROL Response Tokens]
 
-De inhoud van Personalization die van [!DNL Target] is teruggekeerd omvat [ reactietokens ](https://experienceleague.adobe.com/en/docs/target/using/administer/response-tokens). De tekenen van de reactie zijn details over de activiteit, de aanbieding, de ervaring, het gebruikersprofiel, geo informatie, en meer. Deze details kunnen met derdehulpmiddelen worden gedeeld of voor het zuiveren worden gebruikt. De tokens van de reactie kunnen in het [!DNL Target] gebruikersinterface worden gevormd.
+De inhoud van Personalization die van [!DNL Target] is teruggekeerd omvat [ reactietokens ](https://experienceleague.adobe.com/nl/docs/target/using/administer/response-tokens). De tekenen van de reactie zijn details over de activiteit, de aanbieding, de ervaring, het gebruikersprofiel, geo informatie, en meer. Deze details kunnen met derdehulpmiddelen worden gedeeld of voor het zuiveren worden gebruikt. De tokens van de reactie kunnen in het [!DNL Target] gebruikersinterface worden gevormd.
 
 ### At.js gebruiken
 
@@ -700,7 +700,7 @@ document.addEventListener(adobe.target.event.REQUEST_SUCCEEDED, function(e) {
 }); 
 ```
 
-[ Leer meer ](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html)
+[ Leer meer ](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html?lang=nl-NL)
 
 ### [!DNL Platform Web SDK] gebruiken
 
@@ -708,7 +708,7 @@ document.addEventListener(adobe.target.event.REQUEST_SUCCEEDED, function(e) {
 >
 >Zorg ervoor dat u [!DNL Experience Platform Web SDK] versie 2.6.0 of hoger gebruikt.
 
-De reactietokens worden geretourneerd als onderdeel van de `propositions` die worden weergegeven in het resultaat van de opdracht `sendEvent` . Elke propositie bevat een array van `items,` en elk item heeft een `meta` -object dat is gevuld met responstokens als deze zijn ingeschakeld in de [!DNL Target] -beheerinterface. [ Leer meer ](https://experienceleague.adobe.com/en/docs/target/using/administer/response-tokens)
+De reactietokens worden geretourneerd als onderdeel van de `propositions` die worden weergegeven in het resultaat van de opdracht `sendEvent` . Elke propositie bevat een array van `items,` en elk item heeft een `meta` -object dat is gevuld met responstokens als deze zijn ingeschakeld in de [!DNL Target] -beheerinterface. [ Leer meer ](https://experienceleague.adobe.com/nl/docs/target/using/administer/response-tokens)
 
 **Voorbeeld**
 
@@ -879,7 +879,7 @@ Vervolgens worden de gegevens als volgt gestroomd:
 
 ![ Diagram die het Zijhet Registreren werkschema van de Server van de Analyse tonen ](/help/dev/implement/client-side/aep-web-sdk/assets/a4t-server-side-atjs.png)
 
-[ leer meer ](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4timplementation.html)
+[ leer meer ](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4timplementation.html?lang=nl-NL)
 
 ### [!DNL Platform Web SDK] gebruiken
 
@@ -961,7 +961,7 @@ window.targetGlobalSettings = {
 };
 ```
 
-[ Leer meer ](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/at-js-implementation/functions-overview/targetgobalsettings.html)
+[ Leer meer ](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/at-js-implementation/functions-overview/targetgobalsettings.html?lang=nl-NL)
 
 ### [!DNL Platform Web SDK] gebruiken
 
@@ -1061,7 +1061,7 @@ adobe.target.getOffers({
 .catch(console.error);
 ```
 
-[ Leer meer ](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/at-js-implementation/functions-overview/adobe-target-getoffers-atjs-2.html)
+[ Leer meer ](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/at-js-implementation/functions-overview/adobe-target-getoffers-atjs-2.html?lang=nl-NL)
 
 ### [!DNL Platform Web SDK] gebruiken
 
@@ -1141,7 +1141,7 @@ window.targetPageParams = function() {
 };
 ```
 
-[ Leer meer ](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/at-js-implementation/functions-overview/targetpageparams.html)
+[ Leer meer ](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/at-js-implementation/functions-overview/targetpageparams.html?lang=nl-NL)
 
 ### [!DNL Platform Web SDK] gebruiken
 
@@ -1258,8 +1258,8 @@ De bibliotheek at.js stelt deze het zuiveren eigenschappen bloot:
 
 U hebt meerdere mogelijkheden voor foutopsporing wanneer u [!DNL Platform Web SDK] gebruikt:
 
-* Gebruikend [ Assurance ](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home)
-* [ Web SDK toegelaten zuivert ](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home)
+* Gebruikend [ Assurance ](https://experienceleague.adobe.com/nl/docs/experience-platform/assurance/home)
+* [ Web SDK toegelaten zuivert ](https://experienceleague.adobe.com/nl/docs/experience-platform/assurance/home)
 * Het gebruik van [ SDK controlemaakjes van het Web ](https://github.com/adobe/alloy/wiki/Monitoring-Hooks)
-* Gebruik [ Adobe Experience Platform Debugger ](https://experienceleague.adobe.com/en/docs/experience-platform/debugger/home)
+* Gebruik [ Adobe Experience Platform Debugger ](https://experienceleague.adobe.com/nl/docs/experience-platform/debugger/home)
 * Doelovertrek

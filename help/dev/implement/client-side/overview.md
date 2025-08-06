@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Overzicht: implementeren [!DNL Target] voor web op de client
 
-In een client-side implementatie van [!DNL Adobe Target] levert [!DNL Target] de ervaringen die aan een activiteit zijn gekoppeld rechtstreeks aan de clientbrowser. De browser bepaalt welke ervaring wordt weergegeven en geeft deze weer. Met een cliënt-zijimplementatie, kunt u een redacteur van WYSIWYG, de [ Visuele Composer van de Ervaring ](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html) (VEC), of een niet-visuele interface, de [ Op vorm-gebaseerde Composer van de Ervaring ](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html) gebruiken, om uw activiteit en verpersoonlijkingservaringen tot stand te brengen.
+In een client-side implementatie van [!DNL Adobe Target] levert [!DNL Target] de ervaringen die aan een activiteit zijn gekoppeld rechtstreeks aan de clientbrowser. De browser bepaalt welke ervaring wordt weergegeven en geeft deze weer. Met een cliënt-zijimplementatie, kunt u een redacteur van WYSIWYG, de [ Visuele Composer van de Ervaring ](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html?lang=nl-NL) (VEC), of een niet-visuele interface, de [ Op vorm-gebaseerde Composer van de Ervaring ](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html?lang=nl-NL) gebruiken, om uw activiteit en verpersoonlijkingservaringen tot stand te brengen.
 
 Als u [!DNL Target] client-side wilt implementeren, moet u een van de volgende JavaScript-bibliotheken gebruiken:
 
