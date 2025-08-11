@@ -2,9 +2,9 @@
 user-guide-title: Adobe Target Developer Guide
 breadcrumb-title: Doelontwikkelaarsgids
 user-guide-description: Leer hoe u de ervaring van uw klanten kunt aanpassen en personaliseren om uw omzet te maximaliseren op uw websites en mobiele sites, apps, sociale media en andere digitale kanalen.
-source-git-commit: 8f24ffe82e16de0dbbd86d3baf0e76d826a98a9a
+source-git-commit: b1b0424bfe61fb8b4e88723e6bb2c565d75f8351
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '827'
 ht-degree: 3%
 
 ---
@@ -169,6 +169,10 @@ ht-degree: 3%
       + [Asynchrone verzoeken (Python)](implement/server-side/python/asynchronous-requests.md)
       + [Logger (Python)](implement/server-side/python/logger.md)
 + [Hybride implementatie](implement/hybrid/hybrid-overview.md)
++ Analyses voor Doel (A4T) met Experience Platform SDK {#a4t}
+   + [Aanmelden bij Adobe Analytics for Target (A4T) via Experience Platform Web SDK](/help/dev/implement/a4t/overview-a4t.md)
+   + [Logboekregistratie op de client voor A4T-gegevens in Experience Platform Web SDK](/help/dev/implement/a4t/client-side-logging.md)
+   + [Logboekregistratie op de server voor A4T-gegevens in Experience Platform Web SDK](/help/dev/implement/a4t/server-side-a4t.md)
 + [Implementatie van aanbevelingen](implement/recommendations/recommendations.md)
 + [bèta implementatie van aanbevelingen](/help/dev/implement/recommendations/recommendations-beta.md)
 + Implementatie van mobiele apps {#mobile-apps}
