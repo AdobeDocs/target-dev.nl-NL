@@ -49,13 +49,13 @@ Met de [!UICONTROL Bulk Profile Update API] kunt u eenvoudig gedetailleerde gege
 
 Als u profielgegevens bulksgewijs wilt bijwerken, maakt u een batchbestand. Het batchbestand is een tekstbestand met waarden gescheiden door komma&#39;s die lijken op het volgende voorbeeldbestand.
 
-``````
+``` ```
 batch=pcId,param1,param2,param3,param4
 123,value1
 124,value1,,,value4
 125,,value2
 126,value1,value2,value3,value4
-``````
+``` ```
 
 >[!NOTE]
 >
@@ -77,9 +77,9 @@ U verwijst dit bestand in de POST-aanroep naar [!DNL Target] servers om het best
 
 Voer een HTTP POST-aanvraag in bij [!DNL Target] Edge-servers om het bestand te verwerken. Hier volgt een voorbeeld van een HTTP POST-aanvraag voor het bestand batch.txt met de opdracht curl:
 
-``````
+``` ```
 curl -X POST --data-binary @BATCH.TXT http://CLIENTCODE.tt.omtrdc.net/m2/CLIENTCODE/v2/profile/batchUpdate
-``````
+``` ```
 
 Waarbij:
 
