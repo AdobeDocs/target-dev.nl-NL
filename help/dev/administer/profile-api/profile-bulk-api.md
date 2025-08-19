@@ -4,7 +4,7 @@ description: Leer hoe te om  [!DNL Adobe Target] [!UICONTROL Bulk Profile Update
 feature: APIs/SDKs
 contributors: https://github.com/icaraps
 exl-id: 0f38d109-5273-4f73-9488-80eca115d44d
-source-git-commit: 39f0ab4a6b06d0b3415be850487552714f51b4a2
+source-git-commit: 8cab20a7842b0a05c5b2a845662a7ab5f60393bd
 workflow-type: tm+mt
 source-wordcount: '929'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Met de [!UICONTROL Bulk Profile Update API] kunt u eenvoudig gedetailleerde gege
 >
 >Versie 2 (v2) van de [!DNL Bulk Profile Update API] is de huidige versie. [!DNL Target] blijft echter versie 1 (v1) ondersteunen.
 >
->* **stand-alone implementaties die niet op `PCID`, gebruiks Versie 2** vertrouwen: Als uw [!DNL Target] implementatie [!DNL Experience Cloud ID] (ECID) als één van de profielherkenningstekens voor anonieme bezoekers gebruikt, moet u `pcId` niet als sleutel in een versie 2 (v2) partijdossier gebruiken. Het gebruik van `pcId` met versie 2 van [!DNL Bulk Profile Update API] is bedoeld voor zelfstandige [!DNL Target] implementaties die niet afhankelijk zijn van `ECID` .
+>* **stand-alone implementaties die niet op `ECID`, gebruiks Versie 2** vertrouwen: Als uw [!DNL Target] implementatie [!DNL Experience Cloud ID] (ECID) als één van de profielherkenningstekens voor anonieme bezoekers gebruikt, moet u `pcId` niet als sleutel in een versie 2 (v2) partijdossier gebruiken. Het gebruik van `pcId` met versie 2 van [!DNL Bulk Profile Update API] is bedoeld voor zelfstandige [!DNL Target] implementaties die niet afhankelijk zijn van `ECID` .
 >
 >* **Implementaties die zich op `thirdPartID` baseren, gebruik Versie 1**: Implementaties die `ECID` voor profielidentificatie gebruiken zouden Versie 1 (v1) van API moeten gebruiken als u `pcId` als sleutel in partijdossier wilt gebruiken. Als in uw implementatie `thirdPartyId` wordt gebruikt voor profielidentificatie, wordt versie 2 (v2) aanbevolen met `thirdPartyId` als sleutel.
 
@@ -47,13 +47,13 @@ Met de [!UICONTROL Bulk Profile Update API] kunt u eenvoudig gedetailleerde gege
 
 Als u profielgegevens bulksgewijs wilt bijwerken, maakt u een batchbestand. Het batchbestand is een tekstbestand met waarden gescheiden door komma&#39;s die lijken op het volgende voorbeeldbestand.
 
-``` ```
+``````
 batch=pcId,param1,param2,param3,param4
 123,value1
 124,value1,,,value4
 125,,value2
 126,value1,value2,value3,value4
-``` ```
+``````
 
 >[!NOTE]
 >
@@ -75,9 +75,9 @@ U verwijst dit bestand in de POST-aanroep naar [!DNL Target] servers om het best
 
 Voer een HTTP POST-aanvraag in bij [!DNL Target] Edge-servers om het bestand te verwerken. Hier volgt een voorbeeld van een HTTP POST-aanvraag voor het bestand batch.txt met de opdracht curl:
 
-``` ```
+``````
 curl -X POST --data-binary @BATCH.TXT http://CLIENTCODE.tt.omtrdc.net/m2/CLIENTCODE/v2/profile/batchUpdate
-``` ```
+``````
 
 Waarbij:
 
