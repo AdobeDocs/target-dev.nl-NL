@@ -315,7 +315,7 @@ Gebruik de volgende set opdrachten (in de opdrachtregelterminal van macOS of Lin
        🔎  DNS CNAME record:  https://whatsmydns.net/#CNAME/target.example.com 
    ```
 
-+++
+   +++
 
 >[!NOTE]
 >
