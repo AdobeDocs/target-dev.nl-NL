@@ -247,7 +247,7 @@ Gebruik de volgende set opdrachten (in de opdrachtregelterminal van macOS of Lin
 
 Als de implementatie gereed is, ziet u de uitvoer hieronder. Het belangrijkste onderdeel is dat alle regels voor validatiestatus `✅` in plaats van `🚫` weergeven. Elke Target edge CNAME shard zou `CN=target.example.com` moeten tonen, die primaire hostname op het gevraagde certificaat aanpast (extra SAN hostnames op het certificaat worden niet gedrukt in deze output).
 
-    ++ Zie details 
+    +++ Zie details 
     
      &quot;bash {line-numbers=&quot;waar&quot;} 
      $ adobeTargetCnameValidation 
@@ -257,7 +257,7 @@ Als de implementatie gereed is, ziet u de uitvoer hieronder. Het belangrijkste o
     ✅ target.example.com gaat TLS en de reactiedetectie van HTTP voor gebied IND1 
     ✅ over target.example.com de bevestiging van TLS en van de reactie van HTTP voor gebied SIN 
     ✅ overgaat TLS en van HTTP- reactievalidering voor gebied OF 
-    ✅ target.example.com. 0} target.example.com overgaat TLS en de antwoordbevestiging van HTTP voor gebied VA 
+    ✅ target.example.com. 0&rbrace; target.example.com overgaat TLS en de antwoordbevestiging van HTTP voor gebied VA 
     ✅ target.example.com overgaat TLS en de antwoordbevestiging van HTTP voor gebied TYO 
     ✅ target.example.com overgaat shard bevestiging voor de volgende 7 randkaarten:==== 
     ✅ [randaard: IRL1-pool.data.data.bedc.net] ====== ✅* datum: b 203 
@@ -266,13 +266,13 @@ Als de implementatie gereed is, ziet u de uitvoer hieronder. Het belangrijkste o
      [rand shard: IND-pool.data.adobedc.net] ==== ✅* verlopen datum: 20 23 
      59 2026 GMT :59:* emittent: C=US; DigiCert; Inc; CN=DigoCert Cert Globaal G2 TLS RSA SHA256 2020 CA1 
     * onderwerp: C=US; ST=California; L=San Jose; O=Adobe Systems Incorporated; CN=target.example.com==== 
-     [randaard: SIN-pool.data.adobedc.net]== ✅ 4}* verlopen datum: Feb 20 23 
+     [randaard: SIN-pool.data.adobedc.net]== ✅ 4&rbrace;* verlopen datum: Feb 20 23 
      59 2026 GMT :59:* uitgever: C=US; O=DigiCert Inc; CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1 
     * onderwerp: C=US; ST=California;=San Jose O=Adobe Systems Incorporated; CN=target.example.com=== 
     ; [edge shard: OR-pool.data.adobedc.net] === ✅* vervaldatum: 20 23 feb 
      59 2026 GMT :59:* emittent: C=US;=DigiCert Inc; CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1 
     * subject: C=US; ST=California; L=San Jose; O=Adobe Systems Incorporated; CN=target.example======= 
-     shard: SYD-data.data bedc.net] ==== ✅* verlopen datum: Feb 20 23 
+     shard: SYD-data.data bedc.net&rbrack; ==== ✅* verlopen datum: Feb 20 23 
      59 2026 GMT :59:* emittent: C=US; O=DigiCert Inc; CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1 
     * subject: C=US; ST=California; L=San Jose; O=Adobe Systems Incorporated; CN=target.example.com===== 
      [edge shard: VA pool.data.adobedc.net] ===✅* expired date: Feb 20 23 
