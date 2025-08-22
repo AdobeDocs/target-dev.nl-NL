@@ -4,9 +4,9 @@ description: Het werk met [!UICONTROL Adobe Client Care] om steun CNAME (Canonic
 title: Hoe gebruik ik CNAME als doel?
 feature: Privacy & Security
 exl-id: 5709df5b-6c21-4fea-b413-ca2e4912d6cb
-source-git-commit: 1a78a1e2750ae906338e91ff24ac16cdc99323ba
+source-git-commit: 04dfc34bcd3e7efbf73cd167334b440d42cafd1b
 workflow-type: tm+mt
-source-wordcount: '1165'
+source-wordcount: '1169'
 ht-degree: 0%
 
 ---
@@ -29,19 +29,19 @@ Instructies voor het werken met [!DNL Adobe Client Care] om ondersteuning voor C
 
    >[!WARNING]
    >
-   >DigiCert, de certificeringsinstantie van Adobe, kan pas een certificaat uitgeven als deze stap is voltooid. Daarom kan Adobe niet aan uw verzoek om een CNAME-implementatie voldoen totdat deze stap is voltooid.
+   >DigiCert, de certificeringsinstantie van Adobe, kan pas een certificaat uitgeven als deze stap is voltooid. Daarom kan Adobe uw verzoek om een implementatie CNAME niet vervullen tot deze stap volledig is.
 
-1. [Vul dit formulier](assets/FPC_Request_Form.xlsx) in en voeg het toe wanneer u een Adobe Client Care-ticket opent waarin CNAME-ondersteuning [&#128279;](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?lang=nl-NL&#reference_ACA3391A00EF467B87930A450050077C)wordt aangevraagd:
+1. [ Vul deze vorm ](assets/FPC_Request_Form.xlsx) in en omvat het wanneer u [ een kaartje van de Zorg van de Cliënt van Adobe die de steun van de NAAM verzoekt ](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?#reference_ACA3391A00EF467B87930A450050077C):
 
    * [!DNL Adobe Target] clientcode:
    * SSL-certificaathostnamen (bijvoorbeeld: `target.example.com target.example.org`):
    * Aankoper van SSL-certificaten (Adobe wordt zeer aanbevolen, zie Veelgestelde vragen): Adobe/klant
    * Als de klant het certificaat aanschaft, ook wel &#39;Create Your Own Certificate&#39; (BYOC) genoemd, voert u de volgende aanvullende gegevens in:
       * Certificaatorganisatie (bijvoorbeeld: Example Company Inc):
-      * Certificaat organisatie-eenheid (optioneel, bijvoorbeeld: Marketing):
-      * Land van certificaat (bijvoorbeeld: VS):
-      * Certificaatstaat/regio (bijvoorbeeld: Californië):
-      * Certificaatstad (bijvoorbeeld: San Jose):
+      * Organisatorische eenheid certificaat (optioneel, bijvoorbeeld: Marketing):
+      * Certificaatland (voorbeeld: VS):
+      * Certificaatstatus/regio (bijvoorbeeld: Californië):
+      * Plaats van certificaat (voorbeeld: San Jose):
 
 1. Als Adobe het certificaat aanschaft, werkt Adobe samen met DigiCert om uw certificaat aan te schaffen en te implementeren op Adobe-productieservers.
 
@@ -57,21 +57,21 @@ De volgende informatie beantwoordt vaak gestelde vragen over het verzoeken van e
 
 ### Kan ik mijn eigen certificaat opgeven (breng uw eigen certificaat of BYOC)?
 
-U kunt uw eigen certificaat opgeven. Adobe beveelt deze praktijk echter niet aan. Het beheer van de levenscyclus van het SSL-certificaat is zowel voor Adobe als voor u eenvoudiger als Adobe het certificaat koopt en beheert. SSL-certificaten moeten elk jaar worden vernieuwd. Daarom moet Adobe Client Care elk jaar contact met u opnemen om een nieuw certificaat te verkrijgen. Sommige klanten kunnen moeite hebben om een vernieuwd certificaat tijdig te produceren. Uw [!DNL Target] implementatie komt in gevaar wanneer het certificaat verloopt omdat browsers verbindingen weigeren.
+U kunt uw eigen certificaat opgeven. Adobe beveelt deze praktijk echter niet aan. Het beheer van de levenscyclus van het SSL-certificaat is zowel voor Adobe als voor u eenvoudiger als Adobe het certificaat koopt en beheert. SSL-certificaten moeten elk jaar worden vernieuwd. Daarom moet Adobe Client Care elk jaar contact met u opnemen om een nieuw certificaat te verkrijgen. Sommige klanten kunnen moeite hebben om een vernieuwd certificaat tijdig te produceren. De implementatie van [!DNL Target] wordt in gevaar gebracht wanneer het certificaat verloopt omdat browsers geen verbinding maken.
 
 >[!WARNING]
 >
->Als u een [!DNL Target] CNAME-implementatie met een bring-your-own-certificaat aanvraagt, bent u verantwoordelijk voor het elk jaar leveren van vernieuwde certificaten aan Adobe Client Care. Als u toestaat dat uw CNAME-certificaat verloopt voordat Adobe een vernieuwd certificaat kan implementeren, resulteert dit in een stroomstoring voor uw specifieke [!DNL Target] -implementatie.
+>Als u een CNAME-implementatie met een [!DNL Target] bring-your-own-certificate aanvraagt, bent u verantwoordelijk voor het jaarlijks verstrekken van vernieuwde certificaten aan Adobe Client Care. Als u toestaat dat uw CNAME-certificaat verloopt voordat Adobe een vernieuwd certificaat kan implementeren, resulteert dit in een stroomstoring voor uw specifieke [!DNL Target] -implementatie.
 
 ### Hoe lang tot mijn nieuwe SSL certificaat verloopt?
 
-Alle door Adobe gekochte certificaten zijn één jaar geldig. Zie {het artikel van 0} DigiCert op 1 jaar certificaten [&#128279;](https://www.digicert.com/blog/position-on-1-year-certificates) voor meer informatie.
+Alle door Adobe gekochte certificaten zijn één jaar geldig. Zie {het artikel van 0} DigiCert op 1 jaar certificaten [ voor meer informatie.](https://www.digicert.com/blog/position-on-1-year-certificates)
 
-### Welke hostnames moet ik kiezen? Hoeveel hostnamen per domein moet ik kiezen?
+### Welke hostnames moet ik kiezen? Hoeveel hostnames per domein zou ik moeten kiezen?
 
-Voor doel-CNAME-implementaties is slechts één hostnaam per domein vereist op het SSL-certificaat en in de DNS van de klant. Adobe raadt één hostnaam per domein aan. Sommige klanten hebben meer hostnamen per domein nodig voor hun eigen doeleinden (bijvoorbeeld testen in staging), wat wordt ondersteund.
+De implementaties van CNAME van het doel vereisen slechts één hostname per domein op het SSL certificaat en in DNS van de klant. Adobe raadt één hostnaam per domein aan. Sommige klanten vereisen meer hostnames per domein voor hun eigen doeleinden (bijvoorbeeld het testen in het opvoeren), wat wordt ondersteund.
 
-De meeste klanten kiezen een hostnaam zoals `target.example.com`. Adobe raadt aan deze praktijk te volgen, maar de keuze is uiteindelijk aan jou. Vraag geen hostnaam aan van een bestaande DNS-record. Dit veroorzaakt een conflict en vertraagt de tijd tot het oplossen van uw [!DNL Target] CNAME-verzoek.
+De meeste klanten kiezen een hostnaam zoals `target.example.com` . Adobe beveelt aan deze praktijk te volgen, maar uiteindelijk is de keuze aan u. Vraag geen hostname van een bestaand DNS verslag aan. Dit veroorzaakt een conflict en vertraagt tijd aan resolutie van uw [!DNL Target] verzoek CNAME.
 
 ### Ik heb al een CNAME-implementatie voor Adobe Analytics. Kan ik hetzelfde certificaat of dezelfde hostnaam gebruiken?
 
@@ -83,19 +83,21 @@ Apple Intelligent Tracking Prevention (ITP) versie 2.3 introduceerde de CNAME Cl
 
 ### Welk soort de dienstverstoringen kan ik verwachten wanneer mijn implementatie CNAME wordt opgesteld?
 
-Er is geen serviceonderbreking wanneer het certificaat wordt geïmplementeerd (inclusief certificaatverlengingen).
+Er is geen de dienstverstoring wanneer het certificaat wordt opgesteld (met inbegrip van certificaatvernieuwingen).
 
-Nadat u echter de hostnaam in uw [!DNL Target] implementatiecode (`serverDomain` in at.js) hebt gewijzigd in de nieuwe CNAME-hostnaam (`target.example.com`), worden terugkerende bezoekers in webbrowsers als nieuwe bezoekers behandeld. Het retourneren van bezoekersprofielgegevens gaat verloren omdat het vorige cookie niet toegankelijk is onder de oude hostnaam (`clientcode.tt.omtrdc.net`). De vorige cookie is niet toegankelijk vanwege beveiligingsmodellen van de browser. Deze verstoring komt slechts op de aanvankelijke besnoeiing-over aan nieuwe CNAME voor. Certificaatverlengingen hebben niet hetzelfde effect omdat de hostnaam niet verandert.
+Nadat u echter de hostnaam in de [!DNL Target] -implementatiecode (`serverDomain` in at.js) hebt gewijzigd in de nieuwe CNAME-hostnaam (`target.example.com` ), behandelen webbrowsers terugkerende bezoekers als nieuwe bezoekers. Het retourneren van bezoekersprofielgegevens gaat verloren omdat het vorige cookie niet toegankelijk is onder de oude hostnaam (`clientcode.tt.omtrdc.net`). De vorige cookie is niet toegankelijk vanwege beveiligingsmodellen van de browser. Deze verstoring komt slechts op de aanvankelijke besnoeiing-over aan nieuwe CNAME voor. Certificaatverlengingen hebben niet hetzelfde effect omdat de hostnaam niet verandert.
 
 ### Welk zeer belangrijk type en algoritme van de certificaathandtekening voor mijn implementatie CNAME wordt gebruikt?
 
-Alle certificaten zijn RSA SHA-256 en sleutels zijn standaard RSA 2048-bits. Toetsgrootten groter dan 2048 bits moeten expliciet via [!UICONTROL Customer Care] worden aangevraagd.
+Alle certificaten zijn RSA SHA-256 en de sleutels zijn RSA 2048 beetje, door gebrek. Toetsgrootten groter dan 2048 bits moeten expliciet via [!UICONTROL Customer Care] worden aangevraagd.
 
-### Hoe kan ik valideren dat mijn CNAME-implementatie klaar is voor verkeer?
+### Hoe kan ik bevestigen dat mijn implementatie CNAME klaar voor verkeer is?
 
-Gebruik de volgende set opdrachten (in de macOS- of Linux-opdrachtregelterminal met bash en curl >=7,49):
+Gebruik de volgende set opdrachten (in de opdrachtregelterminal van macOS of Linux, met bash en curl >=7.49):
 
-1. Kopieer en plak deze bash-functie in uw terminal of plak de functie in uw bash-opstartscriptbestand (meestal `~/.bash_profile` of `~/.bashrc`) zodat de functie beschikbaar is in terminalsessies:
+1. Kopieer en plak deze basfunctie in uw terminal, of plak de functie in het bash-opstartscriptbestand (meestal `~/.bash_profile` of `~/.bashrc` ) zodat de functie beschikbaar is in de verschillende eindsessies:
+
+   +++Zie details
 
    ```
    function adobeTargetCnameValidation {
@@ -240,13 +242,15 @@ Gebruik de volgende set opdrachten (in de macOS- of Linux-opdrachtregelterminal 
    }
    ```
 
-1. Plak deze opdracht (vervangen `target.example.com` door uw hostnaam):
+   +++
 
-   ```
-   adobeTargetCnameValidation target.example.com
-   ```
+1. Plak deze opdracht (waarbij `target.example.com` wordt vervangen door uw hostnaam):
+
+   ```adobeTargetCnameValidation target.example.com```
 
    Als de implementatie gereed is, ziet u de uitvoer hieronder. Het belangrijkste onderdeel is dat alle regels voor validatiestatus `✅` in plaats van `🚫` weergeven. Elke Target edge CNAME shard zou `CN=target.example.com` moeten tonen, die primaire hostname op het gevraagde certificaat aanpast (extra SAN hostnames op het certificaat worden niet gedrukt in deze output).
+
+   +++Zie details
 
    ```
    $ adobeTargetCnameValidation target.example.com
@@ -311,6 +315,8 @@ Gebruik de volgende set opdrachten (in de macOS- of Linux-opdrachtregelterminal 
        🔎  DNS CNAME record:  https://whatsmydns.net/#CNAME/target.example.com 
    ```
 
++++
+
 >[!NOTE]
 >
 >Als dit bevestigingsbevel op DNS bevestiging ontbreekt maar u reeds de noodzakelijke DNS veranderingen hebt aangebracht, zou u op uw DNS updates kunnen moeten wachten om volledig te verspreiden. DNS de verslagen hebben bijbehorend [ TTL (tijd-aan-levende) ](https://en.wikipedia.org/wiki/Time_to_live#DNS_records) die geheim voorgeheugenvervaltijd voor DNS antwoorden van die verslagen dicteert. Dientengevolge, zou u minstens zolang uw TTLs kunnen moeten wachten. U kunt het `dig target.example.com` bevel of [ gebruiken Toolbox van de Reeks van G ](https://toolbox.googleapps.com/apps/dig/#CNAME) om uw specifieke TTLs omhoog te kijken. Om DNS propagatie rond de wereld te controleren, zie [ what smydns.net ](https://whatsmydns.net/#CNAME).
@@ -325,4 +331,4 @@ Vervang `clientcode` met uw cliëntcode, dan voeg de tekst of het beeld toe dat 
 ## Bekende beperkingen
 
 * De modus QA blijft niet behouden wanneer u CNAME en at.js 1.x hebt, omdat deze is gebaseerd op een cookie van een andere fabrikant. Als tussenoplossing kunt u de voorvertoningsparameters toevoegen aan elke URL waarnaar u navigeert. De modus QA blijft behouden wanneer u CNAME en at.js 2.x hebt.
-* Bij het gebruik van CNAME wordt het waarschijnlijker dat de grootte van de cookie-header voor [!DNL Target] oproepen toeneemt. Adobe raadt aan de cookiegrootte onder de 8 kB te houden.
+* Wanneer u CNAME gebruikt, neemt de kans toe dat de grootte van de cookieheader voor [!DNL Target] -aanroepen toeneemt. Adobe raadt aan de cookie kleiner te maken dan 8 kB.
