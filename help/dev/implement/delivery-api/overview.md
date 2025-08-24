@@ -4,9 +4,9 @@ description: Adobe Target Delivery API - Overzicht
 keywords: aflevering api
 exl-id: e760bddc-b1ae-4b7b-bff2-aba81c6b6d34
 feature: APIs/SDKs
-source-git-commit: ccc27e66207e58dcd33865e5d28a51644e8e1931
+source-git-commit: 413b16ed0b098de6914558fa29b9ca59aaba958e
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '177'
 ht-degree: 0%
 
 ---
@@ -22,21 +22,6 @@ Met [!UICONTROL Adobe Target's Delivery API] kunt u:
 * Lever verenigbare en gepersonaliseerde ervaringen aan een gebruiker ongeacht welke kanaal of apparaten de gebruiker met uw zaken in dienst heeft genomen.
 * De ervaringen van het geheime voorgeheugen voor een gebruiker binnen een zitting in uw server zodat de veelvoudige API vraag kan worden vermeden en dientengevolge betere prestaties bereiken.
 * Naadloos integreren met [!DNL Adobe Experience Cloud] -producten zoals [!DNL Adobe Analytics] , [!DNL Adobe Audience Manager] en [!DNL Experience Cloud ID Service] vanaf de serverzijde.
-
->[!IMPORTANT]
->
->Wees voorzichtig wanneer u [!DNL Recommendations] [!UICONTROL Catalog] via [!DNL Delivery API] bijwerkt. Het bestand [!DNL Delivery API] is public, gebruik dit dus niet om klikbare items in de catalogus met aanbevelingen te vullen. Zo kunt u ongeldig inhoud introduceren en uw catalogus vervuilen.
->
->Aanbevolen werkwijzen:
->
->Gebruik de [!DNL Delivery API] alleen voor het bijwerken van cataloguskenmerken die:
->* Verandering regelmatig (bijvoorbeeld prijs, voorraadniveau).
->* Volg een vooraf gedefinieerde indeling die gemakkelijk op uw website kan worden gevalideerd.
->* Gebruik deze optie niet voor het toevoegen of wijzigen van klikbare items of andere niet-geverifieerde inhoud.
->
->Indien nodig kunt u klantenondersteuning aanvragen om catalogusupdates uit te schakelen via de bezorgings-API.
-
-Zie de [[!UICONTROL Adobe Target Delivery API] ](https://developer.adobe.com/target/implement/delivery-api/){target=_blank} documentatie voor meer informatie.
 
 >[!NOTE]
 >
