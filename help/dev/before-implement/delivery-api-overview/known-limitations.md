@@ -4,9 +4,9 @@ description: Met welke overwegingen en bekende beperkingen moet ik rekening houd
 keywords: aflevering api
 exl-id: 49fe13b0-efcb-4b1c-a4cb-03b64fbd9214
 feature: APIs/SDKs
-source-git-commit: 413b16ed0b098de6914558fa29b9ca59aaba958e
+source-git-commit: 94a4122244065384f487ca9a29dfa1b414168cb8
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '145'
 ht-degree: 0%
 
 ---
@@ -22,15 +22,3 @@ De volgende informatie geeft een overzicht van overwegingen en bekende beperking
   Als u een eindpunt gebruikt dat bezoekers door onze nieuwe infrastructuur van de Balancer van de Lading leidt, worden hun verbindingen automatisch bevorderd aan HTTP/2. Dit verbeteringsproces zet verzoekkopballen in kleine letters om zodat zullen zij niet misvormd worden beschouwd.
 
   Deze kwestie kan een kwestie voor klanten potentieel zijn als hun bibliotheken opstelling zijn om geval-gevoelige (specifiek niet in kleine letters) verzoek/reactiekkopballen te zoeken.
-
-* Wees voorzichtig wanneer u [!DNL Recommendations] [!UICONTROL Catalog] via [!DNL Delivery API] bijwerkt. Het bestand [!DNL Delivery API] is public, gebruik dit dus niet om klikbare items in de catalogus met aanbevelingen te vullen. Zo kunt u ongeldig inhoud introduceren en uw catalogus vervuilen.
-
-  **Beste praktijken**:
-
-  Gebruik de [!DNL Delivery API] alleen voor het bijwerken van cataloguskenmerken die:
-   * Verandering regelmatig (bijvoorbeeld prijs, voorraadniveau).
-   * Volg een vooraf gedefinieerde indeling die gemakkelijk op uw website kan worden gevalideerd.
-   * Gebruik deze optie niet voor het toevoegen of wijzigen van klikbare items of andere niet-geverifieerde inhoud.
-   * Indien nodig kunt u klantenondersteuning aanvragen om catalogusupdates uit te schakelen via de bezorgings-API.
-
-  Zie de [[!UICONTROL Adobe Target Delivery API] ](https://developer.adobe.com/target/implement/delivery-api/){target=_blank} documentatie voor meer informatie.
