@@ -4,7 +4,7 @@ description: Het werk met [!UICONTROL Adobe Client Care] om steun CNAME (Canonic
 title: Hoe gebruik ik CNAME als doel?
 feature: Privacy & Security
 exl-id: 5709df5b-6c21-4fea-b413-ca2e4912d6cb
-source-git-commit: 71a8a2d9d324cd31452a4400d76052432efbfdd4
+source-git-commit: 4f28018a55d484f45ebbbce319d580450d3db68b
 workflow-type: tm+mt
 source-wordcount: '1169'
 ht-degree: 0%
@@ -31,12 +31,13 @@ Instructies voor het werken met [!DNL Adobe Client Care] om ondersteuning voor C
    >
    >DigiCert, de certificeringsinstantie van Adobe, kan pas een certificaat uitgeven als deze stap is voltooid. Daarom kan Adobe uw verzoek om een implementatie CNAME niet vervullen tot deze stap volledig is.
 
-1. [ Vul deze vorm ](assets/FPC_Request_Form.xlsx) in en omvat het wanneer u [ een kaartje van de Zorg van de Cliënt van Adobe die de steun van de NAAM verzoekt ](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?lang=nl-NL&#reference_ACA3391A00EF467B87930A450050077C):
+1. [ Vul deze vorm ](assets/FPC_Request_Form.xlsx) in en omvat het wanneer u [ een kaartje van de Zorg van de Cliënt van Adobe die de steun van de NAAM verzoekt ](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?#reference_ACA3391A00EF467B87930A450050077C):
 
    * [!DNL Adobe Target] clientcode:
    * SSL-certificaathostnamen (bijvoorbeeld: `target.example.com target.example.org`):
    * Aankoper van SSL-certificaten (Adobe wordt zeer aanbevolen, zie Veelgestelde vragen): Adobe/klant
    * Als de klant het certificaat aanschaft, ook wel &#39;Create Your Own Certificate&#39; (BYOC) genoemd, voert u de volgende aanvullende gegevens in:
+
       * Certificaatorganisatie (bijvoorbeeld: Example Company Inc):
       * Organisatorische eenheid certificaat (optioneel, bijvoorbeeld: Marketing):
       * Certificaatland (voorbeeld: VS):
@@ -306,3 +307,4 @@ Vervang `clientcode` met uw cliëntcode, dan voeg de tekst of het beeld toe dat 
 
 * De modus QA blijft niet behouden wanneer u CNAME en at.js 1.x hebt, omdat deze is gebaseerd op een cookie van een andere fabrikant. Als tussenoplossing kunt u de voorvertoningsparameters toevoegen aan elke URL waarnaar u navigeert. De modus QA blijft behouden wanneer u CNAME en at.js 2.x hebt.
 * Wanneer u CNAME gebruikt, neemt de kans toe dat de grootte van de cookieheader voor [!DNL Target] -aanroepen toeneemt. Adobe raadt aan de cookie kleiner te maken dan 8 kB.
+
