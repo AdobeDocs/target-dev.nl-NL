@@ -19,7 +19,7 @@ Instructies voor het werken met [!DNL Adobe] Client Care om ondersteuning voor C
 ## Ondersteuning voor CNAME aanvragen in [!DNL Target]
 
 1. Bepaal de lijst met hostnamen die u nodig hebt voor uw SSL-certificaat (zie de Veelgestelde vragen hieronder).
-1. [ Vul deze vorm ](/help/dev/implement/assets/FPC_Request_Form.xlsx) in en omvat het wanneer u [ een  [!DNL Adobe]  kaartje van de Zorg van de Cliënt die CNAME om steun verzoekt ](https://experienceleague.adobe.com/en/docs/target/using/cmp-resources-and-contact-information#reference_ACA3391A00EF467B87930A450050077C):
+1. [&#x200B; Vul deze vorm &#x200B;](/help/dev/implement/assets/FPC_Request_Form.xlsx) in en omvat het wanneer u [&#x200B; een  [!DNL Adobe]  kaartje van de Zorg van de Cliënt die CNAME om steun verzoekt &#x200B;](https://experienceleague.adobe.com/en/docs/target/using/cmp-resources-and-contact-information#reference_ACA3391A00EF467B87930A450050077C):
 
    * [!DNL Adobe Target] clientcode:
    * SSL-certificaathostnamen (bijvoorbeeld: `target.example.com target.example.org`):
@@ -50,7 +50,7 @@ Instructies voor het werken met [!DNL Adobe] Client Care om ondersteuning voor C
 
    [!DNL Adobe] De klantenzorg brengt u op de hoogte wanneer uw implementatie klaar is.
 
-1. Werk `serverDomain` ([ documentatie ](/help/dev/implement/client-side/atjs/atjs-functions/targetglobalsettings.md#serverDomain)) bij aan nieuwe CNAME hostname en reeks `overrideMboxEdgeServer` aan `false` ([ documentatie ](/help/dev/implement/client-side/atjs/atjs-functions/targetglobalsettings.md#overridemboxedgeserver)) in uw configuratie at.js.
+1. Werk `serverDomain` ([&#x200B; documentatie &#x200B;](/help/dev/implement/client-side/atjs/atjs-functions/targetglobalsettings.md#serverDomain)) bij aan nieuwe CNAME hostname en reeks `overrideMboxEdgeServer` aan `false` ([&#x200B; documentatie &#x200B;](/help/dev/implement/client-side/atjs/atjs-functions/targetglobalsettings.md#overridemboxedgeserver)) in uw configuratie at.js.
 
 ## Veelgestelde vragen
 
@@ -72,7 +72,7 @@ Tot 15 maart 2026 bedraagt de maximale levensduur van een TLS-certificaat 398 da
 Vanaf 15 maart 2026 bedraagt de maximale levensduur van een TLS-certificaat 200 dagen.
 Vanaf 15 maart 2027 bedraagt de maximale levensduur van een TLS-certificaat 100 dagen.
 Vanaf 15 maart 2029 bedraagt de maximale levensduur van een TLS-certificaat 47 dagen.
-Voor meer informatie, zie {het artikel van 0} DigiCert bij het verminderen van certificaatlevens [](https://www.digicert.com/blog/tls-certificate-lifetimes-will-officially-reduce-to-47-days)
+Voor meer informatie, zie {het artikel van 0} DigiCert bij het verminderen van certificaatlevens [&#128279;](https://www.digicert.com/blog/tls-certificate-lifetimes-will-officially-reduce-to-47-days)
 
 ### Welke hostnames moet ik kiezen? Hoeveel hostnames per domein zou ik moeten kiezen?
 
@@ -86,7 +86,7 @@ Nee, [!DNL Target] vereist een aparte hostnaam en certificaat.
 
 ### Heeft mijn huidige implementatie van [!DNL Target] gevolgen voor ITP 2.x?
 
-Apple Intelligent Tracking Prevention (ITP) versie 2.3 introduceerde de CNAME Cloaking Mitigation-functie, waarmee [!DNL Adobe Target] CNAME-implementaties kunnen worden gedetecteerd en de vervaldatum van het cookie tot zeven dagen wordt teruggebracht. [!DNL Target] heeft momenteel geen oplossing voor de CNAME-camouflage van ITP. Voor meer informatie over ITP, zie [ Intelligente het Volgen Preventie van Apple (ITP) 2.x ](/help/dev/before-implement/privacy/apple-itp-2x.md).
+Apple Intelligent Tracking Prevention (ITP) versie 2.3 introduceerde de CNAME Cloaking Mitigation-functie, waarmee [!DNL Adobe Target] CNAME-implementaties kunnen worden gedetecteerd en de vervaldatum van het cookie tot zeven dagen wordt teruggebracht. [!DNL Target] heeft momenteel geen oplossing voor de CNAME-camouflage van ITP. Voor meer informatie over ITP, zie [&#x200B; Intelligente het Volgen Preventie van Apple (ITP) 2.x &#x200B;](/help/dev/before-implement/privacy/apple-itp-2x.md).
 
 ### Welk soort de dienstverstoringen kan ik verwachten wanneer mijn implementatie CNAME wordt opgesteld?
 
@@ -334,14 +334,14 @@ Gebruik de volgende set opdrachten (in de opdrachtregelterminal van macOS of Lin
 
    >[!NOTE]
    >
-   >Als dit bevestigingsbevel op DNS bevestiging ontbreekt maar u reeds de noodzakelijke DNS veranderingen hebt aangebracht, zou u op uw DNS updates kunnen moeten wachten om volledig te verspreiden. DNS de verslagen hebben bijbehorend [ TTL (tijd-aan-levende) ](https://en.wikipedia.org/wiki/Time_to_live#DNS_records) die geheim voorgeheugenvervaltijd voor DNS antwoorden van die verslagen dicteert. Dientengevolge, zou u minstens zolang uw TTLs kunnen moeten wachten. U kunt het `dig target.example.com` bevel of [ gebruiken Toolbox van de Reeks van G ](https://toolbox.googleapps.com/apps/dig/#CNAME) om uw specifieke TTLs omhoog te kijken. Om DNS propagatie rond de wereld te controleren, zie [ what smydns.net ](https://whatsmydns.net/#CNAME).
+   >Als dit bevestigingsbevel op DNS bevestiging ontbreekt maar u reeds de noodzakelijke DNS veranderingen hebt aangebracht, zou u op uw DNS updates kunnen moeten wachten om volledig te verspreiden. DNS de verslagen hebben bijbehorend [&#x200B; TTL (tijd-aan-levende) &#x200B;](https://en.wikipedia.org/wiki/Time_to_live#DNS_records) die geheim voorgeheugenvervaltijd voor DNS antwoorden van die verslagen dicteert. Dientengevolge, zou u minstens zolang uw TTLs kunnen moeten wachten. U kunt het `dig target.example.com` bevel of [&#x200B; gebruiken Toolbox van de Reeks van G &#x200B;](https://toolbox.googleapps.com/apps/dig/#CNAME) om uw specifieke TTLs omhoog te kijken. Om DNS propagatie rond de wereld te controleren, zie [&#x200B; what smydns.net &#x200B;](https://whatsmydns.net/#CNAME).
 
 ### Hoe gebruik ik een opt-out-koppeling met CNAME
 
 Als u CNAME gebruikt, zou de opt-out verbinding de &quot;client= `clientcode` parameter, bijvoorbeeld moeten bevatten:
 `https://my.cname.domain/optout?client=clientcode` .
 
-Vervang `clientcode` met uw cliëntcode, dan voeg de tekst of het beeld toe dat aan [ opt-out URL ](/help/dev/before-implement/privacy/privacy.md) moet worden verbonden.
+Vervang `clientcode` met uw cliëntcode, dan voeg de tekst of het beeld toe dat aan [&#x200B; opt-out URL &#x200B;](/help/dev/before-implement/privacy/privacy.md) moet worden verbonden.
 
 ## Bekende beperkingen
 
