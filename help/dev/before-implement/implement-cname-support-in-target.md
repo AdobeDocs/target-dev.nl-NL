@@ -19,7 +19,7 @@ Instructies voor het werken met [!DNL Adobe] Client Care om ondersteuning voor C
 ## Ondersteuning voor CNAME aanvragen in [!DNL Target]
 
 1. Bepaal de lijst met hostnamen die u nodig hebt voor uw SSL-certificaat (zie de Veelgestelde vragen hieronder).
-1. [&#x200B; Vul deze vorm &#x200B;](/help/dev/implement/assets/FPC_Request_Form.xlsx) in en omvat het wanneer u [&#x200B; een  [!DNL Adobe]  kaartje van de Zorg van de Cliënt die CNAME om steun verzoekt &#x200B;](https://experienceleague.adobe.com/en/docs/target/using/cmp-resources-and-contact-information#reference_ACA3391A00EF467B87930A450050077C):
+1. [&#x200B; Vul deze vorm &#x200B;](/help/dev/implement/assets/FPC_Request_Form.xlsx) in en omvat het wanneer u [&#x200B; een  [!DNL Adobe]  kaartje van de Zorg van de Cliënt die CNAME om steun verzoekt &#x200B;](https://experienceleague.adobe.com/nl/docs/target/using/cmp-resources-and-contact-information#reference_ACA3391A00EF467B87930A450050077C):
 
    * [!DNL Adobe Target] clientcode:
    * SSL-certificaathostnamen (bijvoorbeeld: `target.example.com target.example.org`):
