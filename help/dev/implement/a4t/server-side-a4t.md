@@ -18,12 +18,12 @@ Met [!DNL Adobe Experience Platform Web SDK] kunt u de functionaliteit [!UICONTR
 
 Logboekregistratie op de server voor [!DNL Analytics] wordt ingeschakeld wanneer [!DNL Analytics] is ingeschakeld in de configuratie van de gegevensstroom:
 
-![ toegelaten de gegevensstroomconfiguratie van Analytics ](/help/dev/implement/a4t/assets/enable-analytics-datastream.png)
+![&#x200B; toegelaten de gegevensstroomconfiguratie van Analytics &#x200B;](/help/dev/implement/a4t/assets/enable-analytics-datastream.png)
 
 In het volgende diagram ziet u hoe gegevens door het systeem stromen wanneer het aanmelden via de server is ingeschakeld: [!DNL Analytics]
 
-![ server-kant registrerenstroom ](/help/dev/implement/a4t/assets/analytics-server-side-logging.png)
+![&#x200B; server-kant registrerenstroom &#x200B;](/help/dev/implement/a4t/assets/analytics-server-side-logging.png)
 
 ## Volgende stappen
 
-Deze gids behandelde server-zijregistreren voor A4T gegevens in het Web SDK. Zie de gids op [ cliënt-kant registreren ](/help/dev/implement/a4t/client-side-logging.md) voor meer informatie over hoe te om A4T gegevens op de cliëntkant te behandelen.
+Deze gids behandelde server-zijregistreren voor A4T gegevens in het Web SDK. Zie de gids op [&#x200B; cliënt-kant registreren &#x200B;](/help/dev/implement/a4t/client-side-logging.md) voor meer informatie over hoe te om A4T gegevens op de cliëntkant te behandelen.

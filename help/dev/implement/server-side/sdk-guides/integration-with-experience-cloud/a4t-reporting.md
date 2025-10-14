@@ -115,7 +115,7 @@ TargetDeliveryResponse offers = targetClient.getOffers(request);
 
 ## Gebruiker haalt analytische lading op van [!DNL Adobe Target]
 
-Een gebruiker kan [!DNL Adobe Analytics] nuttige lading voor een bepaalde mbox terugwinnen, dan het verzenden naar [!DNL Adobe Analytics] via de [ Invoeging API van Gegevens ](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md). Wanneer een [!DNL Adobe Target] -aanvraag wordt geactiveerd, geeft u `client_side` door aan het `logging` -veld in de aanvraag. Deze aanvraag retourneert een payload als het opgegeven mbox aanwezig is in een activiteit die [!DNL Analytics] als rapportagebron gebruikt.
+Een gebruiker kan [!DNL Adobe Analytics] nuttige lading voor een bepaalde mbox terugwinnen, dan het verzenden naar [!DNL Adobe Analytics] via de [&#x200B; Invoeging API van Gegevens &#x200B;](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md). Wanneer een [!DNL Adobe Target] -aanvraag wordt geactiveerd, geeft u `client_side` door aan het `logging` -veld in de aanvraag. Deze aanvraag retourneert een payload als het opgegeven mbox aanwezig is in een activiteit die [!DNL Analytics] als rapportagebron gebruikt.
 
 >[!BEGINTABS]
 

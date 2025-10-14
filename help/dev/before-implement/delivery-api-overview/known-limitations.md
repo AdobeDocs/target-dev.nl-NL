@@ -17,7 +17,7 @@ De volgende informatie geeft een overzicht van overwegingen en bekende beperking
 
 * Er is geen verificatie voor [!DNL Target] Delivery-API&#39;s.
 * Deze API verwerkt geen cookies of leidt geen aanroepen om.
-* Zowel HTTP/1.1- als HTTP/2-headernamen zijn niet hoofdlettergevoelig. HTTP/2 dwingt echter kleine-hoofdheadernamen af. Voor meer informatie, zie de [ Versie 2 van het Protocol van de Overdracht van de Hypertext (HTTP/2) documentatie ](https://www.rfc-editor.org/rfc/rfc7540#section-8.1.2){target=_blank}.
+* Zowel HTTP/1.1- als HTTP/2-headernamen zijn niet hoofdlettergevoelig. HTTP/2 dwingt echter kleine-hoofdheadernamen af. Voor meer informatie, zie de [&#x200B; Versie 2 van het Protocol van de Overdracht van de Hypertext (HTTP/2) documentatie &#x200B;](https://www.rfc-editor.org/rfc/rfc7540#section-8.1.2){target=_blank}.
 
   Als u een eindpunt gebruikt dat bezoekers door onze nieuwe infrastructuur van de Balancer van de Lading leidt, worden hun verbindingen automatisch bevorderd aan HTTP/2. Dit verbeteringsproces zet verzoekkopballen in kleine letters om zodat zullen zij niet misvormd worden beschouwd.
 

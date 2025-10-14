@@ -14,20 +14,20 @@ ht-degree: 0%
 
 De `mbox3rdPartyId` in [!DNL Adobe Target] is de bezoekersidentiteitskaart van uw bedrijf, zoals lidmaatschapsidentiteitskaart voor het loyaliteitsprogramma van uw bedrijf.
 
-Wanneer een bezoeker zich aanmeldt bij de site van een bedrijf, maakt het bedrijf doorgaans een id die is gekoppeld aan de account, de loyaliteitskaart, het lidmaatschapsnummer of andere toepasselijke id&#39;s voor dat bedrijf. [ Leer meer ](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html?lang=nl-NL)
+Wanneer een bezoeker zich aanmeldt bij de site van een bedrijf, maakt het bedrijf doorgaans een id die is gekoppeld aan de account, de loyaliteitskaart, het lidmaatschapsnummer of andere toepasselijke id&#39;s voor dat bedrijf. [&#x200B; Leer meer &#x200B;](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html?lang=nl-NL)
 
 ## `mbox3rdPartyId` gebruiken met de [!DNL Platform Web SDK]
 
 ### Stap 1: Configureer de `Target Third Party ID Namespace`
 
-Vorm `Target Third Party ID Namespace` in uw [ DataStream ](https://experienceleague.adobe.com/nl/docs/experience-platform/datastreams/overview), gebruikend identiteitskaart Namespace u als 3de partijidentiteitskaart wilt gebruiken. [ Leer meer over identiteitskaart namespaces ](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html?lang=nl-NL)
+Vorm `Target Third Party ID Namespace` in uw [&#x200B; DataStream &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/datastreams/overview), gebruikend identiteitskaart Namespace u als 3de partijidentiteitskaart wilt gebruiken. [&#x200B; Leer meer over identiteitskaart namespaces &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html?lang=nl-NL)
 
-![ Experience Platform UI die het van de Derde van het Doel namespace gebied toont.](/help/dev/implement/client-side/aep-web-sdk/assets/mbox3rdpartyid.png)
+![&#x200B; Experience Platform UI die het van de Derde van het Doel namespace gebied toont.](/help/dev/implement/client-side/aep-web-sdk/assets/mbox3rdpartyid.png)
 
 ### Stap 2: De `mbox3rdpartyId` naar [!DNL Target] verzenden
 
 Verzend `mbox3rdpartyId` naar [!DNL Target] in het `sendEvent` bevel, gebruikend identiteitskaart namespace die u in Stap 1 vormde.
-[ leer meer over het verzenden van IDs ](/help/dev/implement/client-side/aep-web-sdk/using-mbox-3rdpartyid.md)
+[&#x200B; leer meer over het verzenden van IDs &#x200B;](/help/dev/implement/client-side/aep-web-sdk/using-mbox-3rdpartyid.md)
 
 ```javascript
 alloy("sendEvent", {

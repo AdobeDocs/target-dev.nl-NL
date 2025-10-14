@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # [!DNL Recommendations] implementatiepatroon met behulp van het overzicht at.js
 
-Dit implementatiepatroon helpt u uw [!DNL Adobe Target Recommendations] implementatie begrijpen en creëren wanneer het gebruiken van de {[ bibliotheek 1} at.js van JavaScript.](/help/dev/implement/client-side/atjs/how-atjs-works/how-atjs-works.md)
+Dit implementatiepatroon helpt u uw [!DNL Adobe Target Recommendations] implementatie begrijpen en creëren wanneer het gebruiken van de {[&#x200B; bibliotheek 1} at.js van JavaScript.](/help/dev/implement/client-side/atjs/how-atjs-works/how-atjs-works.md)
 
 Klik op de afbeelding om deze uit te breiden naar het volledige scherm.
 
-![ Adobe Target architectuurdiagram ](/help/dev/patterns/assets/architecture-chart.png){width="600" zoomable="yes"}
+![&#x200B; Adobe Target architectuurdiagram &#x200B;](/help/dev/patterns/assets/architecture-chart.png){width="600" zoomable="yes"}
 
 De nummers in de afbeelding geven geen bewerkingsvolgorde aan:
 

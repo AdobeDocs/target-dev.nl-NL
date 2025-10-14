@@ -14,14 +14,14 @@ ht-degree: 0%
 
 ## Beschrijving
 
-Wanneer [ het initialiseren van SDK ](initialize-sdk.md), zijn er verscheidene opties op het `ClientConfig` voorwerp, dat aan logboekverzoeken kan worden geplaatst.
+Wanneer [&#x200B; het initialiseren van SDK &#x200B;](initialize-sdk.md), zijn er verscheidene opties op het `ClientConfig` voorwerp, dat aan logboekverzoeken kan worden geplaatst.
 
 | Optie | Beschrijving |
 | --- | --- |
 | `logRequests` | Logs gehele verzoeklichaam evenals reactielichaam. |
 | `logRequestStatus` | De URL van het verzoek van logs, status samen met reactietijd. |
 
-[!DNL Target] Java SDK gebruikt `slf4j` -logboekregistratie. U moet uw implementatie van registreerapparaten zoals `java.util.logging`, `logback`, en `log4j` verstrekken. Verwijs naar [ https://www.slf4j.org/manual.html ](https://www.slf4j.org/manual.html) voor meer informatie. Alle logbestanden worden afgedrukt in `debug` .
+[!DNL Target] Java SDK gebruikt `slf4j` -logboekregistratie. U moet uw implementatie van registreerapparaten zoals `java.util.logging`, `logback`, en `log4j` verstrekken. Verwijs naar [&#x200B; https://www.slf4j.org/manual.html &#x200B;](https://www.slf4j.org/manual.html) voor meer informatie. Alle logbestanden worden afgedrukt in `debug` .
 
 ## Voorbeeld
 

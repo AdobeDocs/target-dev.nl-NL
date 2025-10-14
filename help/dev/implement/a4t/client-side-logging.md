@@ -14,13 +14,13 @@ ht-degree: 0%
 
 # Logboekregistratie op de client voor A4T-gegevens in de [!DNL Experience Platform Web SDK]
 
-[!DNL Adobe Experience Platform Web SDK] staat u toe om [ Adobe Analytics voor Doel (A4T) ](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=nl-NL) gegevens over de cliëntkant van uw Webtoepassing te verzamelen.
+[!DNL Adobe Experience Platform Web SDK] staat u toe om [&#x200B; Adobe Analytics voor Doel (A4T) &#x200B;](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=nl-NL) gegevens over de cliëntkant van uw Webtoepassing te verzamelen.
 
-Logboekregistratie aan de clientzijde betekent dat relevante [!DNL Target] gegevens worden geretourneerd aan de clientzijde, zodat u gegevens kunt verzamelen en delen met [!DNL Analytics] . Deze optie zou moeten worden toegelaten als u van plan bent gegevens aan Analytics manueel te verzenden gebruikend de [ Invoeging API van Gegevens ](https://experienceleague.adobe.com/docs/analytics/import/c-data-insertion-api.html?lang=nl-NL).
+Logboekregistratie aan de clientzijde betekent dat relevante [!DNL Target] gegevens worden geretourneerd aan de clientzijde, zodat u gegevens kunt verzamelen en delen met [!DNL Analytics] . Deze optie zou moeten worden toegelaten als u van plan bent gegevens aan Analytics manueel te verzenden gebruikend de [&#x200B; Invoeging API van Gegevens &#x200B;](https://experienceleague.adobe.com/docs/analytics/import/c-data-insertion-api.html?lang=nl-NL).
 
 >[!NOTE]
 >
->Een methode om dit uit te voeren gebruikend [ AppMeasurement.js ](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=nl-NL) is momenteel in ontwikkeling en zal in de nabije toekomst beschikbaar zijn.
+>Een methode om dit uit te voeren gebruikend [&#x200B; AppMeasurement.js &#x200B;](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=nl-NL) is momenteel in ontwikkeling en zal in de nabije toekomst beschikbaar zijn.
 
 In dit document worden de stappen beschreven voor het instellen van A4T-logboekregistratie op de client voor [!DNL Platform Web SDK] en worden voorbeelden gegeven van implementatie voor veelvoorkomende gebruiksgevallen.
 
@@ -28,9 +28,9 @@ In dit document worden de stappen beschreven voor het instellen van A4T-logboekr
 
 In deze zelfstudie wordt ervan uitgegaan dat u bekend bent met de fundamentele concepten en processen die betrekking hebben op het gebruik van [!DNL Platform Web SDK] voor verpersoonlijkingsdoeleinden. Raadpleeg de volgende documentatie als u een inleiding nodig hebt:
 
-* [ Vormend het Web SDK ](https://experienceleague.adobe.com/nl/docs/experience-platform/web-sdk/commands/configure/overview)
-* [ Verzendende gebeurtenissen ](https://experienceleague.adobe.com/nl/docs/experience-platform/web-sdk/commands/sendevent/overview)
-* [ teruggevend verpersoonlijkingsinhoud ](https://experienceleague.adobe.com/nl/docs/experience-platform/web-sdk/personalization/rendering-personalization-content)
+* [&#x200B; Vormend het Web SDK &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/web-sdk/commands/configure/overview)
+* [&#x200B; Verzendende gebeurtenissen &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/web-sdk/commands/sendevent/overview)
+* [&#x200B; teruggevend verpersoonlijkingsinhoud &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/web-sdk/personalization/rendering-personalization-content)
 
 ## Logboekregistratie op de client instellen [!DNL Analytics] {#set-up-client-side-logging}
 
@@ -38,19 +38,19 @@ In de volgende subsecties wordt beschreven hoe u [!DNL Analytics] logboekregistr
 
 ### Enable [!DNL Analytics] client-side log {#enable-analytics-client-side-logging}
 
-Om [!DNL Analytics] cliënt-zijregistreren te overwegen die voor uw implementatie wordt toegelaten, moet u de [!DNL Adobe Analytics] configuratie in uw [ datastream ](https://experienceleague.adobe.com/nl/docs/experience-platform/datastreams/overview) onbruikbaar maken.
+Om [!DNL Analytics] cliënt-zijregistreren te overwegen die voor uw implementatie wordt toegelaten, moet u de [!DNL Adobe Analytics] configuratie in uw [&#x200B; datastream &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/datastreams/overview) onbruikbaar maken.
 
-![ de configuratie van de Analyse gegevensstroom gehandicapte ](/help/dev/implement/a4t/assets/disable-analytics-datastream.png)
+![&#x200B; de configuratie van de Analyse gegevensstroom gehandicapte &#x200B;](/help/dev/implement/a4t/assets/disable-analytics-datastream.png)
 
 ### [!DNL A4T] -gegevens ophalen van de SDK en verzenden deze naar [!DNL Analytics] {#a4t-to-analytics}
 
-Deze rapportmethode werkt alleen correct als u de [!DNL A4T] verwante gegevens verzendt die zijn opgehaald uit de opdracht [`sendEvent` ](https://experienceleague.adobe.com/nl/docs/experience-platform/web-sdk/commands/sendevent/overview) in de hit [!DNL Analytics] .
+Deze rapportmethode werkt alleen correct als u de [!DNL A4T] verwante gegevens verzendt die zijn opgehaald uit de opdracht [`sendEvent` &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/web-sdk/commands/sendevent/overview) in de hit [!DNL Analytics] .
 
 Wanneer [!DNL Target] Edge een reactie op een voorstel berekent, wordt gecontroleerd of [!DNL Analytics] logboekregistratie op de client is ingeschakeld (bijvoorbeeld als [!DNL Analytics] is uitgeschakeld in uw gegevensstroom). Als logboekregistratie op de client is ingeschakeld, voegt het systeem een [!DNL Analytics] token toe aan elke propositie in de reactie.
 
 De stroom ziet er ongeveer als volgt uit:
 
-![ cliënt-kant registrerenstroom ](/help/dev/implement/a4t/assets/analytics-client-side-logging.png)
+![&#x200B; cliënt-kant registrerenstroom &#x200B;](/help/dev/implement/a4t/assets/analytics-client-side-logging.png)
 
 Hieronder ziet u een voorbeeld van een `interact` -reactie als [!DNL Analytics] logboekregistratie op de client is ingeschakeld. Als het voorstel betrekking heeft op een activiteit die [!DNL Analytics] rapporteert, heeft het de eigenschap `scopeDetails.characteristics.analyticsToken` .
 
@@ -202,7 +202,7 @@ Voorstellen voor [!UICONTROL Form-based Experience Composer] -activiteiten kunne
 }
 ```
 
-Alle waarden van `scopeDetails.characteristics.analyticsToken`, evenals `scopeDetails.characteristics.analyticsDisplayToken` (voor getoonde inhoud) en `scopeDetails.characteristics.analyticsClickToken` (voor klikmetriek) zijn de nuttige ladingen A4T die moeten worden verzameld en als `tnta` markering in de [ API van de Invoeging van Gegevens ](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md) vraag worden omvat.
+Alle waarden van `scopeDetails.characteristics.analyticsToken`, evenals `scopeDetails.characteristics.analyticsDisplayToken` (voor getoonde inhoud) en `scopeDetails.characteristics.analyticsClickToken` (voor klikmetriek) zijn de nuttige ladingen A4T die moeten worden verzameld en als `tnta` markering in de [&#x200B; API van de Invoeging van Gegevens &#x200B;](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md) vraag worden omvat.
 
 >[!IMPORTANT]
 >
@@ -225,7 +225,7 @@ In de volgende subsecties ziet u hoe u [!DNL Analytics] -logboekregistratie op d
 
 ### [!UICONTROL Form-Based Experience Composer] activiteiten {#form-based-composer}
 
-U kunt [!DNL Platform Web SDK] gebruiken om de uitvoering van voorstellen van [ Adobe Target vorm-Gebaseerde Composer van de Ervaring te controleren ](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html?lang=nl-NL) activiteiten.
+U kunt [!DNL Platform Web SDK] gebruiken om de uitvoering van voorstellen van [&#x200B; Adobe Target vorm-Gebaseerde Composer van de Ervaring te controleren &#x200B;](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html?lang=nl-NL) activiteiten.
 
 Wanneer u om voorstellen voor een specifiek besluitwerkingsgebied verzoekt, bevat het teruggekeerde voorstel zijn aangewezen [!DNL Analytics] teken. De beste manier is om de opdracht [!DNL Experience Platform Web SDK] `sendEvent` te koppelen en de geretourneerde voorstellen te doorlopen om deze uit te voeren terwijl de [!DNL Analytics] -tokens tegelijkertijd worden verzameld.
 
@@ -425,10 +425,10 @@ Samenvattend, moeten de volgende stappen worden uitgevoerd wanneer u [!UICONTROL
 1. Pas de inhoudswijzigingen toe op de pagina;
 1. Verzend de `decisioning.propositionDisplay` notification-gebeurtenis;
 1. Verzamel de [!DNL Analytics] weergavetokens van de SDK-reactie en construeer een payload voor de [!DNL Analytics] hit.
-1. Verzend de nuttige lading naar [!DNL Analytics] gebruikend de [ Invoeging API van Gegevens ](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md);
+1. Verzend de nuttige lading naar [!DNL Analytics] gebruikend de [&#x200B; Invoeging API van Gegevens &#x200B;](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md);
 1. Als er klikmetriek in geleverde voorstellen zijn, zouden de klikluisteraars opstelling moeten zijn zodat wanneer een klik wordt uitgevoerd, het de `decisioning.propositionInteract` berichtgebeurtenis verzendt. De `onBeforeEventSend` -handler moet zo worden geconfigureerd dat bij het onderscheppen van `decisioning.propositionInteract` -gebeurtenissen de volgende handelingen plaatsvinden:
    1. De kliktokens [!DNL Analytics] van `xdm._experience.decisioning.propositions` verzamelen
-   1. Verzenden van de klik [!DNL Analytics] slag met de verzamelde [!DNL Analytics] nuttige lading via [ de Invoeging API van Gegevens ](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md);
+   1. Verzenden van de klik [!DNL Analytics] slag met de verzamelde [!DNL Analytics] nuttige lading via [&#x200B; de Invoeging API van Gegevens &#x200B;](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md);
 
 ```javascript
 alloy("sendEvent", {
@@ -465,11 +465,11 @@ alloy("sendEvent", {
 
 ### [!UICONTROL Visual Experience Composer] (VEC)-activiteiten {#visual-experience-composer-acitivties}
 
-[!DNL Platform Web SDK] staat u toe om aanbiedingen te behandelen die gebruikend [ Visuele Composer van de Ervaring (VEC) ](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html?lang=nl-NL) werden authored.
+[!DNL Platform Web SDK] staat u toe om aanbiedingen te behandelen die gebruikend [&#x200B; Visuele Composer van de Ervaring (VEC) &#x200B;](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html?lang=nl-NL) werden authored.
 
 >[!NOTE]
 >
->De stappen voor het uitvoeren van dit gebruiksgeval zijn zeer gelijkaardig aan de stappen voor [ op vorm-Gebaseerde activiteiten van de Composer van de Ervaring ](#form-based-composer). Bekijk de vorige sectie voor meer informatie.
+>De stappen voor het uitvoeren van dit gebruiksgeval zijn zeer gelijkaardig aan de stappen voor [&#x200B; op vorm-Gebaseerde activiteiten van de Composer van de Ervaring &#x200B;](#form-based-composer). Bekijk de vorige sectie voor meer informatie.
 
 Wanneer automatische rendering is ingeschakeld, kunt u de [!DNL Analytics] tokens verzamelen van de voorstellingen die op de pagina zijn uitgevoerd. De beste manier is om de opdracht [!DNL Experience Platform Web SDK] `sendEvent` te koppelen en de geretourneerde voorstellen te doorlopen om de voorstellen te filteren die de Web SDK heeft gerenderd.
 
@@ -538,4 +538,4 @@ alloy("configure", {
 
 ## Volgende stappen {#next-steps}
 
-Deze handleiding betrof het aanmelden van gegevens op de client voor A4T-gegevens in de [!DNL Platform Web SDK] . Zie de gids op [ server-zijregistreren ](/help/dev/implement/a4t/server-side-a4t.md) voor meer informatie over hoe te om A4T gegevens over Edge Network te behandelen.
+Deze handleiding betrof het aanmelden van gegevens op de client voor A4T-gegevens in de [!DNL Platform Web SDK] . Zie de gids op [&#x200B; server-zijregistreren &#x200B;](/help/dev/implement/a4t/server-side-a4t.md) voor meer informatie over hoe te om A4T gegevens over Edge Network te behandelen.

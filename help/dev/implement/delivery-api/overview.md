@@ -25,4 +25,4 @@ Met [!UICONTROL Adobe Target's Delivery API] kunt u:
 
 >[!NOTE]
 >
->U kunt tot de [ erfenis /v1/mbox en /v2/batchmbox API documentatie ](https://developers.adobetarget.com/api/legacy-api/index.html) nog toegang hebben. Er worden echter functies ontwikkeld in de API voor levering (zoals hier beschreven) die niet worden teruggezet naar de bestaande API&#39;s.
+>U kunt tot de [&#x200B; erfenis /v1/mbox en /v2/batchmbox API documentatie &#x200B;](https://developers.adobetarget.com/api/legacy-api/index.html) nog toegang hebben. Er worden echter functies ontwikkeld in de API voor levering (zoals hier beschreven) die niet worden teruggezet naar de bestaande API&#39;s.
