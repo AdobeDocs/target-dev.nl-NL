@@ -17,7 +17,7 @@ Informatie over de algemene gegevensbeschermingsverordening van de Europese Unie
 
 ## Overzicht van privacy en algemene gegevensbeschermingsverordening (GDPR)
 
-Op 25 mei 2018 is de GDPR van de Europese Unie van kracht geworden. Voor meer informatie over wat deze verordening voor u betekent, zie [GDPR en uw bedrijf](https://business.adobe.com/privacy/general-data-protection-regulation.html).
+Op 25 mei 2018 is de GDPR van de Europese Unie van kracht geworden. Voor meer informatie over wat deze verordening voor u betekent, zie [GDPR en uw bedrijf](https://business.adobe.com/nl/privacy/general-data-protection-regulation.html).
 
 Wanneer Adobe software en de diensten aan een onderneming verleent, handelt Adobe als Bewerker van Gegevens voor om het even welke persoonlijke gegevens het verwerkt en opslaat als deel van het verlenen van deze diensten. Als gegevensverwerker verwerkt Adobe persoonlijke gegevens in overeenstemming met de toestemming en instructies van uw bedrijf (bijvoorbeeld, zoals uiteengezet in uw overeenkomst met Adobe).
 
