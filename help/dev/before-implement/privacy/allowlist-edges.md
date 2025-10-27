@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Informatie en een bijgewerkte lijst met hosts om u te helpen de randen van [!DNL Adobe Target] te lijsten van gewenste personen.
 
-Een rand is een geografisch verspreide serverende architectuur die optimale reactietijden voor eindgebruikers verzekert die om inhoud verzoeken, ongeacht waar zij worden gevestigd. Elk Edge-knooppunt heeft alle informatie die nodig is om te reageren op de aanvraag van de inhoud van de gebruiker en om analysegegevens over die aanvraag bij te houden. Gebruikersverzoeken worden naar het dichtstbijzijnde randknooppunt gerouteerd. Voor meer informatie, zie [&#x200B; het randnetwerk &#x200B;](https://experienceleague.adobe.com/docs/target/using/introduction/how-target-works.html#concept_0AE2ED8E9DE64288A8B30FCBF1040934).
+Een rand is een geografisch verspreide serverende architectuur die optimale reactietijden voor eindgebruikers verzekert die om inhoud verzoeken, ongeacht waar zij worden gevestigd. Elk Edge-knooppunt heeft alle informatie die nodig is om te reageren op de aanvraag van de inhoud van de gebruiker en om analysegegevens over die aanvraag bij te houden. Gebruikersverzoeken worden naar het dichtstbijzijnde randknooppunt gerouteerd. Voor meer informatie, zie [&#x200B; het randnetwerk &#x200B;](https://experienceleague.adobe.com/docs/target/using/introduction/how-target-works.html?lang=nl-NL#concept_0AE2ED8E9DE64288A8B30FCBF1040934).
 
 U kunt indien gewenst randknooppunten van [!DNL Target] lijsten van gewenste personen.
 
@@ -23,7 +23,7 @@ U kunt indien gewenst randknooppunten van [!DNL Target] lijsten van gewenste per
 >
 >Naast het voegend op lijst van gewenste personen de IP van de Vertaling van het Adres van het Netwerk (NATIONAAL) adressen van [!DNL Target] randen en [!DNL Target] randIP adressen die in het artikel worden besproken, zou u alle [!DNL Adobe Analytics] IP adresblokken ook moeten lijsten van gewenste personen.
 >
->Voor meer informatie, zie [&#x200B; Alle het adresblokken van Adobe Analytics IP &#x200B;](https://experienceleague.adobe.com/docs/analytics/technotes/ip-addresses.html?lang=en#all-adobe-analytics-ip-address-blocks){target=_blank} in de *technische nota&#39;s van Adobe Analytics* documentatie.
+>Voor meer informatie, zie [&#x200B; Alle het adresblokken van Adobe Analytics IP &#x200B;](https://experienceleague.adobe.com/docs/analytics/technotes/ip-addresses.html?lang=nl-NL#all-adobe-analytics-ip-address-blocks){target=_blank} in de *technische nota&#39;s van Adobe Analytics* documentatie.
 >
 >[!DNL Adobe Target] wordt de infrastructuur bijgewerkt en de klanten die adressen willen lijsten van gewenste personen moeten beide reeksen IPs gebruiken. Het nalaten om dit te doen zal klanten gebruikend server-kant of hybride implementaties beïnvloeden waar de vraag van doel API voor het halen van ervaringen uit binnen een netwerk achter een firewall voortkomt die wordt gevormd om een lijst van gewenste personen te gebruiken.
 >
