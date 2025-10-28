@@ -49,13 +49,13 @@ Met de [!UICONTROL Bulk Profile Update API] kunt u eenvoudig gedetailleerde gege
 
 Als u profielgegevens bulksgewijs wilt bijwerken, maakt u een batchbestand. Het batchbestand is een tekstbestand met waarden gescheiden door komma&#39;s die lijken op het volgende voorbeeldbestand.
 
-``````
+``` ```
 batch=pcId,param1,param2,param3,param4
 123,value1
 124,value1,,,value4
 125,,value2
 126,value1,value2,value3,value4
-``````
+``` ```
 
 >[!NOTE]
 >
@@ -67,7 +67,7 @@ U verwijst dit bestand in de POST-aanroep naar [!DNL Target] servers om het best
 * De eerste header moet een `pcId` of `thirdPartyId` zijn. [!UICONTROL Marketing Cloud visitor ID] wordt niet ondersteund. [!UICONTROL pcId] is een door [!DNL Target] gegenereerde bezoeker-id. `thirdPartyId` is een id die door de clienttoepassing is opgegeven en die via een mbox-aanroep als [!DNL Target] aan `mbox3rdPartyId` wordt doorgegeven. U moet hier naar dit item verwijzen als `thirdPartyId` .
 * Parameters en waarden die u in het batchbestand opgeeft, moeten uit veiligheidsoverwegingen URL-gecodeerd zijn met UTF-8. Parameters en waarden kunnen naar andere randknooppunten worden doorgestuurd voor verwerking door HTTP-aanvragen.
 * De parameters mogen alleen de notatie `paramName` hebben. Parameters worden weergegeven in [!DNL Target] als `profile.paramName` .
-* Als u [!UICONTROL Bulk Profile Update API] v2 gebruikt, hoeft u niet alle parameterwaarden voor elke `pcId` op te geven. Profielen worden gemaakt voor `pcId` of `mbox3rdPartyId` die niet worden gevonden in [!DNL Target] . Als u v1 gebruikt, worden er geen profielen gemaakt voor ontbrekende pcIds of mbox3rdPartyIds. Voor meer informatie, zie [ Behandelend lege waarden in  [!DNL Bulk Profile Update API]](#empty) hieronder.
+* Als u [!UICONTROL Bulk Profile Update API] v2 gebruikt, hoeft u niet alle parameterwaarden voor elke `pcId` op te geven. Profielen worden gemaakt voor `pcId` of `mbox3rdPartyId` die niet worden gevonden in [!DNL Target] . Als u v1 gebruikt, worden er geen profielen gemaakt voor ontbrekende pcIds of mbox3rdPartyIds. Voor meer informatie, zie [&#x200B; Behandelend lege waarden in  [!DNL Bulk Profile Update API]](#empty) hieronder.
 * Het batchbestand moet kleiner zijn dan 50 MB. Bovendien mag het totale aantal rijen niet groter zijn dan 500.000. Deze limiet zorgt ervoor dat servers niet overstroomd raken met te veel verzoeken.
 * U kunt meerdere bestanden verzenden. Het totaal van de rijen van alle bestanden die u op een dag verzendt, mag echter niet hoger zijn dan 1 miljoen voor elke client.
 * Er is geen beperking op het aantal kenmerken dat u kunt uploaden. De totale grootte van de externe profielgegevens, die klantkenmerken, profiel-API, In-Mbox-profielparameters en profielscriptuitvoer bevatten, mag echter niet groter zijn dan 64 kB.
@@ -77,9 +77,9 @@ U verwijst dit bestand in de POST-aanroep naar [!DNL Target] servers om het best
 
 Voer een HTTP POST-aanvraag in bij [!DNL Target] Edge-servers om het bestand te verwerken. Hier volgt een voorbeeld van een HTTP POST-aanvraag voor het bestand batch.txt met de opdracht curl:
 
-``````
+``` ```
 curl -X POST --data-binary @BATCH.TXT http://CLIENTCODE.tt.omtrdc.net/m2/CLIENTCODE/v2/profile/batchUpdate
-``````
+``` ```
 
 Waarbij:
 
