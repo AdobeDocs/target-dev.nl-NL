@@ -4,9 +4,9 @@ description: Leer hoe te om  [!DNL Adobe Target] [!UICONTROL Bulk Profile Update
 feature: APIs/SDKs
 contributors: https://github.com/icaraps
 exl-id: 0f38d109-5273-4f73-9488-80eca115d44d
-source-git-commit: dae198fd8ef3fc8473ad31807c146802339b1832
+source-git-commit: 38ed32560170e5a8f472aa191bb5a24d4e13cde7
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '1078'
 ht-degree: 0%
 
 ---
@@ -49,13 +49,13 @@ Met de [!UICONTROL Bulk Profile Update API] kunt u eenvoudig gedetailleerde gege
 
 Als u profielgegevens bulksgewijs wilt bijwerken, maakt u een batchbestand. Het batchbestand is een tekstbestand met waarden gescheiden door komma&#39;s die lijken op het volgende voorbeeldbestand.
 
-``` ```
+``````
 batch=pcId,param1,param2,param3,param4
 123,value1
 124,value1,,,value4
 125,,value2
 126,value1,value2,value3,value4
-``` ```
+``````
 
 >[!NOTE]
 >
@@ -77,9 +77,9 @@ U verwijst dit bestand in de POST-aanroep naar [!DNL Target] servers om het best
 
 Voer een HTTP POST-aanvraag in bij [!DNL Target] Edge-servers om het bestand te verwerken. Hier volgt een voorbeeld van een HTTP POST-aanvraag voor het bestand batch.txt met de opdracht curl:
 
-``` ```
+``````
 curl -X POST --data-binary @BATCH.TXT http://CLIENTCODE.tt.omtrdc.net/m2/CLIENTCODE/v2/profile/batchUpdate
-``` ```
+``````
 
 Waarbij:
 
@@ -144,3 +144,25 @@ http://mboxedge45.tt.omtrdc.net/m2/demo/profile/batchStatus?batchId=demo-1701473
     <failedUpdates>0</failedUpdates>
 </response>
 ```
+
+## Verduidelijking bij het verwerken van lege waarden in de [!DNL Bulk Profile Update API]
+
+Wanneer u [!DNL Target] [!DNL Bulk Profile Update API] (v1 of v2) gebruikt, is het belangrijk dat u begrijpt hoe het systeem lege parameter- of kenmerkwaarden verwerkt.
+
+### Verwacht gedrag
+
+Als u lege waarden (&quot;&quot;, null of ontbrekende velden) verzendt voor bestaande parameters of kenmerken, worden deze waarden niet opnieuw ingesteld of verwijderd in het profielarchief. Dit is door ontwerp.
+
+Lege waarden worden genegeerd: de API filtert lege waarden tijdens de verwerking uit om onnodige of betekenisloze updates te voorkomen.
+
+**geen ontruiming van bestaande gegevens**: Als een parameter reeds een waarde heeft, verlaat het verzenden van een lege waarde het onveranderd.
+
+**leeg-slechts partijen worden overgeslagen**: Als een partij slechts lege of ongeldige waarden bevat, wordt het volledig genegeerd en geen updates worden toegepast.
+
+### Aanvullende opmerkingen
+
+Dit gedrag is van toepassing op zowel v1 als v2 van de [!DNL Bulk Profile Update API] .
+
+Wanneer u probeert een kenmerk te wissen of te verwijderen door een lege waarde te verzenden, heeft dit geen effect.
+
+Ondersteuning voor het expliciet verwijderen van kenmerken is gepland voor een toekomstige versie (v3) van de API, maar is momenteel niet beschikbaar.
