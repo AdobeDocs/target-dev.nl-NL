@@ -37,11 +37,11 @@ TargetClient.create(options)
 | registreerapparaat | object | Nee | INFO-logboekregistratie | Hiermee vervangt u de standaard-INFO-logboekregistratie |
 | target_location_hint | str | Nee | Geen | [!DNL Target] locatiehint |
 | property_token | str | Nee | Geen | [!DNL Target] Eigenschaptoken. Als hier gespecificeerd, zullen alle get_aanbiedingen vraag deze waarde gebruiken. |
-| beslissings_methode | str | Nee | server-kant | Bepaalt welke beslissingsmethode te gebruiken ([ op-apparaat ](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/overview.md), server-kant, hybride) |
-| polling_interval | int | Nee | 300000 (5 minuten) | Het opiniepeilen interval voor het [ op-apparaat bepalingsregelartefact ](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-overview.md) (in ms) |
-| artefact_location | str | Nee | Geen | Een volledig - gekwalificeerde url aan het [ op-apparaat bepalingsregelartefact ](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-overview.md). Hiermee overschrijft u de intern bepaalde locatie. |
-| artifact_payload | object | Nee | Geen | De nuttige lading JSON van het [ op apparaat beslissingsregelartefact ](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-overview.md). Indien opgegeven, wordt deze gebruikt in plaats van een aanvraag via een URL in te dienen. |
-| [ gebeurtenissen ](sdk-events.md) | dict &lt;str, callable> | Nee | Geen | Een optioneel object met gebeurtenisnaamtoetsen en callback-functiewaarden |
+| beslissings_methode | str | Nee | server-kant | Bepaalt welke beslissingsmethode te gebruiken ([&#x200B; op-apparaat &#x200B;](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/overview.md), server-kant, hybride) |
+| polling_interval | int | Nee | 300000 (5 minuten) | Het opiniepeilen interval voor het [&#x200B; op-apparaat bepalingsregelartefact &#x200B;](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-overview.md) (in ms) |
+| artefact_location | str | Nee | Geen | Een volledig - gekwalificeerde url aan het [&#x200B; op-apparaat bepalingsregelartefact &#x200B;](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-overview.md). Hiermee overschrijft u de intern bepaalde locatie. |
+| artifact_payload | object | Nee | Geen | De nuttige lading JSON van het [&#x200B; op apparaat beslissingsregelartefact &#x200B;](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-overview.md). Indien opgegeven, wordt deze gebruikt in plaats van een aanvraag via een URL in te dienen. |
+| [&#x200B; gebeurtenissen &#x200B;](sdk-events.md) | dict &lt;str, callable> | Nee | Geen | Een optioneel object met gebeurtenisnaamtoetsen en callback-functiewaarden |
 | environment_id | int | Nee | productie | De milieu-id [!DNL Target] |
 | milieu | str | Nee | productie | De omgevingsnaam [!DNL Target] |
 | cdn_environment | str | Nee | productie | De CDN-omgevingsnaam |

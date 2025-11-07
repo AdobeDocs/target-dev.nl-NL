@@ -13,11 +13,11 @@ ht-degree: 1%
 
 # [!UICONTROL On-device decisioning] for at.js
 
-Vanaf versie 2.5.0 biedt at.js [!UICONTROL on-device decisioning] aan. [!UICONTROL On-device decisioning] laat u uw [ Test A/B ](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html) in het voorgeheugen onderbrengen en [ Ervaring richtend ](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html) (XT) activiteiten op browser om in-geheugenbesluiten zonder een blokkerend netwerkverzoek aan [!DNL Adobe Target] Edge Network uit te voeren.
+Vanaf versie 2.5.0 biedt at.js [!UICONTROL on-device decisioning] aan. [!UICONTROL On-device decisioning] laat u uw [&#x200B; Test A/B &#x200B;](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html) in het voorgeheugen onderbrengen en [&#x200B; Ervaring richtend &#x200B;](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html) (XT) activiteiten op browser om in-geheugenbesluiten zonder een blokkerend netwerkverzoek aan [!DNL Adobe Target] Edge Network uit te voeren.
 
 >[!NOTE]
 >
->[!UICONTROL On-device decisioning] is beschikbaar voor zowel client-side als server-side implementaties. In dit artikel wordt [!UICONTROL on-device decisioning] beschreven voor client-side. Voor informatie betreffende [!UICONTROL on-device decisioning] voor server-kant, verwijs hier de server-zijimplementatiedocumentatie [ ](../../../server-side/sdk-guides/on-device-decisioning/overview.md).
+>[!UICONTROL On-device decisioning] is beschikbaar voor zowel client-side als server-side implementaties. In dit artikel wordt [!UICONTROL on-device decisioning] beschreven voor client-side. Voor informatie betreffende [!UICONTROL on-device decisioning] voor server-kant, verwijs hier de server-zijimplementatiedocumentatie [&#x200B; &#x200B;](../../../server-side/sdk-guides/on-device-decisioning/overview.md).
 
 [!DNL Target] biedt ook de flexibiliteit om de meest relevante en meest recente ervaring van uw experimenteren en machine leergedreven (ML-gedreven) verpersoonlijkingsactiviteiten via een levende servervraag te leveren. Met andere woorden, wanneer prestaties het belangrijkst zijn, kunt u ervoor kiezen om [!UICONTROL on-device decisioning] te gebruiken. Nochtans, wanneer de meest relevante, bijgewerkte, en ML-gedreven ervaring nodig is, kan een servervraag in plaats daarvan worden gemaakt.
 
@@ -28,7 +28,7 @@ De voordelen van [!UICONTROL on-device decisioning] zijn onder andere:
 * **lever het opblazen snelle besluiten en ervaringen.** De sluiting en de beslissing worden uitgevoerd in het geheugen en op browser om het blokkeren van netwerkverzoeken te vermijden.
 * **verbeter toepassingsprestaties.** Voer experimenten uit en lever personalisatie aan uw klanten en gebruikers zonder de ervaringen van eindgebruikers in gevaar te brengen.
 * **verbeter de Score van de Kwaliteit van de Plaats van Google.** Nu de beslissing in het geheugen plaatsvindt, verbetert u de score voor kwaliteit van de Google-site van uw onlinebedrijf om deze beter door de consument te kunnen ontdekken.
-* **leer van analyses in real time.** de Inzichten van de winst van uw activiteitenprestaties in real time via [ Analytics voor Doel ](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) (A4T) rapporterend. A4T staat u toe om uw strategie op kritieke momenten te draaien.
+* **leer van analyses in real time.** de Inzichten van de winst van uw activiteitenprestaties in real time via [&#x200B; Analytics voor Doel &#x200B;](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) (A4T) rapporterend. A4T staat u toe om uw strategie op kritieke momenten te draaien.
 
 ## Ondersteunde functies
 
@@ -38,11 +38,11 @@ De [!DNL Adobe Target] JS SDK biedt klanten de flexibiliteit om te kiezen tussen
 * Doelgerichtheid publiek
 * Toewijzingsmethode
 
-Voor meer informatie, zie [ Gesteunde eigenschappen voor [!UICONTROL on-device decisioning]](/help/dev/implement/client-side/atjs/on-device-decisioning/supported-features.md).
+Voor meer informatie, zie [&#x200B; Gesteunde eigenschappen voor [!UICONTROL on-device decisioning]](/help/dev/implement/client-side/atjs/on-device-decisioning/supported-features.md).
 
 ## Hoe werkt [!UICONTROL on-device decisioning]?
 
-Wanneer u bij.js met [!UICONTROL on-device decisioning] toegelaten opstelt en initialiseert, a [ regelartefact ](/help/dev/implement/client-side/atjs/on-device-decisioning/rule-artifact.md) dat uw [!UICONTROL on-device decisioning] voor A/B en XT activiteiten, publiek, en activa omvat, wordt gedownload van dichtste Akamai CDN aan uw bezoeker en plaatselijk in het voorgeheugen ondergebracht op browser van uw bezoeker. Wanneer een verzoek van at.js wordt gedaan om een ervaring terug te winnen, wordt het besluit betreffende welke ervaring om in geheugen terug te keren wordt gemaakt, die op de meta-gegevens wordt gebaseerd in het caching regelartefact worden gecodeerd.
+Wanneer u bij.js met [!UICONTROL on-device decisioning] toegelaten opstelt en initialiseert, a [&#x200B; regelartefact &#x200B;](/help/dev/implement/client-side/atjs/on-device-decisioning/rule-artifact.md) dat uw [!UICONTROL on-device decisioning] voor A/B en XT activiteiten, publiek, en activa omvat, wordt gedownload van dichtste Akamai CDN aan uw bezoeker en plaatselijk in het voorgeheugen ondergebracht op browser van uw bezoeker. Wanneer een verzoek van at.js wordt gedaan om een ervaring terug te winnen, wordt het besluit betreffende welke ervaring om in geheugen terug te keren wordt gemaakt, die op de meta-gegevens wordt gebaseerd in het caching regelartefact worden gecodeerd.
 
 ## Beslissingsmethode
 
@@ -56,7 +56,7 @@ Met [!UICONTROL on-device decisioning] introduceert [!DNL Target] een nieuwe ins
 
 Server-kant slechts is de standaardbeslissingsmethode die uit de doos wordt geplaatst wanneer at.js 2.5.0+ wordt uitgevoerd en op uw Webeigenschappen opgesteld.
 
-Als alleen server-side wordt gebruikt als de standaardconfiguratie, worden alle beslissingen genomen in het [!DNL Target] edge-netwerk. Dit houdt in dat de server wordt geblokkeerd. Deze benadering kan stijgende latentie introduceren, maar het verstrekt ook significante voordelen, zoals het geven van u de capaciteit om [!DNL Target] machine-leert mogelijkheden van toepassing te zijn die [ Aanbevelingen ](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations.html) omvatten, [ Automated Personalization ](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html) (AP), en [ auto-Doel ](https://experienceleague.adobe.com/docs/target/using/activities/auto-target/auto-target-to-optimize.html) activiteiten.
+Als alleen server-side wordt gebruikt als de standaardconfiguratie, worden alle beslissingen genomen in het [!DNL Target] edge-netwerk. Dit houdt in dat de server wordt geblokkeerd. Deze benadering kan stijgende latentie introduceren, maar het verstrekt ook significante voordelen, zoals het geven van u de capaciteit om [!DNL Target] machine-leert mogelijkheden van toepassing te zijn die [&#x200B; Aanbevelingen &#x200B;](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations.html) omvatten, [&#x200B; Automated Personalization &#x200B;](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html) (AP), en [&#x200B; auto-Doel &#x200B;](https://experienceleague.adobe.com/docs/target/using/activities/auto-target/auto-target-to-optimize.html) activiteiten.
 
 Bovendien kan het verbeteren van uw persoonlijke ervaringen door het gebruikersprofiel van [!DNL Target] te gebruiken, dat door sessies en kanalen blijft bestaan, krachtige resultaten voor uw bedrijf opleveren.
 
@@ -66,13 +66,13 @@ In het volgende diagram ziet u de interactie tussen uw bezoeker, de browser, at.
 
 (Klik op de afbeelding om deze uit te breiden naar de volledige breedte.)
 
-![ server-zij slechts stroomdiagram ](/help/dev/implement/client-side/atjs/on-device-decisioning/assets/server-side-only.png " server-zij slechts stroomdiagram "){zoomable="yes"}
+![&#x200B; server-zij slechts stroomdiagram &#x200B;](/help/dev/implement/client-side/atjs/on-device-decisioning/assets/server-side-only.png " server-zij slechts stroomdiagram "){zoomable="yes"}
 
 De volgende lijst komt overeen met de cijfers in het diagram:
 
 | Stap | Beschrijving |
 | --- | --- |
-| 1 | De identiteitskaart van de Bezoeker van Experience Cloud wordt teruggewonnen van de [ Dienst van de Identiteit van Adobe Experience Cloud ](https://experienceleague.adobe.com/docs/id-service/using/home.html?). |
+| 1 | De identiteitskaart van de Bezoeker van Experience Cloud wordt teruggewonnen van de [&#x200B; Dienst van de Identiteit van Adobe Experience Cloud &#x200B;](https://experienceleague.adobe.com/docs/id-service/using/home.html?). |
 | 2 | De bibliotheek at.js wordt synchroon geladen en de hoofdtekst van het document verborgen.<br />   De bibliotheek at.js kan ook asynchroon worden geladen met een optioneel vooraf verborgen fragment dat op de pagina is geïmplementeerd. |
 | 3 | De bibliotheek at.js verbergt het lichaam om flikkering te voorkomen. |
 | 4 | Er wordt een aanvraag voor het laden van een pagina ingediend die alle geconfigureerde parameters bevat, zoals (ECID, Customer ID, Custom Parameters, User Profile, enzovoort). |
@@ -93,7 +93,7 @@ Alleen op het apparaat is de beslissingsmethode die moet worden ingesteld in at.
 
 [!UICONTROL On-device decisioning] kan uw ervaringen en personalisatieactiviteiten op een razendsnelle manier aanbieden, omdat de beslissingen worden genomen op basis van een cacheovereenkomst die al uw activiteiten bevat die in aanmerking komen voor [!UICONTROL on-device decisioning] .
 
-Zie [!UICONTROL on-device decisioning] Ondersteunde functies in [ voor meer informatie over welke activiteiten in aanmerking komen voor [!UICONTROL on-device decisioning]](/help/dev/implement/client-side/atjs/on-device-decisioning/supported-features.md) .
+Zie [!UICONTROL on-device decisioning] Ondersteunde functies in [&#x200B; voor meer informatie over welke activiteiten in aanmerking komen voor [!UICONTROL on-device decisioning]](/help/dev/implement/client-side/atjs/on-device-decisioning/supported-features.md) .
 
 Deze besluitvormingsmethode zou slechts moeten worden gebruikt als de prestaties hoogst kritiek over alle pagina&#39;s zijn die besluiten van Doel vereisen. Houd er bovendien rekening mee dat wanneer deze beslissingsmethode wordt geselecteerd, uw [!DNL Target] -activiteiten die niet in aanmerking komen voor [!UICONTROL on-device decisioning] niet worden uitgevoerd of uitgevoerd. De bibliotheek at.js 2.5.0+ wordt gevormd om het caching regelartefact slechts te zoeken om besluiten te nemen.
 
@@ -101,7 +101,7 @@ In het volgende diagram ziet u de interactie tussen uw bezoeker, de browser, at.
 
 (Klik op de afbeelding om deze uit te breiden naar de volledige breedte.)
 
-![ Op-apparaat slechts stroomdiagram ](/help/dev/implement/client-side/atjs/on-device-decisioning/assets/on-device-only.png " op-apparaat slechts stroomdiagram "){zoomable="yes"}
+![&#x200B; Op-apparaat slechts stroomdiagram &#x200B;](/help/dev/implement/client-side/atjs/on-device-decisioning/assets/on-device-only.png " op-apparaat slechts stroomdiagram "){zoomable="yes"}
 
 De volgende lijst komt overeen met de cijfers in het diagram:
 
@@ -111,7 +111,7 @@ De volgende lijst komt overeen met de cijfers in het diagram:
 
 | Stap | Beschrijving |
 | --- | --- |
-| 1 | De identiteitskaart van de Bezoeker van Experience Cloud wordt teruggewonnen van de [ Dienst van de Identiteit van Adobe Experience Cloud ](https://experienceleague.adobe.com/docs/id-service/using/home.html). |
+| 1 | De identiteitskaart van de Bezoeker van Experience Cloud wordt teruggewonnen van de [&#x200B; Dienst van de Identiteit van Adobe Experience Cloud &#x200B;](https://experienceleague.adobe.com/docs/id-service/using/home.html). |
 | 2 | De bibliotheek at.js wordt synchroon geladen en de hoofdtekst van het document verborgen.<br /> de bibliotheek at.js kan ook asynchroon met een facultatief pre-verbergend die fragment worden geladen op de pagina wordt uitgevoerd. |
 | 3 | De bibliotheek at.js verbergt het lichaam om flikkering te voorkomen. |
 | 4 | De bibliotheek at.js vraagt om het JSON-regelartefact van de dichtstbijzijnde Akamai CDN naar de bezoeker op te halen. |
@@ -128,7 +128,7 @@ In het volgende diagram ziet u de interactie tussen uw bezoeker, de browser, op 
 
 (Klik op de afbeelding om deze uit te breiden naar de volledige breedte.)
 
-![ op-apparaat slechts stroomdiagram voor verdere paginanavigatie en herhaal bezoeken ](/help/dev/implement/client-side/atjs/on-device-decisioning/assets/on-device-only-subsequent.png " slechts stroomdiagram op-apparaat voor verdere paginanavigatie en herhaal bezoeken "){zoomable="yes"}
+![&#x200B; op-apparaat slechts stroomdiagram voor verdere paginanavigatie en herhaal bezoeken &#x200B;](/help/dev/implement/client-side/atjs/on-device-decisioning/assets/on-device-only-subsequent.png " slechts stroomdiagram op-apparaat voor verdere paginanavigatie en herhaal bezoeken "){zoomable="yes"}
 
 De volgende lijst komt overeen met de cijfers in het diagram:
 
@@ -138,7 +138,7 @@ De volgende lijst komt overeen met de cijfers in het diagram:
 
 | Stap | Beschrijving |
 | --- | --- |
-| 1 | De identiteitskaart van de Bezoeker van Experience Cloud wordt teruggewonnen van de [ Dienst van de Identiteit van Adobe Experience Cloud ](https://experienceleague.adobe.com/docs/id-service/using/home.html). |
+| 1 | De identiteitskaart van de Bezoeker van Experience Cloud wordt teruggewonnen van de [&#x200B; Dienst van de Identiteit van Adobe Experience Cloud &#x200B;](https://experienceleague.adobe.com/docs/id-service/using/home.html). |
 | 2 | De bibliotheek at.js wordt synchroon geladen en de hoofdtekst van het document verborgen.<br /> de bibliotheek at.js kan ook asynchroon met een facultatief pre-verbergend die fragment worden geladen op de pagina wordt uitgevoerd. |
 | 3 | De bibliotheek at.js verbergt het lichaam om flikkering te voorkomen. |
 | 4 | De bibliotheek at.js interpreteert het JSON-regelartefact en voert de beslissing in het geheugen uit om de ervaring op te halen. |
@@ -163,7 +163,7 @@ Deze benadering zorgt ervoor dat de grootte van het artefact, dat vele activitei
 
 (Klik op de afbeelding om deze uit te breiden naar de volledige breedte.)
 
-![ Hybrid stroomdiagram voor een eerste-tijdbezoeker ](/help/dev/implement/client-side/atjs/on-device-decisioning/assets/hybrid-first-time-visitor.png " Hybrid stroomdiagram voor een eerste-tijdbezoeker "){zoomable="yes"}
+![&#x200B; Hybrid stroomdiagram voor een eerste-tijdbezoeker &#x200B;](/help/dev/implement/client-side/atjs/on-device-decisioning/assets/hybrid-first-time-visitor.png " Hybrid stroomdiagram voor een eerste-tijdbezoeker "){zoomable="yes"}
 
 De volgende lijst komt overeen met de cijfers in het diagram:
 
@@ -173,7 +173,7 @@ De volgende lijst komt overeen met de cijfers in het diagram:
 
 | Stap | Beschrijving |
 | --- | --- |
-| 1 | De identiteitskaart van de Bezoeker van Experience Cloud wordt teruggewonnen van de [ Dienst van de Identiteit van Adobe Experience Cloud ](https://experienceleague.adobe.com/docs/id-service/using/home.html). |
+| 1 | De identiteitskaart van de Bezoeker van Experience Cloud wordt teruggewonnen van de [&#x200B; Dienst van de Identiteit van Adobe Experience Cloud &#x200B;](https://experienceleague.adobe.com/docs/id-service/using/home.html). |
 | 2 | De bibliotheek at.js wordt synchroon geladen en de hoofdtekst van het document verborgen.<br /> de bibliotheek at.js kan ook asynchroon met een facultatief pre-verbergend die fragment worden geladen op de pagina wordt uitgevoerd. |
 | 3 | De bibliotheek at.js verbergt het lichaam om flikkering te voorkomen. |
 | 4 | Er wordt een aanvraag ingediend om de pagina te laden naar de Edge Network van [!DNL Adobe Target] , inclusief alle geconfigureerde parameters zoals (ECID, Customer ID, Custom Parameters, User Profile, enzovoort.) |
@@ -193,7 +193,7 @@ Het volgende diagram illustreert de interactie tussen uw bezoeker, browser, at.j
 
 (Klik op de afbeelding om deze uit te breiden naar de volledige breedte.)
 
-![ Hybrid stroomdiagram voor verdere paginanavigatie en herhaal bezoeken ](/help/dev/implement/client-side/atjs/on-device-decisioning/assets/hybrid-subsequent.png " Hybrid stroomdiagram voor verdere paginanavigatie en herhaal bezoeken "){zoomable="yes"}
+![&#x200B; Hybrid stroomdiagram voor verdere paginanavigatie en herhaal bezoeken &#x200B;](/help/dev/implement/client-side/atjs/on-device-decisioning/assets/hybrid-subsequent.png " Hybrid stroomdiagram voor verdere paginanavigatie en herhaal bezoeken "){zoomable="yes"}
 
 De volgende lijst komt overeen met de cijfers in het diagram:
 
@@ -203,7 +203,7 @@ De volgende lijst komt overeen met de cijfers in het diagram:
 
 | Stap | Beschrijving |
 | --- | --- |
-| 1 | De identiteitskaart van de Bezoeker van Experience Cloud wordt teruggewonnen van de [ Dienst van de Identiteit van Adobe Experience Cloud ](https://experienceleague.adobe.com/docs/id-service/using/home.html). |
+| 1 | De identiteitskaart van de Bezoeker van Experience Cloud wordt teruggewonnen van de [&#x200B; Dienst van de Identiteit van Adobe Experience Cloud &#x200B;](https://experienceleague.adobe.com/docs/id-service/using/home.html). |
 | 2 | De bibliotheek at.js wordt synchroon geladen en de hoofdtekst van het document verborgen.<br /> de bibliotheek at.js kan ook asynchroon met een facultatief pre-verbergend die fragment worden geladen op de pagina wordt uitgevoerd. |
 | 3 | De bibliotheek at.js verbergt het lichaam om flikkering te voorkomen. |
 | 4 | Er wordt een verzoek ingediend om een ervaring op te halen. |
@@ -223,19 +223,19 @@ De volgende lijst komt overeen met de cijfers in het diagram:
 
 >[!NOTE]
 >
->U moet Admin of de Approver [ gebruikersrol ](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html) hebben om de op-Apparaat van een knevel te voorzien of onbruikbaar te maken.
+>U moet Admin of de Approver [&#x200B; gebruikersrol &#x200B;](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html) hebben om de op-Apparaat van een knevel te voorzien of onbruikbaar te maken.
 
 1. Klik op **[!UICONTROL Administration]** > **[!UICONTROL Implementation]** > **[!UICONTROL Account details]**.
 1. Schuif onder **[!UICONTROL Account details]** de schakeloptie **[!UICONTROL On-Device Decisioning]** naar de positie &quot;aan&quot;.
 
-   ![[!UICONTROL On-device decisioning] toggle ](assets/on-device-decisioning-toggle.png)
+   ![[!UICONTROL On-device decisioning] toggle &#x200B;](assets/on-device-decisioning-toggle.png)
 
    De optie Alle bestaande [!UICONTROL on-device decisioning] gekwalificeerde activiteiten opnemen in het artefact wordt weergegeven als u [!UICONTROL on-device decisioning] inschakelt.
 1. (Voorwaardelijk) Schuif de schakeloptie naar de positie &quot;aan&quot; als u wilt dat al uw live [!DNL Target] -activiteiten die voor [!UICONTROL on-device decisioning] in aanmerking komen, automatisch in het artefact worden opgenomen.
 
    Als u deze schakeloptie uitschakelt, moet u alle [!UICONTROL on-device decisioning] -activiteiten opnieuw maken en activeren, zodat deze worden opgenomen in het gegenereerde artefact voor regels. Met andere woorden, elke activiteit in live-toestand voordat de beslissingsschakeloptie op het apparaat wordt ingeschakeld, is niet opgenomen in het artefact van de regels.
 
-Na het toelaten van de knevel van het Beslissen op apparaat, [!DNL Target] begint producerend en verspreidend [ regelartefacten ](/help/dev/implement/client-side/atjs/on-device-decisioning/rule-artifact.md) voor uw cliënt.
+Na het toelaten van de knevel van het Beslissen op apparaat, [!DNL Target] begint producerend en verspreidend [&#x200B; regelartefacten &#x200B;](/help/dev/implement/client-side/atjs/on-device-decisioning/rule-artifact.md) voor uw cliënt.
 
 >[!WARNING]
 >
@@ -246,7 +246,7 @@ Na het toelaten van de knevel van het Beslissen op apparaat, [!DNL Target] begin
 1. Klik op **[!UICONTROL Administration]** > **[!UICONTROL Implementation]** > **[!UICONTROL Account details]**.
 1. Onder **[!UICONTROL Implementation Methods]** > **[!UICONTROL Main Implementation Method]** klikt u op **[!UICONTROL Edit]** naast uw versie at.js (moet .js 2.5.0 of hoger zijn).
 
-   ![ geeft de Belangrijkste montages van de Methode van de Implementatie uit ](assets/main-implementation-method.png)
+   ![&#x200B; geeft de Belangrijkste montages van de Methode van de Implementatie uit &#x200B;](assets/main-implementation-method.png)
 
    >[!WARNING]
    >
@@ -258,11 +258,11 @@ Na het toelaten van de knevel van het Beslissen op apparaat, [!DNL Target] begin
    * Alleen op apparaat
    * Hybride
 
-   ![ geeft bij.js montagespaneel uit ](assets/global-settings.png)
+   ![&#x200B; geeft bij.js montagespaneel uit &#x200B;](assets/global-settings.png)
 
 ### Algemene instellingen
 
-U kunt een standaardbeslissingsmethode configureren voor alle [!DNL Target] -beslissingen. De verschillende besluitvormingsmethodes zijn server-kant slechts, slechts op apparaat, en Hybrid. De beslissingsmethode die is geselecteerd in de [!DNL Target] -gebruikersinterface, wordt geconfigureerd in `window.targetGlobalSettings` onder het veld `decisioningMethod` . Leer meer over `decisioningMethod` in [ targetGlobalSettings () ](/help/dev/implement/client-side/atjs/atjs-functions/targetglobalsettings.md#decisioningmethod).
+U kunt een standaardbeslissingsmethode configureren voor alle [!DNL Target] -beslissingen. De verschillende besluitvormingsmethodes zijn server-kant slechts, slechts op apparaat, en Hybrid. De beslissingsmethode die is geselecteerd in de [!DNL Target] -gebruikersinterface, wordt geconfigureerd in `window.targetGlobalSettings` onder het veld `decisioningMethod` . Leer meer over `decisioningMethod` in [&#x200B; targetGlobalSettings () &#x200B;](/help/dev/implement/client-side/atjs/atjs-functions/targetglobalsettings.md#decisioningmethod).
 
 ```javascript {line-numbers="true"}
 <head> 
@@ -282,7 +282,7 @@ U kunt een standaardbeslissingsmethode configureren voor alle [!DNL Target] -bes
 
 ### Aangepaste instelling
 
-Als u `decisioningMethod` in `window.targetGlobalSettings` plaatst, maar `decisioningMethod` voor elk [!DNL Adobe Target] besluit volgens uw gebruiksgeval zou willen met voeten treden, kunt u deze procedure doen door `decisioningMethod` in At.js2.5.0+ [ te specificeren getOffers () ](/help/dev/implement/client-side/atjs/atjs-functions/adobe-target-getoffers-atjs-2.md) vraag.
+Als u `decisioningMethod` in `window.targetGlobalSettings` plaatst, maar `decisioningMethod` voor elk [!DNL Adobe Target] besluit volgens uw gebruiksgeval zou willen met voeten treden, kunt u deze procedure doen door `decisioningMethod` in At.js2.5.0+ [&#x200B; te specificeren getOffers () &#x200B;](/help/dev/implement/client-side/atjs/atjs-functions/adobe-target-getoffers-atjs-2.md) vraag.
 
 ```javascript {line-numbers="true"}
 adobe.target.getOffers({ 
@@ -315,13 +315,13 @@ Bij volgende bezoeken aan uw site controleert de browser automatisch of er een n
 
 Nadat u een activiteit creeert die [!UICONTROL on-device decisioning] in aanmerking komt, is een etiket dat Beslissingen op Apparaat Geschikt leest, zichtbaar in de pagina van het Overzicht van de activiteit.
 
-![ Op-Apparaat Beslissend In aanmerking komend etiket op de pagina van het Overzicht van de activiteit.](assets/on-device-decisioning-eligible-label.png)
+![&#x200B; Op-Apparaat Beslissend In aanmerking komend etiket op de pagina van het Overzicht van de activiteit.](assets/on-device-decisioning-eligible-label.png)
 
 Dit label betekent niet dat de activiteit altijd via [!UICONTROL on-device decisioning] wordt geleverd. Alleen wanneer at.js 2.5.0+ is geconfigureerd voor gebruik van [!UICONTROL on-device decisioning] , wordt deze activiteit op het apparaat uitgevoerd. Als at.js 2.5.0+ niet wordt gevormd om op-apparaat te gebruiken, dan zal deze activiteit nog via een servervraag worden geleverd die van at.js wordt gemaakt.
 
 U kunt filteren voor alle activiteiten die [!UICONTROL on-device decisioning] in aanmerking komen op de pagina Activiteiten via het filter In aanmerking komende voor besluitvorming op het apparaat.
 
-![ Op Apparaat beslist Beleenbaar filter op de pagina van Activiteiten.](assets/on-device-decisioning-filter.png)
+![&#x200B; Op Apparaat beslist Beleenbaar filter op de pagina van Activiteiten.](assets/on-device-decisioning-filter.png)
 
 >[!NOTE]
 >
@@ -334,6 +334,6 @@ U kunt filteren voor alle activiteiten die [!UICONTROL on-device decisioning] in
 
    De eerste JSON-regels kunnen tot 10 minuten duren.
 
-1. Maak en activeer een [ type activiteit dat door [!UICONTROL on-device decisioning]](/help/dev/implement/client-side/atjs/on-device-decisioning/supported-features.md) wordt ondersteund, en controleer of dit [!UICONTROL on-device decisioning] mogelijk is.
+1. Maak en activeer een [&#x200B; type activiteit dat door [!UICONTROL on-device decisioning]](/help/dev/implement/client-side/atjs/on-device-decisioning/supported-features.md) wordt ondersteund, en controleer of dit [!UICONTROL on-device decisioning] mogelijk is.
 1. Stel de **[!UICONTROL Decisioning Method]** in op **[!UICONTROL "Hybrid"]** of **[!UICONTROL "On-device only"]** via de interface voor instellingen bij.js.
 1. Download en implementeer At.js 2.5.0+ op uw pagina&#39;s.

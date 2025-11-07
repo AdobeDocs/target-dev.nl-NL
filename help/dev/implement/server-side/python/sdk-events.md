@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ## Beschrijving
 
-Wanneer [ het initialiseren van SDK ](initialize-sdk.md), is het `options["events"]` dict een facultatief voorwerp met de sleutels van de gebeurtenisnaam en callback functiewaarden. Deze kan worden gebruikt om een abonnement te nemen op verschillende gebeurtenissen die plaatsvinden in de SDK. De gebeurtenis `client_ready` kan bijvoorbeeld worden gebruikt met een callback-functie die wordt aangeroepen wanneer de SDK gereed is voor methodeaanroepen.
+Wanneer [&#x200B; het initialiseren van SDK &#x200B;](initialize-sdk.md), is het `options["events"]` dict een facultatief voorwerp met de sleutels van de gebeurtenisnaam en callback functiewaarden. Deze kan worden gebruikt om een abonnement te nemen op verschillende gebeurtenissen die plaatsvinden in de SDK. De gebeurtenis `client_ready` kan bijvoorbeeld worden gebruikt met een callback-functie die wordt aangeroepen wanneer de SDK gereed is voor methodeaanroepen.
 
 Wanneer de functie `callback` wordt aangeroepen, wordt een gebeurtenisobject doorgegeven. Elke gebeurtenis heeft een `type` die overeenkomt met de naam van de gebeurtenis. Sommige gebeurtenissen bevatten aanvullende eigenschappen met relevante informatie.
 

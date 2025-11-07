@@ -1,6 +1,6 @@
 ---
 keywords: adobe.target.getOffers, getOffers, getoffers, get aanbiedingen, at.js, functions, function, $8
-description: Gebruik de [!UICONTROL adobe.target.getOffers()] functie en zijn opties voor de { [!DNL Adobe Target]  at.js bibliotheek om verzoeken in brand te steken om veelvoudige  [!DNL Target]  aanbiedingen te krijgen. (om 2.x.js)
+description: Gebruik de [!UICONTROL adobe.target.getOffers()] functie en zijn opties voor de &lbrace; [!DNL Adobe Target]  at.js bibliotheek om verzoeken in brand te steken om veelvoudige  [!DNL Target]  aanbiedingen te krijgen. (om 2.x.js)
 title: Hoe gebruik ik de functie [!UICONTROL adobe.target.getOffers()] ?
 feature: at.js
 exl-id: b96a3018-93eb-49e7-9aed-b27bd9ae073a
@@ -30,7 +30,7 @@ Deze functie laat u veelvoudige aanbiedingen terugwinnen door in veelvoudige doz
 
 >[!NOTE]
 >
->Raadpleeg de [ documentatie van API van de Levering ](/help/dev/implement/delivery-api/overview.md) voor informatie over de aanvaardbare types voor alle hieronder vermelde gebieden.
+>Raadpleeg de [&#x200B; documentatie van API van de Levering &#x200B;](/help/dev/implement/delivery-api/overview.md) voor informatie over de aanvaardbare types voor alle hieronder vermelde gebieden.
 
 | Veldnaam | Vereist? | Beperkingen | Beschrijving |
 | --- | --- | --- | --- |
@@ -52,7 +52,7 @@ Deze functie laat u veelvoudige aanbiedingen terugwinnen door in veelvoudige doz
 | Verzoek > Uitvoeren | Nee |  |  |
 | Verzoek > Uitvoeren > pageLoad | Nee |  |  |
 | Request > execute > pageLoad > parameters | Nee | Maximaal aantal 50.<P>Naam niet leeg.<P>Naam lengte `<=` 128.<P>Waarde length `<=` 5000.<P>Accepteert alleen tekenreekswaarden.<P>De naam mag niet beginnen met &quot;profiel&quot;.<P>Namen niet toegestaan: &quot;orderId&quot;, &quot;orderTotal&quot;, &quot;productPurchasedId&quot;. | Haal aanbiedingen met de opgegeven parameters op wanneer de pagina wordt geladen. |
-| Verzoek > execute > pageLoad > profileParameters | Nee | Maximaal aantal 50.<P>Naam niet leeg.<P>Naam lengte `<=` 128.<P>De lengte van de waarde `<=` {256.<P>De naam mag niet beginnen met &quot;profiel&quot;.<P>Accepteert alleen tekenreekswaarden. | Haal aanbiedingen met de opgegeven profielparameters op wanneer de pagina wordt geladen. |
+| Verzoek > execute > pageLoad > profileParameters | Nee | Maximaal aantal 50.<P>Naam niet leeg.<P>Naam lengte `<=` 128.<P>De lengte van de waarde `<=` &lbrace;256.<P>De naam mag niet beginnen met &quot;profiel&quot;.<P>Accepteert alleen tekenreekswaarden. | Haal aanbiedingen met de opgegeven profielparameters op wanneer de pagina wordt geladen. |
 | Request > execute > pageLoad > product | Nee |  |  |
 | Verzoek > execute > pageLoad > product -> id | Nee | Niet leeg.<P>Maximale grootte = 128. | Ontvang voorstellen met gespecificeerde product IDs wanneer de pagina laadt. |
 | Request > execute > pageLoad > product > categoryId | Nee | Niet leeg.<P>Maximale grootte = 128. | Ontvang voorstellen met gespecificeerde productcategorie IDs wanneer de pagina laadt. |
@@ -64,7 +64,7 @@ Deze functie laat u veelvoudige aanbiedingen terugwinnen door in veelvoudige doz
 | Request > execute > mboxes>mbox | Ja | Niet leeg.<P>Geen achtervoegsel &#39;-geklikt&#39;.<P>Maximale grootte = 250.<P>Toegestane tekens: `'-, ._\/=:;&!@#$%^&*()_+|?~[]{}'`\|Naam van vak. |
 | Request > execute > boxes>mbox>index | Ja | Niet null.<P>Uniek.<P>`>=` 0 | De index vertegenwoordigt niet de volgorde waarin de vakken worden verwerkt. Net als in een webpagina met verschillende regionale vakken kan de volgorde waarin ze worden verwerkt niet worden opgegeven. |
 | Request > execute > boxes > mbox > parameters | Nee | Maximum aantal = 50.<P>Naam niet leeg.<P>Naam lengte `<=` 128.<P>Accepteert alleen tekenreekswaarden.<P>Waarde length `<=` 5000.<P>De naam mag niet beginnen met &#39;profiel&#39;.<P>Namen niet toegestaan: &quot;orderId&quot;, &quot;orderTotal&quot;, &quot;productPurchasedId&quot;. | Hiermee worden voorstellen voor een bepaalde mbox met de opgegeven parameters opgehaald. |
-| Verzoek > execute > mboxes>mbox>profileParameters | Nee | Maximum aantal = 50.<P>Naam niet leeg.<P>Naam lengte `<=` 128.<P>Accepteert alleen tekenreekswaarden.<P>De lengte van de waarde `<=` {256.<P>De naam mag niet beginnen met &#39;profiel&#39;. | Hiermee worden aanbiedingen voor een bepaalde box met de opgegeven profielparameters opgehaald. |
+| Verzoek > execute > mboxes>mbox>profileParameters | Nee | Maximum aantal = 50.<P>Naam niet leeg.<P>Naam lengte `<=` 128.<P>Accepteert alleen tekenreekswaarden.<P>De lengte van de waarde `<=` &lbrace;256.<P>De naam mag niet beginnen met &#39;profiel&#39;. | Hiermee worden aanbiedingen voor een bepaalde box met de opgegeven profielparameters opgehaald. |
 | Request > execute > mboxes>mbox > product | Nee |  |  |
 | Request > execute > boxes > mbox > product > id | Nee | Niet leeg.<P>Maximale grootte = 128. | Wis voorstellen voor een bepaalde doos met gespecificeerde product IDs. |
 | Verzoek > Uitvoeren > Selectievakje > Product > Categorie-id | Nee | Niet leeg.<P>Maximale grootte = 128. | Wis voorstellen voor een bepaalde doos met gespecificeerde productcategorie IDs. |
@@ -204,7 +204,7 @@ adobe.target.getOffers({
 }
 ```
 
-De nuttige lading kan dan aan [!DNL Adobe Analytics] via de [ Invoeging API van Gegevens ](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md) door:sturen.
+De nuttige lading kan dan aan [!DNL Adobe Analytics] via de [&#x200B; Invoeging API van Gegevens &#x200B;](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md) door:sturen.
 
 ## Gegevens uit meerdere vakken ophalen en renderen via [!UICONTROL getOffers()] en [!UICONTROL applyOffers()]
 

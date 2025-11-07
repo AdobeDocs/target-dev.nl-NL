@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # [!DNL Adobe Analytics for Target] (A4T) aanmelden bij [!DNL Experience Platform Web SDK]
 
-Wanneer u [!DNL Adobe Target] gebruikt voor personalisatie, kunt u kiezen welk systeem u wilt gebruiken voor prestatiemeting. Elk [ activiteit van het Doel ](https://experienceleague.adobe.com/docs/target/using/activities/target-activities-guide.html) staat u toe om tussen [!DNL Target] het melden en Adobe [!DNL Analytics] het melden te selecteren.
+Wanneer u [!DNL Adobe Target] gebruikt voor personalisatie, kunt u kiezen welk systeem u wilt gebruiken voor prestatiemeting. Elk [&#x200B; activiteit van het Doel &#x200B;](https://experienceleague.adobe.com/docs/target/using/activities/target-activities-guide.html) staat u toe om tussen [!DNL Target] het melden en Adobe [!DNL Analytics] het melden te selecteren.
 
 Als u [!DNL Analytics] reporting gebruikt, moet [!DNL Target] het volgende meedelen aan [!DNL Analytics]:
 
@@ -28,11 +28,11 @@ De instructie [!DNL Adobe Experience Platform Web SDK] ondersteunt twee typen [!
 | Logmethode | Beschrijving |
 | --- | --- |
 | Logboekregistratie op de server [!DNL Analytics] | Alle [!DNL Analytics] -resultaten die via de Edge Network worden verzonden, worden vergroot met [!DNL Target] -gegevens aan de serverzijde, zonder dat u het detectieproces hoeft te doorlopen. |
-| Logboekregistratie op de client [!DNL Analytics] | [!DNL Target] gegevens zijn teruggekeerd op de cliëntkant, toestaand u om gegevens aan [!DNL Analytics] manueel te verhogen en te verzenden gebruikend de [ Invoeging API van Gegevens ](https://experienceleague.adobe.com/docs/analytics/import/c-data-insertion-api.html). |
+| Logboekregistratie op de client [!DNL Analytics] | [!DNL Target] gegevens zijn teruggekeerd op de cliëntkant, toestaand u om gegevens aan [!DNL Analytics] manueel te verhogen en te verzenden gebruikend de [&#x200B; Invoeging API van Gegevens &#x200B;](https://experienceleague.adobe.com/docs/analytics/import/c-data-insertion-api.html). |
 
-De registrerenmethode wordt bepaald door of u [!DNL Adobe Analytics] toegelaten op uw gevormde [ datastream ](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview) hebt:
+De registrerenmethode wordt bepaald door of u [!DNL Adobe Analytics] toegelaten op uw gevormde [&#x200B; datastream &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview) hebt:
 
-![ Logging van de methodebeslissingsstroom ](/help/dev/implement/a4t/assets/analytics-logging.png)
+![&#x200B; Logging van de methodebeslissingsstroom &#x200B;](/help/dev/implement/a4t/assets/analytics-logging.png)
 
 ## Volgende stappen
 

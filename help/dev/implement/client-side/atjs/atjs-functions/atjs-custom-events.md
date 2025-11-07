@@ -1,6 +1,6 @@
 ---
 keywords: custom events, at.js, request failed, request failed, content rendering failed, content rendering failed, library loaded, request start, content rendering start, content rendering no aanbiedingen, content rendering redirect, custom events2
-description: De douanegebeurtenissen van het gebruik voor de { [!DNL Adobe Target]  at.js JavaScript bibliotheek die moeten worden op de hoogte gebracht wanneer een mbox verzoek of een aanbieding ontbreekt of slaagt.
+description: De douanegebeurtenissen van het gebruik voor de &lbrace; [!DNL Adobe Target]  at.js JavaScript bibliotheek die moeten worden op de hoogte gebracht wanneer een mbox verzoek of een aanbieding ontbreekt of slaagt.
 title: Hoe gebruik ik aangepaste gebeurtenissen at.js?
 feature: at.js
 exl-id: a4baed9a-9eb8-4343-9834-709b03e44ca2
@@ -46,7 +46,7 @@ document.addEventListener(adobe.target.event.REQUEST_SUCCEEDED, function(event) 
 });
 ```
 
-## De Video van de opleiding: De Tokens van de Reactie en de Gebeurtenissen van de Douane at.js ![ badge van het Leerprogramma ](../../../assets/tutorial.png)
+## De Video van de opleiding: De Tokens van de Reactie en de Gebeurtenissen van de Douane at.js ![&#x200B; badge van het Leerprogramma &#x200B;](../../../assets/tutorial.png)
 
 Bekijk de volgende video om te leren hoe u de Tokens van de Reactie en de Gebeurtenissen van de Douane bij.js kunt gebruiken om profielinformatie van [!DNL Target] aan derdesystemen te delen.
 

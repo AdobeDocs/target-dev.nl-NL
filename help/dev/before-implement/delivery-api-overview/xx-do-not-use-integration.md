@@ -73,7 +73,7 @@ curl -X POST \
 
 ### Analytics Payload van Adobe Target ophalen
 
-De consumenten van Adobe Target leveren API kunnen de nuttige lading van Adobe Analytics voor een overeenkomstige mbox terugwinnen zodat de consument de nuttige lading naar Adobe Analytics via de [ Invoeging API van Gegevens ](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md) kan verzenden. Wanneer een Adobe Target-aanroep op de server wordt geactiveerd, geeft u `client_side` door aan het `logging` -veld in de aanvraag. Dit zal beurtelings een lading terugkeren als mbox in een activiteit aanwezig is die Analytics als rapporteringsbron gebruikt.
+De consumenten van Adobe Target leveren API kunnen de nuttige lading van Adobe Analytics voor een overeenkomstige mbox terugwinnen zodat de consument de nuttige lading naar Adobe Analytics via de [&#x200B; Invoeging API van Gegevens &#x200B;](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md) kan verzenden. Wanneer een Adobe Target-aanroep op de server wordt geactiveerd, geeft u `client_side` door aan het `logging` -veld in de aanvraag. Dit zal beurtelings een lading terugkeren als mbox in een activiteit aanwezig is die Analytics als rapporteringsbron gebruikt.
 
 ```
 curl -X POST \

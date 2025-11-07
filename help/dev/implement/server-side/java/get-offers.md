@@ -66,7 +66,7 @@ Het `[!UICONTROL TargetDeliveryRequestBuilder]` -object heeft de volgende struct
 | trackingServerSecure | String | Nee | De lus [!UICONTROL Adobe Analytics Secure Server] zodat [!DNL Adobe Target] en [!DNL Adobe Analytics] de gegevens op de juiste wijze aan elkaar kunnen koppelen. |
 | determinoningMethod | DecisioningMethod | Nee | Kan worden gebruikt om de ON_DEVICE- of HYBRID-beslissingsmethode expliciet in te stellen voor apparaatbeslissingen |
 
-De waarden van elk veld moeten voldoen aan de aanvraagspecificatie van *[!UICONTROL Target View Delivery API]* . Meer over *[!UICONTROL Target View Delivery API]* leren, zie [ http://developers.adobetarget.com/api/#view-delivery-overview ](http://developers.adobetarget.com/api/#view-delivery-overview)
+De waarden van elk veld moeten voldoen aan de aanvraagspecificatie van *[!UICONTROL Target View Delivery API]* . Meer over *[!UICONTROL Target View Delivery API]* leren, zie [&#x200B; http://developers.adobetarget.com/api/#view-delivery-overview &#x200B;](http://developers.adobetarget.com/api/#view-delivery-overview)
 
 
 ## Antwoord

@@ -17,7 +17,7 @@ Adobe Target gebruikt de user-agent om bezoekers voor segmentatie en verpersoonl
 
 >[!NOTE]
 >
->De informatie in dit artikel is op [ at.js versie 2.9.0 ](target-atjs-versions.md) (of later) van toepassing.
+>De informatie in dit artikel is op [&#x200B; at.js versie 2.9.0 &#x200B;](target-atjs-versions.md) (of later) van toepassing.
 
 Telkens wanneer een webbrowser een verzoek indient bij een server, wordt informatie over de browser en de omgeving waarin de browser wordt uitgevoerd, opgenomen in de koptekst van de aanvraag. Sinds de vroege dagen van Internet, zijn deze gegevens bijeengevoegd in één enkel koord genoemd user-agent.
 
@@ -160,14 +160,14 @@ Hier is een lijst van de wenken van de Cliënt en hun overeenkomstige het gebrui
 
 | Clienttip | Entropie | Auditiekenmerk | Gebruik van profielscript |
 | --- | --- | --- | --- |
-| [ sec-CH-UA ](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-CH-UA) | Laag | Browser | `user.clientHint('sec-ch-ua')` |
-| [ Sec-CH-UA-Arch ](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-CH-UA-Arch) | Hoog | Aan gebruikers beschikbaar via profielscripts | `user.clientHint('sec-ch-ua-arch')` |
-| [ sec-CH-UA-Bitness ](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-CH-UA-Bitness) | Hoog | Aan gebruikers beschikbaar via profielscripts | `user.clientHint('sec-ch-ua-bitness')` |
-| [ sec-CH-UA-Volledig-Versie-Lijst ](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-CH-UA-Full-Version-List) | Hoog | Browser | `user.clientHint('sec-ch-ua-full-version-list')` |
-| [ sec-CH-UA-Mobiel ](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-CH-UA-Mobile) | Laag | Mobiel | `user.clientHint('sec-ch-ua-mobile')` |
-| [ sec-CH-UA-Model ](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-CH-UA-Model) | Hoog | Mobiel | `user.clientHint('sec-ch-ua-model')` |
-| [ sec-CH-UA-Platform ](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-CH-UA-Platform) | Laag | Besturingssysteem | `user.clientHint('sec-ch-ua-platform')` |
-| [ sec-CH-UA-Platform-Versie ](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-CH-UA-Platform-Version) | Hoog | Aan gebruikers beschikbaar via profielscripts | `user.clientHint('sec-ch-ua-platform-version')` |
+| [&#x200B; sec-CH-UA &#x200B;](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-CH-UA) | Laag | Browser | `user.clientHint('sec-ch-ua')` |
+| [&#x200B; Sec-CH-UA-Arch &#x200B;](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-CH-UA-Arch) | Hoog | Aan gebruikers beschikbaar via profielscripts | `user.clientHint('sec-ch-ua-arch')` |
+| [&#x200B; sec-CH-UA-Bitness &#x200B;](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-CH-UA-Bitness) | Hoog | Aan gebruikers beschikbaar via profielscripts | `user.clientHint('sec-ch-ua-bitness')` |
+| [&#x200B; sec-CH-UA-Volledig-Versie-Lijst &#x200B;](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-CH-UA-Full-Version-List) | Hoog | Browser | `user.clientHint('sec-ch-ua-full-version-list')` |
+| [&#x200B; sec-CH-UA-Mobiel &#x200B;](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-CH-UA-Mobile) | Laag | Mobiel | `user.clientHint('sec-ch-ua-mobile')` |
+| [&#x200B; sec-CH-UA-Model &#x200B;](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-CH-UA-Model) | Hoog | Mobiel | `user.clientHint('sec-ch-ua-model')` |
+| [&#x200B; sec-CH-UA-Platform &#x200B;](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-CH-UA-Platform) | Laag | Besturingssysteem | `user.clientHint('sec-ch-ua-platform')` |
+| [&#x200B; sec-CH-UA-Platform-Versie &#x200B;](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-CH-UA-Platform-Version) | Hoog | Aan gebruikers beschikbaar via profielscripts | `user.clientHint('sec-ch-ua-platform-version')` |
 
 ## Clienttips doorgeven aan Adobe Target
 
@@ -183,4 +183,4 @@ window.targetGlobalSettings = { allowHighEntropyClientHints: true };
 
 ### SDK&#39;s aan serverzijde
 
-Voor meer informatie over hoe te om de wenken van de Cliënt via server-kant SDKs over te gaan, zie [ wenken van de Cliënt ](../../server-side/sdk-guides/core-principles/audience-targeting.md#client-hints) onder Server-kant de documentatie van de Implementatie.
+Voor meer informatie over hoe te om de wenken van de Cliënt via server-kant SDKs over te gaan, zie [&#x200B; wenken van de Cliënt &#x200B;](../../server-side/sdk-guides/core-principles/audience-targeting.md#client-hints) onder Server-kant de documentatie van de Implementatie.

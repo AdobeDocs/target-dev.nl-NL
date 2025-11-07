@@ -12,17 +12,17 @@ ht-degree: 0%
 
 # Overzicht van Admin API voor doelbeheerder
 
-Dit artikel verstrekt een overzicht van achtergrondinformatie noodzakelijk om [!DNL Adobe Target Admin API] met succes te begrijpen en te gebruiken. De volgende inhoud veronderstelt u begrijpt hoe te [ authentificatie ](../configure-authentication.md) voor [!DNL Adobe Target Admin API] s vormen.
+Dit artikel verstrekt een overzicht van achtergrondinformatie noodzakelijk om [!DNL Adobe Target Admin API] met succes te begrijpen en te gebruiken. De volgende inhoud veronderstelt u begrijpt hoe te [&#x200B; authentificatie &#x200B;](../configure-authentication.md) voor [!DNL Adobe Target Admin API] s vormen.
 
 >[!NOTE]
 >
->Als u wenst om [!DNL Target] via UI te beheren, zie de [ beleidssectie van de *Gids van de BedrijfsPraktijk van Adobe Target* ](https://experienceleague.adobe.com/docs/target/using/administer/administrating-target.html?lang=en).
+>Als u wenst om [!DNL Target] via UI te beheren, zie de [&#x200B; beleidssectie van de *Gids van de BedrijfsPraktijk van Adobe Target* &#x200B;](https://experienceleague.adobe.com/docs/target/using/administer/administrating-target.html?lang=en).
 >
 >De API&#39;s voor beheerders en profiel-API&#39;s worden vaak gezamenlijk genoemd (&quot;Admin en Profile API&#39;s&quot;), maar kunnen ook afzonderlijk worden vermeld (&quot;Admin API&#39;s&quot; en &quot;Profile API&#39;s&quot;). De API voor aanbevelingen is een specifieke implementatie van een [!DNL Target] Admin-API.
 
 ## Voordat u begint
 
-In alle codevoorbeelden die voor [ worden verstrekt Admin APIs ](../../administer/admin-api/admin-api-overview-new.md), vervang {tenant} met uw huurderswaarde, `your-bearer-token` met het toegangstoken dat u met uw JWT en `your-api-key` met uw API sleutel van [ Adobe Developer Console ](https://developer.adobe.com/console/home) produceert. Voor meer informatie over huurders en JWTs, te zien gelieve het artikel op hoe te [ authentificatie ](../configure-authentication.md) voor Adobe [!DNL Target] Admin APIs vormen.
+In alle codevoorbeelden die voor [&#x200B; worden verstrekt Admin APIs &#x200B;](../../administer/admin-api/admin-api-overview-new.md), vervang {tenant} met uw huurderswaarde, `your-bearer-token` met het toegangstoken dat u met uw JWT en `your-api-key` met uw API sleutel van [&#x200B; Adobe Developer Console &#x200B;](https://developer.adobe.com/console/home) produceert. Voor meer informatie over huurders en JWTs, te zien gelieve het artikel op hoe te [&#x200B; authentificatie &#x200B;](../configure-authentication.md) voor Adobe [!DNL Target] Admin APIs vormen.
 
 ## Versioning
 
@@ -56,7 +56,7 @@ Foutbericht voor niet-ondersteunde functies
 
 Admin Postman Collection
 
-Postman is een toepassing waarmee het eenvoudig is API-aanroepen te starten. Dit [ Admin API van het Doel de Inzameling van Postman ](https://developers.adobetarget.com/api/#admin-postman-collection) bevat alle vraag van Admin API van het Doel die authentificatie gebruikend Activiteiten, Soorten, Aanbiedingen, Rapporten, Mboxes, en Milieu vereist
+Postman is een toepassing waarmee het eenvoudig is API-aanroepen te starten. Dit [&#x200B; Admin API van het Doel de Inzameling van Postman &#x200B;](https://developers.adobetarget.com/api/#admin-postman-collection) bevat alle vraag van Admin API van het Doel die authentificatie gebruikend Activiteiten, Soorten, Aanbiedingen, Rapporten, Mboxes, en Milieu vereist
 
 ## Antwoordcodes
 
@@ -64,21 +64,21 @@ Hier volgen de algemene responscodes voor de API&#39;s voor doelbeheer.
 
 | Status | Betekenis | Beschrijving |
 | --- | --- | --- |
-| 200 | [ O.K. ](https://www.rfc-editor.org/rfc/rfc7231#section-6.3.1) | OK |
-| 400 | [ Onjuist Verzoek ](https://www.rfc-editor.org/rfc/rfc7231#section-6.5.1) | Onjuist verzoek. Waarschijnlijk zijn de gegevens in het verzoek ongeldig. |
-| 401 | [ onbevoegd ](https://www.rfc-editor.org/rfc/rfc7235#section-3.1) | De gebruiker mag deze bewerking niet uitvoeren. |
-| 403 | [ Verboden ](https://www.rfc-editor.org/rfc/rfc7231#section-6.5.3) | Toegang tot deze resource is verboden. |
-| 404 | [ niet Gevonden ](https://www.rfc-editor.org/rfc/rfc7231#section-6.5.4) | De resource waarnaar wordt verwezen, is niet gevonden. |
+| 200 | [&#x200B; O.K. &#x200B;](https://www.rfc-editor.org/rfc/rfc7231#section-6.3.1) | OK |
+| 400 | [&#x200B; Onjuist Verzoek &#x200B;](https://www.rfc-editor.org/rfc/rfc7231#section-6.5.1) | Onjuist verzoek. Waarschijnlijk zijn de gegevens in het verzoek ongeldig. |
+| 401 | [&#x200B; onbevoegd &#x200B;](https://www.rfc-editor.org/rfc/rfc7235#section-3.1) | De gebruiker mag deze bewerking niet uitvoeren. |
+| 403 | [&#x200B; Verboden &#x200B;](https://www.rfc-editor.org/rfc/rfc7231#section-6.5.3) | Toegang tot deze resource is verboden. |
+| 404 | [&#x200B; niet Gevonden &#x200B;](https://www.rfc-editor.org/rfc/rfc7231#section-6.5.4) | De resource waarnaar wordt verwezen, is niet gevonden. |
 
 ## Activiteiten
 
 Met een activiteit kunt u inhoud voor uw gebruikers testen of aanpassen. De activiteiten kunnen een van de volgende soorten activiteiten zijn:
 
-* [ A/B ](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html)
-* [ Ervaring die (XT) richt ](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html)
-* [ Aanbevelingen ](https://experienceleague.adobe.com/docs/target/using/activities/recommendations-activity.html)
-* [ Automated Personalization ](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html)
-* [ Multivariate Test (MVT) ](https://experienceleague.adobe.com/docs/target/using/activities/multivariate-test/multivariate-testing.html)
+* [&#x200B; A/B &#x200B;](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html)
+* [&#x200B; Ervaring die (XT) richt &#x200B;](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html)
+* [&#x200B; Aanbevelingen &#x200B;](https://experienceleague.adobe.com/docs/target/using/activities/recommendations-activity.html)
+* [&#x200B; Automated Personalization &#x200B;](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html)
+* [&#x200B; Multivariate Test (MVT) &#x200B;](https://experienceleague.adobe.com/docs/target/using/activities/multivariate-test/multivariate-testing.html)
 
 ## Batchupdates
 
