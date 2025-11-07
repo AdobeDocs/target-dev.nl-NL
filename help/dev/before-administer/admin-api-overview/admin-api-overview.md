@@ -16,7 +16,7 @@ Dit artikel verstrekt een overzicht van achtergrondinformatie noodzakelijk om [!
 
 >[!NOTE]
 >
->Als u wenst om [!DNL Target] via UI te beheren, zie de [&#x200B; beleidssectie van de *Gids van de BedrijfsPraktijk van Adobe Target* &#x200B;](https://experienceleague.adobe.com/docs/target/using/administer/administrating-target.html?lang=en).
+>Als u wenst om [!DNL Target] via UI te beheren, zie de [&#x200B; beleidssectie van de *Gids van de BedrijfsPraktijk van Adobe Target* &#x200B;](https://experienceleague.adobe.com/docs/target/using/administer/administrating-target.html?lang=nl-NL).
 >
 >De API&#39;s voor beheerders en profiel-API&#39;s worden vaak gezamenlijk genoemd (&quot;Admin en Profile API&#39;s&quot;), maar kunnen ook afzonderlijk worden vermeld (&quot;Admin API&#39;s&quot; en &quot;Profile API&#39;s&quot;). De API voor aanbevelingen is een specifieke implementatie van een [!DNL Target] Admin-API.
 
@@ -74,11 +74,11 @@ Hier volgen de algemene responscodes voor de API&#39;s voor doelbeheer.
 
 Met een activiteit kunt u inhoud voor uw gebruikers testen of aanpassen. De activiteiten kunnen een van de volgende soorten activiteiten zijn:
 
-* [&#x200B; A/B &#x200B;](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html)
-* [&#x200B; Ervaring die (XT) richt &#x200B;](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html)
-* [&#x200B; Aanbevelingen &#x200B;](https://experienceleague.adobe.com/docs/target/using/activities/recommendations-activity.html)
-* [&#x200B; Automated Personalization &#x200B;](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html)
-* [&#x200B; Multivariate Test (MVT) &#x200B;](https://experienceleague.adobe.com/docs/target/using/activities/multivariate-test/multivariate-testing.html)
+* [&#x200B; A/B &#x200B;](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=nl-NL)
+* [&#x200B; Ervaring die (XT) richt &#x200B;](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html?lang=nl-NL)
+* [&#x200B; Aanbevelingen &#x200B;](https://experienceleague.adobe.com/docs/target/using/activities/recommendations-activity.html?lang=nl-NL)
+* [&#x200B; Automated Personalization &#x200B;](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html?lang=nl-NL)
+* [&#x200B; Multivariate Test (MVT) &#x200B;](https://experienceleague.adobe.com/docs/target/using/activities/multivariate-test/multivariate-testing.html?lang=nl-NL)
 
 ## Batchupdates
 

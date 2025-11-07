@@ -61,7 +61,7 @@ target_client.send_notifications(options)
 | target_location_hint_cookie | dict | [!DNL Target] locatiehintcookie |
 | analytics_details | lijst [ AnalyticsResponse ] | [!DNL Analytics] payload, in het geval van [!DNL Analytics] gebruik op de client |
 | traceren | lijst [ dict ] | Samengevoegde spoorgegevens voor alle verzoekdozen/meningen |
-| response_tokens | lijst [ dict ] | Een lijst met [&#x200B; &#x200B; Responstkens &#x200B;](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html) |
+| response_tokens | lijst [ dict ] | Een lijst met [&#x200B; &#x200B; Responstkens &#x200B;](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html?lang=nl-NL) |
 | meta | dict | Aanvullende beslissingsmetagegevens voor gebruik met apparaatbesluitvorming |
 
 ## Voorbeeld

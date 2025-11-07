@@ -17,7 +17,7 @@ Informatie over de algemene gegevensbeschermingsverordening van de Europese Unie
 
 ## Overzicht van privacy en algemene gegevensbeschermingsverordening (GDPR)
 
-Op 25 mei 2018 is de GDPR van de Europese Unie van kracht geworden. Voor meer informatie over wat deze verordening voor u betekent, zie [&#x200B; GDPR en Uw Zaken &#x200B;](https://business.adobe.com/privacy/general-data-protection-regulation.html).
+Op 25 mei 2018 is de GDPR van de Europese Unie van kracht geworden. Voor meer informatie over wat deze verordening voor u betekent, zie [&#x200B; GDPR en Uw Zaken &#x200B;](https://business.adobe.com/nl/privacy/general-data-protection-regulation.html).
 
 Wanneer Adobe software en services levert aan een onderneming, treedt Adobe op als gegevensprocessor voor persoonlijke gegevens die het verwerkt en opslaat als onderdeel van het aanbieden van deze services. Als gegevensverwerker verwerkt Adobe persoonlijke gegevens volgens de toestemming en instructies van uw bedrijf (bijvoorbeeld zoals uiteengezet in uw overeenkomst met Adobe).
 
@@ -30,9 +30,9 @@ Adobe Experience Cloud biedt API&#39;s die geschikt zijn voor GDPR voor gegevens
 
 Zie voor meer informatie:
 
-* [&#x200B; Adobe Privacy Service overzicht &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html)
-* [&#x200B; Privacy Service API gids &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html)
-* [&#x200B; overzicht van Privacy Service UI &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html)
+* [&#x200B; Adobe Privacy Service overzicht &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=nl-NL)
+* [&#x200B; Privacy Service API gids &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=nl-NL)
+* [&#x200B; overzicht van Privacy Service UI &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html?lang=nl-NL)
 
 ## Overzicht van de California Consumer Privacy Act (CCPA)
 
@@ -73,7 +73,7 @@ Er zijn drie scenario&#39;s om te overwegen wanneer het gebruiken van Opt-binnen
 
 1. **de markering van het Doel wordt vooraf goedgekeurd via Adobe Experience Platform (of het gegevenssubject eerder goedgekeurd Doel):** De markering van het Doel wordt niet gehouden voor toestemming en functies zoals verwacht.
 1. **de markering van het Doel is NIET vooraf goedgekeurd en `bodyHidingEnabled` is VALS:** de markering van het Doel brandt slechts nadat de toestemming van de klant wordt verzameld. Voordat toestemming wordt verzameld, is alleen de standaardinhoud beschikbaar. Nadat de toestemming wordt ontvangen, wordt Doel geroepen en de gepersonaliseerde inhoud is beschikbaar aan de betrokkene (bezoeker). Omdat alleen de standaardinhoud beschikbaar is vóór de toestemming, is het belangrijk om een geschikte strategie te gebruiken, zoals een welkomstpagina die een gedeelte van de pagina of inhoud beslaat die kan worden gepersonaliseerd. Dit proces zorgt ervoor dat de ervaring voor de betrokkene (bezoeker) consistent blijft.
-1. **de markering van het Doel is NIET vooraf goedgekeurd en `bodyHidingEnabled` is WAAR:** de markering van het Doel brandt slechts nadat de toestemming van de klant wordt verzameld. Voordat toestemming wordt verzameld, is alleen de standaardinhoud beschikbaar. Omdat `bodyHidingEnabled` is ingesteld op true, bepaalt `bodyHiddenStyle` echter welke inhoud op de pagina wordt verborgen totdat de doeltag wordt geactiveerd (of de betrokkene de aanmeldingsnaam weigert, in welk geval de standaardinhoud wordt weergegeven). Standaard is `bodyHiddenStyle` ingesteld op `body { opacity:0;}` , waardoor de body-tag van HTML wordt verborgen. De door Adobe aanbevolen paginaconfiguratie is hieronder weergegeven, zodat de volledige hoofdtekst van de pagina, behalve het dialoogvenster voor het beheer van de toestemming, wordt verborgen door de inhoud van de pagina in één container te plaatsen en het dialoogvenster voor het beheer van de toestemming in een aparte container. Met deze instelling configureert u Doel zodanig dat alleen de container van de pagina-inhoud wordt verborgen. Zie het [&#x200B; overzicht van Privacy Service &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?).
+1. **de markering van het Doel is NIET vooraf goedgekeurd en `bodyHidingEnabled` is WAAR:** de markering van het Doel brandt slechts nadat de toestemming van de klant wordt verzameld. Voordat toestemming wordt verzameld, is alleen de standaardinhoud beschikbaar. Omdat `bodyHidingEnabled` is ingesteld op true, bepaalt `bodyHiddenStyle` echter welke inhoud op de pagina wordt verborgen totdat de doeltag wordt geactiveerd (of de betrokkene de aanmeldingsnaam weigert, in welk geval de standaardinhoud wordt weergegeven). Standaard is `bodyHiddenStyle` ingesteld op `body { opacity:0;}` , waardoor de body-tag van HTML wordt verborgen. De door Adobe aanbevolen paginaconfiguratie is hieronder weergegeven, zodat de volledige hoofdtekst van de pagina, behalve het dialoogvenster voor het beheer van de toestemming, wordt verborgen door de inhoud van de pagina in één container te plaatsen en het dialoogvenster voor het beheer van de toestemming in een aparte container. Met deze instelling configureert u Doel zodanig dat alleen de container van de pagina-inhoud wordt verborgen. Zie het [&#x200B; overzicht van Privacy Service &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=nl-NL&).
 
    De geadviseerde pagina opstelling voor scenario 3 is:
 
@@ -119,7 +119,7 @@ Alle GDPR- en CCPA-aanvragen in Experience Cloud-oplossingen, waaronder Target, 
 
 ### Met welke informatie kunnen klanten door Adobe worden verwijderd als reactie op een verzoek van een betrokkene of gebruiker?
 
-De informatie met betrekking tot een individuele bezoeker binnen Doel is opgenomen in het profiel van de Doelbezoeker. Met Doel kunnen klanten alle gegevens verwijderen die aan een id zijn gekoppeld in hun bezoekersprofiel. Voor voorbeelden van de opslag van het profielgegevensdoel, zie [&#x200B; Profiel van de Bezoeker &#x200B;](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html).
+De informatie met betrekking tot een individuele bezoeker binnen Doel is opgenomen in het profiel van de Doelbezoeker. Met Doel kunnen klanten alle gegevens verwijderen die aan een id zijn gekoppeld in hun bezoekersprofiel. Voor voorbeelden van de opslag van het profielgegevensdoel, zie [&#x200B; Profiel van de Bezoeker &#x200B;](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html?lang=nl-NL).
 
 Geaggregeerde of geanonimiseerde gegevens (bijvoorbeeld gegevens die een bepaalde persoon niet identificeren) of gegevens die geen verband houden met een specifieke persoon (bijvoorbeeld inhoudsgegevens), vallen buiten het bereik van een verzoek tot verwijdering van een gebruiker.
 
@@ -147,7 +147,7 @@ Adobe biedt momenteel geen oplossing voor het beheer van instemming, maar er zij
 
 Het doel biedt ondersteuning voor aanmeldingsfuncties via Adobe Experience Platform ter ondersteuning van uw strategie voor het beheer van machtigingen. Met de functie Inschakelen kunnen klanten bepalen hoe en wanneer de tag Doel wordt geactiveerd. Via Adobe Experience Platform kunt u ook de tag Doel vooraf goedkeuren. Het gebruik van Adobe Experience Platform voor het beheer van opt-in is de aanbevolen aanpak. Er is meer korrelige controle beschikbaar in Adobe Experience Platform om bepaalde elementen van uw pagina te verbergen vóór het afvuren van het Doel. Dit kan handig zijn als onderdeel van uw toestemmingsstrategie.
 
-Voor meer informatie over GDPR, CCPA, en Adobe Experience Platform, zie [&#x200B; de Bibliotheek van JavaScript van de Privacy van Adobe en GDPR &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?). Ook, zie *Adobe Target en Adobe Experience Platform hierboven opt-in* sectie.
+Voor meer informatie over GDPR, CCPA, en Adobe Experience Platform, zie [&#x200B; de Bibliotheek van JavaScript van de Privacy van Adobe en GDPR &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=nl-NL&). Ook, zie *Adobe Target en Adobe Experience Platform hierboven opt-in* sectie.
 
 ### Verzendt `AdobePrivacy.js` informatie naar de GDPR API?
 
@@ -286,7 +286,7 @@ De volgende tabel bevat een beschrijving van de JSON-velden voor het illustratie
 | sample_parameter | Veel gegevens in het doelprofiel worden geüpload of rechtstreeks geleverd door de gegevenscontroller. In dit voorbeeld is een parameter geüpload naar het doelprofiel met de API voor profielupdate. Voor meer informatie, zie [&#x200B; Methoden om Gegevens in Doel &#x200B;](/help/dev/before-implement/methods-to-get-data-into-target/methods-to-get-data-into-target.md) te krijgen. |
 | user.ReturnTimeOfDay | Dit standaardveld bevat de tijd van de dag van het meest recente retourbezoek van een gebruiker. |
 | firstSessionStart | Dit standaardveld bevat de tijd van de dag waarop de eerste sessie van de gebruiker is gestart. |
-| user.sessionCountScript | Veel gegevens in het doelprofiel worden geüpload of rechtstreeks geleverd door de gegevenscontroller. In dit voorbeeld verhoogt een profielscript het aantal sessies dat deze bezoeker op de site van de Data Controller heeft uitgevoerd. Voor meer informatie, zie {de Attributen van het Manuscript van 0} Profiel [.](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html) |
+| user.sessionCountScript | Veel gegevens in het doelprofiel worden geüpload of rechtstreeks geleverd door de gegevenscontroller. In dit voorbeeld verhoogt een profielscript het aantal sessies dat deze bezoeker op de site van de Data Controller heeft uitgevoerd. Voor meer informatie, zie {de Attributen van het Manuscript van 0} Profiel [.](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html?lang=nl-NL) |
 
 >[!NOTE]
 >

@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # [!UICONTROL On-device decisioning] for at.js
 
-Vanaf versie 2.5.0 biedt at.js [!UICONTROL on-device decisioning] aan. [!UICONTROL On-device decisioning] laat u uw [&#x200B; Test A/B &#x200B;](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html) in het voorgeheugen onderbrengen en [&#x200B; Ervaring richtend &#x200B;](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html) (XT) activiteiten op browser om in-geheugenbesluiten zonder een blokkerend netwerkverzoek aan [!DNL Adobe Target] Edge Network uit te voeren.
+Vanaf versie 2.5.0 biedt at.js [!UICONTROL on-device decisioning] aan. [!UICONTROL On-device decisioning] laat u uw [&#x200B; Test A/B &#x200B;](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=nl-NL) in het voorgeheugen onderbrengen en [&#x200B; Ervaring richtend &#x200B;](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html?lang=nl-NL) (XT) activiteiten op browser om in-geheugenbesluiten zonder een blokkerend netwerkverzoek aan [!DNL Adobe Target] Edge Network uit te voeren.
 
 >[!NOTE]
 >
@@ -28,7 +28,7 @@ De voordelen van [!UICONTROL on-device decisioning] zijn onder andere:
 * **lever het opblazen snelle besluiten en ervaringen.** De sluiting en de beslissing worden uitgevoerd in het geheugen en op browser om het blokkeren van netwerkverzoeken te vermijden.
 * **verbeter toepassingsprestaties.** Voer experimenten uit en lever personalisatie aan uw klanten en gebruikers zonder de ervaringen van eindgebruikers in gevaar te brengen.
 * **verbeter de Score van de Kwaliteit van de Plaats van Google.** Nu de beslissing in het geheugen plaatsvindt, verbetert u de score voor kwaliteit van de Google-site van uw onlinebedrijf om deze beter door de consument te kunnen ontdekken.
-* **leer van analyses in real time.** de Inzichten van de winst van uw activiteitenprestaties in real time via [&#x200B; Analytics voor Doel &#x200B;](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) (A4T) rapporterend. A4T staat u toe om uw strategie op kritieke momenten te draaien.
+* **leer van analyses in real time.** de Inzichten van de winst van uw activiteitenprestaties in real time via [&#x200B; Analytics voor Doel &#x200B;](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=nl-NL) (A4T) rapporterend. A4T staat u toe om uw strategie op kritieke momenten te draaien.
 
 ## Ondersteunde functies
 
@@ -56,7 +56,7 @@ Met [!UICONTROL on-device decisioning] introduceert [!DNL Target] een nieuwe ins
 
 Server-kant slechts is de standaardbeslissingsmethode die uit de doos wordt geplaatst wanneer at.js 2.5.0+ wordt uitgevoerd en op uw Webeigenschappen opgesteld.
 
-Als alleen server-side wordt gebruikt als de standaardconfiguratie, worden alle beslissingen genomen in het [!DNL Target] edge-netwerk. Dit houdt in dat de server wordt geblokkeerd. Deze benadering kan stijgende latentie introduceren, maar het verstrekt ook significante voordelen, zoals het geven van u de capaciteit om [!DNL Target] machine-leert mogelijkheden van toepassing te zijn die [&#x200B; Aanbevelingen &#x200B;](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations.html) omvatten, [&#x200B; Automated Personalization &#x200B;](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html) (AP), en [&#x200B; auto-Doel &#x200B;](https://experienceleague.adobe.com/docs/target/using/activities/auto-target/auto-target-to-optimize.html) activiteiten.
+Als alleen server-side wordt gebruikt als de standaardconfiguratie, worden alle beslissingen genomen in het [!DNL Target] edge-netwerk. Dit houdt in dat de server wordt geblokkeerd. Deze benadering kan stijgende latentie introduceren, maar het verstrekt ook significante voordelen, zoals het geven van u de capaciteit om [!DNL Target] machine-leert mogelijkheden van toepassing te zijn die [&#x200B; Aanbevelingen &#x200B;](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations.html?lang=nl-NL) omvatten, [&#x200B; Automated Personalization &#x200B;](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html?lang=nl-NL) (AP), en [&#x200B; auto-Doel &#x200B;](https://experienceleague.adobe.com/docs/target/using/activities/auto-target/auto-target-to-optimize.html?lang=nl-NL) activiteiten.
 
 Bovendien kan het verbeteren van uw persoonlijke ervaringen door het gebruikersprofiel van [!DNL Target] te gebruiken, dat door sessies en kanalen blijft bestaan, krachtige resultaten voor uw bedrijf opleveren.
 
@@ -72,7 +72,7 @@ De volgende lijst komt overeen met de cijfers in het diagram:
 
 | Stap | Beschrijving |
 | --- | --- |
-| 1 | De identiteitskaart van de Bezoeker van Experience Cloud wordt teruggewonnen van de [&#x200B; Dienst van de Identiteit van Adobe Experience Cloud &#x200B;](https://experienceleague.adobe.com/docs/id-service/using/home.html?). |
+| 1 | De identiteitskaart van de Bezoeker van Experience Cloud wordt teruggewonnen van de [&#x200B; Dienst van de Identiteit van Adobe Experience Cloud &#x200B;](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=nl-NL&). |
 | 2 | De bibliotheek at.js wordt synchroon geladen en de hoofdtekst van het document verborgen.<br />   De bibliotheek at.js kan ook asynchroon worden geladen met een optioneel vooraf verborgen fragment dat op de pagina is geïmplementeerd. |
 | 3 | De bibliotheek at.js verbergt het lichaam om flikkering te voorkomen. |
 | 4 | Er wordt een aanvraag voor het laden van een pagina ingediend die alle geconfigureerde parameters bevat, zoals (ECID, Customer ID, Custom Parameters, User Profile, enzovoort). |
@@ -111,7 +111,7 @@ De volgende lijst komt overeen met de cijfers in het diagram:
 
 | Stap | Beschrijving |
 | --- | --- |
-| 1 | De identiteitskaart van de Bezoeker van Experience Cloud wordt teruggewonnen van de [&#x200B; Dienst van de Identiteit van Adobe Experience Cloud &#x200B;](https://experienceleague.adobe.com/docs/id-service/using/home.html). |
+| 1 | De identiteitskaart van de Bezoeker van Experience Cloud wordt teruggewonnen van de [&#x200B; Dienst van de Identiteit van Adobe Experience Cloud &#x200B;](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=nl-NL). |
 | 2 | De bibliotheek at.js wordt synchroon geladen en de hoofdtekst van het document verborgen.<br /> de bibliotheek at.js kan ook asynchroon met een facultatief pre-verbergend die fragment worden geladen op de pagina wordt uitgevoerd. |
 | 3 | De bibliotheek at.js verbergt het lichaam om flikkering te voorkomen. |
 | 4 | De bibliotheek at.js vraagt om het JSON-regelartefact van de dichtstbijzijnde Akamai CDN naar de bezoeker op te halen. |
@@ -138,7 +138,7 @@ De volgende lijst komt overeen met de cijfers in het diagram:
 
 | Stap | Beschrijving |
 | --- | --- |
-| 1 | De identiteitskaart van de Bezoeker van Experience Cloud wordt teruggewonnen van de [&#x200B; Dienst van de Identiteit van Adobe Experience Cloud &#x200B;](https://experienceleague.adobe.com/docs/id-service/using/home.html). |
+| 1 | De identiteitskaart van de Bezoeker van Experience Cloud wordt teruggewonnen van de [&#x200B; Dienst van de Identiteit van Adobe Experience Cloud &#x200B;](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=nl-NL). |
 | 2 | De bibliotheek at.js wordt synchroon geladen en de hoofdtekst van het document verborgen.<br /> de bibliotheek at.js kan ook asynchroon met een facultatief pre-verbergend die fragment worden geladen op de pagina wordt uitgevoerd. |
 | 3 | De bibliotheek at.js verbergt het lichaam om flikkering te voorkomen. |
 | 4 | De bibliotheek at.js interpreteert het JSON-regelartefact en voert de beslissing in het geheugen uit om de ervaring op te halen. |
@@ -173,7 +173,7 @@ De volgende lijst komt overeen met de cijfers in het diagram:
 
 | Stap | Beschrijving |
 | --- | --- |
-| 1 | De identiteitskaart van de Bezoeker van Experience Cloud wordt teruggewonnen van de [&#x200B; Dienst van de Identiteit van Adobe Experience Cloud &#x200B;](https://experienceleague.adobe.com/docs/id-service/using/home.html). |
+| 1 | De identiteitskaart van de Bezoeker van Experience Cloud wordt teruggewonnen van de [&#x200B; Dienst van de Identiteit van Adobe Experience Cloud &#x200B;](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=nl-NL). |
 | 2 | De bibliotheek at.js wordt synchroon geladen en de hoofdtekst van het document verborgen.<br /> de bibliotheek at.js kan ook asynchroon met een facultatief pre-verbergend die fragment worden geladen op de pagina wordt uitgevoerd. |
 | 3 | De bibliotheek at.js verbergt het lichaam om flikkering te voorkomen. |
 | 4 | Er wordt een aanvraag ingediend om de pagina te laden naar de Edge Network van [!DNL Adobe Target] , inclusief alle geconfigureerde parameters zoals (ECID, Customer ID, Custom Parameters, User Profile, enzovoort.) |
@@ -203,7 +203,7 @@ De volgende lijst komt overeen met de cijfers in het diagram:
 
 | Stap | Beschrijving |
 | --- | --- |
-| 1 | De identiteitskaart van de Bezoeker van Experience Cloud wordt teruggewonnen van de [&#x200B; Dienst van de Identiteit van Adobe Experience Cloud &#x200B;](https://experienceleague.adobe.com/docs/id-service/using/home.html). |
+| 1 | De identiteitskaart van de Bezoeker van Experience Cloud wordt teruggewonnen van de [&#x200B; Dienst van de Identiteit van Adobe Experience Cloud &#x200B;](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=nl-NL). |
 | 2 | De bibliotheek at.js wordt synchroon geladen en de hoofdtekst van het document verborgen.<br /> de bibliotheek at.js kan ook asynchroon met een facultatief pre-verbergend die fragment worden geladen op de pagina wordt uitgevoerd. |
 | 3 | De bibliotheek at.js verbergt het lichaam om flikkering te voorkomen. |
 | 4 | Er wordt een verzoek ingediend om een ervaring op te halen. |
@@ -223,7 +223,7 @@ De volgende lijst komt overeen met de cijfers in het diagram:
 
 >[!NOTE]
 >
->U moet Admin of de Approver [&#x200B; gebruikersrol &#x200B;](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html) hebben om de op-Apparaat van een knevel te voorzien of onbruikbaar te maken.
+>U moet Admin of de Approver [&#x200B; gebruikersrol &#x200B;](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html?lang=nl-NL) hebben om de op-Apparaat van een knevel te voorzien of onbruikbaar te maken.
 
 1. Klik op **[!UICONTROL Administration]** > **[!UICONTROL Implementation]** > **[!UICONTROL Account details]**.
 1. Schuif onder **[!UICONTROL Account details]** de schakeloptie **[!UICONTROL On-Device Decisioning]** naar de positie &quot;aan&quot;.

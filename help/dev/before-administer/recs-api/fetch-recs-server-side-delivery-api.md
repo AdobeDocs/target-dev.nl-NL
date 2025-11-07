@@ -42,9 +42,9 @@ De leverings-API gebruiken om de ervaringen van het Doel-met inbegrip van aanbev
 
 ## Een aanbeveling maken met de Form-based Experience Composer
 
-Om aanbevelingen tot stand te brengen die met levering API kunnen worden gebruikt, gebruik [&#x200B; op vorm-gebaseerde Composer &#x200B;](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html).
+Om aanbevelingen tot stand te brengen die met levering API kunnen worden gebruikt, gebruik [&#x200B; op vorm-gebaseerde Composer &#x200B;](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html?lang=nl-NL).
 
-1. Maak eerst een JSON-ontwerp en sla dit op dat u in uw aanbeveling wilt gebruiken. Voor steekproef JSON, plus achtergrondinformatie betreffende hoe de reacties JSON kunnen zijn teruggekeerd wanneer het vormen van een op vorm-gebaseerde activiteit, zie de documentatie bij [&#x200B; Creërend de Ontwerpen van de Aanbeveling &#x200B;](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-design/create-design.html). In dit voorbeeld, wordt het ontwerp genoemd *Eenvoudige JSON.*
+1. Maak eerst een JSON-ontwerp en sla dit op dat u in uw aanbeveling wilt gebruiken. Voor steekproef JSON, plus achtergrondinformatie betreffende hoe de reacties JSON kunnen zijn teruggekeerd wanneer het vormen van een op vorm-gebaseerde activiteit, zie de documentatie bij [&#x200B; Creërend de Ontwerpen van de Aanbeveling &#x200B;](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-design/create-design.html?lang=nl-NL). In dit voorbeeld, wordt het ontwerp genoemd *Eenvoudige JSON.*
    ![&#x200B; server-kant-creeer-recs-json-design.png &#x200B;](assets/server-side-create-recs-json-design.png)
 
 1. Navigeer in Doel naar **[!UICONTROL Activities]** > **[!UICONTROL Create Activity]** > **[!UICONTROL Recommendations]** en selecteer vervolgens **[!UICONTROL Form]** .
@@ -54,7 +54,7 @@ Om aanbevelingen tot stand te brengen die met levering API kunnen worden gebruik
 1. Selecteer een eigenschap en klik op **[!UICONTROL Next]** .
 1. Bepaal de plaats waar u gebruikers de reactie van de aanbeveling wilt ontvangen. Het voorbeeld gebruikt hieronder een plaats genoemd *api_charter*. Selecteer uw op JSON-Gebaseerd ontwerp, vroeger gecreeerd, genoemd *Eenvoudige JSON.*
    ![&#x200B; server-kant-creeer-recs-form.png &#x200B;](assets/server-side-create-recs-form1.png)
-1. Sla de aanbeveling op en activeer deze. Het zal resultaten opleveren. [&#x200B; Zodra de resultaten klaar &#x200B;](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-activity/previewing-and-launching-your-recommendations-activity.html) zijn, kunt u levering API gebruiken om hen terug te winnen.
+1. Sla de aanbeveling op en activeer deze. Het zal resultaten opleveren. [&#x200B; Zodra de resultaten klaar &#x200B;](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-activity/previewing-and-launching-your-recommendations-activity.html?lang=nl-NL) zijn, kunt u levering API gebruiken om hen terug te winnen.
 
 ## De API voor aflevering gebruiken
 
@@ -115,7 +115,7 @@ Wij leerden in een [&#x200B; vroegere sectie &#x200B;](manage-catalog.md) hoe te
 ## Referentiedocumentatie
 
 * [Adobe Target Delivery API-documentatie](/help/dev/implement/delivery-api/overview.md)
-* [&#x200B; integreer Aanbevelingen met e-mail &#x200B;](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-faq/integrating-recs-email.html)
+* [&#x200B; integreer Aanbevelingen met e-mail &#x200B;](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-faq/integrating-recs-email.html?lang=nl-NL)
 
 ## Samenvatting en revisie
 
