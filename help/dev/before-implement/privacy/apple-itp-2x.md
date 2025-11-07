@@ -1,12 +1,12 @@
 ---
 keywords: appel, ITP, intelligente traceringspreventie, ervaring cloud id, ecid, itp
-description: Meer informatie over [!DNL Adobe Target] en de gevolgen van het Apple Intelligent Tracking Prevention (ITP)-initiatief ter bescherming van de privacy van Safari-gebruikers.
-title: Hoe werkt [!DNL Target] Apple ITP-ondersteuning afhandelen?
+description: Leer over  [!DNL Adobe Target]  en het effect van het initiatief van de Preventie van het Intelligente Volgen van Apple (ITP) dat probeert om de privacy van gebruikers van Safari te beschermen.
+title: Hoe behandelt  [!DNL Target]  de Steun van Apple ITP?
 feature: Privacy & Security
 exl-id: 6deee03b-df86-4d0d-999c-b11855ddfda5
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 67cc93cf697f8d5bca6fedb3ae974e4012347a0b
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
@@ -19,23 +19,23 @@ Deze versies van ITP bevatten de volgende beperkingen:
 
 | Versie | Details |
 | --- | --- |
-| [ITP 2.1](https://webkit.org/blog/8613/intelligent-tracking-prevention-2-1/) | Gekoppelde clientcookies die met de `document.cookie` API tot een vervaldatum van zeven dagen.<br />Release van 21 februari 2019. |
-| [ITP 2.2](https://webkit.org/blog/8828/intelligent-tracking-prevention-2-2/) | Verminderde de 7-daagse vervalsingsdop drastisch tot één dag.<br />Release van 24 april 2019. |
-| [ITP 2.3](https://webkit.org/blog/9521/intelligent-tracking-prevention-2-3/) | Verschillende hindernissen zijn geëlimineerd, zoals het gebruik van localStorage of het gebruik van JavaScript `Document.referrer property`.<br />Release van 23 september 2019.<br />De CNAME-camouflage-verdedigingsfunctie van ITP, uitgebracht in Safari 14, macOS Big Sur, Catalina, Mojave, iOS 14 en iPad OS 14. Alle cookies die door een derde CNAME-camouflage HTTP-respons worden gemaakt, verlopen over zeven dagen.<br />Aankondigd op 12 november 2020. |
+| [ ITP 2.1 ](https://webkit.org/blog/8613/intelligent-tracking-prevention-2-1/) | Er zijn maximaal zeven dagen verstreken voordat de cookies aan de clientzijde die met de API `document.cookie` op de browser worden geplaatst.<br /> vrijgegeven 21 februari 2019. |
+| [ ITP 2.2 ](https://webkit.org/blog/8828/intelligent-tracking-prevention-2-2/) | Verminderde de 7-daagse vervalsingsdop drastisch tot één dag.<br /> vrijgegeven 24 april 2019. |
+| [ ITP 2.3 ](https://webkit.org/blog/9521/intelligent-tracking-prevention-2-3/) | Er zijn verschillende obstakels verwijderd, zoals het gebruik van localStorage of het gebruik van de JavaScript `Document.referrer property` .<br /> vrijgegeven 23 september 2019.<br /> CNAME-camouflage defensie eigenschap aan ITP die in Safari 14, macOS Big Sur, Catalina, Mojave, iOS 14, en iPad OS 14 wordt vrijgegeven. Alle cookies die door een derde CNAME-camouflage HTTP-respons worden gemaakt, verlopen over zeven dagen.<br /> kondigde 12 november 2020 aan. |
 
-## Wat is de impact voor mij als een [!DNL Target] klant?
+## Wat is de impact voor mij als [!DNL Target] klant?
 
-Het doel biedt JavaScript-bibliotheken die u op uw pagina&#39;s kunt implementeren, zodat [!DNL Target] kan uw bezoekers in real time personaliseren. Er zijn drie [!DNL Target] JavaScript-bibliotheken op .js 1.*x*, om.js 2.*x* de [!DNL Adobe Experience Cloud Web SDK] die op de client [!DNL Target] cookies in de browsers van uw bezoekers via de `document.cookie` API. Dientengevolge, [!DNL Target] cookies worden beïnvloed door Apple ITP 2.1, 2.2 en 2.3 en verlopen na zeven dagen (met ITP 2.1) en na één dag (met ITP 2.2 en ITP 2.3).
+Doel biedt JavaScript-bibliotheken die u op uw pagina&#39;s kunt gebruiken, zodat [!DNL Target] uw bezoekers in real-time een persoonlijk tintje kan geven. Er zijn drie [!DNL Target] JavaScript-bibliotheken op 1.js.*x*, at.js 2.*x*, [!DNL Adobe Experience Cloud Web SDK] die cliënt-kant [!DNL Target] koekjes op browsers van uw bezoekers via `document.cookie` API plaatsen. Als gevolg hiervan worden cookies van [!DNL Target] beïnvloed door Apple ITP 2.1, 2.2 en 2.3 en verlopen deze na zeven dagen (met ITP 2.1) en na één dag (met ITP 2.2 en ITP 2.3).
 
-Apple ITP 2.x-effecten [!DNL Target] op de volgende gebieden:
+Apple ITP 2.x beïnvloedt [!DNL Target] op de volgende gebieden:
 
 | Gevolgen | Details |
 | --- | --- |
-| Mogelijke toename van het aantal unieke bezoekers | Omdat het afloopvenster wordt ingesteld op zeven dagen (met ITP 2.1) en één dag (met ITP 2.2 en ITP 2.3), kan het zijn dat er een toename is van unieke bezoekers die uit Safari-browsers komen. Als uw bezoekers uw domein na zeven dagen (ITP 2.1) of één dag (ITP 2.2 en ITP 2.3) terugkeren, [!DNL Target] is gedwongen een nieuwe [!DNL Target] cookie op uw domein in plaats van de verlopen cookie. De nieuwe [!DNL Target] cookie wordt omgezet naar een nieuwe unieke bezoeker, ook al is de gebruiker hetzelfde. |
-| Verlaagde terugzoekperiodes voor [!DNL Target] activiteiten | Bezoekersprofielen voor [!DNL Target] de activiteiten kunnen een kortere terugkijkperiode voor besluitvorming hebben. [!DNL Target] cookies worden gebruikt om een bezoeker te identificeren en gebruikersprofielkenmerken op te slaan voor personalisatie. Aangezien [!DNL Target] cookies kunnen op Safari verlopen na zeven dagen (ITP 2.1) of één dag (ITP 2.2 en 2.3), de gebruikersprofielgegevens die aan het leeggemaakte product waren gekoppeld [!DNL Target] cookie kan niet worden gebruikt voor de besluitvorming. |
-| Profielscripts gebaseerd op 3rdPartyID | Aangezien het vervalvenster wordt ingesteld op zeven dagen (met ITP 2.1) en één dag (met ITP 2.2 en ITP 2.3), [profielscripts](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html?lang=nl-NL) op basis van het cookie 3rdPartyID werkt niet meer na afloop. |
-| URL&#39;s met kwaliteitscontrole/voorvertoning op iOS-apparaten | Aangezien het vervalvenster wordt ingesteld op zeven dagen (met ITP 2.1) en één dag (met ITP 2.2 en ITP 2.3), [URL&#39;s voor kwaliteitscontrole/voorvertoning](https://experienceleague.adobe.com/docs/target/using/activities/activity-qa/activity-qa.html?lang=nl-NL) werkt niet meer nadat de URL is verlopen omdat de URL&#39;s zijn gebaseerd op het cookie 3rdPartyID. |
+| Mogelijke toename van het aantal unieke bezoekers | Omdat het afloopvenster wordt ingesteld op zeven dagen (met ITP 2.1) en één dag (met ITP 2.2 en ITP 2.3), kan het zijn dat er een toename is van unieke bezoekers die uit Safari-browsers komen. Als uw bezoekers uw domein na zeven dagen (ITP 2.1) of één dag (ITP 2.2 en ITP 2.3) terugkeren, wordt [!DNL Target] gedwongen om een nieuwe [!DNL Target] cookie op uw domein te plaatsen in plaats van de verlopen cookie. Het nieuwe [!DNL Target] cookie wordt omgezet naar een nieuwe unieke bezoeker, ook al is de gebruiker hetzelfde. |
+| Verlaagde terugzoektijden voor [!DNL Target] activiteiten | Bezoekersprofielen voor [!DNL Target] -activiteiten hebben mogelijk een kortere terugzoekperiode voor beslissingen. [!DNL Target] cookies worden gebruikt om een bezoeker te identificeren en gebruikersprofielkenmerken op te slaan voor personalisatie. Aangezien [!DNL Target] -cookies na zeven dagen (ITP 2.1) of één dag (ITP 2.2 en 2.3) in Safari kunnen verlopen, kunnen de gebruikersprofielgegevens die aan het gezuiverde [!DNL Target] -cookie waren gekoppeld, niet worden gebruikt voor beslissingen. |
+| Profielscripts gebaseerd op 3rdPartyID | Wegens het vervalvenster dat aan zeven dagen (met ITP 2.1) en één dag (met ITP 2.2 en ITP 2.3) wordt geplaatst, [ profielmanuscripten ](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html) die op het cookie 3rdPartyID worden gebaseerd zullen ophouden werkend bij afloop. |
+| URL&#39;s met kwaliteitscontrole/voorvertoning op iOS-apparaten | Wegens het vervalvenster dat aan zeven dagen (met ITP 2.1) en één dag (met ITP 2.2 en ITP 2.3) wordt geplaatst, [ QA/Voorproef URLs ](https://experienceleague.adobe.com/docs/target/using/activities/activity-qa/activity-qa.html) zal ophouden werkend bij afloop omdat URLs op het cookie 3rdPartyID gebaseerd is. |
 
-## Is mijn huidige implementatie van [!DNL Target] beïnvloed?
+## Heeft dit gevolgen voor mijn huidige implementatie van [!DNL Target] ?
 
-Als u naast de Experience Cloud-id (ECID) ook de bibliotheek gebruikt [!DNL Target] JavaScript-bibliotheek, wordt uw implementatie beïnvloed op de manieren die in dit artikel worden vermeld: [Safari ITP 2.1 Impact op klanten van Adobe Experience Cloud en Experience Platform](https://medium.com/adobetech/safari-itp-2-1-impact-on-adobe-experience-cloud-customers-9439cecb55ac).
+Als u de bibliotheek van Experience Cloud identiteitskaart (ECID) naast de [!DNL Target] bibliotheek van JavaScript gebruikt, zal uw implementatie op de manieren worden beïnvloed die in dit artikel worden vermeld: [ Safari ITP 2.1 Effect op de Klanten van Adobe Experience Cloud en van Experience Platform ](https://medium.com/adobetech/safari-itp-2-1-impact-on-adobe-experience-cloud-customers-9439cecb55ac).

@@ -2,9 +2,9 @@
 title: Integratie met Experience Cloud
 description: Integratie met Experience Cloud
 keywords: aflevering api
-source-git-commit: f16903556954d2b1854acd429f60fbf6fc2920de
+source-git-commit: 67cc93cf697f8d5bca6fedb3ae974e4012347a0b
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '467'
 ht-degree: 0%
 
 ---
@@ -25,8 +25,8 @@ Wanneer een vraag van de Levering API van het Doel van de server in brand wordt 
 
 Adobe Target kan de lading van de analysegegevens automatisch via de serverzijde naar Adobe Analytics doorsturen als de volgende id&#39;s worden opgegeven:
 
-1. `supplementalDataId` - De id die wordt gebruikt om te verbinden tussen Adobe Analytics en Adobe Target
-1. `trackingServer` - De Adobe Analaytics Server zodat Adobe Target en Adobe Analytics de gegevens op de juiste wijze kunnen samenvoegen, hetzelfde `supplementalDataId` moeten zowel aan Adobe Target als aan Adobe Analytics worden doorgegeven.
+1. `supplementalDataId` - De id die wordt gebruikt om te naaien tussen Adobe Analytics en Adobe Target
+1. `trackingServer` - De Adobe Analaytics Server Als Adobe Target en Adobe Analytics de gegevens op de juiste wijze willen samenvoegen, moet hetzelfde `supplementalDataId` worden doorgegeven aan zowel Adobe Target als Adobe Analytics.
 
 ```
 curl -X POST \
@@ -73,7 +73,7 @@ curl -X POST \
 
 ### Analytics Payload van Adobe Target ophalen
 
-Consumenten van de Adobe Target Delivery API kunnen de Adobe Analytics-lading voor een corresponderende doos ophalen zodat de consument de lading via de [API voor gegevensinvoer](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md). Wanneer een Adobe Target-aanroep op de server wordt geactiveerd, geeft u door `client_side` aan de `logging` in de aanvraag. Dit zal beurtelings een lading terugkeren als mbox in een activiteit aanwezig is die Analytics als rapporteringsbron gebruikt.
+De consumenten van Adobe Target leveren API kunnen de nuttige lading van Adobe Analytics voor een overeenkomstige mbox terugwinnen zodat de consument de nuttige lading naar Adobe Analytics via de [ Invoeging API van Gegevens ](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md) kan verzenden. Wanneer een Adobe Target-aanroep op de server wordt geactiveerd, geeft u `client_side` door aan het `logging` -veld in de aanvraag. Dit zal beurtelings een lading terugkeren als mbox in een activiteit aanwezig is die Analytics als rapporteringsbron gebruikt.
 
 ```
 curl -X POST \
@@ -121,7 +121,7 @@ curl -X POST \
     }'
 ```
 
-Wanneer u `logging` = `client_side`, ontvangt u de lading in de `mbox` veld zoals hieronder weergegeven.
+Nadat u `logging` = `client_side` hebt opgegeven, ontvangt u de lading in het veld `mbox` , zoals hieronder wordt weergegeven.
 
 ```
 {
@@ -176,7 +176,7 @@ Wanneer u `logging` = `client_side`, ontvangt u de lading in de `mbox` veld zoal
 }
 ```
 
-Als de reactie van Doel iets in bevat `analytics` -> `payload` eigenschap, doorsturen naar Adobe Analytics. Analytics weet hoe deze lading moet worden verwerkt. Dit kan in een verzoek van de GET worden gedaan gebruikend het volgende formaat:
+Als de reactie van Target iets bevat in de eigenschap `analytics` -> `payload` , stuurt u deze door zoals deze naar Adobe Analytics is. Analytics weet hoe deze lading moet worden verwerkt. Dit kan in een GET-verzoek in de volgende notatie worden gedaan:
 
 ```
 https://{datacollectionhost.sc.omtrdc.net}/b/ss/{rsid}/0/CODEVERSION?pe=tnt&tnta={payload}&mid={mid}&vid={vid}&aid={aid}
@@ -187,9 +187,9 @@ https://{datacollectionhost.sc.omtrdc.net}/b/ss/{rsid}/0/CODEVERSION?pe=tnt&tnta
 | Veldnaam | Vereist | Beschrijving |
 | --- | --- | --- |
 | `rsid` | Ja | De rapportsuite-id |
-| `pe` | Ja | Pagina-gebeurtenis. Altijd instellen op `tnt` |
-| `tnta` | Ja | Analyselading die door de server van het Doel in wordt geretourneerd `analytics` -> `payload` -> `tnta` |
-| `mid` | Bezoeker-id Marketing Cloud |
+| `pe` | Ja | Pagina-gebeurtenis. Altijd ingesteld op `tnt` |
+| `tnta` | Ja | Analyselading die door doelserver wordt geretourneerd in `analytics` -> `payload` -> `tnta` |
+| `mid` | Marketing Cloud-bezoeker-id |  |
 
 ### Vereiste koptekstwaarden
 
@@ -205,12 +205,12 @@ https://demo.sc.omtrdc.net/b/ss/myCustomRsid/0/MOBILE-1.0?pe=tnt&tnta=285408:0:0
 
 ## Adobe Audience Manager
 
-Adobe Audience Manager (AAM)-segmenten kunnen ook worden benut via Adobe Target Delivery-API&#39;s. Voor het hefboomeffect AAM segmenten moeten de volgende velden worden verstrekt:
+Adobe Audience Manager (AAM)-segmenten kunnen ook worden benut via Adobe Target Delivery-API&#39;s. Om AAM-segmenten te kunnen gebruiken, moeten de volgende velden worden ingevuld:
 
 | Veldnaam | Vereist | Beschrijving |
 | --- | --- | --- |
-| `locationHint` | Ja | De Hint van de Plaats DCS wordt gebruikt om te bepalen welke AAM DCS Eindpunt om te slaan om het profiel terug te winnen. Moet >= 1 zijn. |
-| `marketingCloudVisitorId` | Ja | Bezoeker-id Marketing Cloud |
+| `locationHint` | Ja | DCS-locatiehint wordt gebruikt om te bepalen welk AAM DCS-eindpunt moet worden bereikt om het profiel op te halen. Moet >= 1 zijn. |
+| `marketingCloudVisitorId` | Ja | Marketing Cloud-bezoeker-id |
 | `blob` | Ja | AAM Blob wordt gebruikt om aanvullende gegevens naar AAM te verzenden. Mag niet leeg zijn en de grootte &lt;= 1024. |
 
 ```

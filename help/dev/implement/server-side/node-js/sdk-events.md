@@ -1,28 +1,28 @@
 ---
-title: Abonneren op gebeurtenissen in het dialoogvenster [!DNL Adobe Target] Node.js SDK
-description: Leer hoe u zich abonneert op verschillende gebeurtenissen die plaatsvinden in de Node.js SDK met de [!UICONTROL OnDeviceDecisioningHandler] object.
+title: Abonneren aan gebeurtenissen in  [!DNL Adobe Target]  Node.js SDK
+description: Leer hoe u zich abonneert op verschillende gebeurtenissen die plaatsvinden in de SDK Node.js met behulp van het [!UICONTROL OnDeviceDecisioningHandler] -object.
 feature: APIs/SDKs
 exl-id: 40c53840-a560-4819-ae04-f527c36b22fe
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 67cc93cf697f8d5bca6fedb3ae974e4012347a0b
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 0%
 
 ---
 
-# SDK-gebeurtenissen (Node.js)
+# SDK Events (Node.js)
 
 ## Beschrijving
 
-Wanneer [initialiseren SDK](initialize-sdk.md)de `options.events` -object is een optioneel object met gebeurtenisnaamtoetsen en callback-functiewaarden. Het kan worden gebruikt om aan diverse gebeurtenissen in te tekenen die binnen SDK voorkomen. Bijvoorbeeld `clientReady` De gebeurtenis kan met een callback functie worden gebruikt die zal worden aangehaald wanneer SDK klaar voor methodevraag is.
+Wanneer [ het initialiseren van SDK ](initialize-sdk.md), is het `options.events` voorwerp een facultatief voorwerp met de sleutels van de gebeurtenisnaam en callback functiewaarden. Deze kan worden gebruikt om een abonnement te nemen op verschillende gebeurtenissen die plaatsvinden in de SDK. De gebeurtenis `clientReady` kan bijvoorbeeld worden gebruikt met een callback-functie die wordt aangeroepen wanneer de SDK gereed is voor methodeaanroepen.
 
-Wanneer de callback-functie wordt aangeroepen, wordt een gebeurtenisobject doorgegeven. Elke gebeurtenis heeft een `type` komt overeen met de gebeurtenisnaam. Sommige gebeurtenissen bevatten aanvullende eigenschappen met relevante informatie.
+Wanneer de callback-functie wordt aangeroepen, wordt een gebeurtenisobject doorgegeven. Elke gebeurtenis heeft een `type` die overeenkomt met de naam van de gebeurtenis. Sommige gebeurtenissen bevatten aanvullende eigenschappen met relevante informatie.
 
 ## Gebeurtenissen
 
 | Naam gebeurtenis (type) | Beschrijving | Aanvullende gebeurteniseigenschappen |
 | --- | --- | --- |
-| clientReady | Wordt verzonden wanneer het artefact is gedownload en de SDK gereed is voor `getOffers` oproepen. Aanbevolen bij gebruik van de beslissingsmethode op het apparaat. |
+| clientReady | Wordt verzonden wanneer het artefact is gedownload en de SDK gereed is voor `getOffers` -aanroepen. Aanbevolen bij gebruik van de beslissingsmethode op het apparaat. |  |
 | artifactDownloadSuccceeded | Wordt telkens verzonden wanneer een nieuw artefact wordt gedownload. | artifactPayload, artifactLocation |
 | artifactDownloadFailed | Wordt telkens verzonden wanneer een artefact niet kan worden gedownload. | artifactLocation, error |
 

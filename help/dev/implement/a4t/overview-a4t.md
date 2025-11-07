@@ -5,7 +5,8 @@ seo-title: Adobe Analytics for Target (A4T) Logging in the Experience Platform W
 seo-description: Learn how to control the collection of Adobe Analytics for Target (A4T) data using the Experience Platform Web SDK.
 keywords: a4t;logging;analytics;sdk;web sdk;
 feature: Implementation
-source-git-commit: b7638f7ab3fe9a6551c9d542a990e22ddb2b27a2
+exl-id: 886588bf-4416-4f1e-aecc-467e48c8fb23
+source-git-commit: 67cc93cf697f8d5bca6fedb3ae974e4012347a0b
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%
@@ -14,7 +15,7 @@ ht-degree: 0%
 
 # [!DNL Adobe Analytics for Target] (A4T) aanmelden bij [!DNL Experience Platform Web SDK]
 
-Wanneer u [!DNL Adobe Target] gebruikt voor personalisatie, kunt u kiezen welk systeem u wilt gebruiken voor prestatiemeting. Elk [&#x200B; activiteit van het Doel &#x200B;](https://experienceleague.adobe.com/docs/target/using/activities/target-activities-guide.html?lang=nl-NL) staat u toe om tussen [!DNL Target] het melden en Adobe [!DNL Analytics] het melden te selecteren.
+Wanneer u [!DNL Adobe Target] gebruikt voor personalisatie, kunt u kiezen welk systeem u wilt gebruiken voor prestatiemeting. Elk [ activiteit van het Doel ](https://experienceleague.adobe.com/docs/target/using/activities/target-activities-guide.html) staat u toe om tussen [!DNL Target] het melden en Adobe [!DNL Analytics] het melden te selecteren.
 
 Als u [!DNL Analytics] reporting gebruikt, moet [!DNL Target] het volgende meedelen aan [!DNL Analytics]:
 
@@ -27,11 +28,11 @@ De instructie [!DNL Adobe Experience Platform Web SDK] ondersteunt twee typen [!
 | Logmethode | Beschrijving |
 | --- | --- |
 | Logboekregistratie op de server [!DNL Analytics] | Alle [!DNL Analytics] -resultaten die via de Edge Network worden verzonden, worden vergroot met [!DNL Target] -gegevens aan de serverzijde, zonder dat u het detectieproces hoeft te doorlopen. |
-| Logboekregistratie op de client [!DNL Analytics] | [!DNL Target] gegevens zijn teruggekeerd op de cliëntkant, toestaand u om gegevens aan [!DNL Analytics] manueel te verhogen en te verzenden gebruikend de [&#x200B; Invoeging API van Gegevens &#x200B;](https://experienceleague.adobe.com/docs/analytics/import/c-data-insertion-api.html?lang=nl-NL). |
+| Logboekregistratie op de client [!DNL Analytics] | [!DNL Target] gegevens zijn teruggekeerd op de cliëntkant, toestaand u om gegevens aan [!DNL Analytics] manueel te verhogen en te verzenden gebruikend de [ Invoeging API van Gegevens ](https://experienceleague.adobe.com/docs/analytics/import/c-data-insertion-api.html). |
 
-De registrerenmethode wordt bepaald door of u [!DNL Adobe Analytics] toegelaten op uw gevormde [&#x200B; datastream &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/datastreams/overview) hebt:
+De registrerenmethode wordt bepaald door of u [!DNL Adobe Analytics] toegelaten op uw gevormde [ datastream ](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview) hebt:
 
-![&#x200B; Logging van de methodebeslissingsstroom &#x200B;](/help/dev/implement/a4t/assets/analytics-logging.png)
+![ Logging van de methodebeslissingsstroom ](/help/dev/implement/a4t/assets/analytics-logging.png)
 
 ## Volgende stappen
 

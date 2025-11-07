@@ -4,9 +4,9 @@ description: Leer hoe Adobe Target de gebruikersagent en de Tips van de Cliënt 
 title: Gebruikersagent en clienttips
 feature: at.js
 exl-id: e0d87d95-ee95-4ca9-8632-222ae1fb9a91
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 67cc93cf697f8d5bca6fedb3ae974e4012347a0b
 workflow-type: tm+mt
-source-wordcount: '1208'
+source-wordcount: '1162'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Adobe Target gebruikt de user-agent om bezoekers voor segmentatie en verpersoonl
 
 >[!NOTE]
 >
->De informatie in dit artikel is van toepassing op [at.js versie 2.9.0](target-atjs-versions.md) (of hoger).
+>De informatie in dit artikel is op [ at.js versie 2.9.0 ](target-atjs-versions.md) (of later) van toepassing.
 
 Telkens wanneer een webbrowser een verzoek indient bij een server, wordt informatie over de browser en de omgeving waarin de browser wordt uitgevoerd, opgenomen in de koptekst van de aanvraag. Sinds de vroege dagen van Internet, zijn deze gegevens bijeengevoegd in één enkel koord genoemd user-agent.
 
@@ -31,13 +31,13 @@ Van deze user-agent, kan de server die het verzoek ontvangt de volgende informat
 
 | Informatie | Details |
 | --- | --- |
-| Naam software | Chroom |
+| Naam software | Chrome |
 | Softwareversie | 101 |
 | Volledige softwareversie | 101.0.4951.41 |
 | Naam van lay-outengine | AppleWebKit |
-| Versie van lay-outengine | 537.36 |
+| Versie van lay-outengine | 537,36 |
 | Besturingssysteem | Android |
-| Versie besturingssysteem | Android 12 (sneeuwkloon) |
+| Versie besturingssysteem | Android 12 (sneeuwkegel) |
 | Apparaat | SM-S908E (Samsung Galaxy S22 Ultra) |
 
 In de loop der jaren is de hoeveelheid browser- en apparaatinformatie in de user-agent-tekenreeks toegenomen.
@@ -146,7 +146,7 @@ Als u het publiek van het Doel gebruikt en om het even welke volgende publieksat
 
 ### Profielscripts
 
-Als u profielscripts gebruikt en verwijst u naar de `user.browser` attribuut (dat naar gebruiker-agent verwijst), zou u het profielmanuscript kunnen moeten bijwerken om één of meerdere wenken van de Cliënt ook te controleren. U kunt tot om het even welke wenken van de Cliënt toegang hebben gebruikend de functie `user.clientHint('sec-ch-ua-xxxxx')`. De naam van de header van de client-tip moet allemaal in kleine letters zijn.
+Als u profielscripts gebruikt en naar het kenmerk `user.browser` verwijst (dat naar user-agent verwijst), moet u mogelijk het profielscript bijwerken om een of meer clienttips te controleren. U hebt toegang tot alle clienttips met de functie `user.clientHint('sec-ch-ua-xxxxx')` . De naam van de header van de client-tip moet allemaal in kleine letters zijn.
 
 In het volgende voorbeeld ziet u hoe u een Windows-besturingssysteem correct detecteert in een profielscript:
 
@@ -160,14 +160,14 @@ Hier is een lijst van de wenken van de Cliënt en hun overeenkomstige het gebrui
 
 | Clienttip | Entropie | Auditiekenmerk | Gebruik van profielscript |
 | --- | --- | --- | --- |
-| [Sec-CH-UA](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-CH-UA) | Laag | Browser | `user.clientHint('sec-ch-ua')` |
-| [Sec-CH-UA-Arch](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-CH-UA-Arch) | Hoog | Aan gebruikers beschikbaar via profielscripts | `user.clientHint('sec-ch-ua-arch')` |
-| [Sec-CH-UA-Bitness](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-CH-UA-Bitness) | Hoog | Aan gebruikers beschikbaar via profielscripts | `user.clientHint('sec-ch-ua-bitness')` |
-| [Sec-CH-UA-Full-Version-List](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-CH-UA-Full-Version-List) | Hoog | Browser | `user.clientHint('sec-ch-ua-full-version-list')` |
-| [Sec-CH-UA-Mobile](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-CH-UA-Mobile) | Laag | Mobiel | `user.clientHint('sec-ch-ua-mobile')` |
-| [Sec-CH-UA-model](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-CH-UA-Model) | Hoog | Mobiel | `user.clientHint('sec-ch-ua-model')` |
-| [Sec-CH-UA-Platform](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-CH-UA-Platform) | Laag | Besturingssysteem | `user.clientHint('sec-ch-ua-platform')` |
-| [Sec-CH-UA-Platform-Version](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-CH-UA-Platform-Version) | Hoog | Aan gebruikers beschikbaar via profielscripts | `user.clientHint('sec-ch-ua-platform-version')` |
+| [ sec-CH-UA ](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-CH-UA) | Laag | Browser | `user.clientHint('sec-ch-ua')` |
+| [ Sec-CH-UA-Arch ](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-CH-UA-Arch) | Hoog | Aan gebruikers beschikbaar via profielscripts | `user.clientHint('sec-ch-ua-arch')` |
+| [ sec-CH-UA-Bitness ](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-CH-UA-Bitness) | Hoog | Aan gebruikers beschikbaar via profielscripts | `user.clientHint('sec-ch-ua-bitness')` |
+| [ sec-CH-UA-Volledig-Versie-Lijst ](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-CH-UA-Full-Version-List) | Hoog | Browser | `user.clientHint('sec-ch-ua-full-version-list')` |
+| [ sec-CH-UA-Mobiel ](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-CH-UA-Mobile) | Laag | Mobiel | `user.clientHint('sec-ch-ua-mobile')` |
+| [ sec-CH-UA-Model ](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-CH-UA-Model) | Hoog | Mobiel | `user.clientHint('sec-ch-ua-model')` |
+| [ sec-CH-UA-Platform ](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-CH-UA-Platform) | Laag | Besturingssysteem | `user.clientHint('sec-ch-ua-platform')` |
+| [ sec-CH-UA-Platform-Versie ](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-CH-UA-Platform-Version) | Hoog | Aan gebruikers beschikbaar via profielscripts | `user.clientHint('sec-ch-ua-platform-version')` |
 
 ## Clienttips doorgeven aan Adobe Target
 
@@ -175,7 +175,7 @@ De volgende secties bevatten meer informatie over hoe te om de wenken van de Cli
 
 ### at.js versie 2.9.0 (of hoger)
 
-Beginnend met at.js 2.9.0, zullen de wenken van de Cliënt van de Agent van de Gebruiker automatisch van browser worden verzameld en naar Doel verzonden wanneer `getOffer/getOffers()` wordt aangeroepen. Standaard verzamelt at at.js alleen &#39;Low Entropy&#39;-clienttips. Als het uitvoeren van publiekssegmentatie of het gebruiken van profielmanuscripten die op gegevens worden gebaseerd die als &quot;Hoge Entropie&quot;van de voorafgaande secties worden gecategoriseerd, moet u at.js vormen om de Hints van de Cliënt &quot;High Entropy&quot;van browser via te verzamelen `targetGlobalSettings`.
+Vanaf at.js 2.9.0 worden de Tips van de Cliënt van de Agent van de Gebruiker automatisch verzameld van browser en verzonden naar Doel wanneer `getOffer/getOffers()` wordt geroepen. Standaard verzamelt at at.js alleen &#39;Low Entropy&#39;-clienttips. Als het uitvoeren van publiekssegmentatie of het gebruiken van profielmanuscripten die op gegevens worden gebaseerd die als &quot;Hoge Entropie&quot;van de voorafgaande secties worden gecategoriseerd, moet u at.js vormen om &quot;Hoge Tips van de Cliënt Entropie&quot;van browser via `targetGlobalSettings` te verzamelen.
 
 ```
 window.targetGlobalSettings = { allowHighEntropyClientHints: true };
@@ -183,4 +183,4 @@ window.targetGlobalSettings = { allowHighEntropyClientHints: true };
 
 ### SDK&#39;s aan serverzijde
 
-Voor meer informatie over hoe te om de wenken van de Cliënt via server-kant SDKs over te gaan, zie [Clienttips](../../server-side/sdk-guides/core-principles/audience-targeting.md#client-hints) onder Implementatiedocumentatie aan de serverzijde.
+Voor meer informatie over hoe te om de wenken van de Cliënt via server-kant SDKs over te gaan, zie [ wenken van de Cliënt ](../../server-side/sdk-guides/core-principles/audience-targeting.md#client-hints) onder Server-kant de documentatie van de Implementatie.

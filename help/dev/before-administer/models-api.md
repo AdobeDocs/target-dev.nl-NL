@@ -1,46 +1,46 @@
 ---
-title: Overzicht van Adobe Modellen API
+title: Overzicht Adobe Models API
 description: Overzicht van de Modellen API, die gebruikers kunnen gebruiken om te voorkomen dat functies worden opgenomen in modellen voor machinaal leren.
 exl-id: e34b9b03-670b-4f7c-a94e-0c3cb711d8e4
 feature: APIs/SDKs, Recommendations, Administration & Configuration
-source-git-commit: 09a50aa67ccd5c687244a85caad24df56c0d78f5
+source-git-commit: 67cc93cf697f8d5bca6fedb3ae974e4012347a0b
 workflow-type: tm+mt
-source-wordcount: '1284'
+source-wordcount: '1288'
 ht-degree: 0%
 
 ---
 
 # Modellen API - Overzicht
 
-Met de API Modellen, ook wel de Lijst van gewezen personen-API genoemd, kunnen gebruikers de lijst met functies weergeven en beheren die in modellen voor machinaal leren worden gebruikt voor [!UICONTROL Automated Personalization] (AP) en [!DNL Auto-Target] (AT) activiteiten. Als een gebruiker een eigenschap van door de modellen voor AP of bij activiteiten zou willen uitsluiten worden gebruikt, kunnen zij Modellen API gebruiken om die eigenschap aan de &quot;lijst van gewezen personen toe te voegen.&quot;
+Met de API Modellen, ook wel de Lijst van gewezen personen-API genoemd, kunnen gebruikers de lijst met functies weergeven en beheren die worden gebruikt in modellen voor machinaal leren voor [!UICONTROL Automated Personalization]- (AP) en [!DNL Auto-Target] -activiteiten (AT). Als een gebruiker een eigenschap van door de modellen voor AP of bij activiteiten zou willen uitsluiten worden gebruikt, kunnen zij Modellen API gebruiken om die eigenschap aan de &quot;lijst van gewezen personen toe te voegen.&quot;
 
-A **[!UICONTROL blocklist]** definieert de reeks functies die worden uitgesloten door [!DNL Adobe Target] van zijn modellen voor machinaal leren. Zie voor meer informatie over functies [Door [!DNL Target] computerleeralgoritmen](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/ap-data.html?lang=nl-NL).
+Een **[!UICONTROL blocklist]** definieert de reeks functies die door [!DNL Adobe Target] worden uitgesloten van zijn leermodellen voor computers. Voor meer informatie over eigenschappen, zie [ Gegevens die door  [!DNL Target]  worden gebruikt machine-leert algoritmen ](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/ap-data.html).
 
-Lijsten van gewezen personen kunnen per activiteit (activiteitsniveau) of voor alle activiteiten binnen een [!DNL Target] account (algemeen niveau).
+Lijsten van gewezen personen kunnen worden gedefinieerd per activiteit (activiteitsniveau) of voor alle activiteiten binnen een [!DNL Target] -account (algemeen niveau).
 
 <!-- To get started with the Models API in order to create and manage your blocklist, download the Postman Collection [here](https://git.corp.adobe.com/target/ml-configuration-management-service/tree/nextRelease/rest_api_library). Note this is an Adobe internal link. Need to publish this publicly if want to share with customers. -->
 
 ## Modellen API-specificatie
 
-De Modellen API-specificatie weergeven [hier](../administer/models-api/models-api-overview.md).
+Bekijk hier de Modellen API specificatie [ ](../administer/models-api/models-api-overview.md).
 
 ## Vereisten
 
-Als u de Modellen-API wilt gebruiken, moet u verificatie configureren met de [Adobe Developer Console](https://developer.adobe.com/console/home), net als bij de [API voor doelbeheer](../administer/admin-api/admin-api-overview-new.md). Zie voor meer informatie [Verificatie configureren](../before-administer/configure-authentication.md).
+Om de Modellen API te gebruiken, moet u authentificatie vormen gebruikend [ Adobe Developer Console ](https://developer.adobe.com/console/home), enkel zoals u met [ Admin API van het Doel ](../administer/admin-api/admin-api-overview-new.md) zou. Voor meer informatie, zie [ hoe te om Authentificatie ](../before-administer/configure-authentication.md) te vormen.
 
 ## Richtlijnen voor gebruik van modellen-API
 
 Hoe te om lijsten van gewezen personen te beheren
 
-[**Stap 1:**](#step1) Lijst met functies voor een activiteit weergeven
+[**Stap 1:**](#step1) lijst van de Mening van eigenschappen voor een activiteit
 
-[**Stap 2:**](#step2) Controleer de lijst van gewezen personen van de activiteit
+[**Stap 2:**](#step2) controleer de lijst van gewezen personen van de activiteit
 
-[**Stap 3:**](#step3) Functies toevoegen aan de lijst van gewezen personen van de activiteit
+[**Stap 3:**](#step3) voegt eigenschappen aan de lijst van gewezen personen van de activiteit toe
 
-[**Stap 4:**](#step4) (Optioneel) Blokkeren opheffen
+[**Stap 4:**](#step4) (Facultatieve) Unblock
 
-[**Stap 5:**](#step5) (Optioneel) De algemene lijst van gewezen personen beheren
+[**Stap 5:**](#step5) (Facultatief) beheert de globale lijst van gewezen personen
 
 
 ## Stap 1: Lijst met functies voor een activiteit weergeven {#step1}
@@ -49,13 +49,13 @@ Voordat u een functie voegt op lijst van gewenste personen, bekijkt u de lijst m
 
 >[!BEGINTABS]
 
->[!TAB Verzoek]
+>[!TAB  Verzoek ]
 
 ```json {line-numbers="true"}
 GET https://mc.adobe.io/<tenant>/target/models/features/<campaignId>
 ```
 
->[!TAB Antwoord]
+>[!TAB  Reactie ]
 
 ```json {line-numbers="true"}
 {
@@ -94,15 +94,15 @@ GET https://mc.adobe.io/<tenant>/target/models/features/<campaignId>
 
 In het hier getoonde voorbeeld, controleert de gebruiker om de lijst van eigenschappen te zien die in het model voor de activiteit worden gebruikt waarvan identiteitskaart van de Activiteit 260840 is.
 
-![Stap 1](assets/models-api-step-1.png)
+![ Stap 1 ](assets/models-api-step-1.png)
 
 >[!NOTE]
 >
->Navigeer naar de Activiteitenlijst in het dialoogvenster [!DNL Target] UI. Klik op de activiteit van belang. De activiteit-id wordt weergegeven in de hoofdtekst van de resulterende pagina Overzicht van activiteiten en aan het einde van de URL voor die pagina.
+>Navigeer naar de Activiteitenlijst in de [!DNL Target] gebruikersinterface om de activiteit-id van uw activiteit te zoeken. Klik op de activiteit van belang. De activiteit-id wordt weergegeven in de hoofdtekst van de resulterende pagina Overzicht van activiteiten en aan het einde van de URL voor die pagina.
 
-De **[!UICONTROL externalName]** is een gebruiksvriendelijke naam voor een functie. Het wordt gemaakt door [!DNL Target]en het is mogelijk dat deze waarde in de loop der tijd verandert. Gebruikers kunnen deze gebruikersvriendelijke namen weergeven in het dialoogvenster [Verslag over persoonlijke inzichten](https://experienceleague.adobe.com/docs/target/using/reports/insights/personalization-insights-reports.html?lang=nl-NL).
+**[!UICONTROL externalName]** is een gebruiksvriendelijke naam voor een functie. Deze wordt gemaakt door [!DNL Target] en het is mogelijk dat deze waarde in de loop van de tijd verandert. De gebruikers kunnen deze gebruikersvriendelijke namen in het [ rapport van de Inzichten van Personalization ](https://experienceleague.adobe.com/docs/target/using/reports/insights/personalization-insights-reports.html) bekijken.
 
-De **[!UICONTROL internalName]** is de werkelijke id van de functie. Het wordt ook gemaakt door [!DNL Target], maar het kan niet worden gewijzigd. Dit is de waarde waarnaar u moet verwijzen om de functie(s) te identificeren die u wilt lijsten van gewezen personen.
+De **[!UICONTROL internalName]** is de werkelijke id van de functie. Deze wordt ook gemaakt door [!DNL Target] , maar kan niet worden gewijzigd. Dit is de waarde waarnaar u moet verwijzen om de functie(s) te identificeren die u wilt lijsten van gewezen personen.
 
 Houd er rekening mee dat de lijst met functies alleen waarden kan bevatten (zodat deze niet null is) als een activiteit:
 
@@ -115,17 +115,17 @@ Bekijk nu de lijst van gewezen personen. Met andere woorden, controleer of er fu
 
 >[!ERROR]
 >
->Let op: `/blockList/` is hoofdlettergevoelig in het verzoek.
+>`/blockList/` is hoofdlettergevoelig in de aanvraag.
 
 >[!BEGINTABS]
 
->[!TAB Verzoek]
+>[!TAB  Verzoek ]
 
 ```json {line-numbers="true"}
 GET https://mc.adobe.io/<tenant>/target/models/features/blockList/<campaignId>
 ```
 
->[!TAB Antwoord]
+>[!TAB  Reactie ]
 
 ```json {line-numbers="true"}
 
@@ -135,23 +135,23 @@ GET https://mc.adobe.io/<tenant>/target/models/features/blockList/<campaignId>
 
 In het hier weergegeven voorbeeld controleert de gebruiker de lijst met geblokkeerde functies voor de activiteit waarvan de activiteit-id 260840 is. De resultaten zijn leeg, wat betekent dat deze activiteit momenteel geen gevoegde op lijst van gewenste personen functies heeft.
 
-![Stap 2](assets/models-api-step-2.png)
+![ Stap 2 ](assets/models-api-step-2.png)
 
 >[!NOTE]
 >
->U ziet mogelijk lege resultaten zoals deze, de eerste keer dat u de volledige lijst van gewezen personen controleert voordat u er functies aan toevoegt. Als u echter functies uit een lijst van gewezen personen hebt toegevoegd (en vervolgens verwijderd), ziet u mogelijk iets andere resultaten, waarbij een lege, op de lijst met ongewenste personen staan array met functies wordt geretourneerd. Lees verder om een voorbeeld hiervan te bekijken in [Stap 4](#step4).
+>U ziet mogelijk lege resultaten zoals deze, de eerste keer dat u de volledige lijst van gewezen personen controleert voordat u er functies aan toevoegt. Als u echter functies uit een lijst van gewezen personen hebt toegevoegd (en vervolgens verwijderd), ziet u mogelijk iets andere resultaten, waarbij een lege, op de lijst met ongewenste personen staan array met functies wordt geretourneerd. Ga verder lezend om een voorbeeld van dit in [ te zien Stap 4 ](#step4).
 
 ## Stap 3: voeg eigenschappen aan de lijst van gewezen personen van de activiteit toe {#step3}
 
-Om eigenschappen aan de lijst van gewezen personen toe te voegen, verander het verzoek van GET in PUT, en wijzig het lichaam van het verzoek om te specificeren `blockedFeatureSources` of `blockedFeatures` naar wens.
+Als u functies wilt toevoegen aan de lijst van gewezen personen, wijzigt u de aanvraag van GET in PUT en wijzigt u de hoofdtekst van de aanvraag om de `blockedFeatureSources` of `blockedFeatures` naar wens op te geven.
 
-* De inhoud van het verzoek vereist: `blockedFeatures` of `blockedFeatureSources`. Beide kunnen worden opgenomen.
-* Vullen `blockedFeatures` met waarden die zijn geïdentificeerd uit `internalName`. Zie [Stap 1](#step1).
-* Vullen `blockedFeatureSources` met waarden uit de onderstaande tabel.
+* Voor de hoofdtekst van de aanvraag is `blockedFeatures` of `blockedFeatureSources` vereist. Beide kunnen worden opgenomen.
+* Vul `blockedFeatures` met waarden die zijn geïdentificeerd uit `internalName` . Zie [ Stap 1 ](#step1).
+* Vul `blockedFeatureSources` met waarden uit de onderstaande tabel.
 
-Let op: `blockedFeatureSources` Hiermee wordt aangegeven waar een functie vandaan komt. Voor het voegend op lijst van gewenste personen maken dienen zij als groepen of categorieën eigenschappen, die gebruikers toelaten om volledige reeksen eigenschappen in één keer te blokkeren. De waarden van `blockedFeatureSources` komen overeen met de eerste tekens van de id van een functie (`blockedFeatures` of `internalName` waarden); daarom kunnen ze ook als &quot;voorvoegsels van functies&quot; worden beschouwd.
+`blockedFeatureSources` geeft aan waar een functie vandaan komt. Voor het voegend op lijst van gewenste personen maken dienen zij als groepen of categorieën eigenschappen, die gebruikers toelaten om volledige reeksen eigenschappen in één keer te blokkeren. De waarden van `blockedFeatureSources` komen overeen met de eerste tekens van de id van een functie (`blockedFeatures` of `internalName` waarden); daarom kunnen deze ook als &#39;functievoorvoegsels&#39; worden beschouwd.
 
-### Tabel `blockedFeatureSources` waarden {#table}
+### Tabel met `blockedFeatureSources` waarden {#table}
 
 | Voorvoegsel | Beschrijving |
 | --- | --- |
@@ -166,11 +166,11 @@ Let op: `blockedFeatureSources` Hiermee wordt aangegeven waar een functie vandaa
 | MOB | Mobiel |
 | CRS | Aangepast - Klantkenmerken |
 | UPA | Aangepast - RT-CDP-profielkenmerk |
-| IAC | Belangengebieden bezoekers |  |
+| IAC | Belangengebieden bezoekers |
 
 >[!BEGINTABS]
 
->[!TAB Verzoek]
+>[!TAB  Verzoek ]
 
 ```json {line-numbers="true"}
 PUT https://mc.adobe.io/<tenant>/target/models/features/blockList/<campaignId>
@@ -181,7 +181,7 @@ PUT https://mc.adobe.io/<tenant>/target/models/features/blockList/<campaignId>
 }
 ```
 
->[!TAB Antwoord]
+>[!TAB  Reactie ]
 
 ```json {line-numbers="true"}
 {
@@ -197,19 +197,19 @@ PUT https://mc.adobe.io/<tenant>/target/models/features/blockList/<campaignId>
 
 >[!ENDTABS]
 
-In het hier weergegeven voorbeeld blokkeert de gebruiker twee functies. `SES_PREVIOUS_VISIT_COUNT` en `SES_TOTAL_SESSIONS`, die zij eerder hebben geïdentificeerd door de volledige lijst met functies te vragen voor de activiteit waarvan activiteit-id 260480 is, zoals beschreven in [Stap 1](#step1). Zij blokkeren ook alle eigenschappen die uit de Segmenten van Experience Cloud komen, die door eigenschappen met de prefix van &quot;AAM,&quot;worden bereikt te blokkeren zoals die in [table](#table) hierboven.
+In het hier getoonde voorbeeld, blokkeert de gebruiker twee eigenschappen, `SES_PREVIOUS_VISIT_COUNT` en `SES_TOTAL_SESSIONS`, die zij eerder door de volledige lijst van eigenschappen voor de activiteit te vragen waarvan identiteitskaart van de Activiteit 260480 is, zoals die in [ Stap 1 ](#step1) wordt beschreven. Zij blokkeren ook alle eigenschappen die uit de Segmenten van Experience Cloud komen, die door eigenschappen met de prefix van &quot;AAM,&quot;zoals die in de [ lijst ](#table) hierboven wordt beschreven te blokkeren worden bereikt.
 
-![Stap 3](assets/models-api-step-3.png)
+![ Stap 3 ](assets/models-api-step-3.png)
 
-Nadat u een functie hebt gevoegd op lijst van gewenste personen, wordt u aangeraden de bijgewerkte lijst van gewezen personen te controleren door [Stap 2](#step2) nogmaals (GET de lijst van gewezen personen). Controleer of de resultaten er goed uitzien (controleer of de resultaten de functies bevatten die zijn toegevoegd uit de meest recente aanvraag voor PUT).
+Merk op dat na het voegend op lijst van gewenste personen een eigenschap, het wordt geadviseerd dat u de bijgewerkte lijst van gewezen personen door [ Stap 2 ](#step2) opnieuw uit te voeren (GET de lijst van gewezen personen) verifieert. Controleer of de resultaten er goed uitzien (controleer of de resultaten de functies bevatten die zijn toegevoegd uit de meest recente PUT-aanvraag).
 
 ## Stap 4: (Optioneel) Blokkeren opheffen {#step4}
 
-Als u alle op de lijst met ongewenste personen staan functies wilt ontgrendelen, wist u de waarden uit `blockedFeatureSources` of `blockedFeatures`.
+Als u alle op de lijst met ongewenste personen staan functies wilt ontgrendelen, wist u de waarden uit `blockedFeatureSources` of `blockedFeatures` .
 
 >[!BEGINTABS]
 
->[!TAB Verzoek]
+>[!TAB  Verzoek ]
 
 ```json {line-numbers="true"}
 PUT https://mc.adobe.io/<tenant>/target/models/features/blockList/<campaignId>
@@ -220,7 +220,7 @@ PUT https://mc.adobe.io/<tenant>/target/models/features/blockList/<campaignId>
 }
 ```
 
->[!TAB Antwoord]
+>[!TAB  Reactie ]
 
 ```json {line-numbers="true"}
 {
@@ -231,25 +231,25 @@ PUT https://mc.adobe.io/<tenant>/target/models/features/blockList/<campaignId>
 
 >[!ENDTABS]
 
-In het hier getoonde voorbeeld, ontruimt de gebruiker hun lijst van gewezen personen voor de activiteit waarvan identiteitskaart van de Activiteit 260840 is. In het antwoord worden lege arrays voor zowel geblokkeerde functies als hun bronnen bevestigd—`blockedFeatureSources` en `blockedFeatures`, respectievelijk.
+In het hier getoonde voorbeeld, ontruimt de gebruiker hun lijst van gewezen personen voor de activiteit waarvan identiteitskaart van de Activiteit 260840 is. Merk op dat de reactie lege series voor zowel geblokkeerde eigenschappen als hun bronnen bevestigt— `blockedFeatureSources` en `blockedFeatures`, respectievelijk.
 
-![Stap 4](assets/models-api-step-4.png)
+![ Stap 4 ](assets/models-api-step-4.png)
 
-Zoals altijd, na het wijzigen van de lijst van gewezen personen, adviseert men dat u uitvoert [Stap 2](#step2) nogmaals (GET de lijst van gewezen personen om te verifiëren de lijst eigenschappen zoals verwacht omvat). In het hier weergegeven voorbeeld controleert de gebruiker of zijn lijst van gewezen personen nu leeg is.
+Zoals altijd, na het wijzigen van de lijst van gewezen personen, adviseert men dat u [ Stap 2 ](#step2) opnieuw uitvoert (GET de lijst van gewezen personen om de lijst te verifiëren omvat eigenschappen zoals verwacht). In het hier weergegeven voorbeeld controleert de gebruiker of zijn lijst van gewezen personen nu leeg is.
 
-![Stap 4b](assets/models-api-step-4b.png)
+![ Stap 4b ](assets/models-api-step-4b.png)
 
 Vraag: Hoe kan ik sommige, maar niet alle, lijsten van gewezen personen verwijderen?
 
-Antwoord: Om een discrete ondergroep van op de lijst met ongewenste personen staan eigenschappen uit een multi-eigenschapslijst van gewezen personen te verwijderen, kunnen de gebruikers eenvoudig de bijgewerkte lijst van eigenschappen verzenden zij binnen willen blokkeren [het verzoek om lijst van gewezen personen](#step3)in plaats van de hele lijst van gewezen personen te wissen en de gewenste functies opnieuw toe te voegen. Met andere woorden, verzend de bijgewerkte eigenschaplijst (zoals aangetoond in [Stap 3](#step3)), waarbij u ervoor zorgt dat de functies die u wilt verwijderen, niet in de lijst van gewezen personen worden opgenomen.
+Antwoord: Om een discrete ondergroep van op de lijst met ongewenste personen staan eigenschappen uit een multi-eigenschapslijst van gewezen personen te verwijderen, kunnen de gebruikers de bijgewerkte lijst van eigenschappen eenvoudig verzenden zij in [ het verzoek van de lijst van gewezen personen ](#step3), in tegenstelling tot het ontruimen van de volledige lijst van gewezen personen zouden willen blokkeren en de gewenste eigenschappen opnieuw toevoegen. Met andere woorden, verzend de bijgewerkte eigenschaplijst (zoals aangetoond in [ Stap 3 ](#step3)), die ervoor zorgen om de eigenschappen uit te sluiten u wenst om &quot;te schrappen&quot;van de lijst van gewezen personen.
 
 ## Stap 5: (Optioneel) Beheer de algemene lijst van gewezen personen {#step5}
 
-De bovenstaande voorbeelden hadden allemaal betrekking op één enkele activiteit. U kunt eigenschappen voor alle activiteiten over een bepaalde cliënt (huurder) ook blokkeren, in plaats van het moeten de lijst van gewezen personen voor elke activiteit afzonderlijk specificeren. Als u een algemene lijst van gewezen personen wilt uitvoeren, gebruikt u de `/blockList/global` vraag, in plaats van `blockList/<campaignId>`.
+De bovenstaande voorbeelden hadden allemaal betrekking op één enkele activiteit. U kunt eigenschappen voor alle activiteiten over een bepaalde cliënt (huurder) ook blokkeren, in plaats van het moeten de lijst van gewezen personen voor elke activiteit afzonderlijk specificeren. Als u een algemene lijst van gewezen personen wilt uitvoeren, gebruikt u de aanroep `/blockList/global` in plaats van `blockList/<campaignId>` .
 
 >[!BEGINTABS]
 
->[!TAB Verzoek]
+>[!TAB  Verzoek ]
 
 ```json {line-numbers="true"}
 PUT https://mc.adobe.io/<tenant>/target/models/features/blockList/global
@@ -260,7 +260,7 @@ PUT https://mc.adobe.io/<tenant>/target/models/features/blockList/global
 }
 ```
 
->[!TAB Antwoord]
+>[!TAB  Reactie ]
 
 ```json {line-numbers="true"}
 {
@@ -278,14 +278,14 @@ PUT https://mc.adobe.io/<tenant>/target/models/features/blockList/global
 
 >[!ENDTABS]
 
-In het voorbeeldVerzoek hierboven wordt getoond, blokkeert de gebruiker twee eigenschappen, &quot;AAM_FEATURE_1&quot;en &quot;AAM_FEATURE_2,&quot;voor alle activiteiten in hun [!DNL Target] account. Dit betekent dat, ongeacht de activiteit, &quot;AAM_FEATURE_1&quot; en &quot;AAM_FEATURE_2&quot; niet in de machine het leren modellen voor deze rekening zullen worden omvat. Bovendien blokkeert de gebruiker wereldwijd ook alle functies waarvan het voorvoegsel &quot;AAM&quot;, &quot;PRO&quot; of &quot;ENV&quot; is.
+In de voorbeeldaanvraag hierboven blokkeert de gebruiker twee functies, &quot;AAM_FEATURE_1&quot; en &quot;AAM_FEATURE_2&quot;, voor alle activiteiten in hun [!DNL Target] -account. Dit betekent dat, ongeacht de activiteit, &quot;AAM_FEATURE_1&quot; en &quot;AAM_FEATURE_2&quot; niet zullen worden opgenomen in de modellen voor machinaal leren voor dit account. Bovendien blokkeert de gebruiker wereldwijd ook alle functies waarvan het voorvoegsel &quot;AAM&quot;, &quot;PRO&quot; of &quot;ENV&quot; is.
 
 Vraag: Is het bovenstaande codevoorbeeld niet overbodig?
 
-Antwoord: Ja. Het is overtollig om eigenschappen met waarden te blokkeren die met &quot;AAM beginnen,&quot;terwijl ook het blokkeren van alle eigenschappen de waarvan bron &quot;AAM is.&quot; Het nettoresultaat is dat alle functies die afkomstig zijn van AAM (Experience Cloud-segmenten) worden geblokkeerd. Daarom als het doel is alle eigenschappen van de Segmenten van Experience Cloud te blokkeren, individueel specificerend bepaalde eigenschappen die met &quot;AAM&quot;beginnen is onnodig, in het bovenstaande voorbeeld.
+Antwoord: Ja. Het is overbodig om functies te blokkeren met waarden die beginnen met &quot;AAM&quot; en tegelijkertijd alle functies te blokkeren waarvan de bron &quot;AAM&quot; is. Het nettoresultaat is dat alle functies van AAM (Experience Cloud Segments) worden geblokkeerd. Daarom als het doel is om alle eigenschappen van de Segmenten van Experience Cloud te blokkeren, individueel het specificeren van bepaalde eigenschappen die met &quot;AAM&quot;beginnen is onnodig, in het bovenstaande voorbeeld.
 
-Laatste stap: Of dit nu op het niveau van de activiteit of wereldwijd is, u wordt aangeraden de lijst van gewezen personen te verifiëren nadat u deze hebt gewijzigd, om er zeker van te zijn dat deze de waarden bevat die u verwacht. Doe dit door de `PUT` een `GET`.
+Laatste stap: Of dit nu op het niveau van de activiteit of wereldwijd is, u wordt aangeraden de lijst van gewezen personen te verifiëren nadat u deze hebt gewijzigd, om er zeker van te zijn dat deze de waarden bevat die u verwacht. Dit doet u door de `PUT` in een `GET` te wijzigen.
 
-Hieronder wordt een voorbeeldreactie weergegeven [!DNL Target] blokkeert twee afzonderlijke functies, plus alle functies van &quot;AAM&quot;, &quot;PRO&quot; en &quot;ENV&quot;.
+De voorbeeldreactie hieronder geeft aan dat [!DNL Target] twee afzonderlijke functies blokkeert, plus alle functies die afkomstig zijn van &quot;AAM&quot;, &quot;PRO&quot; en &quot;ENV&quot;.
 
-![Stap 5](assets/models-api-step-5.png)
+![ Stap 5 ](assets/models-api-step-5.png)

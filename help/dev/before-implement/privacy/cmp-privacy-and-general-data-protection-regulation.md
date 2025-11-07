@@ -4,9 +4,9 @@ description: Leer over Doel en de Algemene Verordening van de Europese Unie van 
 title: Hoe handelt Target Privacy- en gegevensbeschermingsregels af?
 feature: Privacy & Security
 exl-id: 40bac3c5-8e6f-4a90-ac0c-eddce1dbe6c0
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 67cc93cf697f8d5bca6fedb3ae974e4012347a0b
 workflow-type: tm+mt
-source-wordcount: '2374'
+source-wordcount: '2329'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,11 @@ Informatie over de algemene gegevensbeschermingsverordening van de Europese Unie
 
 ## Overzicht van privacy en algemene gegevensbeschermingsverordening (GDPR)
 
-Op 25 mei 2018 is de GDPR van de Europese Unie van kracht geworden. Voor meer informatie over wat deze verordening voor u betekent, zie [GDPR en uw bedrijf](https://business.adobe.com/nl/privacy/general-data-protection-regulation.html).
+Op 25 mei 2018 is de GDPR van de Europese Unie van kracht geworden. Voor meer informatie over wat deze verordening voor u betekent, zie [ GDPR en Uw Zaken ](https://business.adobe.com/privacy/general-data-protection-regulation.html).
 
-Wanneer Adobe software en de diensten aan een onderneming verleent, handelt Adobe als Bewerker van Gegevens voor om het even welke persoonlijke gegevens het verwerkt en opslaat als deel van het verlenen van deze diensten. Als gegevensverwerker verwerkt Adobe persoonlijke gegevens in overeenstemming met de toestemming en instructies van uw bedrijf (bijvoorbeeld, zoals uiteengezet in uw overeenkomst met Adobe).
+Wanneer Adobe software en services levert aan een onderneming, treedt Adobe op als gegevensprocessor voor persoonlijke gegevens die het verwerkt en opslaat als onderdeel van het aanbieden van deze services. Als gegevensverwerker verwerkt Adobe persoonlijke gegevens volgens de toestemming en instructies van uw bedrijf (bijvoorbeeld zoals uiteengezet in uw overeenkomst met Adobe).
 
-Als Controlemechanisme van Gegevens, bepaalt u de persoonlijke gegevens die Adobe verwerkt en namens u opslaat. Als u Adobe Experience Cloud-oplossingen gebruikt, kan Adobe persoonlijke gegevens voor u hosten, afhankelijk van de oplossingen die u gebruikt en de informatie die u kiest om naar uw Adobe Experience Cloud-account te verzenden. Zie voor een gedetailleerde lijst met voorbeelden [Adobe Experience Cloud Privacy](https://www.adobe.com/privacy/experience-cloud.html#collect).
+Als Data Controller, bepaalt u de persoonlijke gegevens die Adobe verwerkt en namens u opslaat. Als u Adobe Experience Cloud-oplossingen gebruikt, kan Adobe persoonlijke gegevens voor u hosten, afhankelijk van de oplossingen die u gebruikt en de informatie die u kiest om naar uw Adobe Experience Cloud-account te verzenden. Voor een gedetailleerde lijst van voorbeelden, zie [ Privacy van Adobe Experience Cloud ](https://www.adobe.com/privacy/experience-cloud.html#collect).
 
 Adobe Experience Cloud biedt API&#39;s die geschikt zijn voor GDPR voor gegevenscontrollers waarmee ze de volgende taken kunnen uitvoeren:
 
@@ -30,9 +30,9 @@ Adobe Experience Cloud biedt API&#39;s die geschikt zijn voor GDPR voor gegevens
 
 Zie voor meer informatie:
 
-* [Overzicht van Adobe Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=nl-NL)
-* [Handleiding Privacy Service-API](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=nl-NL)
-* [Overzicht van de gebruikersinterface voor Privacys Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html?lang=nl-NL)
+* [ Adobe Privacy Service overzicht ](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html)
+* [ Privacy Service API gids ](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html)
+* [ overzicht van Privacy Service UI ](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html)
 
 ## Overzicht van de California Consumer Privacy Act (CCPA)
 
@@ -53,9 +53,9 @@ Als u zich vorig jaar bezig zou houden met het voorbereiden van de Europese priv
 
 ## Adobe Target- en Adobe Experience Platform-opt-in
 
-Het doel biedt ondersteuning voor aanmeldingsfuncties via tags in Adobe Experience Platform om uw strategie voor het beheer van machtigingen te ondersteunen. Met de functie Inschakelen kunnen klanten bepalen hoe en wanneer de tag Doel wordt geactiveerd. Via Adobe Experience Platform kunt u ook de tag Doel vooraf goedkeuren. Als u de mogelijkheid wilt inschakelen om Opt-In te gebruiken in de bibliotheek Target at.js, moet u `targetGlobalSettings` en voeg de `optinEnabled=true` instellen. Selecteer in Adobe Experience Platform de optie &quot;inschakelen&quot; in de vervolgkeuzelijst GDPR Inschakelen in de installatieweergave van de extensie. Zie [Doel implementeren met Adobe Experience Platform](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) voor meer informatie .
+Het doel biedt ondersteuning voor aanmeldingsfuncties via tags in Adobe Experience Platform om uw strategie voor het beheer van machtigingen te ondersteunen. Met de functie Inschakelen kunnen klanten bepalen hoe en wanneer de tag Doel wordt geactiveerd. Via Adobe Experience Platform kunt u ook de tag Doel vooraf goedkeuren. Als u de mogelijkheid wilt inschakelen om Opt-In te gebruiken in de bibliotheek Target at.js, moet u `targetGlobalSettings` gebruiken en de instelling `optinEnabled=true` toevoegen. Selecteer in Adobe Experience Platform de optie &quot;inschakelen&quot; in de vervolgkeuzelijst GDPR Inschakelen in de installatieweergave van de extensie. Zie [ Doel uitvoeren gebruikend Adobe Experience Platform ](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) voor meer details.
 
-In het volgende codefragment wordt getoond hoe u het `optinEnabled=true` instellen:
+In het volgende codefragment wordt getoond hoe u de instelling `optinEnabled=true` kunt inschakelen:
 
 ```
 window.targetGlobalSettings = {
@@ -71,9 +71,9 @@ Het gebruik van Adobe Experience Platform voor het beheer van opt-in is de aanbe
 
 Er zijn drie scenario&#39;s om te overwegen wanneer het gebruiken van Opt-binnen:
 
-1. **De tag Target is vooraf goedgekeurd via Adobe Experience Platform (of het gegevenssubject dat eerder is goedgekeurd als Target):** De tag Doel wordt niet bewaard voor toestemming en functies zoals verwacht.
-1. **De tag Doel is NIET vooraf goedgekeurd en `bodyHidingEnabled` is FALSE:** De tag Doel wordt alleen geactiveerd nadat toestemming van de klant is verzameld. Voordat toestemming wordt verzameld, is alleen de standaardinhoud beschikbaar. Nadat de toestemming wordt ontvangen, wordt Doel geroepen en de gepersonaliseerde inhoud is beschikbaar aan de betrokkene (bezoeker). Omdat alleen de standaardinhoud beschikbaar is vóór de toestemming, is het belangrijk om een geschikte strategie te gebruiken, zoals een welkomstpagina die een gedeelte van de pagina of inhoud beslaat die kan worden gepersonaliseerd. Dit proces zorgt ervoor dat de ervaring voor de betrokkene (bezoeker) consistent blijft.
-1. **De tag Doel is NIET vooraf goedgekeurd en `bodyHidingEnabled` is WAAR:** De tag Doel wordt alleen geactiveerd nadat toestemming van de klant is verzameld. Voordat toestemming wordt verzameld, is alleen de standaardinhoud beschikbaar. Maar omdat `bodyHidingEnabled` is ingesteld op true, `bodyHiddenStyle` Hiermee bepaalt u welke inhoud op de pagina wordt verborgen totdat de doeltag wordt geactiveerd (of de betrokkene de aanmeldingsnaam weigert, in welk geval de standaardinhoud wordt weergegeven). Standaard, `bodyHiddenStyle` is ingesteld op `body { opacity:0;}`, die de body-tag HTML verbergt. Aanbevolen pagina-configuratie bevindt zich hieronder zodat de gehele hoofdtekst van de pagina, behalve het dialoogvenster voor het beheer van de Adobe, wordt verborgen door de inhoud van de pagina in één container te plaatsen en het dialoogvenster voor het beheer van de toestemming in een aparte container. Met deze instelling configureert u Doel zodanig dat alleen de container van de pagina-inhoud wordt verborgen. Zie de [Overzicht van Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=nl-NL&).
+1. **de markering van het Doel wordt vooraf goedgekeurd via Adobe Experience Platform (of het gegevenssubject eerder goedgekeurd Doel):** De markering van het Doel wordt niet gehouden voor toestemming en functies zoals verwacht.
+1. **de markering van het Doel is NIET vooraf goedgekeurd en `bodyHidingEnabled` is VALS:** de markering van het Doel brandt slechts nadat de toestemming van de klant wordt verzameld. Voordat toestemming wordt verzameld, is alleen de standaardinhoud beschikbaar. Nadat de toestemming wordt ontvangen, wordt Doel geroepen en de gepersonaliseerde inhoud is beschikbaar aan de betrokkene (bezoeker). Omdat alleen de standaardinhoud beschikbaar is vóór de toestemming, is het belangrijk om een geschikte strategie te gebruiken, zoals een welkomstpagina die een gedeelte van de pagina of inhoud beslaat die kan worden gepersonaliseerd. Dit proces zorgt ervoor dat de ervaring voor de betrokkene (bezoeker) consistent blijft.
+1. **de markering van het Doel is NIET vooraf goedgekeurd en `bodyHidingEnabled` is WAAR:** de markering van het Doel brandt slechts nadat de toestemming van de klant wordt verzameld. Voordat toestemming wordt verzameld, is alleen de standaardinhoud beschikbaar. Omdat `bodyHidingEnabled` is ingesteld op true, bepaalt `bodyHiddenStyle` echter welke inhoud op de pagina wordt verborgen totdat de doeltag wordt geactiveerd (of de betrokkene de aanmeldingsnaam weigert, in welk geval de standaardinhoud wordt weergegeven). Standaard is `bodyHiddenStyle` ingesteld op `body { opacity:0;}` , waardoor de body-tag van HTML wordt verborgen. De door Adobe aanbevolen paginaconfiguratie is hieronder weergegeven, zodat de volledige hoofdtekst van de pagina, behalve het dialoogvenster voor het beheer van de toestemming, wordt verborgen door de inhoud van de pagina in één container te plaatsen en het dialoogvenster voor het beheer van de toestemming in een aparte container. Met deze instelling configureert u Doel zodanig dat alleen de container van de pagina-inhoud wordt verborgen. Zie het [ overzicht van Privacy Service ](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?).
 
    De geadviseerde pagina opstelling voor scenario 3 is:
 
@@ -97,7 +97,7 @@ Er zijn drie scenario&#39;s om te overwegen wanneer het gebruiken van Opt-binnen
    </html> 
    ```
 
-   Ervan uitgaande dat de `bodyHiddenStyle` van:
+   Ervan uitgaande dat `bodyHiddenStyle` van:
 
    ```
    #pageContent { opacity:0;}
@@ -107,19 +107,19 @@ Er zijn drie scenario&#39;s om te overwegen wanneer het gebruiken van Opt-binnen
 
 Veelgestelde vragen over de algemene gegevensbeschermingsverordening (GDPR) van de Europese Unie, de California Consumer Privacy Act (CCPA) en andere specifieke internationale privacyvereisten voor Target.
 
-### Wat is het beleid van de Adobe voor deze regelgeving?
+### Wat is het beleid van Adobe voor deze regelgeving?
 
-Adobe voldoet al aan of voert zijn verplichtingen als gegevensverwerker uit. Adobe heeft een sterke basis voor gecertificeerde beveiliging en privacycontroles door ontwerp en heeft productverbeteringen aangebracht vóór de deadline van mei 2018. De klanten van de onderneming hebben de verantwoordelijkheid om deze verhogingen uit te voeren en om het even welk noodzakelijk beleid en procedures bij te werken.
+Adobe voldoet al aan of voert zijn verplichtingen als gegevensverwerker uit. Adobe heeft een sterke basis voor gecertificeerde beveiliging en privacycontroles door ontwerp en heeft productverbeteringen doorgevoerd vóór de deadline van mei 2018. De klanten van de onderneming hebben de verantwoordelijkheid om deze verhogingen uit te voeren en om het even welk noodzakelijk beleid en procedures bij te werken.
 
 ### Moet mijn bedrijf, het Controlemechanisme van Gegevens, een GDPR of CCPA- verzoek aan elke oplossing van Adobe Experience Cloud voorleggen die het gebruikt?
 
 Nee, Adobe biedt een centrale manier om gegevenscontrollers te helpen voldoen aan hun GDPR- en CCPA-vereisten. Gegevenscontrollers hoeven niet rechtstreeks naar elke oplossing te gaan.
 
-Alle GDPR- en CCPA-aanvragen voor Experience Cloud-oplossingen, waaronder Target, worden uitgevoerd via een centrale Adobe-API, die momenteel de GDPR-API wordt genoemd. De API voltooit dan het verzoek over de de oplossingsreeks van de Experience Cloud van het Controlemechanisme van Gegevens.
+Alle GDPR- en CCPA-aanvragen in Experience Cloud-oplossingen, waaronder Target, worden uitgevoerd via een centrale Adobe API, die momenteel de GDPR API wordt genoemd. De API voltooit de aanvraag vervolgens via de Experience Cloud-oplossing van de Data Controller.
 
-### Welke informatie stelt Adobe klanten in staat om te verwijderen in reactie op een verzoek van een betrokkene/gebruiker?
+### Met welke informatie kunnen klanten door Adobe worden verwijderd als reactie op een verzoek van een betrokkene of gebruiker?
 
-De informatie met betrekking tot een individuele bezoeker binnen Doel is opgenomen in het profiel van de Doelbezoeker. Met Doel kunnen klanten alle gegevens verwijderen die aan een id zijn gekoppeld in hun bezoekersprofiel. Voor voorbeelden van de profielgegevens die het Doel opslaat, zie [Bezoekerprofiel](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html?lang=nl-NL).
+De informatie met betrekking tot een individuele bezoeker binnen Doel is opgenomen in het profiel van de Doelbezoeker. Met Doel kunnen klanten alle gegevens verwijderen die aan een id zijn gekoppeld in hun bezoekersprofiel. Voor voorbeelden van de opslag van het profielgegevensdoel, zie [ Profiel van de Bezoeker ](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html).
 
 Geaggregeerde of geanonimiseerde gegevens (bijvoorbeeld gegevens die een bepaalde persoon niet identificeren) of gegevens die geen verband houden met een specifieke persoon (bijvoorbeeld inhoudsgegevens), vallen buiten het bereik van een verzoek tot verwijdering van een gebruiker.
 
@@ -131,8 +131,8 @@ Het doel ondersteunt de volgende id-typen om een klantprofiel te zoeken:
 
 | Gebruikersnaam | Naam ruimte-id-type | Naamruimte-id | Definitie |
 |--- |--- |--- |--- |
-| Experience Cloud-ID (ECID) | Standaard | 4 | Adobe Experience Cloud ID, voorheen bekend als Bezoeker-ID of Experience Cloud-ID. U kunt de JavaScript-API gebruiken om deze id te zoeken (zie onderstaande details). |
-| TnT-id / Cookie-id (TNTID) | Standaard | 9 | Doel-id ingesteld als een cookie in de browser van de bezoeker. U kunt de JavaScript-API gebruiken om deze id te zoeken (zie onderstaande details). |
+| Experience Cloud-id (ECID) | Standaard | 4 | Adobe Experience Cloud ID, voorheen bekend als bezoeker-ID of Experience Cloud-ID. U kunt de JavaScript API gebruiken om deze id te zoeken (zie hieronder voor meer informatie). |
+| TnT-id / Cookie-id (TNTID) | Standaard | 9 | Doel-id ingesteld als een cookie in de browser van de bezoeker. U kunt de JavaScript API gebruiken om deze id te zoeken (zie hieronder voor meer informatie). |
 | ID/CRM-ID van derden (DERDE PARTYID) | Doelspecifiek | NVT | Als u Target van uw CRM of andere unieke herkenningstekeninformatie voor uw klanten voorziet. |
 
 >[!NOTE]
@@ -143,25 +143,25 @@ Het doel ondersteunt de volgende id-typen om een klantprofiel te zoeken:
 
 GDPR en CCPA veranderen niet wanneer u toestemming moet krijgen, maar hoe u het krijgt. De toestemmingsstrategie van elke klant hangt van zijn gegevensinzameling en gebruikspraktijken en zijn privacybeleid af. Het beheer van de toestemming wordt niet gesteund door en zou niet via Doel voor GDPR en CCPA moeten worden bereikt.
 
-Adobe biedt momenteel geen oplossing voor het beheer van instemming, maar er zijn verschillende hulpmiddelen die zich op de markt ontwikkelen om aan een aantal van de nieuwe vereisten te voldoen. Voor meer informatie over privacyinstrumenten in het algemeen, waaronder toestemmingsmanagers, zie [2017 Privacy Tech Vendor Report](https://iapp.org/media/pdf/resource_center/Tech-Vendor-Directory-1.4.1-electronic.pdf) op de *International Association of Privacy Professionals (iaap)* website.
+Adobe biedt momenteel geen oplossing voor het beheer van instemming, maar er zijn verschillende instrumenten die zich op de markt ontwikkelen om aan een aantal van de nieuwe vereisten te voldoen. Voor meer informatie over privacyhulpmiddelen in het algemeen, met inbegrip van toestemmingsmanagers, zie het [ 2017 Rapport van de Technische Verkoper van de Privacy ](https://iapp.org/media/pdf/resource_center/Tech-Vendor-Directory-1.4.1-electronic.pdf) op de *Internationale Vereniging van de Beroeps van de Privacy (iaap)* website.
 
 Het doel biedt ondersteuning voor aanmeldingsfuncties via Adobe Experience Platform ter ondersteuning van uw strategie voor het beheer van machtigingen. Met de functie Inschakelen kunnen klanten bepalen hoe en wanneer de tag Doel wordt geactiveerd. Via Adobe Experience Platform kunt u ook de tag Doel vooraf goedkeuren. Het gebruik van Adobe Experience Platform voor het beheer van opt-in is de aanbevolen aanpak. Er is meer korrelige controle beschikbaar in Adobe Experience Platform om bepaalde elementen van uw pagina te verbergen vóór het afvuren van het Doel. Dit kan handig zijn als onderdeel van uw toestemmingsstrategie.
 
-Voor meer informatie over GDPR, CCPA, en Adobe Experience Platform, zie [De Adobe Privacy JavaScript-bibliotheek en GDPR](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=nl-NL&). Zie ook de *Adobe Target- en Adobe Experience Platform-opt-in* hierboven.
+Voor meer informatie over GDPR, CCPA, en Adobe Experience Platform, zie [ de Bibliotheek van JavaScript van de Privacy van Adobe en GDPR ](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?). Ook, zie *Adobe Target en Adobe Experience Platform hierboven opt-in* sectie.
 
-### doet `AdobePrivacy.js` informatie aan de GDPR-API verstrekken?
+### Verzendt `AdobePrivacy.js` informatie naar de GDPR API?
 
-AdobePrivacy.js doet dit *niet* verzend deze informatie naar de API. De klant moet dat doen. Deze bibliotheek bevat alleen de id&#39;s die in de browser voor die specifieke bezoeker zijn opgeslagen.
+AdobePrivacy.js legt ** deze informatie aan API niet voor. De klant moet dat doen. Deze bibliotheek bevat alleen de id&#39;s die in de browser voor die specifieke bezoeker zijn opgeslagen.
 
-### Wat doet `removeIdentities` verwijderen?
+### Wat verwijdert `removeIdentities`?
 
-`removeIdentities` *alleen* verwijdert die identiteiten uit browser, en dat slechts afhangt van of de oplossing van de Adobe het heeft uitgevoerd.
+`removeIdentities` *slechts* verwijdert die identiteiten uit browser, en dat slechts afhangt van of de oplossing van Adobe het heeft uitgevoerd.
 
 Doel verwijdert bijvoorbeeld de cookies waarin de id&#39;s worden opgeslagen, maar Adobe Audience Manager (AAM) verwijdert de index-id die is opgeslagen in een cookie van een andere fabrikant niet.
 
 ### Welke informatie moet in een GDPR- of CCPA-aanvraag van Target worden opgenomen?
 
-Naast de vereisten van de centrale Privacy Service bevat een geldig GDPR- of CCPA-bericht voor Target:
+Naast de vereisten van Centraal Privacy Service bevat een geldig GDPR- of CCPA-bericht voor Target:
 
 ```
 { 
@@ -205,13 +205,13 @@ Naast de vereisten van de centrale Privacy Service bevat een geldig GDPR- of CCP
 | Aanvraagstatus | Doelresponsbericht | Scenario |
 |--- |--- |--- |
 | Verwerking | Verwerking | Doel heeft het verzoek van GDPR of CCPA ontvangen en verwerkt dit. |
-| Voltooid | Niet van toepassing - bedrijfcontext niet van toepassing | De IMS-id in het GDPR- of CCPA-verzoek wordt niet toegewezen aan een doelclient.<br />Sommige bedrijven hebben meerdere IMS-id&#39;s. Verzend de IMS-id waarin Target is ingericht. |
-| Voltooid | Niet van toepassing - gebruikerscontext niet gevonden | De in het verzoek van de GDPR of de CCPA voor de specifieke bezoeker of betrokkene verstrekte id is niet aanwezig in de Target profile store.<br />Dit resultaat wordt ook geretourneerd wanneer u probeert een naamruimte-id-type te verzenden dat niet door Doel wordt ondersteund (zie hierboven voor ondersteunde id&#39;s). |
-| Fout | Foutbericht (details zijn afhankelijk van het type fout) | Fout bij het ophalen of verwijderen van het gewenste gegevensonderwerpprofiel.<br />Fout bij uploaden naar Azure voor toegangsaanvraag. |
+| Voltooid | Niet van toepassing - bedrijfcontext niet van toepassing | De IMS-id in het GDPR- of CCPA-verzoek wordt niet toegewezen aan een doelclient.<br /> Sommige bedrijven hebben veelvoudige IMS IDs. Verzend de IMS-id waarin Target is ingericht. |
+| Voltooid | Niet van toepassing - gebruikerscontext niet gevonden | De in het verzoek van de GDPR of de CCPA voor de specifieke bezoeker of betrokkene verstrekte id is niet aanwezig in de Target profile store.<br /> Dit resultaat keert ook terug als u probeert om een type van namespaceidentiteitskaart voor te leggen dat niet door Doel (zie hierboven voor gesteunde IDs) wordt gesteund. |
+| Fout | Foutbericht (details zijn afhankelijk van het type fout) | Fout bij het ophalen of verwijderen van het gewenste gegevensonderwerpprofiel.<br /> Fout terwijl het uploaden aan Azure voor toegangsverzoek. |
 
 ### Welke reactie verzendt Target naar de GDPR API voor een toegangsverzoek?
 
-Reacties op verzoeken om toegang tot gegevens bevatten een samenvatting van het doelprofiel voor de betrokken bezoeker. Deze terugkeer wordt verzonden naar Experience Cloud GDPR API, die op zijn beurt de Controllers van Gegevens een reactie verzendt.
+Reacties op verzoeken om toegang tot gegevens bevatten een samenvatting van het doelprofiel voor de betrokken bezoeker. Deze terugkeer wordt verzonden naar de Experience Cloud GDPR API, die op zijn beurt de Controllers van Gegevens een reactie verzendt.
 
 Een voorbeeld van de API-respons voor doeltoegang kan er als volgt uitzien:
 
@@ -283,10 +283,10 @@ De volgende tabel bevat een beschrijving van de JSON-velden voor het illustratie
 
 | Veld | Beschrijving |
 |--- |--- |
-| sample_parameter | Veel gegevens in het doelprofiel worden geüpload of rechtstreeks geleverd door de gegevenscontroller. In dit voorbeeld is een parameter geüpload naar het doelprofiel met de API voor profielupdate. Zie voor meer informatie [Methoden om gegevens op te halen in doel](/help/dev/before-implement/methods-to-get-data-into-target/methods-to-get-data-into-target.md). |
+| sample_parameter | Veel gegevens in het doelprofiel worden geüpload of rechtstreeks geleverd door de gegevenscontroller. In dit voorbeeld is een parameter geüpload naar het doelprofiel met de API voor profielupdate. Voor meer informatie, zie [ Methoden om Gegevens in Doel ](/help/dev/before-implement/methods-to-get-data-into-target/methods-to-get-data-into-target.md) te krijgen. |
 | user.ReturnTimeOfDay | Dit standaardveld bevat de tijd van de dag van het meest recente retourbezoek van een gebruiker. |
 | firstSessionStart | Dit standaardveld bevat de tijd van de dag waarop de eerste sessie van de gebruiker is gestart. |
-| user.sessionCountScript | Veel gegevens in het doelprofiel worden geüpload of rechtstreeks geleverd door de gegevenscontroller. In dit voorbeeld verhoogt een profielscript het aantal sessies dat deze bezoeker op de site van de Data Controller heeft uitgevoerd. Zie voor meer informatie [Profielscriptkenmerken](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html?lang=nl-NL). |
+| user.sessionCountScript | Veel gegevens in het doelprofiel worden geüpload of rechtstreeks geleverd door de gegevenscontroller. In dit voorbeeld verhoogt een profielscript het aantal sessies dat deze bezoeker op de site van de Data Controller heeft uitgevoerd. Voor meer informatie, zie {de Attributen van het Manuscript van 0} Profiel [.](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html) |
 
 >[!NOTE]
 >
@@ -294,7 +294,7 @@ De volgende tabel bevat een beschrijving van de JSON-velden voor het illustratie
 
 ### Steunt het Doel IP verduistering?
 
-Het doel steunt IP verwarring als u verkiest om het als deel van uw GDPR of CCPA implementatiestrategie te gebruiken. Zie voor meer informatie [Privacy](privacy.md/#replacement-of-last-octet-of-ip-addresses).
+Het doel steunt IP verwarring als u verkiest om het als deel van uw GDPR of CCPA implementatiestrategie te gebruiken. Voor meer informatie, zie [ Privacy ](privacy.md#replacement-of-last-octet-of-ip-addresses).
 
 ### Moet ik iets doen om te voorkomen dat mijn gegevens worden gedeeld of verkocht aan derden?
 

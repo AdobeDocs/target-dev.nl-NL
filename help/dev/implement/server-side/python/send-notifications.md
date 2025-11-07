@@ -1,11 +1,11 @@
 ---
-title: Weergave- of klikberichten verzenden naar [!DNL Adobe Target] met de Python SDK
-description: Leer hoe u sendNotifications() kunt gebruiken om weergave te verzenden of op meldingen te klikken naar [!DNL Adobe Target] voor meting en rapportage.
+title: Verstuur vertoning of klik berichten aan  [!DNL Adobe Target]  gebruikend Python SDK
+description: Leer hoe te om sendNotifications () te gebruiken om vertoning te verzenden of berichten aan  [!DNL Adobe Target]  voor meting en het melden te klikken.
 feature: APIs/SDKs
 exl-id: 03827b18-a546-4ec8-8762-391fcb3ac435
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 67cc93cf697f8d5bca6fedb3ae974e4012347a0b
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
@@ -14,18 +14,18 @@ ht-degree: 0%
 
 ## Beschrijving
 
-`send_notifications()` wordt gebruikt voor het verzenden van weergave- of klikberichten naar [!DNL Adobe Target] voor meting en rapportage.
+`send_notifications()` wordt gebruikt om weergave- of klikmeldingen voor meting en rapportage naar [!DNL Adobe Target] te verzenden.
 
 >[!NOTE]
 >
->Wanneer een `execute` object met vereiste parameters zich in het verzoek zelf bevindt, wordt de indruk automatisch vergroot voor in aanmerking komende activiteiten.
+>Wanneer een `execute` -object met vereiste parameters zich in het verzoek zelf bevindt, wordt de indruk automatisch vergroot voor kwalificerende activiteiten.
 
-De methodes van SDK die een indruk automatisch zullen verhogen zijn:
+De methoden van SDK die automatisch de indruk vergroten zijn:
 
 * `get_offers()`
 * `get_attributes()`
 
-Wanneer een `prefetch` object binnen het verzoek wordt doorgegeven, wordt de indruk niet automatisch verhoogd voor de activiteiten met selectievakjes binnen het `prefetch` object. `Send_notifications()` moet worden gebruikt voor vooraf opgemaakte ervaringen voor het verhogen van indrukken en omzettingen.
+Wanneer een `prefetch` -object binnen de aanvraag wordt doorgegeven, wordt de indruk niet automatisch vergroot voor de activiteiten met vakken binnen het `prefetch` -object. `Send_notifications()` moet worden gebruikt voor vooraf ingestelde ervaringen voor het verhogen van indrukken en conversies.
 
 ## Methode
 
@@ -41,32 +41,32 @@ target_client.send_notifications(options)
 
 | Naam | Type | Vereist | Standaard | Beschrijving |
 | --- | --- | --- | --- | --- |
-| verzoek | DeliveryRequest | Ja | Geen | Hiermee wordt voldaan aan de [[!UICONTROL Target Delivery API]](/help/dev/implement/delivery-api/overview.md) verzoek |
-| target_cookie | str | nee | Geen | [!DNL Target] koekje |
+| verzoek | DeliveryRequest | Ja | Geen | Komt overeen met de aanvraag [[!UICONTROL Target Delivery API]](/help/dev/implement/delivery-api/overview.md) |
+| target_cookie | str | nee | Geen | [!DNL Target] cookie |
 | target_location_hint | str | nee | Geen | [!DNL Target] locatiehint |
 | consumer_id | str | nee | Geen | Wanneer het stitching van veelvoudige vraag, zouden verschillende consument IDs moeten worden verstrekt |
-| customer_ids | list[CustomerId] | nee | Geen | Een lijst met Customer Ids in de indeling VisitorId die compatibel is met de klant |
+| customer_ids | lijst [ CustomerId ] | nee | Geen | Een lijst met Customer Ids in de indeling VisitorId die compatibel is met de klant |
 | session_id | str | nee | Geen | Wordt gebruikt voor het koppelen van meerdere aanvragen |
 | callback | aanroepbaar | nee | Geen | Als het behandelen van verzoek asynchroon, callback wordt aangehaald wanneer de reactie klaar is |
 | err_callback | aanroepbaar | nee | Geen | Als het behandelen van verzoek asynchroon, foutencallback wordt aangehaald wanneer de uitzondering wordt opgeheven |
 
 ## Retourneert
 
-`Returns` a `TargetDeliveryResponse` indien synchroon (standaard), of een `AsyncResult` als opgeroepen met een callback. `TargetDeliveryResponse` heeft de volgende structuur:
+`Returns` a `TargetDeliveryResponse` indien synchroon aangeroepen (standaard), of een `AsyncResult` indien aangeroepen met een callback. `TargetDeliveryResponse` heeft de volgende structuur:
 
 | Naam | Type | Beschrijving |
 | --- | --- | --- |
-| reactie | DeliveryResponse | Hiermee wordt voldaan aan de [[!DNL Target Delivery API]](/help/dev/implement/delivery-api/overview.md) reactie |
-| target_cookie | dict | [!DNL Target] koekje |
+| reactie | DeliveryResponse | Komt overeen met het antwoord [[!DNL Target Delivery API]](/help/dev/implement/delivery-api/overview.md) |
+| target_cookie | dict | [!DNL Target] cookie |
 | target_location_hint_cookie | dict | [!DNL Target] locatiehintcookie |
-| analytics_details | list[AnalyticsResponse] | [!DNL Analytics] lading, in geval van cliënt-kant [!DNL Analytics] gebruiken |
-| traceren |  | list[dict] | Samengevoegde spoorgegevens voor alle verzoekdozen/meningen |
-| response_tokens | list[dict] | Een lijst van [&#x200B; respontokens](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html?lang=nl-NL) |
+| analytics_details | lijst [ AnalyticsResponse ] | [!DNL Analytics] payload, in het geval van [!DNL Analytics] gebruik op de client |
+| traceren | lijst [ dict ] | Samengevoegde spoorgegevens voor alle verzoekdozen/meningen |
+| response_tokens | lijst [ dict ] | Een lijst met [ &#x200B; Responstkens ](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html) |
 | meta | dict | Aanvullende beslissingsmetagegevens voor gebruik met apparaatbesluitvorming |
 
 ## Voorbeeld
 
-Laten we eerst de [!UICONTROL Target Delivery API] verzoek om inhoud vooraf in te stellen voor de `home` en `product1` box.
+Eerst bouwen we de [!UICONTROL Target Delivery API] -aanvraag voor het vooraf instellen van inhoud voor de vakken `home` en `product1` .
 
 ### Python
 
@@ -80,7 +80,7 @@ delivery_request = DeliveryRequest(prefetch=prefetch)
 response = target_client.get_offers({ "request": delivery_request })
 ```
 
-Een succesvol antwoord bevat een [!UICONTROL Target Delivery API] reactieobject, dat vooraf ingestelde inhoud voor de gevraagde vakken bevat. Een monster `target_response["response"]` Het object (opgemaakt als een dict) kan er als volgt uitzien:
+Een succesvol antwoord bevat een reactieobject [!UICONTROL Target Delivery API] dat vooraf gecodeerde inhoud bevat voor de gevraagde vakjes. Een voorbeeldobject `target_response["response"]` (opgemaakt als een dict) kan er als volgt uitzien:
 
 ### Python
 
@@ -138,7 +138,7 @@ Een succesvol antwoord bevat een [!UICONTROL Target Delivery API] reactieobject,
 }
 ```
 
-Noteer de mbox `name` en `state` en de `eventToken` in elk van de opties voor doelinhoud. Deze moeten worden vermeld in het `send_notifications()` aanvragen, zodra elke inhoudsoptie wordt weergegeven. Laten we aannemen `product1` mbox is weergegeven op een niet-browserapparaat. De aanmeldingsaanvraag zal als volgt worden weergegeven:
+Noteer de velden mbox `name` en `state` en `eventToken` in elk van de opties voor de doelinhoud. Deze gegevens moeten in het `send_notifications()` -verzoek worden opgegeven zodra elke inhoudsoptie wordt weergegeven. Stel dat de `product1` mbox is weergegeven op een niet-browserapparaat. De aanmeldingsaanvraag zal als volgt worden weergegeven:
 
 ### Python
 
@@ -155,7 +155,7 @@ notification = Notification(
 notification_request = DeliveryRequest(notifications=[notification])
 ```
 
-Er is zowel de mbox-status als de gebeurtenistoken opgenomen die overeenkomt met de [!DNL Target] voorstel geleverd in de prefetch reactie. Nadat we het verzoek om meldingen hebben samengesteld, kunnen we het verzenden naar [!DNL Target] via de `send_notifications()` API-methode:
+Merk op dat zowel de mbox-status als het gebeurtenistoken zijn opgenomen die overeenkomen met de aanbieding van [!DNL Target] in het Prefetch-antwoord. Nadat we de aanvraag voor meldingen hebben gemaakt, kunnen we deze via de API-methode [!DNL Target] naar `send_notifications()` verzenden:
 
 ### Python
 
