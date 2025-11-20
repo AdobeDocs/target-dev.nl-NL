@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # [!DNL Adobe Target] Handleiding voor ontwikkelaars
 
-**([&#x200B; de documentatieupdates van de Mening  [!DNL Target]  &#x200B;](https://experienceleague.adobe.com/docs/target/using/release-notes/doc-change.html){target=_blank})**
+**([&#x200B; de documentatieupdates van de Mening  [!DNL Target]  &#x200B;](https://experienceleague.adobe.com/docs/target/using/release-notes/doc-change.html?lang=nl-NL){target=_blank})**
 
 Deze *[!DNL Adobe Target]handleiding voor ontwikkelaars* biedt bronnen en hulplijnen voor [!DNL Target] -ontwikkelaars, waaronder API- en SDK-documentatie voor implementatie en beheer van [!DNL Target] .
 
@@ -22,11 +22,11 @@ Deze *[!DNL Adobe Target]handleiding voor ontwikkelaars* biedt bronnen en hulpli
 >
 >Naast deze handleiding zijn ook de volgende [!DNL Adobe Target] hulplijnen beschikbaar:
 >
->* [*[!DNL Adobe Target] Gids Bedrijfs van de Praktijk *](https://experienceleague.adobe.com/docs/target/using/target-home.html){target=_blank}
+>* [*[!DNL Adobe Target] Gids Bedrijfs van de Praktijk *](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=nl-NL){target=_blank}
 >
->* [*[!DNL Adobe Target] Zelfstudies *](https://experienceleague.adobe.com/docs/target-learn/tutorials/overview.html){target=_blank}
+>* [*[!DNL Adobe Target] Zelfstudies *](https://experienceleague.adobe.com/docs/target-learn/tutorials/overview.html?lang=nl-NL){target=_blank}
 >
->Voor versieinformatie, zie [&#x200B; de versienota&#39;s van het Doel (huidig) &#x200B;](https://experienceleague.adobe.com/docs/target/using/release-notes/release-notes.html){target=_blank} in de *[!DNL Adobe Target]Gids Bedrijfs van de Praktijk*.
+>Voor versieinformatie, zie [&#x200B; de versienota&#39;s van het Doel (huidig) &#x200B;](https://experienceleague.adobe.com/docs/target/using/release-notes/release-notes.html?lang=nl-NL){target=_blank} in de *[!DNL Adobe Target]Gids Bedrijfs van de Praktijk*.
 
 ## Aan de slag met de implementatie
 
@@ -86,7 +86,7 @@ Deze *[!DNL Adobe Target]handleiding voor ontwikkelaars* biedt bronnen en hulpli
 
 [**Admin Console APIs** &#x200B;](https://developer.adobe.com/umapi/): Beheer gebruikers en productrechten door het Beheer van de Gebruiker van Adobe en de Synchronisatie APIs van de Gebruiker.
 
-[**[!DNL Adobe Experience Platform Edge Network Server API]**](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html): gebruik de [!DNL Adobe Experience Platform Edge Network Server] API voor een verscheidenheid van gegevensinzameling, verpersoonlijking, reclame, en marketing gebruiksgevallen.
+[**[!DNL Adobe Experience Platform Edge Network Server API]**](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=nl-NL): gebruik de [!DNL Adobe Experience Platform Edge Network Server] API voor een verscheidenheid van gegevensinzameling, verpersoonlijking, reclame, en marketing gebruiksgevallen.
 
 ## Bronnen
 
@@ -98,6 +98,6 @@ Deze *[!DNL Adobe Target]handleiding voor ontwikkelaars* biedt bronnen en hulpli
 * [Doelimplementatie](./before-implement/prepare-to-implement-target.md)
 * [Doelbeheer](./before-administer/target-api-overview.md)
 * [&#x200B; Adobe Target Dev Docs GitHub Repo &#x200B;](https://github.com/AdobeDocs/target-developers)
-* [&#x200B; de Nota&#39;s van de Versie van Adobe Target &#x200B;](https://experienceleague.adobe.com/docs/target/using/release-notes/release-notes.html)
-* [&#x200B; Van Bedrijfs Adobe Target Gids van Gebruiker &#x200B;](https://experienceleague.adobe.com/docs/target/using/target-home.html)
+* [&#x200B; de Nota&#39;s van de Versie van Adobe Target &#x200B;](https://experienceleague.adobe.com/docs/target/using/release-notes/release-notes.html?lang=nl-NL)
+* [&#x200B; Van Bedrijfs Adobe Target Gids van Gebruiker &#x200B;](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=nl-NL)
 
