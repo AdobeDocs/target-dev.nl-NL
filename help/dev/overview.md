@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # [!DNL Adobe Target] Handleiding voor ontwikkelaars
 
-**([&#x200B; de documentatieupdates van de Mening  [!DNL Target]  &#x200B;](https://experienceleague.adobe.com/docs/target/using/release-notes/doc-change.html?lang=nl-NL){target=_blank})**
+**([ de documentatieupdates van de Mening  [!DNL Target]  ](https://experienceleague.adobe.com/docs/target/using/release-notes/doc-change.html){target=_blank})**
 
 Deze *[!DNL Adobe Target]handleiding voor ontwikkelaars* biedt bronnen en hulplijnen voor [!DNL Target] -ontwikkelaars, waaronder API- en SDK-documentatie voor implementatie en beheer van [!DNL Target] .
 
@@ -22,11 +22,11 @@ Deze *[!DNL Adobe Target]handleiding voor ontwikkelaars* biedt bronnen en hulpli
 >
 >Naast deze handleiding zijn ook de volgende [!DNL Adobe Target] hulplijnen beschikbaar:
 >
->* [*[!DNL Adobe Target] Gids Bedrijfs van de Praktijk *](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=nl-NL){target=_blank}
+>* [*[!DNL Adobe Target] Gids Bedrijfs van de Praktijk *](https://experienceleague.adobe.com/docs/target/using/target-home.html){target=_blank}
 >
->* [*[!DNL Adobe Target] Zelfstudies *](https://experienceleague.adobe.com/docs/target-learn/tutorials/overview.html?lang=nl-NL){target=_blank}
+>* [*[!DNL Adobe Target] Zelfstudies *](https://experienceleague.adobe.com/docs/target-learn/tutorials/overview.html){target=_blank}
 >
->Voor versieinformatie, zie [&#x200B; de versienota&#39;s van het Doel (huidig) &#x200B;](https://experienceleague.adobe.com/docs/target/using/release-notes/release-notes.html?lang=nl-NL){target=_blank} in de *[!DNL Adobe Target]Gids Bedrijfs van de Praktijk*.
+>Voor versieinformatie, zie [ de versienota&#39;s van het Doel (huidig) ](https://experienceleague.adobe.com/docs/target/using/release-notes/release-notes.html){target=_blank} in de *[!DNL Adobe Target]Gids Bedrijfs van de Praktijk*.
 
 ## Aan de slag met de implementatie
 
@@ -62,7 +62,7 @@ Deze *[!DNL Adobe Target]handleiding voor ontwikkelaars* biedt bronnen en hulpli
 
 [**AEP Mobile SDK overzicht**](implement/mobile/overview.md): Overzicht van hoe te om [!DNL Adobe Target] met [!DNL Adobe Experience Platform] Mobiele SDKs uit te voeren.
 
-[**AEP Mobile SDK verwijzing** &#x200B;](https://developer.adobe.com/client-sdks/documentation/): voer [!DNL Adobe Target] met [!DNL Adobe Experience Platform] Mobiele SDKs uit.
+[**AEP Mobile SDK verwijzing** ](https://developer.adobe.com/client-sdks/documentation/): voer [!DNL Adobe Target] met [!DNL Adobe Experience Platform] Mobiele SDKs uit.
 
 ## E-mailimplementatie
 
@@ -84,20 +84,20 @@ Deze *[!DNL Adobe Target]handleiding voor ontwikkelaars* biedt bronnen en hulpli
 
 [**[!DNL Target Models API]**](administer/models-api/models-api-overview.md): beheer lijsten van gewezen personen om de functies te definiëren die in [!DNL Target] -modellen voor machinaal leren worden gebruikt.
 
-[**Admin Console APIs** &#x200B;](https://developer.adobe.com/umapi/): Beheer gebruikers en productrechten door het Beheer van de Gebruiker van Adobe en de Synchronisatie APIs van de Gebruiker.
+[**Admin Console APIs** ](https://developer.adobe.com/umapi/): Beheer gebruikers en productrechten door het Beheer van de Gebruiker van Adobe en de Synchronisatie APIs van de Gebruiker.
 
-[**[!DNL Adobe Experience Platform Edge Network Server API]**](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=nl-NL): gebruik de [!DNL Adobe Experience Platform Edge Network Server] API voor een verscheidenheid van gegevensinzameling, verpersoonlijking, reclame, en marketing gebruiksgevallen.
+[**[!DNL Adobe Experience Platform Edge Network Server API]**](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html): gebruik de [!DNL Adobe Experience Platform Edge Network Server] API voor een verscheidenheid van gegevensinzameling, verpersoonlijking, reclame, en marketing gebruiksgevallen.
 
 ## Bronnen
 
-* [&#x200B; open bronrepo van Adobe &#x200B;](https://github.com/adobe)
-* [&#x200B; Knoop JS SDK Source van het Doel &#x200B;](https://github.com/adobe/target-nodejs-sdk)
-* [&#x200B; de VoorbeeldenRepo van de Knoop JS van het Doel &#x200B;](https://github.com/adobe/target-nodejs-sdk-samples)
-* [&#x200B; Doel Java SDK Source &#x200B;](https://github.com/adobe/target-java-sdk)
-* [&#x200B; Reactie van het Voorbeeld van Java SDK van het Doel &#x200B;](https://github.com/adobe/target-java-sdk-samples)
+* [ open bronrepo van Adobe ](https://github.com/adobe)
+* [ Knoop JS SDK Source van het Doel ](https://github.com/adobe/target-nodejs-sdk)
+* [ de VoorbeeldenRepo van de Knoop JS van het Doel ](https://github.com/adobe/target-nodejs-sdk-samples)
+* [ Doel Java SDK Source ](https://github.com/adobe/target-java-sdk)
+* [ Reactie van het Voorbeeld van Java SDK van het Doel ](https://github.com/adobe/target-java-sdk-samples)
 * [Doelimplementatie](./before-implement/prepare-to-implement-target.md)
 * [Doelbeheer](./before-administer/target-api-overview.md)
-* [&#x200B; Adobe Target Dev Docs GitHub Repo &#x200B;](https://github.com/AdobeDocs/target-developers)
-* [&#x200B; de Nota&#39;s van de Versie van Adobe Target &#x200B;](https://experienceleague.adobe.com/docs/target/using/release-notes/release-notes.html?lang=nl-NL)
-* [&#x200B; Van Bedrijfs Adobe Target Gids van Gebruiker &#x200B;](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=nl-NL)
+* [ Adobe Target Dev Docs GitHub Repo ](https://github.com/AdobeDocs/target-developers)
+* [ de Nota&#39;s van de Versie van Adobe Target ](https://experienceleague.adobe.com/docs/target/using/release-notes/release-notes.html)
+* [ Van Bedrijfs Adobe Target Gids van Gebruiker ](https://experienceleague.adobe.com/docs/target/using/target-home.html)
 
