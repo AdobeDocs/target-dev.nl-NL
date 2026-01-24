@@ -14,4 +14,4 @@ ht-degree: 0%
 
 Ontdek wat de toekomstige veroudering van cookies van andere bedrijven betekent voor uw [!DNL Adobe Target] at.js-implementatie.
 
-Zie voor meer informatie [De impact van de afleiding van Cookie van derden op Adobe Target (at.js)](https://experienceleaguecommunities.adobe.com/t5/adobe-target-blogs/the-impact-of-third-party-cookie-deprecation-on-adobe-target-at/ba-p/661615?search=Third%20Party%20Cookie%20Deprecation){target=_blank} in de Adobe Target-Gemeenschap.
+Zie voor meer informatie [De impact van de afleiding van Cookie van derden op Adobe Target (at.js)](https://experienceleaguecommunities.adobe.com/t5/adobe-target-blogs/the-impact-of-third-party-cookie-deprecation-on-adobe-target-at/ba-p/661615?profile.language=nl&search=Third%20Party%20Cookie%20Deprecation){target=_blank} in de Adobe Target-Gemeenschap.
